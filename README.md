@@ -7,7 +7,7 @@ Tested with operating system Baremetal (Zynq ARM processor) but easily portable 
 An OpenCV client allows to visualize the image stream (raw image Luma, raw image Chroma, Color image and processed image)
 A client running on the remote computer enables to change (via TCP) parameters of the convolutional filter (separable or standard) implemeted into the FPGA. 
 
-For more details see 06 - Embedded_Vision.pdf in Documentation (Italian)
+For more details see 06 - Embedded_Vision.pdf in Documentation
 
 https://www.youtube.com/watch?v=EG3NYqMJvZI
 
