@@ -16,7 +16,5 @@ https://www.youtube.com/watch?v=6HEgdZEHpsM
 
 If you use this code please cite: 
 
-06 - Embedded_Vision.pdf available 
-
-www.vision.disi.unibo.it/smatt
+06 - Embedded_Vision.pdf available at www.vision.disi.unibo.it/smatt
 
