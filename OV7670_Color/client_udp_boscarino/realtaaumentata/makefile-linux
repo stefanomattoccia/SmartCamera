@@ -1,0 +1,34 @@
+CC=g++ 
+FLAGS= -fPIC -g -Wall
+INCLUDES = -I/usr/local/include -I/usr/include
+OPT=
+ARCH=
+CPU=
+CFLAGS =
+LDFLAGS = -lopencv_caflib3d -lopencv_core -lopencv_highgui -lopencv_imgproc -lm -lGL -lglut -lGLU
+
+all : augmented_reality.so
+
+augmented_reality.so : application.o CVfunctions.o GLfunctions.o util.o
+	$(CC) -shared -o augmented_reality.so application.o CVfunctions.o GLfunctions.o util.o $(LDFLAGS)
+	@echo [INFO] 
+	@echo [INFO] Static library and object files ready
+	@echo [INFO] Please move the .so file to your default 
+	@echo [INFO] library location (such as /usr/lib)
+	@echo [INFO]
+	cp -f augmented_reality.so ../Client_pc_colore
+
+application.o : application.h ../OS/os.h application.cpp makefile-linux
+	$(CC) $(FLAGS) $(INCLUDES) $(OPT) $(ARCH) $(CPU) -c application.cpp $(LDFLAGS)
+
+CVfunctions.o : CVfunctions.h CVfunctions.cpp makefile-linux
+	$(CC) $(FLAGS) $(INCLUDES) $(OPT) $(ARCH) $(CPU) -c CVfunctions.cpp  $(LDFLAGS)
+
+GLfunctions.o : GLfunctions.h GLfunctions.cpp makefile-linux
+	$(CC) $(FLAGS) $(INCLUDES) $(OPT) $(ARCH) $(CPU) -c GLfunctions.cpp  $(LDFLAGS)
+
+util.o : util.h util.cpp makefile-linux
+	$(CC) $(FLAGS) $(INCLUDES) $(OPT) $(ARCH) $(CPU) -c util.cpp  $(LDFLAGS)
+
+clean: 
+	rm -rf *.so *.o *.~ 

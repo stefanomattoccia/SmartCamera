@@ -1,0 +1,495 @@
+
+
+================================================================
+== Vivado HLS Report for 'ddr_to_axis_reader'
+================================================================
+* Date:           Sat Apr 30 19:23:12 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        DDR_TO_AXIS_READER_VGA64
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.75|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  346502|  346502|  346503|  346503|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------------------+--------+--------+----------+-----------+-----------+------+----------+
+        |                                |     Latency     | Iteration|  Initiation Interval  | Trip |          |
+        |            Loop Name           |   min  |   max  |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------------------+--------+--------+----------+-----------+-----------+------+----------+
+        |- Loop 1                        |  346500|  346500|      4620|          -|          -|    75|    no    |
+        | + memcpy.buffer.base_ddr_addr  |     513|     513|         3|          1|          1|   512|    yes   |
+        | + Loop 1.2                     |    4097|    4097|         3|          1|          1|  4096|    yes   |
+        +--------------------------------+--------+--------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+  * Pipeline-1: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 16
+* Pipeline: 2
+  Pipeline-0: II = 1, D = 3, States = { 10 11 12 }
+  Pipeline-1: II = 1, D = 3, States = { 13 14 15 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / (!exitcond1)
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	13  / (exitcond2)
+	11  / (!exitcond2)
+11 --> 
+	12  / true
+12 --> 
+	10  / true
+13 --> 
+	16  / (exitcond)
+	14  / (!exitcond)
+14 --> 
+	15  / true
+15 --> 
+	13  / true
+16 --> 
+	3  / true
+* FSM state operations: 
+
+ <State 1>: 0.80ns
+ST_1: buffer [1/1] 0.00ns
+:6  %buffer = alloca [512 x i64], align 16
+
+ST_1: inner_index_V [1/1] 0.00ns
+:16  %inner_index_V = call i3 @_ssdm_op_Read.ap_none.i3P(i3* %frame_index_V)
+
+ST_1: inner_index_V_2 [1/1] 0.80ns
+:17  %inner_index_V_2 = add i3 %inner_index_V, -1
+
+
+ <State 2>: 7.95ns
+ST_2: stg_20 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i8* %outStream_V), !map !7
+
+ST_2: stg_21 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i64* %base_ddr_addr), !map !11
+
+ST_2: stg_22 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i3* %frame_index_V), !map !17
+
+ST_2: stg_23 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %frame_count), !map !21
+
+ST_2: stg_24 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i32* %frame_count_equals), !map !25
+
+ST_2: stg_25 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecTopModule([19 x i8]* @ddr_to_axis_reader_str) nounwind
+
+ST_2: stg_26 [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecInterface(i32* %frame_count_equals, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_2: stg_27 [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecInterface(i32* %frame_count, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_2: stg_28 [1/1] 0.00ns
+:9  call void (...)* @_ssdm_op_SpecInterface(i8* %outStream_V, [5 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_2: stg_29 [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecInterface(i64* %base_ddr_addr, [6 x i8]* @p_str3, i32 0, i32 0, i32 0, i32 128, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_2: stg_30 [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecInterface(i3* %frame_index_V, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_2: stg_31 [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecMemCore([512 x i64]* %buffer, [1 x i8]* @p_str1, [12 x i8]* @p_str4, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+ST_2: stg_32 [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecReset(i32* @frame_count_inner, i32 1, [1 x i8]* @p_str1) nounwind
+
+ST_2: stg_33 [1/1] 0.00ns
+:14  call void (...)* @_ssdm_op_SpecReset(i32* @index_old, i32 1, [1 x i8]* @p_str1) nounwind
+
+ST_2: stg_34 [1/1] 0.00ns
+:15  call void (...)* @_ssdm_op_SpecReset(i32* @frame_count_equals_inner, i32 1, [1 x i8]* @p_str1) nounwind
+
+ST_2: tmp [1/1] 0.00ns
+:18  %tmp = zext i3 %inner_index_V_2 to i32
+
+ST_2: tmp_cast [1/1] 0.00ns
+:19  %tmp_cast = zext i3 %inner_index_V_2 to i22
+
+ST_2: tmp_1 [1/1] 6.38ns
+:20  %tmp_1 = mul i22 %tmp_cast, 307200
+
+ST_2: offset_cast [1/1] 0.00ns
+:21  %offset_cast = call i19 @_ssdm_op_PartSelect.i19.i22.i32.i32(i22 %tmp_1, i32 3, i32 21)
+
+ST_2: stg_39 [1/1] 1.57ns
+:22  br label %1
+
+
+ <State 3>: 8.75ns
+ST_3: offset1 [1/1] 0.00ns
+:0  %offset1 = phi i19 [ %offset_cast, %0 ], [ %offset, %3 ]
+
+ST_3: i [1/1] 0.00ns
+:1  %i = phi i7 [ 0, %0 ], [ %i_1, %3 ]
+
+ST_3: exitcond1 [1/1] 1.97ns
+:2  %exitcond1 = icmp eq i7 %i, -53
+
+ST_3: empty [1/1] 0.00ns
+:3  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 75, i64 75, i64 75)
+
+ST_3: i_1 [1/1] 1.72ns
+:4  %i_1 = add i7 %i, 1
+
+ST_3: stg_45 [1/1] 0.00ns
+:5  br i1 %exitcond1, label %4, label %burst.rd.header.preheader
+
+ST_3: tmp_2 [1/1] 0.00ns
+burst.rd.header.preheader:0  %tmp_2 = zext i19 %offset1 to i64
+
+ST_3: base_ddr_addr_addr [1/1] 0.00ns
+burst.rd.header.preheader:1  %base_ddr_addr_addr = getelementptr i64* %base_ddr_addr, i64 %tmp_2
+
+ST_3: p_rd_req [7/7] 8.75ns
+burst.rd.header.preheader:2  %p_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)
+
+ST_3: frame_count_inner_load [1/1] 0.00ns
+:0  %frame_count_inner_load = load i32* @frame_count_inner, align 4
+
+ST_3: tmp_3 [1/1] 2.44ns
+:1  %tmp_3 = add nsw i32 %frame_count_inner_load, 1
+
+ST_3: stg_51 [1/1] 0.00ns
+:2  store i32 %tmp_3, i32* @frame_count_inner, align 4
+
+ST_3: stg_52 [1/1] 0.00ns
+:3  call void @_ssdm_op_Write.ap_none.i32P(i32* %frame_count, i32 %tmp_3)
+
+ST_3: index_old_load [1/1] 0.00ns
+:4  %index_old_load = load i32* @index_old, align 4
+
+ST_3: tmp_4 [1/1] 2.52ns
+:5  %tmp_4 = icmp eq i32 %tmp, %index_old_load
+
+ST_3: stg_55 [1/1] 0.00ns
+:6  br i1 %tmp_4, label %5, label %._crit_edge
+
+ST_3: frame_count_equals_inner_load [1/1] 0.00ns
+:0  %frame_count_equals_inner_load = load i32* @frame_count_equals_inner, align 4
+
+ST_3: tmp_5 [1/1] 2.44ns
+:1  %tmp_5 = add nsw i32 %frame_count_equals_inner_load, 1
+
+ST_3: stg_58 [1/1] 0.00ns
+:2  store i32 %tmp_5, i32* @frame_count_equals_inner, align 4
+
+ST_3: stg_59 [1/1] 0.00ns
+:3  call void @_ssdm_op_Write.ap_none.i32P(i32* %frame_count_equals, i32 %tmp_5)
+
+ST_3: stg_60 [1/1] 0.00ns
+:4  br label %._crit_edge
+
+ST_3: stg_61 [1/1] 0.00ns
+._crit_edge:0  store i32 %tmp, i32* @index_old, align 4
+
+ST_3: stg_62 [1/1] 0.00ns
+._crit_edge:1  ret void
+
+
+ <State 4>: 8.75ns
+ST_4: p_rd_req [6/7] 8.75ns
+burst.rd.header.preheader:2  %p_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)
+
+
+ <State 5>: 8.75ns
+ST_5: p_rd_req [5/7] 8.75ns
+burst.rd.header.preheader:2  %p_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)
+
+
+ <State 6>: 8.75ns
+ST_6: p_rd_req [4/7] 8.75ns
+burst.rd.header.preheader:2  %p_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)
+
+
+ <State 7>: 8.75ns
+ST_7: p_rd_req [3/7] 8.75ns
+burst.rd.header.preheader:2  %p_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)
+
+
+ <State 8>: 8.75ns
+ST_8: p_rd_req [2/7] 8.75ns
+burst.rd.header.preheader:2  %p_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)
+
+
+ <State 9>: 8.75ns
+ST_9: p_rd_req [1/7] 8.75ns
+burst.rd.header.preheader:2  %p_rd_req = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)
+
+ST_9: stg_69 [1/1] 1.57ns
+burst.rd.header.preheader:3  br label %burst.rd.header
+
+
+ <State 10>: 3.64ns
+ST_10: indvar [1/1] 0.00ns
+burst.rd.header:0  %indvar = phi i10 [ %indvar_next, %burst.rd.body ], [ 0, %burst.rd.header.preheader ]
+
+ST_10: exitcond2 [1/1] 2.07ns
+burst.rd.header:1  %exitcond2 = icmp eq i10 %indvar, -512
+
+ST_10: empty_9 [1/1] 0.00ns
+burst.rd.header:2  %empty_9 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 512, i64 512, i64 512)
+
+ST_10: indvar_next [1/1] 1.84ns
+burst.rd.header:3  %indvar_next = add i10 %indvar, 1
+
+ST_10: stg_74 [1/1] 1.57ns
+burst.rd.header:4  br i1 %exitcond2, label %burst.rd.end, label %burst.rd.body
+
+
+ <State 11>: 8.75ns
+ST_11: base_ddr_addr_addr_read [1/1] 8.75ns
+burst.rd.body:3  %base_ddr_addr_addr_read = call i64 @_ssdm_op_Read.m_axi.i64P(i64* %base_ddr_addr_addr)
+
+
+ <State 12>: 2.71ns
+ST_12: burstread_rbegin [1/1] 0.00ns
+burst.rd.body:0  %burstread_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @burstread_OC_region_str) nounwind
+
+ST_12: stg_77 [1/1] 0.00ns
+burst.rd.body:1  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str6)
+
+ST_12: empty_10 [1/1] 0.00ns
+burst.rd.body:2  %empty_10 = call i32 (...)* @_ssdm_op_SpecLoopName([28 x i8]* @memcpy_OC_buffer_OC_base_ddr_a) nounwind
+
+ST_12: tmp_7 [1/1] 0.00ns
+burst.rd.body:4  %tmp_7 = zext i10 %indvar to i64
+
+ST_12: buffer_addr [1/1] 0.00ns
+burst.rd.body:5  %buffer_addr = getelementptr [512 x i64]* %buffer, i64 0, i64 %tmp_7
+
+ST_12: stg_81 [1/1] 2.71ns
+burst.rd.body:6  store i64 %base_ddr_addr_addr_read, i64* %buffer_addr, align 8
+
+ST_12: burstread_rend [1/1] 0.00ns
+burst.rd.body:7  %burstread_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @burstread_OC_region_str, i32 %burstread_rbegin) nounwind
+
+ST_12: stg_83 [1/1] 0.00ns
+burst.rd.body:8  br label %burst.rd.header
+
+
+ <State 13>: 3.55ns
+ST_13: j [1/1] 0.00ns
+burst.rd.end:0  %j = phi i13 [ %j_1, %2 ], [ 0, %burst.rd.header ]
+
+ST_13: exitcond [1/1] 2.18ns
+burst.rd.end:1  %exitcond = icmp eq i13 %j, -4096
+
+ST_13: j_1 [1/1] 1.96ns
+burst.rd.end:2  %j_1 = add i13 %j, 1
+
+ST_13: stg_87 [1/1] 0.00ns
+burst.rd.end:3  br i1 %exitcond, label %3, label %2
+
+ST_13: tmp_6 [1/1] 0.00ns
+:3  %tmp_6 = trunc i13 %j to i3
+
+ST_13: gepindex_cast [1/1] 0.00ns
+:4  %gepindex_cast = call i9 @_ssdm_op_PartSelect.i9.i13.i32.i32(i13 %j, i32 3, i32 11)
+
+ST_13: gepindex2_cast [1/1] 0.00ns
+:5  %gepindex2_cast = zext i9 %gepindex_cast to i64
+
+ST_13: buffer_addr_1 [1/1] 0.00ns
+:6  %buffer_addr_1 = getelementptr [512 x i64]* %buffer, i64 0, i64 %gepindex2_cast
+
+ST_13: buffer_load [2/2] 2.71ns
+:7  %buffer_load = load i64* %buffer_addr_1, align 8
+
+
+ <State 14>: 7.65ns
+ST_14: buffer_load [1/2] 2.71ns
+:7  %buffer_load = load i64* %buffer_addr_1, align 8
+
+ST_14: start_pos [1/1] 0.00ns
+:8  %start_pos = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %tmp_6, i3 0)
+
+ST_14: end_pos [1/1] 0.00ns
+:9  %end_pos = or i6 %start_pos, 7
+
+ST_14: tmp_8 [1/1] 1.94ns
+:10  %tmp_8 = icmp ugt i6 %start_pos, %end_pos
+
+ST_14: tmp_10 [1/1] 0.00ns
+:11  %tmp_10 = zext i6 %start_pos to i7
+
+ST_14: tmp_11 [1/1] 0.00ns
+:12  %tmp_11 = zext i6 %end_pos to i7
+
+ST_14: tmp_12 [1/1] 0.00ns
+:13  %tmp_12 = call i64 @llvm.part.select.i64(i64 %buffer_load, i32 63, i32 0)
+
+ST_14: tmp_13 [1/1] 1.72ns
+:14  %tmp_13 = sub i7 %tmp_10, %tmp_11
+
+ST_14: tmp_14 [1/1] 1.37ns
+:15  %tmp_14 = xor i7 %tmp_10, 63
+
+ST_14: tmp_15 [1/1] 1.72ns
+:16  %tmp_15 = sub i7 %tmp_11, %tmp_10
+
+ST_14: tmp_16 [1/1] 1.37ns
+:17  %tmp_16 = select i1 %tmp_8, i7 %tmp_13, i7 %tmp_15
+
+ST_14: tmp_17 [1/1] 1.37ns
+:18  %tmp_17 = select i1 %tmp_8, i64 %tmp_12, i64 %buffer_load
+
+ST_14: tmp_18 [1/1] 1.37ns
+:19  %tmp_18 = select i1 %tmp_8, i7 %tmp_14, i7 %tmp_10
+
+ST_14: tmp_20 [1/1] 0.00ns
+:21  %tmp_20 = zext i7 %tmp_18 to i64
+
+ST_14: tmp_22 [1/1] 3.57ns
+:23  %tmp_22 = lshr i64 %tmp_17, %tmp_20
+
+
+ <State 15>: 4.27ns
+ST_15: empty_11 [1/1] 0.00ns
+:0  %empty_11 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4096, i64 4096, i64 4096)
+
+ST_15: tmp_9 [1/1] 0.00ns
+:1  %tmp_9 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str5)
+
+ST_15: stg_110 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_15: tmp_19 [1/1] 1.72ns
+:20  %tmp_19 = sub i7 63, %tmp_16
+
+ST_15: tmp_21 [1/1] 0.00ns
+:22  %tmp_21 = zext i7 %tmp_19 to i64
+
+ST_15: tmp_23 [1/1] 1.18ns
+:24  %tmp_23 = lshr i64 -1, %tmp_21
+
+ST_15: tmp_24 [1/1] 1.37ns
+:25  %tmp_24 = and i64 %tmp_22, %tmp_23
+
+ST_15: tmp_25 [1/1] 0.00ns
+:26  %tmp_25 = trunc i64 %tmp_24 to i8
+
+ST_15: stg_116 [1/1] 0.00ns
+:27  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outStream_V, i8 %tmp_25)
+
+ST_15: empty_12 [1/1] 0.00ns
+:28  %empty_12 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str5, i32 %tmp_9)
+
+ST_15: stg_118 [1/1] 0.00ns
+:29  br label %burst.rd.end
+
+
+ <State 16>: 2.08ns
+ST_16: offset [1/1] 2.08ns
+:0  %offset = add i19 %offset1, 512
+
+ST_16: stg_120 [1/1] 0.00ns
+:1  br label %1
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

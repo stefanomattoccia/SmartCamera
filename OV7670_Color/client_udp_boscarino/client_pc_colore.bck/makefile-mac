@@ -1,0 +1,34 @@
+CC = g++ -m64
+CFLAGS = -g -Wall
+INCLUDES = -I/usr/local/include
+LFLAGS = -L/usr/local/lib 
+LIBS = -lopencv_core -lopencv_highgui -lopencv_imgproc -L. -l_time_measurements 
+
+all : client
+
+# Per creare l’eseguibile client abbiamo bisogno dei file oggetto
+# main.o, OV7670.o, hybrid_socket.o, lib_time_measurements.o,
+# Calibration_single_camera.o:
+
+client: main.o OV7670.o hybrid_socket.o lib_time_measurements.a
+	$(CC) $(CFLAGS) $(INCLUDES) -o client main.o OV7670.o hybrid_socket.o $(LFLAGS) $(LIBS)
+
+client_ar: main.o OV7670_ar.o hybrid_socket.o lib_time_measurements.a
+	$(CC) $(CFLAGS) -DREALTA_AUMENTATA $(INCLUDES) -I/System/Library/Frameworks/OpenGL.framework/Headers -o client main.o OV7670_ar.o hybrid_socket.o $(LFLAGS) $(LIBS) augmented_reality.dylib
+
+# Per creare main.o servono main.c e OV7670.h
+main.o: main.c OV7670.h lib_time_measurements.h makefile-mac
+	$(CC) $(CFLAGS) -c main.c 
+
+# Per creare OV7670.o servono OV7670.c e OV7670.h
+OV7670.o: OV7670.c OV7670.h lib_time_measurements.h makefile-mac
+	$(CC) $(CFLAGS) -c OV7670.c
+
+# Per creare hybrid_socket.o servono hybrid_socket.c e hybrid_socket.h
+hybrid_socket.o: hybrid_socket.c hybrid_socket.h makefile-mac
+	$(CC) $(CFLAGS) -c hybrid_socket.c
+
+
+# VERSIONE AUGMENTED REALITY: Per creare OV7670_ar.o servono OV7670.c e OV7670.h
+OV7670_ar.o: OV7670.c OV7670.h lib_time_measurements.h makefile-mac
+	$(CC) $(CFLAGS) -I/System/Library/Frameworks/OpenGL.framework/Headers -DREALTA_AUMENTATA -c OV7670.c -o OV7670_ar.o

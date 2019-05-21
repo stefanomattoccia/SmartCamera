@@ -1,0 +1,103 @@
+@I [SIM-47] Using XSIM for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vivado_HLS/2015.4/msys/bin/g++.exe"
+   Compiling apatb_ov7670_grayscale.cpp
+   Compiling ov7670_grayscale.cpp_pre.cpp.tb.cpp
+   Compiling testbench.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+@I [SIM-302] Starting C TB testing ... 
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+@I [SIM-323] Starting verilog simulation. 
+@I [SIM-15] Starting XSIM ...
+@I [SIM-316] Starting C post checking ...
+Valori campionati:
+1
+3
+5
+7
+9
+
+C:\Users\Riccardo\Documents\HLS_FILTERS\OV7670_GRAYSCALE\solution1\sim\verilog>call xelab xil_defaultlib.apatb_ov7670_grayscale_top -prj ov7670_grayscale.prj --lib "ieee_proposed=./ieee_proposed" -s ov7670_grayscale -debug wave 
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_ov7670_grayscale_top -prj ov7670_grayscale.prj --lib ieee_proposed=./ieee_proposed -s ov7670_grayscale -debug wave 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/AESL_axi_s_inStream_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_inStream_V_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/AESL_axi_s_outStream_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_outStream_V_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/ov7670_grayscale.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_ov7670_grayscale_top
+INFO: [VRFC 10-2458] undeclared symbol ap_clk, assumed default net type wire [C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/ov7670_grayscale.autotb.v:110]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n, assumed default net type wire [C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/ov7670_grayscale.autotb.v:111]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n_n, assumed default net type wire [C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/ov7670_grayscale.autotb.v:126]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/ov7670_grayscale.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ov7670_grayscale
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ov7670_grayscale
+Compiling module xil_defaultlib.fifo(DEPTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_inStream_V_V
+Compiling module xil_defaultlib.AESL_axi_s_outStream_V_V
+Compiling module xil_defaultlib.apatb_ov7670_grayscale_top
+Built simulation snapshot ov7670_grayscale
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/xsim.dir/ov7670_grayscale/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb 22 10:40:29 2016...
+
+****** xsim v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/ov7670_grayscale/xsim_script.tcl
+# xsim {ov7670_grayscale} -maxdeltaid 10000 -autoloadwcfg -tclbatch {ov7670_grayscale.tcl}
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source ov7670_grayscale.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-142] log_wave skipped an HDL object or scope because of this problem: WARNING: Simulation object /apatb_ov7670_grayscale_top/next_trigger_ready_cnt was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of Verilog named events.
+
+Tracing of this type is not supported yet
+
+Tracing of this type is not supported yet
+
+WARNING: [Simtcl 6-142] log_wave skipped an HDL object or scope because of this problem: WARNING: Simulation object /apatb_ov7670_grayscale_top/AESL_AXI_S_inStream_V_V/fifo_inStream_V_V_TDATA/write_event was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of Verilog named events.
+
+WARNING: [Simtcl 6-142] log_wave skipped an HDL object or scope because of this problem: WARNING: Simulation object /apatb_ov7670_grayscale_top/AESL_AXI_S_inStream_V_V/fifo_inStream_V_V_TDATA/read_event was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of Verilog named events.
+
+Tracing of this type is not supported yet
+
+Tracing of this type is not supported yet
+
+WARNING: [Simtcl 6-142] log_wave skipped an HDL object or scope because of this problem: WARNING: Simulation object /apatb_ov7670_grayscale_top/AESL_AXI_S_outStream_V_V/fifo_outStream_V_V_TDATA/write_event was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of Verilog named events.
+
+WARNING: [Simtcl 6-142] log_wave skipped an HDL object or scope because of this problem: WARNING: Simulation object /apatb_ov7670_grayscale_top/AESL_AXI_S_outStream_V_V/fifo_outStream_V_V_TDATA/read_event was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of Verilog named events.
+
+## run all
+$finish called at time : 275 ns : File "C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/ov7670_grayscale.autotb.v" Line 282
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Feb 22 10:40:34 2016...
+Valori campionati:
+1
+3
+5
+7
+9
+@I [SIM-1000] *** C/RTL co-simulation finished: PASS ***

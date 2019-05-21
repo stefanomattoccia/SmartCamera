@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Mar 02 12:59:49 2017
+# Process ID: 15112
+# Current directory: C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3304 C:\Users\Mattia\OneDrive\Documenti\TESI\Mattia-Utku_version\OV7670_color_mattia\OV7670.xpr
+# Log file: C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/vivado.log
+# Journal file: C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.sdk -hwspec C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.sdk -hwspec C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.sdk/design_1_wrapper.hdf

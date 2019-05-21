@@ -1,0 +1,48 @@
+
+D:\Dropbox\0_AA-2015-2016\LOGICHE_RICONFIGURABILI\0_NEW_EXAMPLES\HLS\VGA_READ_BRAM_ADDRESS\solution1\sim\verilog>call xelab xil_defaultlib.apatb_vga_bram_read_address_top -prj vga_bram_read_address.prj --lib "ieee_proposed=./ieee_proposed" -s vga_bram_read_address -debug wave 
+Vivado Simulator 2015.3
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: d:/Xilinx/Vivado/2015.3/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_vga_bram_read_address_top -prj vga_bram_read_address.prj --lib ieee_proposed=./ieee_proposed -s vga_bram_read_address -debug wave 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dropbox/0_AA-2015-2016/LOGICHE_RICONFIGURABILI/0_NEW_EXAMPLES/HLS/VGA_READ_BRAM_ADDRESS/solution1/sim/verilog/vga_bram_read_address.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_vga_bram_read_address_top
+INFO: [VRFC 10-2458] undeclared symbol ap_clk, assumed default net type wire [D:/Dropbox/0_AA-2015-2016/LOGICHE_RICONFIGURABILI/0_NEW_EXAMPLES/HLS/VGA_READ_BRAM_ADDRESS/solution1/sim/verilog/vga_bram_read_address.autotb.v:134]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst, assumed default net type wire [D:/Dropbox/0_AA-2015-2016/LOGICHE_RICONFIGURABILI/0_NEW_EXAMPLES/HLS/VGA_READ_BRAM_ADDRESS/solution1/sim/verilog/vga_bram_read_address.autotb.v:135]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n, assumed default net type wire [D:/Dropbox/0_AA-2015-2016/LOGICHE_RICONFIGURABILI/0_NEW_EXAMPLES/HLS/VGA_READ_BRAM_ADDRESS/solution1/sim/verilog/vga_bram_read_address.autotb.v:152]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Dropbox/0_AA-2015-2016/LOGICHE_RICONFIGURABILI/0_NEW_EXAMPLES/HLS/VGA_READ_BRAM_ADDRESS/solution1/sim/verilog/vga_bram_read_address.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_bram_read_address
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.vga_bram_read_address
+Compiling module xil_defaultlib.apatb_vga_bram_read_address_top
+Built simulation snapshot vga_bram_read_address
+
+****** Webtalk v2015.3 (64-bit)
+  **** SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+  **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source D:/Dropbox/0_AA-2015-2016/LOGICHE_RICONFIGURABILI/0_NEW_EXAMPLES/HLS/VGA_READ_BRAM_ADDRESS/solution1/sim/verilog/xsim.dir/vga_bram_read_address/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 10 22:24:07 2015...
+
+****** xsim v2015.3 (64-bit)
+  **** SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+  **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/vga_bram_read_address/xsim_script.tcl
+# xsim {vga_bram_read_address} -maxdeltaid 10000 -autoloadwcfg -tclbatch {vga_bram_read_address.tcl}
+Vivado Simulator 2015.3
+Time resolution is 1 ps
+source vga_bram_read_address.tcl
+## add_wave /
+WARNING: Simulation object /apatb_vga_bram_read_address_top/next_trigger_ready_cnt was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of Verilog named events.
+## save_wave_config vga_bram_read_address.wcfg
+## run all
+$finish called at time : 4200205 ns : File "D:/Dropbox/0_AA-2015-2016/LOGICHE_RICONFIGURABILI/0_NEW_EXAMPLES/HLS/VGA_READ_BRAM_ADDRESS/solution1/sim/verilog/vga_bram_read_address.autotb.v" Line 615
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Nov 10 22:24:19 2015...

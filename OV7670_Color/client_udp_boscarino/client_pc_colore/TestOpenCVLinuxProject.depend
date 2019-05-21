@@ -1,0 +1,258 @@
+# depslib dependency file v1.0
+1488893284 source:c:\users\mattia\onedrive\documenti\tesi\testopencv\main.cpp
+	<iostream>
+	<windows.h>
+	"OV7670.h"
+
+1419747905 
+
+1463054819 c:\opencv\my_build\install\include\opencv2\core\core.hpp
+	"opencv2/core/types_c.h"
+	"opencv2/core/version.hpp"
+	<limits.h>
+	<algorithm>
+	<cmath>
+	<cstddef>
+	<complex>
+	<map>
+	<new>
+	<string>
+	<vector>
+	<sstream>
+	"opencv2/core/operations.hpp"
+	"opencv2/core/mat.hpp"
+
+1463054819 ore/mat.hpp"
+
+1463054819 c:\opencv\my_build\install\include\opencv2\core\types_c.h
+	<assert.h>
+	<stdlib.h>
+	<string.h>
+	<float.h>
+	<stdint.h>
+	<intrin.h>
+	<emmintrin.h>
+	<fastmath.h>
+	<math.h>
+	<ipl.h>
+	<ipl/ipl.h>
+	"tegra_round.hpp"
+	"emmintrin.h"
+
+1463054819 .h"
+
+1463054819 c:\opencv\my_build\install\include\opencv2\core\version.hpp
+
+1419747905 c:\opencv\my_build\install\include\opencv2\core\operations.hpp
+	<string.h>
+	<limits.h>
+	<ext/atomicity.h>
+	<bits/atomicity.h>
+	<limits>
+
+1453009235 c:\opencv\my_build\install\include\opencv2\core\mat.hpp
+	<limits.h>
+	<string.h>
+
+1384335862 c:\opencv\my_build\install\include\opencv2\highgui\highgui.hpp
+	"opencv2/core/core.hpp"
+	"opencv2/highgui/highgui_c.h"
+
+1384335862 ighgui/highgui_c.h"
+
+1427710444 c:\opencv\my_build\install\include\opencv2\highgui\highgui_c.h
+	"opencv2/core/core_c.h"
+
+1427710444 ore/core_c.h"
+
+1407676989 c:\opencv\my_build\install\include\opencv2\core\core_c.h
+	"opencv2/core/types_c.h"
+
+1407676989 ore/types_c.h"
+
+1488898166 source:c:\users\mattia\onedrive\documenti\tesi\testopencv\ov7670.cpp
+	"OV7670.h"
+
+1487772220 source:c:\users\mattia\onedrive\documenti\tesi\testopencv\webcam.cpp
+	"webcam.hpp"
+
+1487772220 p"
+
+1487772228 c:\users\mattia\onedrive\documenti\tesi\testopencv\webcam.hpp
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<iostream>
+	<windows.h>
+
+1487772228 >
+
+1488487464 c:\users\mattia\onedrive\documenti\tesi\testopencv\ov7670.hpp
+	<stdio.h>
+	<WinSock2.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	<opencv2/core.hpp>
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc.hpp>
+	"opencv2/highgui.hpp"
+
+1488894314 ighgui.hpp"
+
+1488894314 c:\users\mattia\onedrive\documenti\tesi\testopencv\ov7670.h
+	<stdio.h>
+	<WinSock2.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	<opencv2/core.hpp>
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc.hpp>
+	"opencv2/highgui.hpp"
+
+1492794831 source:c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\main.cpp
+	<iostream>
+	<windows.h>
+	"OV7670.h"
+
+1492932175 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\ov7670.h
+	<stdio.h>
+	<WinSock2.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	"lib_time_measurements.h"
+	"Calibration_single_camera.h"
+
+1493579548 on_single_camera.h"
+
+1492938875 source:c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\ov7670.cpp
+	"OV7670.h"
+
+1492293461 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1492293461 h>
+
+1492293037 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\os\os.h
+
+1492939284 source:c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\calibration_single_camera.cpp
+	"Calibration_single_camera.h"
+
+1492796514 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\calibration_single_camera.h
+	"../OS/os.h"
+	<opencv/cv.h>
+	<stdio.h>
+	<stdlib.h>
+
+1492939284 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\calibration_single_camera.cpp
+	"Calibration_single_camera.h"
+
+1493579596 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\calibration_single_camera.h
+	"../OS/os.h"
+	<opencv/cv.h>
+	<stdio.h>
+	<stdlib.h>
+
+1492293037 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\os\os.h
+
+1492794831 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\main.cpp
+	<iostream>
+	<windows.h>
+	"OV7670.h"
+
+1493579548 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\ov7670.h
+	<stdio.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	"lib_time_measurements.h"
+	"hybrid_socket.h"
+	"Calibration_single_camera.h"
+
+1492293461 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1493580563 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\ov7670.cpp
+	"OV7670.h"
+
+1493226958 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\hybrid_socket.h
+	<stdlib.h>
+	"OV7670.h"
+	<WinSock2.h>
+	<direct.h>
+	<unistd.h>
+
+1493580535 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\hybrid_socket.cpp
+	"hybrid_socket.h"
+
+1493580535 cket.h"
+
+1492928484 source:/home/bosca/ov7670_color_mattia/Client_pc_colore/Calibration_single_camera.c
+	"Calibration_single_camera.h"
+
+1493568796 /home/bosca/ov7670_color_mattia/Client_pc_colore/Calibration_single_camera.h
+	"../OS/os.h"
+	<opencv/cv.h>
+	<stdio.h>
+	<stdlib.h>
+
+1494538331 /home/bosca/ov7670_color_mattia/OS/os.h
+
+1494537861 source:/home/bosca/ov7670_color_mattia/Client_pc_colore/hybrid_socket.c
+	"hybrid_socket.h"
+
+1494532874 /home/bosca/ov7670_color_mattia/Client_pc_colore/hybrid_socket.h
+	<stdlib.h>
+	"OV7670.h"
+	<WinSock2.h>
+	<direct.h>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+
+1494533003 /home/bosca/ov7670_color_mattia/Client_pc_colore/OV7670.h
+	<stdio.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	"lib_time_measurements.h"
+	"hybrid_socket.h"
+	"Calibration_single_camera.h"
+
+1492282660 /home/bosca/ov7670_color_mattia/Client_pc_colore/lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1494532512 source:/home/bosca/ov7670_color_mattia/Client_pc_colore/main.c
+	<windows.h>
+	"OV7670.h"
+	<iostream>
+
+1494537935 source:/home/bosca/ov7670_color_mattia/Client_pc_colore/OV7670.c
+	"OV7670.h"
+

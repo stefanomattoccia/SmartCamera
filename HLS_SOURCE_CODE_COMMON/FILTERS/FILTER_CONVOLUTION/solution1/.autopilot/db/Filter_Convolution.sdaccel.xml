@@ -1,0 +1,255 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'Filter_Convolution'" level="0">
+<item name = "Date">Tue Nov 29 22:23:32 2016
+</item>
+<item name = "Version">2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)</item>
+<item name = "Project">FILTER_CONVOLUTION</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">10.00</item>
+<item name = "Clock uncertainty (ns)">1.25</item>
+<item name = "Estimated clock period (ns)">10.18</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">308344, 308344, 308345, 308345, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop_row_Loop_col">308341, 308341, 22, 1, 1, 308321, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, 5, -, -</column>
+<column name="Expression">-, 4, 0, 142</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, 374, 374</column>
+<column name="Memory">2, -, 36, 11</column>
+<column name="Multiplexer">-, -, -, 69</column>
+<column name="Register">-, -, 375, 2</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">~0, 4, ~0, 1</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="Filter_Convolution_sdiv_14ns_6ns_14_18_U0">Filter_Convolution_sdiv_14ns_6ns_14_18, 0, 0, 374, 374</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="Filter_Convolution_mac_muladd_8ns_2ns_11ns_11_1_U5">Filter_Convolution_mac_muladd_8ns_2ns_11ns_11_1, i0 * i1 + i2</column>
+<column name="Filter_Convolution_mac_muladd_8ns_2s_11ns_11_1_U2">Filter_Convolution_mac_muladd_8ns_2s_11ns_11_1, i0 + i1 * i2</column>
+<column name="Filter_Convolution_mac_muladd_8ns_2s_11ns_11_1_U4">Filter_Convolution_mac_muladd_8ns_2s_11ns_11_1, i0 + i1 * i2</column>
+<column name="Filter_Convolution_mac_muladd_8ns_2s_11s_12_1_U1">Filter_Convolution_mac_muladd_8ns_2s_11s_12_1, i0 * i1 + i2</column>
+<column name="Filter_Convolution_mac_muladd_8ns_3ns_11s_12_1_U3">Filter_Convolution_mac_muladd_8ns_3ns_11s_12_1, i0 + i1 * i2</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="M_0_0_U">Filter_Convolution_M_0_0, 0, 2, 1, 8, 2, 1, 16</column>
+<column name="M_0_1_U">Filter_Convolution_M_0_1, 0, 3, 1, 8, 3, 1, 24</column>
+<column name="M_0_2_U">Filter_Convolution_M_0_2, 0, 2, 1, 8, 2, 1, 16</column>
+<column name="M_1_0_U">Filter_Convolution_M_1_0, 0, 3, 1, 8, 3, 1, 24</column>
+<column name="M_1_1_U">Filter_Convolution_M_1_1, 0, 3, 1, 8, 3, 1, 24</column>
+<column name="M_1_2_U">Filter_Convolution_M_1_2, 0, 3, 1, 8, 3, 1, 24</column>
+<column name="M_2_0_U">Filter_Convolution_M_2_0, 0, 2, 1, 8, 2, 1, 16</column>
+<column name="M_2_1_U">Filter_Convolution_M_2_1, 0, 3, 1, 8, 3, 1, 24</column>
+<column name="M_2_2_U">Filter_Convolution_M_2_2, 0, 2, 1, 8, 2, 1, 16</column>
+<column name="Offset_U">Filter_Convolution_Offset, 0, 8, 1, 8, 8, 1, 64</column>
+<column name="SumF_U">Filter_Convolution_SumF, 0, 5, 1, 8, 5, 1, 40</column>
+<column name="line_buffer_V_0_U">Filter_Convolution_line_buffer_V_0, 1, 0, 0, 640, 8, 1, 5120</column>
+<column name="line_buffer_V_1_U">Filter_Convolution_line_buffer_V_0, 1, 0, 0, 640, 8, 1, 5120</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="tmp_29_0_1_fu_598_p2">*, 1, 0, 0, 8, 3</column>
+<column name="tmp_29_1_2_fu_660_p2">*, 1, 0, 0, 8, 3</column>
+<column name="tmp_29_1_fu_607_p2">*, 1, 0, 0, 8, 3</column>
+<column name="tmp_29_2_1_fu_616_p2">*, 1, 0, 0, 8, 3</column>
+<column name="col_1_fu_539_p2">+, 0, 0, 10, 10, 1</column>
+<column name="indvar_flatten_next_fu_429_p2">+, 0, 0, 19, 19, 1</column>
+<column name="out_img_V_TDATA">+, 0, 0, 8, 8, 8</column>
+<column name="out_temp_V_215_2_fu_713_p2">+, 0, 0, 14, 14, 14</column>
+<column name="row_s_fu_449_p2">+, 0, 0, 9, 9, 1</column>
+<column name="tmp1_fu_679_p2">+, 0, 0, 12, 12, 12</column>
+<column name="tmp4_fu_703_p2">+, 0, 0, 13, 13, 13</column>
+<column name="ap_sig_209">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_271">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_786">and, 0, 0, 1, 1, 1</column>
+<column name="or_cond_fu_533_p2">and, 0, 0, 1, 1, 1</column>
+<column name="tmp_s_fu_515_p2">and, 0, 0, 1, 1, 1</column>
+<column name="exitcond_flatten_fu_423_p2">icmp, 0, 0, 7, 19, 19</column>
+<column name="exitcond_fu_435_p2">icmp, 0, 0, 4, 10, 10</column>
+<column name="tmp8_fu_461_p2">icmp, 0, 0, 3, 9, 7</column>
+<column name="tmp_2_fu_481_p2">icmp, 0, 0, 3, 9, 1</column>
+<column name="tmp_2_mid1_fu_475_p2">icmp, 0, 0, 3, 9, 1</column>
+<column name="tmp_4_fu_503_p2">icmp, 0, 0, 4, 10, 10</column>
+<column name="tmp_8_fu_527_p2">icmp, 0, 0, 4, 10, 1</column>
+<column name="tmp_mid1_fu_455_p2">icmp, 0, 0, 3, 9, 7</column>
+<column name="col_mid2_fu_441_p3">select, 0, 0, 10, 1, 1</column>
+<column name="row_mid2_fu_495_p3">select, 0, 0, 9, 1, 9</column>
+<column name="tmp_2_mid2_fu_487_p3">select, 0, 0, 1, 1, 1</column>
+<column name="tmp_mid2_fu_467_p3">select, 0, 0, 1, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">1, 5, 1, 5</column>
+<column name="ap_reg_ppiten_pp0_it1">1, 2, 1, 2</column>
+<column name="ap_reg_ppiten_pp0_it2">1, 2, 1, 2</column>
+<column name="ap_reg_ppiten_pp0_it21">1, 2, 1, 2</column>
+<column name="ap_sig_ioackin_out_img_V_TREADY">1, 2, 1, 2</column>
+<column name="col_reg_330">10, 2, 10, 20</column>
+<column name="in_img_V_TDATA_blk_n">1, 2, 1, 2</column>
+<column name="in_temp_V_1_fu_106">8, 2, 8, 16</column>
+<column name="indvar_flatten_reg_308">19, 2, 19, 38</column>
+<column name="out_img_V_TDATA_blk_n">1, 2, 1, 2</column>
+<column name="row_reg_319">9, 2, 9, 18</column>
+<column name="window_V_0_2_loc_1_fu_114">8, 2, 8, 16</column>
+<column name="window_V_1_2_loc_1_fu_110">8, 2, 8, 16</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="Offset_load_reg_898">8, 0, 8, 0</column>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
+<column name="ap_reg_ioackin_out_img_V_TREADY">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it0">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it1">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it10">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it11">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it12">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it13">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it14">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it15">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it16">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it17">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it18">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it19">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it2">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it20">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it21">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it3">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it4">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it5">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it6">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it7">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it8">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it9">1, 0, 1, 0</column>
+<column name="ap_reg_ppstg_window_V_1_2_loc_1_load_reg_961_pp0_iter2">8, 0, 8, 0</column>
+<column name="col_mid2_reg_912">10, 0, 10, 0</column>
+<column name="col_reg_330">10, 0, 10, 0</column>
+<column name="exitcond_flatten_reg_903">1, 0, 1, 0</column>
+<column name="i_op_assign_3_tr_tr_tr_cast_reg_893">5, 0, 14, 9</column>
+<column name="in_temp_V_1_fu_106">8, 0, 8, 0</column>
+<column name="in_temp_V_1_load_reg_956">8, 0, 8, 0</column>
+<column name="in_temp_V_reg_941">8, 0, 8, 0</column>
+<column name="indvar_flatten_reg_308">19, 0, 19, 0</column>
+<column name="line_buffer_V_0_addr_reg_926">10, 0, 10, 0</column>
+<column name="or_cond_reg_947">1, 0, 1, 0</column>
+<column name="out_temp_V_215_2_reg_1001">14, 0, 14, 0</column>
+<column name="row_reg_319">9, 0, 9, 0</column>
+<column name="tmp1_reg_991">12, 0, 12, 0</column>
+<column name="tmp6_reg_996">12, 0, 12, 0</column>
+<column name="tmp_28_0_1_reg_853">11, 0, 11, 0</column>
+<column name="tmp_28_0_2_cast_reg_858">10, 0, 10, 0</column>
+<column name="tmp_28_1_1_cast_reg_868">3, 0, 11, 8</column>
+<column name="tmp_28_1_2_cast_reg_873">11, 0, 11, 0</column>
+<column name="tmp_28_1_reg_863">11, 0, 11, 0</column>
+<column name="tmp_28_2_1_reg_883">11, 0, 11, 0</column>
+<column name="tmp_28_2_2_cast_reg_888">2, 0, 10, 8</column>
+<column name="tmp_28_2_cast_reg_878">10, 0, 10, 0</column>
+<column name="tmp_29_0_1_reg_971">11, 0, 11, 0</column>
+<column name="tmp_29_1_2_reg_986">11, 0, 11, 0</column>
+<column name="tmp_29_1_reg_976">11, 0, 11, 0</column>
+<column name="tmp_29_2_1_reg_981">11, 0, 11, 0</column>
+<column name="tmp_4_reg_922">1, 0, 1, 0</column>
+<column name="tmp_7_cast_reg_848">10, 0, 10, 0</column>
+<column name="tmp_s_reg_937">1, 0, 1, 0</column>
+<column name="window_V_0_1">8, 0, 8, 0</column>
+<column name="window_V_0_2">8, 0, 8, 0</column>
+<column name="window_V_0_2_loc_1_fu_114">8, 0, 8, 0</column>
+<column name="window_V_0_2_loc_1_load_reg_966">8, 0, 8, 0</column>
+<column name="window_V_1_1">8, 0, 8, 0</column>
+<column name="window_V_1_2">8, 0, 8, 0</column>
+<column name="window_V_1_2_loc_1_fu_110">8, 0, 8, 0</column>
+<column name="window_V_1_2_loc_1_load_reg_961">8, 0, 8, 0</column>
+<column name="window_V_2_1">8, 0, 8, 0</column>
+<column name="window_V_2_2">8, 0, 8, 0</column>
+<column name="exitcond_flatten_reg_903">0, 1, 1, 0</column>
+<column name="or_cond_reg_947">0, 1, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, Filter_Convolution, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, Filter_Convolution, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, Filter_Convolution, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, Filter_Convolution, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, Filter_Convolution, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, Filter_Convolution, return value</column>
+<column name="id_filter_V">in, 3, ap_none, id_filter_V, scalar</column>
+<column name="in_img_V_TDATA">in, 8, axis, in_img_V, pointer</column>
+<column name="in_img_V_TVALID">in, 1, axis, in_img_V, pointer</column>
+<column name="in_img_V_TREADY">out, 1, axis, in_img_V, pointer</column>
+<column name="out_img_V_TDATA">out, 8, axis, out_img_V, pointer</column>
+<column name="out_img_V_TVALID">out, 1, axis, out_img_V, pointer</column>
+<column name="out_img_V_TREADY">in, 1, axis, out_img_V, pointer</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">10.18</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'tmp_27_1_1_cast', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:83">zext, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_29_1_1', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:83">mul, 3.36, 3.36, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_29_1_1_cast', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:83">zext, 0.00, 3.36, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp5', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:83">add, 3.02, 6.38, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp5_cast', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:83">sext, 0.00, 6.38, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp4', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:83">add, 1.84, 8.22, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp4_cast', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:83">sext, 0.00, 8.22, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'out_temp_V_215_2', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:83">add, 1.96, 10.18, -, -, -, -, -, -, -, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

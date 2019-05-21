@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/Tesi/ProgettoVivado/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1025849fs"></ZoomEndTime>
+      <Cursor1Time time="201000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="3" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0_outStream_V_TDATA" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0_outStream_V_TDATA[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_to_axis_reader_SD_0_outStream_V_TDATA[7:0]</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0_outStream_V_TREADY" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0_outStream_V_TREADY</obj_property>
+      <obj_property name="ObjectShortName">ddr_to_axis_reader_SD_0_outStream_V_TREADY</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/OV7670_GRAYSCALE_TO_AXIS/outStream_V_TVALID" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">design_1_i/OV7670_GRAYSCALE_TO_AXIS/outStream_V_TVALID</obj_property>
+      <obj_property name="ObjectShortName">outStream_V_TVALID</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+   </wvobject>
+</wave_config>

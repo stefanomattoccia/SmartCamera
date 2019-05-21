@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="pattern_generator.h" path="C:\Users\Riccardo\Documents\HLS_COMMON\PATTERN_GENERATORS\PATTERN_GENERATOR_CROSS\pattern_generator.h"/>
+    <originFiles name="pattern_generator.cpp" path="C:\Users\Riccardo\Documents\HLS_COMMON\PATTERN_GENERATORS\PATTERN_GENERATOR_CROSS\pattern_generator.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test.cpp" path="C:\Users\Riccardo\Documents\HLS_COMMON\PATTERN_GENERATORS\PATTERN_GENERATOR_CROSS\test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

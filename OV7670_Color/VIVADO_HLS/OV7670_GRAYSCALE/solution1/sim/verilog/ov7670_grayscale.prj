@@ -1,0 +1,6 @@
+verilog xil_defaultlib "AESL_axi_s_inStream_V_V.v"
+verilog xil_defaultlib "AESL_axi_s_outStream_V_V.v"
+verilog xil_defaultlib "AESL_fifo.v"
+verilog xil_defaultlib "ov7670_grayscale.autotb.v"
+verilog xil_defaultlib "ov7670_grayscale.v"
+

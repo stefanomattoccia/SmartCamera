@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="axis_to_ddr_writer.cpp" path="C:\Test_5_Tesi\HLS_COMMON\DDR\AXIS_TO_DDR_WRITER_AXILITE\axis_to_ddr_writer.cpp"/>
+    <originFiles name="axis_to_ddr_writer.h" path="C:\Test_5_Tesi\HLS_COMMON\DDR\AXIS_TO_DDR_WRITER_AXILITE\axis_to_ddr_writer.h"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench.cpp" path="C:\Test_5_Tesi\HLS_COMMON\DDR\AXIS_TO_DDR_WRITER_AXILITE\testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

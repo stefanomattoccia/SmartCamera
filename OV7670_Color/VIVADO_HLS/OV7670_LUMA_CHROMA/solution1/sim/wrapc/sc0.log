@@ -1,0 +1,5 @@
+   Build using "C:/Xilinx/Vivado_HLS/2015.4/msys/bin/g++.exe"
+   Compiling apatb_ov7670_grayscale.cpp
+   Compiling ov7670_grayscale.cpp_pre.cpp.tb.cpp
+   Compiling testbench.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

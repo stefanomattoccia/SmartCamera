@@ -1,0 +1,52 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_axis_to_ddr_writer_top -prj axis_to_ddr_writer.prj --lib ieee_proposed=./ieee_proposed -s axis_to_ddr_writer -debug wave 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog/AESL_axi_master_base_ddr_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_base_ddr_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog/AESL_axi_s_inputStream_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_inputStream_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog/axis_to_ddr_writer.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_axis_to_ddr_writer_top
+INFO: [VRFC 10-2458] undeclared symbol ap_clk, assumed default net type wire [C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog/axis_to_ddr_writer.autotb.v:160]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n, assumed default net type wire [C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog/axis_to_ddr_writer.autotb.v:161]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n_n, assumed default net type wire [C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog/axis_to_ddr_writer.autotb.v:220]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog/axis_to_ddr_writer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_to_ddr_writer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog/axis_to_ddr_writer_base_ddr_addr_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_to_ddr_writer_base_ddr_addr_m_axi
+INFO: [VRFC 10-311] analyzing module axis_to_ddr_writer_base_ddr_addr_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module axis_to_ddr_writer_base_ddr_addr_m_axi_decoder
+INFO: [VRFC 10-311] analyzing module axis_to_ddr_writer_base_ddr_addr_m_axi_throttl
+INFO: [VRFC 10-311] analyzing module axis_to_ddr_writer_base_ddr_addr_m_axi_read
+INFO: [VRFC 10-311] analyzing module axis_to_ddr_writer_base_ddr_addr_m_axi_write
+INFO: [VRFC 10-2458] undeclared symbol data_valid, assumed default net type wire [C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog/axis_to_ddr_writer_base_ddr_addr_m_axi.v:1725]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog/axis_to_ddr_writer_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axis_to_ddr_writer_buffer_ram
+INFO: [VRFC 10-311] analyzing module axis_to_ddr_writer_buffer
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.axis_to_ddr_writer_base_ddr_addr...
+Compiling module xil_defaultlib.axis_to_ddr_writer_base_ddr_addr...
+Compiling module xil_defaultlib.axis_to_ddr_writer_base_ddr_addr...
+Compiling module xil_defaultlib.axis_to_ddr_writer_base_ddr_addr...
+Compiling module xil_defaultlib.axis_to_ddr_writer_base_ddr_addr...
+Compiling module xil_defaultlib.axis_to_ddr_writer_base_ddr_addr...
+Compiling module xil_defaultlib.axis_to_ddr_writer_base_ddr_addr...
+Compiling module xil_defaultlib.axis_to_ddr_writer_base_ddr_addr...
+Compiling module xil_defaultlib.axis_to_ddr_writer_base_ddr_addr...
+Compiling module xil_defaultlib.axis_to_ddr_writer_base_ddr_addr...
+Compiling module xil_defaultlib.axis_to_ddr_writer_base_ddr_addr...
+Compiling module xil_defaultlib.axis_to_ddr_writer_buffer_ram
+Compiling module xil_defaultlib.axis_to_ddr_writer_buffer(DataWi...
+Compiling module xil_defaultlib.axis_to_ddr_writer_default
+Compiling module xil_defaultlib.fifo(DEPTH=128)
+Compiling module xil_defaultlib.AESL_axi_s_inputStream_V
+Compiling module xil_defaultlib.AESL_axi_master_base_ddr_addr
+Compiling module xil_defaultlib.apatb_axis_to_ddr_writer_top
+Built simulation snapshot axis_to_ddr_writer

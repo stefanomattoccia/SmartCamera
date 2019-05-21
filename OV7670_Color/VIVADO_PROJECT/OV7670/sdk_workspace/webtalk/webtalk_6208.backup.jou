@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# 
+# Start of session at: Sun Apr 03 15:19:30 2016
+# Process ID: 6208
+# Current directory: C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO/OV7670/sdk_workspace/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO/OV7670/sdk_workspace/webtalk/webtalk.log
+# Journal file: C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO/OV7670/sdk_workspace/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

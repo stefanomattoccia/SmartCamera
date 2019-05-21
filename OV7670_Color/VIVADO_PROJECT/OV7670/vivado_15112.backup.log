@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Mar 02 12:59:49 2017
+# Process ID: 15112
+# Current directory: C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3304 C:\Users\Mattia\OneDrive\Documenti\TESI\Mattia-Utku_version\OV7670_color_mattia\OV7670.xpr
+# Log file: C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/vivado.log
+# Journal file: C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Mattia/OneDrive/Documenti/TESI/Colore/VIVADO/OV7670' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Mattia/OneDrive/Documenti/TESI/VIVADO_HLS/OV7670_INTERFACE', nor could it be found using path 'C:/Users/Mattia/OneDrive/Documenti/TESI/Colore/VIVADO_HLS/OV7670_INTERFACE'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Mattia/OneDrive/Documenti/TESI/VIVADO_HLS/OV7670_LUMA_CHROMA', nor could it be found using path 'C:/Users/Mattia/OneDrive/Documenti/TESI/Colore/VIVADO_HLS/OV7670_LUMA_CHROMA'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Mattia/OneDrive/Documenti/TESI/VIVADO_HLS/OV7670_GRAYSCALE', nor could it be found using path 'C:/Users/Mattia/OneDrive/Documenti/TESI/Colore/VIVADO_HLS/OV7670_GRAYSCALE'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Mattia/OneDrive/Documenti/HLS_COMMON/LF_VALID_TO_AXIS', nor could it be found using path 'C:/Users/Mattia/OneDrive/Documenti/TESI/HLS_COMMON/LF_VALID_TO_AXIS'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Mattia/OneDrive/Documenti/HLS_COMMON/DDR/AXIS_TO_DDR_WRITER_AXILITE', nor could it be found using path 'C:/Users/Mattia/OneDrive/Documenti/TESI/HLS_COMMON/DDR/AXIS_TO_DDR_WRITER_AXILITE'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Mattia/OneDrive/Documenti/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE', nor could it be found using path 'C:/Users/Mattia/OneDrive/Documenti/TESI/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Mattia/OneDrive/Documenti/HLS_COMMON/FILTERS/FILTER_CONVOLUTION', nor could it be found using path 'C:/Users/Mattia/OneDrive/Documenti/TESI/HLS_COMMON/FILTERS/FILTER_CONVOLUTION'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/Mattia/OneDrive/Documenti/HLS_COMMON/VGA/AXI_STREAM_TO_VGA', nor could it be found using path 'C:/Users/Mattia/OneDrive/Documenti/TESI/HLS_COMMON/VGA/AXI_STREAM_TO_VGA'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Mattia/OneDrive/Documenti/TESI/VIVADO_HLS/OV7670_INTERFACE'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Mattia/OneDrive/Documenti/TESI/VIVADO_HLS/OV7670_LUMA_CHROMA'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Mattia/OneDrive/Documenti/TESI/VIVADO_HLS/OV7670_GRAYSCALE'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Mattia/OneDrive/Documenti/HLS_COMMON/LF_VALID_TO_AXIS'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Mattia/OneDrive/Documenti/HLS_COMMON/DDR/AXIS_TO_DDR_WRITER_AXILITE'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Mattia/OneDrive/Documenti/HLS_COMMON/DDR/DDR_TO_AXIS_READER_AXILITE'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Mattia/OneDrive/Documenti/HLS_COMMON/FILTERS/FILTER_CONVOLUTION'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/Mattia/OneDrive/Documenti/HLS_COMMON/VGA/AXI_STREAM_TO_VGA'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_axi_stream_to_vga_0_1
+design_1_LF_valid_to_AXIS_0_0
+design_1_Filter_Convolution_0_1
+design_1_ov7670_interface_0_1
+design_1_axis_to_ddr_writer_0_0
+design_1_ddr_to_axis_reader_0_1
+design_1_axis_to_ddr_writer_2_0
+design_1_ov7670_LUMA_CHROMA_0_0
+design_1_axis_to_ddr_writer_1_0
+
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 914.957 ; gain = 252.969
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.sdk -hwspec C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.sdk -hwspec C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.sdk -hwspec C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.sdk -hwspec C:/Users/Mattia/OneDrive/Documenti/TESI/Mattia-Utku_version/OV7670_color_mattia/OV7670.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 02 21:47:31 2017...

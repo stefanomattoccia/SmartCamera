@@ -1,0 +1,27 @@
+CC=g++
+FLAGS=-Wall
+OPT=-O3
+ARCH=
+CPU=
+CFLAGS = `pkg-config --cflags opencv` -L/opt/local/lib
+LDFLAGS = `pkg-config --libs opencv` -lm  -dynamiclib
+
+all : lib_pose_estimation.dylib
+
+lib_pose_estimation.dylib : lib_pose_estimation.o
+	$(CC) $(FLAGS) $(OPT) $(ARCH) $(CPU) $(CFLAGS) $(LDFLAGS) -o lib_pose_estimation.dylib lib_pose_estimation.o
+	@echo [INFO] 
+	@echo [INFO] Static library and object files ready
+	@echo [INFO] Copying files to the right place...
+	@echo [INFO] 
+	cp -f lib_pose_estimation.dylib ../lib_smart_camera
+	cp -f lib_pose_estimation.h ../lib_smart_camera
+	cp -f lib_pose_estimation.o ../lib_smart_camera
+
+lib_pose_estimation.o : lib_pose_estimation.h ../OS/os.h lib_pose_estimation.cpp makefile-mac
+	$(CC) $(FLAGS) $(OPT) $(ARCH) $(CPU) -c lib_pose_estimation.cpp
+
+clean: 
+	rm -rf *.dylib *.o *.~ 
+
+

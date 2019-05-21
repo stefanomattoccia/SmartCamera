@@ -1,0 +1,78 @@
+#include "read_sd_card.h"
+#include "main.h"
+
+#include "xparameters.h"
+#include "xbasic_types.h"
+#include "xgpio.h"
+#include "xstatus.h"
+
+XGpio GpioOutput;
+XGpio GpioInput;
+
+int main (void) {
+/*
+  Xuint32 status;
+  Xuint32 DataRead;
+  Xuint32 OldData;
+
+  // Clear the screen
+  xil_printf("%c[2J",27);
+
+  // Initialize the GPIO driver so that it's ready to use,
+  status = XGpio_Initialize(&GpioInput, XPAR_AXI_GPIO_SD_STREAM_SWITCH_DEVICE_ID);
+  if (status != XST_SUCCESS)
+    return XST_FAILURE;
+  // Set the direction for all signals to be inputs
+  XGpio_SetDataDirection(&GpioInput, 1, 0xFFFFFFFF);
+
+  OldData = 0xFFFFFFFF;
+
+  while(1)
+  {
+    // Read the state of the DIP switches
+    DataRead = XGpio_DiscreteRead(&GpioInput, 1);
+
+    // Send the data to the UART if the settings change
+    if(DataRead != OldData)
+    {
+      xil_printf("DIP Switch settings: 0x%X\r\n", DataRead);
+      // Record the DIP switch settings
+      OldData = DataRead;
+    }
+  }
+*/
+
+
+	mount_sd_card();
+
+	read_all_from_directory();
+
+	int result;
+
+	//Platform Initialization
+	result = init_platform();
+	if(result != XST_SUCCESS)
+	{
+		xil_printf("There is an error about init_platform\n");
+	}
+	xil_printf("init_platform done \n\r");
+
+
+	if(1 /*condizione switch acceso in una certa posizione*/)
+	{
+		init_platform_SD_funcs();
+		start_application_SD_funcs();
+	}
+
+	//Application Starting
+	result = start_application();
+	if(result != XST_SUCCESS)
+	{
+		xil_printf("There is an error about start_application\n");
+	}
+	xil_printf("Application started\n");
+
+
+	return 0;
+}
+

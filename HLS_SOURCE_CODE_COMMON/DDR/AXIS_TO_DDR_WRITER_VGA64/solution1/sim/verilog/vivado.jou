@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Feb 22 22:28:28 2016
+# Process ID: 6632
+# Current directory: C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog
+# Command line: vivado.exe -source open_wave.tcl
+# Log file: C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog/vivado.log
+# Journal file: C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_VGA64/solution1/sim/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source open_wave.tcl
+add_wave {{/apatb_axis_to_ddr_writer_top}} 
+add_wave {{/apatb_axis_to_ddr_writer_top/AESL_inst_axis_to_ddr_writer/buffer_U}} 
+close_sim

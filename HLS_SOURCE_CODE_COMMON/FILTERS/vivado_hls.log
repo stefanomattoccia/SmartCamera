@@ -1,0 +1,19 @@
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado_HLS/2016.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'smatt' on host 'asus_pc' (Windows NT_amd64 version 6.2) on Sun Dec 04 16:30:16 +0100 2016
+INFO: [HLS 200-10] In directory 'D:/000_OFFICIAL_OV_VISION_PIPELINE_2016/HLS_COMMON/FILTERS'
+INFO: [HLS 200-10] Opening project 'D:/000_OFFICIAL_OV_VISION_PIPELINE_2016/HLS_COMMON/FILTERS/FILTER_CONVOLUTION'.
+INFO: [HLS 200-10] Opening solution 'D:/000_OFFICIAL_OV_VISION_PIPELINE_2016/HLS_COMMON/FILTERS/FILTER_CONVOLUTION/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+   Compiling ../../../Testbench.cpp in debug mode
+   Generating csim.exe
+../../../Testbench.cpp: In function 'int main()':
+../../../Testbench.cpp:22:63: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+../../../Testbench.cpp:59:81: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+[INFO] Starting testbench
+[INFO] Read image ../../../DATA/Runtime_Left_7_rect.bmp from file
+[INFO] Copying to input image
+[INFO] Processing ../../../DATA/Runtime_Left_7_rect.bmp
+[INFO] Verifying results (TODO)
+[INFO] Writing output image
+INFO: [SIM 211-1] CSim done with 0 errors.

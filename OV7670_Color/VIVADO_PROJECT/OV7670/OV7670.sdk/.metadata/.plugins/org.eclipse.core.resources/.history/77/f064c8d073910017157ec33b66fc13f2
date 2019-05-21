@@ -1,0 +1,37 @@
+#include "mux_sd_ov.h"
+
+int check_switch_status()
+{
+	  Xuint32 status;
+	  Xuint32 DataRead;
+
+	  // Initialize the GPIO driver so that it's ready to use,
+	  status = XGpio_Initialize(&GpioInput, XPAR_AXI_GPIO_SD_STREAM_SWITCH_DEVICE_ID);
+	  if (status != XST_SUCCESS)
+	    return XST_FAILURE;
+	  // Set the direction for all signals to be inputs
+	  XGpio_SetDataDirection(&GpioInput, 1, 0xFFFFFFFF);
+
+	// Read the state of the DIP switches
+	DataRead = XGpio_DiscreteRead(&GpioInput, 1);
+
+	if(DataRead == 1)
+		return TRUE;
+	else
+		return FALSE;
+}
+
+int init_mux_sd_switch_ov()
+{
+
+	int status;
+
+	status = XMux_sd_ov_Initialize()(&mux, XPAR_XMUX_SD_OV_0_DEVICE_ID);
+
+	if (status != XST_SUCCESS)
+	{
+		xil_printf("Errore inizializzazione multiplexer per switch\n");
+		return status;
+	}
+	return XST_SUCCESS;
+}

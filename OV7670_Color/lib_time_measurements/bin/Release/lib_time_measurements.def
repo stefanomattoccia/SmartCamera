@@ -1,0 +1,11 @@
+EXPORTS
+    _Z11ElapsedTimeyy @1
+    _Z12Get_HH_MM_SSiPiS_S_ @2
+    _Z16PrintElapsedTimePcyy @3
+    _Z17function_Get_Timev @4
+    _Z20function_ElapsedTimeyy @5
+    _Z21function_Get_HH_MM_SSiPiS_S_ @6
+    _Z25function_PrintElapsedTimePcyy @7
+    _Z26GetTimeAndPrintElapsedTimePcy @8
+    _Z35function_GetTimeAndPrintElapsedTimePcy @9
+    _Z8Get_Timev @10

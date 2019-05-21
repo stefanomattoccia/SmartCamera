@@ -1,0 +1,18 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_ov7670_interface_top -prj ov7670_interface.prj --lib ieee_proposed=./ieee_proposed -s ov7670_interface -debug wave 
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Silvio/Documents/ProgettiLRM/VISION_PIPELINE_CAMERA/HLS/OV7670_INTERFACE/solution1/sim/verilog/ov7670_interface.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_ov7670_interface_top
+INFO: [VRFC 10-2458] undeclared symbol ap_clk, assumed default net type wire [C:/Users/Silvio/Documents/ProgettiLRM/VISION_PIPELINE_CAMERA/HLS/OV7670_INTERFACE/solution1/sim/verilog/ov7670_interface.autotb.v:124]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst, assumed default net type wire [C:/Users/Silvio/Documents/ProgettiLRM/VISION_PIPELINE_CAMERA/HLS/OV7670_INTERFACE/solution1/sim/verilog/ov7670_interface.autotb.v:125]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n, assumed default net type wire [C:/Users/Silvio/Documents/ProgettiLRM/VISION_PIPELINE_CAMERA/HLS/OV7670_INTERFACE/solution1/sim/verilog/ov7670_interface.autotb.v:140]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Silvio/Documents/ProgettiLRM/VISION_PIPELINE_CAMERA/HLS/OV7670_INTERFACE/solution1/sim/verilog/ov7670_interface.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ov7670_interface
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ov7670_interface
+Compiling module xil_defaultlib.apatb_ov7670_interface_top
+Built simulation snapshot ov7670_interface

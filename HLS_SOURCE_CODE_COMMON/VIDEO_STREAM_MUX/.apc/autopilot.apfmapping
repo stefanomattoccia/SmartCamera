@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="mux_sd_ov.cpp" path="F:\Progetti_Vivado_Tesi\Test_7_Tesi\HLS_COMMON\VIDEO_STREAM_MUX\mux_sd_ov.cpp"/>
+    <originFiles name="mux_sd_ov.h" path="F:\Progetti_Vivado_Tesi\Test_7_Tesi\HLS_COMMON\VIDEO_STREAM_MUX\mux_sd_ov.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

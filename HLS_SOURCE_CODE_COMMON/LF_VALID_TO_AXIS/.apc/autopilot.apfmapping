@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="LF_valid_to_AXIS.h" path="C:\Test_5_Tesi\HLS_COMMON\LF_VALID_TO_AXIS\LF_valid_to_AXIS.h"/>
+    <originFiles name="LF_valid_to_AXIS.cpp" path="C:\Test_5_Tesi\HLS_COMMON\LF_VALID_TO_AXIS\LF_valid_to_AXIS.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench.cpp" path="C:\Test_5_Tesi\HLS_COMMON\LF_VALID_TO_AXIS\testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,11 @@
+0.4
+2016.2
+C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/AESL_axi_s_filter_V.v,1503417186,verilog,,,,C:/Xilinx/Vivado/2016.2/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/AESL_axi_s_in_img_V.v,1503417186,verilog,,,,C:/Xilinx/Vivado/2016.2/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/AESL_axi_s_out_img_V.v,1503417186,verilog,,,,C:/Xilinx/Vivado/2016.2/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/AESL_fifo.v,1503417186,verilog,,,,C:/Xilinx/Vivado/2016.2/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter.autotb.v,1503417186,verilog,,,,C:/Xilinx/Vivado/2016.2/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter.v,1503417129,verilog,,,,C:/Xilinx/Vivado/2016.2/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter_filter_weights_V.v,1503417129,verilog,,,,C:/Xilinx/Vivado/2016.2/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter_line_buffer_V_0.v,1503417129,verilog,,,,C:/Xilinx/Vivado/2016.2/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter_udiv_16ns_8ns_16_20.v,1503417129,verilog,,,,C:/Xilinx/Vivado/2016.2/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,

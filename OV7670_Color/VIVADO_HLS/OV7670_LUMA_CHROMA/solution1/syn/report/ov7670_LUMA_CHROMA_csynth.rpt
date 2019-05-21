@@ -1,0 +1,152 @@
+
+
+================================================================
+== Vivado HLS Report for 'ov7670_LUMA_CHROMA'
+================================================================
+* Date:           Sat Aug 19 13:09:34 2017
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        OV7670_LUMA_CHROMA
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      1.37|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|      9|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      7|
+|Register         |        -|      -|       5|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|       5|     16|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------+----------+-------+---+----+------------+------------+
+    |ap_sig_116      |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_119      |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_122      |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_46       |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_52       |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_55       |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_59       |    or    |      0|  0|   1|           1|           1|
+    |tmp_6_fu_80_p2  |    xor   |      0|  0|   2|           1|           2|
+    +----------------+----------+-------+---+----+------------+------------+
+    |Total           |          |      0|  0|   9|           8|           9|
+    +----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------------------+----+-----------+-----+-----------+
+    |                      Name                     | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------------------+----+-----------+-----+-----------+
+    |ap_sig_ioackin_outStream_CHROMA_V_V_TREADY     |   1|          2|    1|          2|
+    |ap_sig_ioackin_outStream_LUMA_V_V_TREADY       |   1|          2|    1|          2|
+    |ap_sig_ioackin_outStream_grayscale_V_V_TREADY  |   1|          2|    1|          2|
+    |inStream_V_V_TDATA_blk_n                       |   1|          2|    1|          2|
+    |outStream_CHROMA_V_V_TDATA_blk_n               |   1|          2|    1|          2|
+    |outStream_LUMA_V_V_TDATA_blk_n                 |   1|          2|    1|          2|
+    |outStream_grayscale_V_V_TDATA_blk_n            |   1|          2|    1|          2|
+    +-----------------------------------------------+----+-----------+-----+-----------+
+    |Total                                          |   7|         14|    7|         14|
+    +-----------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------------------+---+----+-----+-----------+
+    |                      Name                     | FF| LUT| Bits| Const Bits|
+    +-----------------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                                      |  1|   0|    1|          0|
+    |ap_reg_ioackin_outStream_CHROMA_V_V_TREADY     |  1|   0|    1|          0|
+    |ap_reg_ioackin_outStream_LUMA_V_V_TREADY       |  1|   0|    1|          0|
+    |ap_reg_ioackin_outStream_grayscale_V_V_TREADY  |  1|   0|    1|          0|
+    |grayscale_valid                                |  1|   0|    1|          0|
+    +-----------------------------------------------+---+----+-----+-----------+
+    |Total                                          |  5|   0|    5|          0|
+    +-----------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk                          |  in |    1| ap_ctrl_hs |    ov7670_LUMA_CHROMA   | return value |
+|ap_rst_n                        |  in |    1| ap_ctrl_hs |    ov7670_LUMA_CHROMA   | return value |
+|ap_start                        |  in |    1| ap_ctrl_hs |    ov7670_LUMA_CHROMA   | return value |
+|ap_done                         | out |    1| ap_ctrl_hs |    ov7670_LUMA_CHROMA   | return value |
+|ap_idle                         | out |    1| ap_ctrl_hs |    ov7670_LUMA_CHROMA   | return value |
+|ap_ready                        | out |    1| ap_ctrl_hs |    ov7670_LUMA_CHROMA   | return value |
+|inStream_V_V_TDATA              |  in |    8|    axis    |       inStream_V_V      |    pointer   |
+|inStream_V_V_TVALID             |  in |    1|    axis    |       inStream_V_V      |    pointer   |
+|inStream_V_V_TREADY             | out |    1|    axis    |       inStream_V_V      |    pointer   |
+|outStream_grayscale_V_V_TDATA   | out |    8|    axis    | outStream_grayscale_V_V |    pointer   |
+|outStream_grayscale_V_V_TVALID  | out |    1|    axis    | outStream_grayscale_V_V |    pointer   |
+|outStream_grayscale_V_V_TREADY  |  in |    1|    axis    | outStream_grayscale_V_V |    pointer   |
+|enable_raw_stream               |  in |    1|   ap_none  |    enable_raw_stream    |    scalar    |
+|outStream_LUMA_V_V_TDATA        | out |    8|    axis    |    outStream_LUMA_V_V   |    pointer   |
+|outStream_LUMA_V_V_TVALID       | out |    1|    axis    |    outStream_LUMA_V_V   |    pointer   |
+|outStream_LUMA_V_V_TREADY       |  in |    1|    axis    |    outStream_LUMA_V_V   |    pointer   |
+|outStream_CHROMA_V_V_TDATA      | out |    8|    axis    |   outStream_CHROMA_V_V  |    pointer   |
+|outStream_CHROMA_V_V_TVALID     | out |    1|    axis    |   outStream_CHROMA_V_V  |    pointer   |
+|outStream_CHROMA_V_V_TREADY     |  in |    1|    axis    |   outStream_CHROMA_V_V  |    pointer   |
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+

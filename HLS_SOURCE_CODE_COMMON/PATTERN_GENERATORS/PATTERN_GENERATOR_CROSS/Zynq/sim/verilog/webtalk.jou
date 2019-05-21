@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4.1 (64-bit)
+# SW Build 1431336 on Fri Dec 11 14:52:45 MST 2015
+# IP Build 1427053 on Mon Dec  7 12:56:29 MST 2015
+# Start of session at: Wed Jan 27 19:12:37 2016
+# Process ID: 7920
+# Current directory: C:/Users/Riccardo/Documents/Vivado_HLS/MY_PATTERN_GENERATOR/solution1/sim/verilog
+# Command line: wbtcv.exe -mode batch -source C:/Users/Riccardo/Documents/Vivado_HLS/MY_PATTERN_GENERATOR/solution1/sim/verilog/xsim.dir/pattern_generator/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Riccardo/Documents/Vivado_HLS/MY_PATTERN_GENERATOR/solution1/sim/verilog/webtalk.log
+# Journal file: C:/Users/Riccardo/Documents/Vivado_HLS/MY_PATTERN_GENERATOR/solution1/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Riccardo/Documents/Vivado_HLS/MY_PATTERN_GENERATOR/solution1/sim/verilog/xsim.dir/pattern_generator/webtalk/xsim_webtalk.tcl -notrace

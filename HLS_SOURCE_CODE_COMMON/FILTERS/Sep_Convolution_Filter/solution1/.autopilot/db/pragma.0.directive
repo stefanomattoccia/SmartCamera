@@ -1,0 +1,58 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="pixel_weighted_average_separable" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="sep_convolution_filter" label="">
+<pragma name="INTERFACE">
+<option name="ap_ovld" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="kernel_config"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sep_convolution_filter" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="out_img"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sep_convolution_filter" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="in_img"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sep_convolution_filter" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="line_buffer"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sep_convolution_filter" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="window"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sep_convolution_filter" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="kernel_v"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sep_convolution_filter" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="kernel_h"/>
+<option name="complete" positionalBoolean="type" value=""/>
+<option name="dim" value="0"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sep_convolution_filter" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

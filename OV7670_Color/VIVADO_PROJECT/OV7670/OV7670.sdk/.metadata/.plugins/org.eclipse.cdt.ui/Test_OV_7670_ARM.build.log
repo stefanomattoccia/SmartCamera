@@ -1,0 +1,123 @@
+09:31:14 **** Incremental Build of configuration Debug for project Test_OV_7670_ARM ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/application.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/application.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/application.d" -MT"src/application.o" -o "src/application.o" "../src/application.c"
+'Finished building: ../src/application.c'
+' '
+'Building file: ../src/axi_gpio_frame_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/axi_gpio_frame_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_gpio_frame_intr.d" -MT"src/axi_gpio_frame_intr.o" -o "src/axi_gpio_frame_intr.o" "../src/axi_gpio_frame_intr.c"
+'Finished building: ../src/axi_gpio_frame_intr.c'
+' '
+'Building file: ../src/axi_gpio_pl_reset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/axi_gpio_pl_reset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axi_gpio_pl_reset.d" -MT"src/axi_gpio_pl_reset.o" -o "src/axi_gpio_pl_reset.o" "../src/axi_gpio_pl_reset.c"
+'Finished building: ../src/axi_gpio_pl_reset.c'
+' '
+'Building file: ../src/axis_to_ddr_writer.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/axis_to_ddr_writer.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/axis_to_ddr_writer.d" -MT"src/axis_to_ddr_writer.o" -o "src/axis_to_ddr_writer.o" "../src/axis_to_ddr_writer.c"
+'Finished building: ../src/axis_to_ddr_writer.c'
+' '
+'Building file: ../src/ddr_to_axis_reader.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ddr_to_axis_reader.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_to_axis_reader.d" -MT"src/ddr_to_axis_reader.o" -o "src/ddr_to_axis_reader.o" "../src/ddr_to_axis_reader.c"
+'Finished building: ../src/ddr_to_axis_reader.c'
+' '
+'Building file: ../src/ddr_to_axis_reader_SD.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ddr_to_axis_reader_SD.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ddr_to_axis_reader_SD.d" -MT"src/ddr_to_axis_reader_SD.o" -o "src/ddr_to_axis_reader_SD.o" "../src/ddr_to_axis_reader_SD.c"
+'Finished building: ../src/ddr_to_axis_reader_SD.c'
+' '
+'Building file: ../src/frame_buffer_interrupt.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/frame_buffer_interrupt.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/frame_buffer_interrupt.d" -MT"src/frame_buffer_interrupt.o" -o "src/frame_buffer_interrupt.o" "../src/frame_buffer_interrupt.c"
+'Finished building: ../src/frame_buffer_interrupt.c'
+' '
+'Building file: ../src/i2c_interrupt.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_interrupt.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_interrupt.d" -MT"src/i2c_interrupt.o" -o "src/i2c_interrupt.o" "../src/i2c_interrupt.c"
+'Finished building: ../src/i2c_interrupt.c'
+' '
+'Building file: ../src/interrupts.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/interrupts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/interrupts.d" -MT"src/interrupts.o" -o "src/interrupts.o" "../src/interrupts.c"
+../src/interrupts.c: In function 'configure_interrupts':
+../src/interrupts.c:57:47: warning: passing argument 2 of 'configure_i2c_interrupt' from incompatible pointer type
+  configure_i2c_interrupt(InterruptController, &Iic);
+                                               ^
+In file included from ../src/interrupts.h:14:0,
+                 from ../src/interrupts.c:9:
+../src/i2c_interrupt.h:15:5: note: expected 'struct XScuGic *' but argument is of type 'struct XIicPs *'
+ int configure_i2c_interrupt(XScuGic* gicInst, XScuGic* IicPsPtr);
+     ^
+'Finished building: ../src/interrupts.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/mux_sd_ov_config.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mux_sd_ov_config.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mux_sd_ov_config.d" -MT"src/mux_sd_ov_config.o" -o "src/mux_sd_ov_config.o" "../src/mux_sd_ov_config.c"
+'Finished building: ../src/mux_sd_ov_config.c'
+' '
+'Building file: ../src/network.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/network.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/network.d" -MT"src/network.o" -o "src/network.o" "../src/network.c"
+'Finished building: ../src/network.c'
+' '
+'Building file: ../src/ov7670_config_i2c.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov7670_config_i2c.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov7670_config_i2c.d" -MT"src/ov7670_config_i2c.o" -o "src/ov7670_config_i2c.o" "../src/ov7670_config_i2c.c"
+'Finished building: ../src/ov7670_config_i2c.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/read_sd_card.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/read_sd_card.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/read_sd_card.d" -MT"src/read_sd_card.o" -o "src/read_sd_card.o" "../src/read_sd_card.c"
+../src/read_sd_card.c:11:13: warning: 'FileName' defined but not used [-Wunused-variable]
+ static char FileName[32] = "0:/text.txt";
+             ^
+../src/read_sd_card.c:23:14: warning: 'File' defined but not used [-Wunused-variable]
+ static char *File;
+              ^
+'Finished building: ../src/read_sd_card.c'
+' '
+'Building file: ../src/tcp_connection.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tcp_connection.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/tcp_connection.d" -MT"src/tcp_connection.o" -o "src/tcp_connection.o" "../src/tcp_connection.c"
+'Finished building: ../src/tcp_connection.c'
+' '
+'Building file: ../src/test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/test.d" -MT"src/test.o" -o "src/test.o" "../src/test.c"
+'Finished building: ../src/test.c'
+' '
+'Building file: ../src/test_SD_main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/test_SD_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../OV_7670_ARM_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/test_SD_main.d" -MT"src/test_SD_main.o" -o "src/test_SD_main.o" "../src/test_SD_main.c"
+In file included from ../src/test_SD_main.c:5:0:
+../../OV_7670_ARM_bsp/ps7_cortexa9_0/include/xbasic_types.h:115:2: warning: #warning The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert. [-Wcpp]
+ #warning  The xbasics_type.h file is deprecated and users should use xil_types.h and xil_assert.
+  ^
+../../OV_7670_ARM_bsp/ps7_cortexa9_0/include/xbasic_types.h:116:2: warning: #warning Please refer the Standalone BSP UG647 for further details [-Wcpp]
+ #warning  Please refer the Standalone BSP UG647 for further details
+  ^
+../src/test_SD_main.c: In function 'main':
+../src/test_SD_main.c:22:41: error: 'XPAR_DIP_SWITCHES_DEVICE_ID' undeclared (first use in this function)
+   status = XGpio_Initialize(&GpioInput, XPAR_DIP_SWITCHES_DEVICE_ID);
+                                         ^
+../src/test_SD_main.c:22:41: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/test_SD_main.o] Error 1
+
+09:31:25 Build Finished (took 10s.975ms)
+

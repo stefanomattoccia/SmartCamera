@@ -1,0 +1,12 @@
+   Compiling ../../../test_ov7670_interface.cpp in debug mode
+   Compiling ../../../ov7670_interface.cpp in debug mode
+   Generating csim.exe
+vsync		0000000000000000111100000000000000001111
+href		0001100110011000000000011001100110000000
+frame_valid	0000000000000000000011111111111111000000
+line_valid	0000000000000000000000011001100110000000
+
+
+********** Fine simulazione **********
+
+@I [SIM-1] CSim done with 0 errors.

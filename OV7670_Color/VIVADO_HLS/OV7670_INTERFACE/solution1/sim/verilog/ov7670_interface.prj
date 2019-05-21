@@ -1,0 +1,3 @@
+verilog xil_defaultlib "ov7670_interface.autotb.v"
+verilog xil_defaultlib "ov7670_interface.v"
+

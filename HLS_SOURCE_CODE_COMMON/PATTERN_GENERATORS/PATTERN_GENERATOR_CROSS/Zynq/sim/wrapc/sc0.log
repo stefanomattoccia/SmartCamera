@@ -1,0 +1,5 @@
+   Build using "C:/Xilinx/Vivado_HLS/2015.4/msys/bin/g++.exe"
+   Compiling apatb_pattern_generator.cpp
+   Compiling pattern_generator.cpp_pre.cpp.tb.cpp
+   Compiling test.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

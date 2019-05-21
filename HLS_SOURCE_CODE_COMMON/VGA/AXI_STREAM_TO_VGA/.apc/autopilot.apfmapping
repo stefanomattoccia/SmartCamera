@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="vga_bram_read_address.h" path="F:\Tesi\ProgettoVivado\HLS_COMMON\VGA\AXI_STREAM_TO_VGA\vga_bram_read_address.h"/>
+    <originFiles name="vga_bram_read_address.cpp" path="F:\Tesi\ProgettoVivado\HLS_COMMON\VGA\AXI_STREAM_TO_VGA\vga_bram_read_address.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench.cpp" path="F:\Tesi\ProgettoVivado\HLS_COMMON\VGA\AXI_STREAM_TO_VGA\testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

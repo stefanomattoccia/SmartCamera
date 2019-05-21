@@ -1,0 +1,29 @@
+CC=g++
+FLAGS=-Wall
+OPT=-O3
+ARCH=
+CPU=
+
+all : lib_time_measurements.dylib
+
+lib_time_measurements.dylib : lib_time_measurements.o Time_Measurement.o
+	$(CC) $(FLAGS) $(OPT) $(ARCH) $(CPU) -I/opt/local/include/opencv2 -L/opt/local/lib -lusb-1.0 -lopencv_core -lopencv_ml -lopencv_highgui -dynamiclib -o lib_time_measurements.dylib lib_time_measurements.o Time_Measurement.o
+
+	@echo [INFO] 
+	@echo [INFO] Static library and object files ready
+	@echo [INFO] Copying files to the right place...
+	@echo [INFO] 
+	cp -f lib_time_measurements.dylib ../lib_smart_camera
+	cp -f lib_time_measurements.h ../lib_smart_camera
+	@echo da eliminare
+	cp -f lib_time_measurements.o ../lib_smart_camera
+	cp -f Time_Measurement.o ../lib_smart_camera
+
+lib_time_measurements.o : lib_time_measurements.h ../OS/os.h Time_Measurement.h lib_time_measurements.cpp makefile-mac
+	$(CC) $(FLAGS) $(OPT) $(ARCH) $(CPU) -c lib_time_measurements.cpp
+
+Time_Measurement.o : Time_Measurement.h ../OS/os.h Time_Measurement.cpp makefile-mac
+	$(CC) $(FLAGS) $(OPT) $(ARCH) $(CPU) -c Time_Measurement.cpp
+
+clean: 
+	rm -rf *.dylib *.o *~ 

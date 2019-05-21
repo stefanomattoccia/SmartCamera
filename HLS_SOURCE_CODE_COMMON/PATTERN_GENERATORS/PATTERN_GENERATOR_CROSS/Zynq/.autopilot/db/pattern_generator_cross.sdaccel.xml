@@ -1,0 +1,161 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'pattern_generator_cross'" level="0">
+<item name = "Date">Sat Apr 30 19:08:09 2016
+</item>
+<item name = "Version">2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)</item>
+<item name = "Project">PATTERN_GENERATOR_CROSS</item>
+<item name = "Solution">Zynq</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">10.00</item>
+<item name = "Clock uncertainty (ns)">1.25</item>
+<item name = "Estimated clock period (ns)">3.89</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">368222, 368222, 368223, 368223, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">368220, 368220, 722, -, -, 510, no</column>
+<column name=" + Loop 1.1">720, 720, 1, -, -, 720, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 173</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, -, -</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 93</column>
+<column name="Register">-, -, 229, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="storemerge4_fu_273_p2">+, 0, 0, 32, 32, 32</column>
+<column name="storemerge_fu_249_p2">+, 0, 0, 32, 32, 32</column>
+<column name="x_1_fu_210_p2">+, 0, 0, 10, 10, 1</column>
+<column name="y_1_fu_139_p2">+, 0, 0, 9, 9, 1</column>
+<column name="storemerge4_v_cast_cast_fu_265_p3">Select, 0, 0, 2, 1, 2</column>
+<column name="storemerge_v_cast_cast_fu_241_p3">Select, 0, 0, 2, 1, 2</column>
+<column name="ap_sig_bdd_209">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_239">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_242">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_245">and, 0, 0, 1, 1, 1</column>
+<column name="or_cond_fu_222_p2">and, 0, 0, 1, 1, 1</column>
+<column name="exitcond5_fu_133_p2">icmp, 0, 0, 3, 9, 3</column>
+<column name="exitcond_fu_204_p2">icmp, 0, 0, 4, 10, 10</column>
+<column name="tmp_1_fu_183_p2">icmp, 0, 0, 11, 32, 9</column>
+<column name="tmp_2_fu_156_p2">icmp, 0, 0, 11, 32, 1</column>
+<column name="tmp_3_fu_145_p2">icmp, 0, 0, 3, 9, 7</column>
+<column name="tmp_4_fu_161_p2">icmp, 0, 0, 11, 32, 10</column>
+<column name="tmp_6_fu_216_p2">icmp, 0, 0, 4, 10, 10</column>
+<column name="tmp_8_fu_178_p2">icmp, 0, 0, 11, 32, 1</column>
+<column name="tmp_9_fu_227_p2">icmp, 0, 0, 11, 32, 32</column>
+<column name="tmp_s_fu_151_p2">icmp, 0, 0, 11, 32, 32</column>
+<column name="or_cond7_fu_232_p2">or, 0, 0, 1, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">1, 5, 1, 5</column>
+<column name="ap_sig_ioackin_outputStream_V_TREADY">1, 2, 1, 2</column>
+<column name="outputStream_V_TDATA">8, 3, 8, 24</column>
+<column name="tmp_5_reg_110">32, 2, 32, 64</column>
+<column name="tmp_7_reg_88">32, 2, 32, 64</column>
+<column name="x_reg_99">10, 2, 10, 20</column>
+<column name="y_reg_77">9, 2, 9, 18</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
+<column name="ap_reg_ioackin_outputStream_V_TREADY">1, 0, 1, 0</column>
+<column name="dirX">1, 0, 1, 0</column>
+<column name="dirY">1, 0, 1, 0</column>
+<column name="lineX">32, 0, 32, 0</column>
+<column name="lineX_load_reg_285">32, 0, 32, 0</column>
+<column name="lineY">32, 0, 32, 0</column>
+<column name="lineY_load_reg_293">32, 0, 32, 0</column>
+<column name="tmp_3_reg_309">1, 0, 1, 0</column>
+<column name="tmp_5_reg_110">32, 0, 32, 0</column>
+<column name="tmp_7_reg_88">32, 0, 32, 0</column>
+<column name="tmp_s_reg_314">1, 0, 1, 0</column>
+<column name="x_reg_99">10, 0, 10, 0</column>
+<column name="y_1_reg_304">9, 0, 9, 0</column>
+<column name="y_reg_77">9, 0, 9, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_none, pattern_generator_cross, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_none, pattern_generator_cross, return value</column>
+<column name="outputStream_V_TDATA">out, 8, axis, outputStream_V, pointer</column>
+<column name="outputStream_V_TVALID">out, 1, axis, outputStream_V, pointer</column>
+<column name="outputStream_V_TREADY">in, 1, axis, outputStream_V, pointer</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">3.89</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'x'">phi, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, &apos;x&apos;, PATTERN_GENERATOR_CROSS/pattern_generator.cpp:31</column>
+<column name="'x_cast1', PATTERN_GENERATOR_CROSS/pattern_generator.cpp:31">zext, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_9', PATTERN_GENERATOR_CROSS/pattern_generator.cpp:35">icmp, 2.52, 2.52, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'or_cond7', PATTERN_GENERATOR_CROSS/pattern_generator.cpp:35">or, 1.37, 3.89, -, -, -, -, -, -, -, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

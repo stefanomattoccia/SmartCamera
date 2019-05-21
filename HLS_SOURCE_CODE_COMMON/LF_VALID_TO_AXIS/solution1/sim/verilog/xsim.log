@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Feb 21 14:47:05 2016
+# Process ID: 11028
+# Current directory: C:/Users/Riccardo/Documents/BVP-Aptina/VIVADO_HLS/LF_VALID_TO_AXIS/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/LF_valid_to_AXIS/xsim_script.tcl}
+# Log file: C:/Users/Riccardo/Documents/BVP-Aptina/VIVADO_HLS/LF_VALID_TO_AXIS/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/Riccardo/Documents/BVP-Aptina/VIVADO_HLS/LF_VALID_TO_AXIS/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/LF_valid_to_AXIS/xsim_script.tcl
+# xsim {LF_valid_to_AXIS} -maxdeltaid 10000 -autoloadwcfg -tclbatch {LF_valid_to_AXIS.tcl}
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source LF_valid_to_AXIS.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-142] log_wave skipped an HDL object or scope because of this problem: WARNING: Simulation object /apatb_LF_valid_to_AXIS_top/next_trigger_ready_cnt was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of Verilog named events.
+
+Tracing of this type is not supported yet
+Tracing of this type is not supported yet
+WARNING: [Simtcl 6-142] log_wave skipped an HDL object or scope because of this problem: WARNING: Simulation object /apatb_LF_valid_to_AXIS_top/AESL_AXI_S_outputStream_V_V/fifo_outputStream_V_V_TDATA/write_event was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of Verilog named events.
+
+WARNING: [Simtcl 6-142] log_wave skipped an HDL object or scope because of this problem: WARNING: Simulation object /apatb_LF_valid_to_AXIS_top/AESL_AXI_S_outputStream_V_V/fifo_outputStream_V_V_TDATA/read_event was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of Verilog named events.
+
+## run all
+$finish called at time : 315 ns : File "C:/Users/Riccardo/Documents/BVP-Aptina/VIVADO_HLS/LF_VALID_TO_AXIS/solution1/sim/verilog/LF_valid_to_AXIS.autotb.v" Line 468
+## quit
+INFO: [Common 17-206] Exiting xsim at Sun Feb 21 14:47:10 2016...

@@ -1,0 +1,1246 @@
+
+
+================================================================
+== Vivado HLS Report for 'sep_convolution_filter'
+================================================================
+* Date:           Thu Sep 14 16:53:04 2017
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        Sep_Convolution_Filter
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  41.67|     28.78|        5.21|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  310599|  310599|  310600|  310600|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+--------+--------+----------+-----------+-----------+--------+----------+
+        |                     |     Latency     | Iteration|  Initiation Interval  |  Trip  |          |
+        |      Loop Name      |   min  |   max  |  Latency |  achieved |   target  |  Count | Pipelined|
+        +---------------------+--------+--------+----------+-----------+-----------+--------+----------+
+        |- Loop_row_Loop_col  |  310597|  310597|        30|          1|          1|  310569|    yes   |
+        +---------------------+--------+--------+----------+-----------+-----------+--------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 30
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 32
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 30, States = { 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	32  / (exitcond_flatten)
+	3  / (!exitcond_flatten)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	20  / true
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	2  / true
+32 --> 
+* FSM state operations: 
+
+ <State 1>: 1.57ns
+ST_1: kernel_h_V_0_loc_1 [1/1] 0.00ns
+.preheader61.preheader:0  %kernel_h_V_0_loc_1 = alloca i8
+
+ST_1: sep_convolution_filter_ap_int_2 [1/1] 0.00ns
+.preheader61.preheader:1  %sep_convolution_filter_ap_int_2 = alloca i32
+
+ST_1: sep_convolution_filter_ap_int_1 [1/1] 0.00ns
+.preheader61.preheader:2  %sep_convolution_filter_ap_int_1 = alloca i32
+
+ST_1: stg_36 [1/1] 0.00ns
+.preheader61.preheader:3  call void (...)* @_ssdm_op_SpecBitsMap([52 x i8]* %kernel_config_V), !map !7
+
+ST_1: stg_37 [1/1] 0.00ns
+.preheader61.preheader:4  call void (...)* @_ssdm_op_SpecBitsMap(i8* %in_img_V), !map !13
+
+ST_1: stg_38 [1/1] 0.00ns
+.preheader61.preheader:5  call void (...)* @_ssdm_op_SpecBitsMap(i8* %out_img_V), !map !19
+
+ST_1: stg_39 [1/1] 0.00ns
+.preheader61.preheader:6  call void (...)* @_ssdm_op_SpecTopModule([23 x i8]* @sep_convolution_filter_str) nounwind
+
+ST_1: stg_40 [1/1] 0.00ns
+.preheader61.preheader:7  call void (...)* @_ssdm_op_SpecInterface([52 x i8]* %kernel_config_V, [8 x i8]* @p_str3, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str) nounwind
+
+ST_1: stg_41 [1/1] 0.00ns
+.preheader61.preheader:8  call void (...)* @_ssdm_op_SpecInterface(i8* %out_img_V, [5 x i8]* @p_str4, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str)
+
+ST_1: stg_42 [1/1] 0.00ns
+.preheader61.preheader:9  call void (...)* @_ssdm_op_SpecInterface(i8* %in_img_V, [5 x i8]* @p_str4, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str)
+
+ST_1: kernel_config_V_addr [1/1] 0.00ns
+.preheader61.preheader:10  %kernel_config_V_addr = getelementptr [52 x i8]* %kernel_config_V, i64 0, i64 49
+
+ST_1: kernel_config_V_addr_1 [1/1] 0.00ns
+.preheader61.preheader:11  %kernel_config_V_addr_1 = getelementptr [52 x i8]* %kernel_config_V, i64 0, i64 50
+
+ST_1: kernel_config_V_addr_2 [1/1] 0.00ns
+.preheader61.preheader:12  %kernel_config_V_addr_2 = getelementptr [52 x i8]* %kernel_config_V, i64 0, i64 51
+
+ST_1: kernel_h_V_0_load [1/1] 0.00ns
+.preheader61.preheader:13  %kernel_h_V_0_load = load i8* @kernel_h_V_0, align 1
+
+ST_1: stg_47 [1/1] 1.57ns
+.preheader61.preheader:14  store i32 0, i32* %sep_convolution_filter_ap_int_1
+
+ST_1: stg_48 [1/1] 1.57ns
+.preheader61.preheader:15  store i32 0, i32* %sep_convolution_filter_ap_int_2
+
+ST_1: stg_49 [1/1] 1.57ns
+.preheader61.preheader:16  store i8 %kernel_h_V_0_load, i8* %kernel_h_V_0_loc_1
+
+ST_1: stg_50 [1/1] 1.57ns
+.preheader61.preheader:17  br label %0
+
+
+ <State 2>: 8.52ns
+ST_2: indvar_flatten [1/1] 0.00ns
+:0  %indvar_flatten = phi i19 [ 0, %.preheader61.preheader ], [ %indvar_flatten_next, %._crit_edge84 ]
+
+ST_2: sep_mulconvolution_filter_ap_int [1/1] 0.00ns
+:1  %sep_mulconvolution_filter_ap_int = phi i19 [ 0, %.preheader61.preheader ], [ %sep_convolution_filter_ap_int_7, %._crit_edge84 ]
+
+ST_2: row [1/1] 0.00ns
+:2  %row = phi i9 [ 0, %.preheader61.preheader ], [ %row_mid2, %._crit_edge84 ]
+
+ST_2: sep_convolution_filter_ap_int_3 [1/1] 0.00ns
+:3  %sep_convolution_filter_ap_int_3 = phi i19 [ 0, %.preheader61.preheader ], [ %tmp_30, %._crit_edge84 ]
+
+ST_2: col [1/1] 0.00ns
+:4  %col = phi i10 [ 0, %.preheader61.preheader ], [ %col_1, %._crit_edge84 ]
+
+ST_2: exitcond_flatten [1/1] 2.33ns
+:5  %exitcond_flatten = icmp eq i19 %indvar_flatten, -213719
+
+ST_2: indvar_flatten_next [1/1] 2.08ns
+:6  %indvar_flatten_next = add i19 %indvar_flatten, 1
+
+ST_2: stg_58 [1/1] 0.00ns
+:7  br i1 %exitcond_flatten, label %18, label %.reset
+
+ST_2: stg_59 [1/1] 0.00ns
+.reset:0  call void (...)* @_ssdm_op_SpecLoopName([18 x i8]* @Loop_row_Loop_col_str)
+
+ST_2: empty_2 [1/1] 0.00ns
+.reset:1  %empty_2 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 310569, i64 310569, i64 310569)
+
+ST_2: tmp_1 [1/1] 2.08ns
+.reset:2  %tmp_1 = add i19 %sep_mulconvolution_filter_ap_int, 643
+
+ST_2: exitcond [1/1] 2.07ns
+.reset:3  %exitcond = icmp eq i10 %col, -381
+
+ST_2: sep_convolution_filter_ap_int_6 [1/1] 1.37ns
+.reset:4  %sep_convolution_filter_ap_int_6 = select i1 %exitcond, i19 %tmp_1, i19 %sep_convolution_filter_ap_int_3
+
+ST_2: col_mid2 [1/1] 1.37ns
+.reset:5  %col_mid2 = select i1 %exitcond, i10 0, i10 %col
+
+ST_2: row_s [1/1] 1.84ns
+.reset:6  %row_s = add i9 %row, 1
+
+ST_2: tmp_mid1 [1/1] 2.03ns
+.reset:7  %tmp_mid1 = icmp ult i9 %row_s, -32
+
+ST_2: tmp [1/1] 2.03ns
+.reset:8  %tmp = icmp ult i9 %row, -32
+
+ST_2: tmp_mid2 [1/1] 1.37ns
+.reset:9  %tmp_mid2 = select i1 %exitcond, i1 %tmp_mid1, i1 %tmp
+
+ST_2: tmp_2_mid1 [1/1] 2.03ns
+.reset:10  %tmp_2_mid1 = icmp ugt i9 %row_s, 2
+
+ST_2: tmp_2 [1/1] 2.03ns
+.reset:11  %tmp_2 = icmp ugt i9 %row, 2
+
+ST_2: tmp_2_mid2 [1/1] 1.37ns
+.reset:12  %tmp_2_mid2 = select i1 %exitcond, i1 %tmp_2_mid1, i1 %tmp_2
+
+ST_2: sep_convolution_filter_ap_int_7 [1/1] 1.37ns
+.reset:13  %sep_convolution_filter_ap_int_7 = select i1 %exitcond, i19 %tmp_1, i19 %sep_mulconvolution_filter_ap_int
+
+ST_2: row_mid2 [1/1] 1.37ns
+.reset:14  %row_mid2 = select i1 %exitcond, i9 %row_s, i9 %row
+
+ST_2: stg_74 [1/1] 0.00ns
+.reset:15  call void (...)* @_ssdm_op_SpecLoopName([9 x i8]* @p_str7) nounwind
+
+ST_2: tmp_13 [1/1] 0.00ns
+.reset:16  %tmp_13 = call i32 (...)* @_ssdm_op_SpecRegionBegin([9 x i8]* @p_str7)
+
+ST_2: stg_76 [1/1] 0.00ns
+.reset:17  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind
+
+ST_2: tmp_4 [1/1] 2.33ns
+.reset:18  %tmp_4 = icmp ult i19 %sep_convolution_filter_ap_int_6, 49
+
+ST_2: stg_78 [1/1] 0.00ns
+.reset:19  br i1 %tmp_4, label %._crit_edge79, label %8
+
+ST_2: tmp_6 [1/1] 2.33ns
+:0  %tmp_6 = icmp eq i19 %sep_convolution_filter_ap_int_6, 49
+
+ST_2: stg_80 [1/1] 0.00ns
+:1  br i1 %tmp_6, label %9, label %10
+
+ST_2: tmp_9 [1/1] 2.33ns
+:0  %tmp_9 = icmp eq i19 %sep_convolution_filter_ap_int_6, 50
+
+ST_2: stg_82 [1/1] 0.00ns
+:1  br i1 %tmp_9, label %11, label %12
+
+ST_2: tmp_12 [1/1] 2.33ns
+:0  %tmp_12 = icmp eq i19 %sep_convolution_filter_ap_int_6, 51
+
+ST_2: stg_84 [1/1] 0.00ns
+:1  br i1 %tmp_12, label %13, label %._crit_edge82
+
+ST_2: kernel_config_V_load_4 [2/2] 2.39ns
+:0  %kernel_config_V_load_4 = load i8* %kernel_config_V_addr_2, align 1
+
+ST_2: stg_86 [1/1] 0.00ns
+._crit_edge82:0  br label %14
+
+ST_2: kernel_config_V_load_2 [2/2] 2.39ns
+:0  %kernel_config_V_load_2 = load i8* %kernel_config_V_addr_1, align 1
+
+ST_2: stg_88 [1/1] 0.00ns
+:0  br label %15
+
+ST_2: kernel_config_V_load [2/2] 2.39ns
+:0  %kernel_config_V_load = load i8* %kernel_config_V_addr, align 1
+
+ST_2: stg_90 [1/1] 0.00ns
+:0  br label %16
+
+ST_2: sep_convolution_filter_ap_int_4 [1/1] 0.00ns
+._crit_edge79:0  %sep_convolution_filter_ap_int_4 = load i32* %sep_convolution_filter_ap_int_2
+
+ST_2: sep_convolution_filter_ap_int_5 [1/1] 0.00ns
+._crit_edge79:1  %sep_convolution_filter_ap_int_5 = load i32* %sep_convolution_filter_ap_int_1
+
+ST_2: tmp_5 [1/1] 2.52ns
+._crit_edge79:2  %tmp_5 = icmp sgt i32 %sep_convolution_filter_ap_int_4, 6
+
+ST_2: tmp_7 [1/1] 2.44ns
+._crit_edge79:3  %tmp_7 = add nsw i32 %sep_convolution_filter_ap_int_5, 1
+
+ST_2: sel_SEBB [1/1] 1.37ns
+._crit_edge79:4  %sel_SEBB = select i1 %tmp_5, i32 %tmp_7, i32 %sep_convolution_filter_ap_int_5
+
+ST_2: sel_SEBB1 [1/1] 1.37ns
+._crit_edge79:5  %sel_SEBB1 = select i1 %tmp_5, i32 0, i32 %sep_convolution_filter_ap_int_4
+
+ST_2: tmp_8 [1/1] 2.52ns
+._crit_edge79:6  %tmp_8 = icmp eq i32 %sel_SEBB, 0
+
+ST_2: stg_98 [1/1] 0.00ns
+._crit_edge79:7  br i1 %tmp_8, label %1, label %4
+
+ST_2: tmp_s [1/1] 2.52ns
+:0  %tmp_s = icmp eq i32 %sel_SEBB1, 0
+
+ST_2: stg_100 [1/1] 0.00ns
+:1  br i1 %tmp_s, label %5, label %._crit_edge81
+
+ST_2: tmp_11 [1/1] 0.00ns
+:0  %tmp_11 = zext i19 %sep_convolution_filter_ap_int_6 to i64
+
+ST_2: kernel_config_V_addr_4 [1/1] 0.00ns
+:1  %kernel_config_V_addr_4 = getelementptr [52 x i8]* %kernel_config_V, i64 0, i64 %tmp_11
+
+ST_2: kernel_config_V_load_3 [2/2] 2.39ns
+:2  %kernel_config_V_load_3 = load i8* %kernel_config_V_addr_4, align 1
+
+ST_2: tmp_31 [1/1] 0.00ns
+:3  %tmp_31 = trunc i32 %sel_SEBB to i3
+
+ST_2: stg_105 [1/1] 1.88ns
+:4  switch i3 %tmp_31, label %branch6 [
+    i3 0, label %branch0
+    i3 1, label %branch1
+    i3 2, label %branch2
+    i3 3, label %branch3
+    i3 -4, label %branch4
+    i3 -3, label %branch5
+  ]
+
+ST_2: stg_106 [1/1] 0.00ns
+:0  br label %._crit_edge81
+
+ST_2: stg_107 [1/1] 0.00ns
+._crit_edge81:0  br label %7
+
+ST_2: tmp_3 [1/1] 0.00ns
+:0  %tmp_3 = zext i19 %sep_convolution_filter_ap_int_6 to i64
+
+ST_2: kernel_config_V_addr_3 [1/1] 0.00ns
+:1  %kernel_config_V_addr_3 = getelementptr [52 x i8]* %kernel_config_V, i64 0, i64 %tmp_3
+
+ST_2: kernel_config_V_load_1 [2/2] 2.39ns
+:2  %kernel_config_V_load_1 = load i8* %kernel_config_V_addr_3, align 1
+
+ST_2: tmp_29 [1/1] 0.00ns
+:3  %tmp_29 = trunc i32 %sel_SEBB1 to i3
+
+ST_2: stg_112 [1/1] 1.88ns
+:4  switch i3 %tmp_29, label %branch13 [
+    i3 0, label %branch7
+    i3 1, label %branch8
+    i3 2, label %branch9
+    i3 3, label %branch10
+    i3 -4, label %branch11
+    i3 -3, label %branch12
+  ]
+
+ST_2: tmp_10 [1/1] 2.52ns
+:0  %tmp_10 = icmp eq i32 %sel_SEBB1, 0
+
+ST_2: stg_114 [1/1] 0.00ns
+:1  br i1 %tmp_10, label %3, label %._crit_edge80
+
+ST_2: stg_115 [1/1] 0.00ns
+._crit_edge80:0  br label %7
+
+ST_2: tmp_14 [1/1] 2.44ns
+:0  %tmp_14 = add nsw i32 %sel_SEBB1, 1
+
+ST_2: stg_117 [1/1] 1.57ns
+:1  store i32 %sel_SEBB, i32* %sep_convolution_filter_ap_int_1
+
+ST_2: stg_118 [1/1] 1.57ns
+:2  store i32 %tmp_14, i32* %sep_convolution_filter_ap_int_2
+
+ST_2: stg_119 [1/1] 0.00ns
+:3  br label %16
+
+ST_2: tmp_15 [1/1] 2.07ns
+:0  %tmp_15 = icmp ult i10 %col_mid2, -384
+
+ST_2: stg_121 [1/1] 0.00ns
+:1  br i1 %tmp_15, label %.preheader.preheader, label %.loopexit
+
+ST_2: or_cond [1/1] 1.37ns
+.loopexit:0  %or_cond = and i1 %tmp_15, %tmp_mid2
+
+ST_2: stg_123 [1/1] 0.00ns
+.loopexit:1  br i1 %or_cond, label %17, label %.loopexit._crit_edge
+
+ST_2: in_temp_V [1/1] 0.00ns
+:0  %in_temp_V = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %in_img_V)
+
+ST_2: tmp_18 [1/1] 2.07ns
+.loopexit._crit_edge:0  %tmp_18 = icmp ugt i10 %col_mid2, 2
+
+ST_2: or_cond1 [1/1] 1.37ns
+.loopexit._crit_edge:1  %or_cond1 = and i1 %tmp_2_mid2, %tmp_18
+
+ST_2: stg_127 [1/1] 0.00ns
+.loopexit._crit_edge:2  br i1 %or_cond1, label %.preheader.i.preheader_ifconv, label %._crit_edge84
+
+ST_2: tmp_30 [1/1] 2.08ns
+._crit_edge84:0  %tmp_30 = add i19 %sep_convolution_filter_ap_int_6, 1
+
+ST_2: empty [1/1] 0.00ns
+._crit_edge84:1  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([9 x i8]* @p_str7, i32 %tmp_13)
+
+ST_2: col_1 [1/1] 1.84ns
+._crit_edge84:2  %col_1 = add i10 %col_mid2, 1
+
+ST_2: stg_131 [1/1] 0.00ns
+._crit_edge84:3  br label %0
+
+
+ <State 3>: 3.96ns
+ST_3: kernel_config_V_load_4 [1/2] 2.39ns
+:0  %kernel_config_V_load_4 = load i8* %kernel_config_V_addr_2, align 1
+
+ST_3: stg_133 [1/1] 0.00ns
+:1  store i8 %kernel_config_V_load_4, i8* @kernel_bit_shift_V, align 1
+
+ST_3: stg_134 [1/1] 0.00ns
+:2  br label %._crit_edge82
+
+ST_3: kernel_config_V_load_2 [1/2] 2.39ns
+:0  %kernel_config_V_load_2 = load i8* %kernel_config_V_addr_1, align 1
+
+ST_3: stg_136 [1/1] 0.00ns
+:1  store i8 %kernel_config_V_load_2, i8* @kernel_off_V, align 1
+
+ST_3: stg_137 [1/1] 0.00ns
+:2  br label %14
+
+ST_3: kernel_config_V_load [1/2] 2.39ns
+:0  %kernel_config_V_load = load i8* %kernel_config_V_addr, align 1
+
+ST_3: stg_139 [1/1] 0.00ns
+:1  store i8 %kernel_config_V_load, i8* @kernel_sum_V, align 1
+
+ST_3: stg_140 [1/1] 0.00ns
+:2  br label %15
+
+ST_3: kernel_config_V_load_3 [1/2] 2.39ns
+:2  %kernel_config_V_load_3 = load i8* %kernel_config_V_addr_4, align 1
+
+ST_3: kernel_config_V_load_1 [1/2] 2.39ns
+:2  %kernel_config_V_load_1 = load i8* %kernel_config_V_addr_3, align 1
+
+ST_3: stg_143 [1/1] 0.00ns
+branch7:0  store i8 %kernel_config_V_load_1, i8* @kernel_h_V_0, align 1
+
+ST_3: stg_144 [1/1] 1.57ns
+branch7:1  store i8 %kernel_config_V_load_1, i8* %kernel_h_V_0_loc_1
+
+ST_3: stg_145 [1/1] 0.00ns
+branch7:2  br label %2
+
+ST_3: tmp_16 [1/1] 0.00ns
+.preheader.preheader:0  %tmp_16 = zext i10 %col_mid2 to i64
+
+ST_3: line_buffer_V_0_addr [1/1] 0.00ns
+.preheader.preheader:1  %line_buffer_V_0_addr = getelementptr [640 x i8]* @line_buffer_V_0, i64 0, i64 %tmp_16
+
+ST_3: line_buffer_V_0_load [2/2] 2.71ns
+.preheader.preheader:2  %line_buffer_V_0_load = load i8* %line_buffer_V_0_addr, align 1
+
+ST_3: line_buffer_V_1_addr [1/1] 0.00ns
+.preheader.preheader:4  %line_buffer_V_1_addr = getelementptr [640 x i8]* @line_buffer_V_1, i64 0, i64 %tmp_16
+
+ST_3: line_buffer_V_1_load [2/2] 2.71ns
+.preheader.preheader:5  %line_buffer_V_1_load = load i8* %line_buffer_V_1_addr, align 1
+
+ST_3: line_buffer_V_2_addr [1/1] 0.00ns
+.preheader.preheader:8  %line_buffer_V_2_addr = getelementptr [640 x i8]* @line_buffer_V_2, i64 0, i64 %tmp_16
+
+ST_3: line_buffer_V_2_load [2/2] 2.71ns
+.preheader.preheader:9  %line_buffer_V_2_load = load i8* %line_buffer_V_2_addr, align 1
+
+ST_3: line_buffer_V_3_addr [1/1] 0.00ns
+.preheader.preheader:12  %line_buffer_V_3_addr = getelementptr [640 x i8]* @line_buffer_V_3, i64 0, i64 %tmp_16
+
+ST_3: line_buffer_V_3_load [2/2] 2.71ns
+.preheader.preheader:13  %line_buffer_V_3_load = load i8* %line_buffer_V_3_addr, align 1
+
+ST_3: line_buffer_V_4_addr [1/1] 0.00ns
+.preheader.preheader:16  %line_buffer_V_4_addr = getelementptr [640 x i8]* @line_buffer_V_4, i64 0, i64 %tmp_16
+
+ST_3: line_buffer_V_4_load [2/2] 2.71ns
+.preheader.preheader:17  %line_buffer_V_4_load = load i8* %line_buffer_V_4_addr, align 1
+
+ST_3: line_buffer_V_5_addr [1/1] 0.00ns
+.preheader.preheader:20  %line_buffer_V_5_addr = getelementptr [640 x i8]* @line_buffer_V_5, i64 0, i64 %tmp_16
+
+ST_3: line_buffer_V_5_load [2/2] 2.71ns
+.preheader.preheader:21  %line_buffer_V_5_load = load i8* %line_buffer_V_5_addr, align 1
+
+
+ <State 4>: 5.42ns
+ST_4: stg_159 [1/1] 0.00ns
+branch5:0  store i8 %kernel_config_V_load_3, i8* @kernel_v_V_5, align 1
+
+ST_4: stg_160 [1/1] 0.00ns
+branch5:1  br label %6
+
+ST_4: stg_161 [1/1] 0.00ns
+branch4:0  store i8 %kernel_config_V_load_3, i8* @kernel_v_V_4, align 1
+
+ST_4: stg_162 [1/1] 0.00ns
+branch4:1  br label %6
+
+ST_4: stg_163 [1/1] 0.00ns
+branch3:0  store i8 %kernel_config_V_load_3, i8* @kernel_v_V_3, align 1
+
+ST_4: stg_164 [1/1] 0.00ns
+branch3:1  br label %6
+
+ST_4: stg_165 [1/1] 0.00ns
+branch2:0  store i8 %kernel_config_V_load_3, i8* @kernel_v_V_2, align 1
+
+ST_4: stg_166 [1/1] 0.00ns
+branch2:1  br label %6
+
+ST_4: stg_167 [1/1] 0.00ns
+branch1:0  store i8 %kernel_config_V_load_3, i8* @kernel_v_V_1, align 1
+
+ST_4: stg_168 [1/1] 0.00ns
+branch1:1  br label %6
+
+ST_4: stg_169 [1/1] 1.57ns
+branch0:0  store i8 %kernel_config_V_load_3, i8* @kernel_v_V_0, align 1
+
+ST_4: stg_170 [1/1] 0.00ns
+branch0:1  br label %6
+
+ST_4: stg_171 [1/1] 0.00ns
+branch6:0  store i8 %kernel_config_V_load_3, i8* @kernel_v_V_6, align 1
+
+ST_4: stg_172 [1/1] 0.00ns
+branch6:1  br label %6
+
+ST_4: stg_173 [1/1] 0.00ns
+branch12:0  store i8 %kernel_config_V_load_1, i8* @kernel_h_V_5, align 1
+
+ST_4: stg_174 [1/1] 0.00ns
+branch12:1  br label %2
+
+ST_4: stg_175 [1/1] 0.00ns
+branch11:0  store i8 %kernel_config_V_load_1, i8* @kernel_h_V_4, align 1
+
+ST_4: stg_176 [1/1] 0.00ns
+branch11:1  br label %2
+
+ST_4: stg_177 [1/1] 0.00ns
+branch10:0  store i8 %kernel_config_V_load_1, i8* @kernel_h_V_3, align 1
+
+ST_4: stg_178 [1/1] 0.00ns
+branch10:1  br label %2
+
+ST_4: stg_179 [1/1] 0.00ns
+branch9:0  store i8 %kernel_config_V_load_1, i8* @kernel_h_V_2, align 1
+
+ST_4: stg_180 [1/1] 0.00ns
+branch9:1  br label %2
+
+ST_4: stg_181 [1/1] 0.00ns
+branch8:0  store i8 %kernel_config_V_load_1, i8* @kernel_h_V_1, align 1
+
+ST_4: stg_182 [1/1] 0.00ns
+branch8:1  br label %2
+
+ST_4: stg_183 [1/1] 0.00ns
+branch13:0  store i8 %kernel_config_V_load_1, i8* @kernel_h_V_6, align 1
+
+ST_4: stg_184 [1/1] 0.00ns
+branch13:1  br label %2
+
+ST_4: kernel_h_V_0_loc_1_load_1 [1/1] 0.00ns
+:0  %kernel_h_V_0_loc_1_load_1 = load i8* %kernel_h_V_0_loc_1
+
+ST_4: stg_186 [1/1] 1.57ns
+:1  store i8 %kernel_h_V_0_loc_1_load_1, i8* @kernel_v_V_0, align 1
+
+ST_4: stg_187 [1/1] 0.00ns
+:2  br label %._crit_edge80
+
+ST_4: line_buffer_V_0_load [1/2] 2.71ns
+.preheader.preheader:2  %line_buffer_V_0_load = load i8* %line_buffer_V_0_addr, align 1
+
+ST_4: stg_189 [1/1] 0.00ns
+.preheader.preheader:3  store i8 %line_buffer_V_0_load, i8* @window_V_0, align 1
+
+ST_4: line_buffer_V_1_load [1/2] 2.71ns
+.preheader.preheader:5  %line_buffer_V_1_load = load i8* %line_buffer_V_1_addr, align 1
+
+ST_4: stg_191 [1/1] 2.71ns
+.preheader.preheader:6  store i8 %line_buffer_V_1_load, i8* %line_buffer_V_0_addr, align 1
+
+ST_4: stg_192 [1/1] 0.00ns
+.preheader.preheader:7  store i8 %line_buffer_V_1_load, i8* @window_V_1, align 1
+
+ST_4: line_buffer_V_2_load [1/2] 2.71ns
+.preheader.preheader:9  %line_buffer_V_2_load = load i8* %line_buffer_V_2_addr, align 1
+
+ST_4: stg_194 [1/1] 2.71ns
+.preheader.preheader:10  store i8 %line_buffer_V_2_load, i8* %line_buffer_V_1_addr, align 1
+
+ST_4: stg_195 [1/1] 0.00ns
+.preheader.preheader:11  store i8 %line_buffer_V_2_load, i8* @window_V_2, align 1
+
+ST_4: line_buffer_V_3_load [1/2] 2.71ns
+.preheader.preheader:13  %line_buffer_V_3_load = load i8* %line_buffer_V_3_addr, align 1
+
+ST_4: stg_197 [1/1] 2.71ns
+.preheader.preheader:14  store i8 %line_buffer_V_3_load, i8* %line_buffer_V_2_addr, align 1
+
+ST_4: stg_198 [1/1] 0.00ns
+.preheader.preheader:15  store i8 %line_buffer_V_3_load, i8* @window_V_3, align 1
+
+ST_4: line_buffer_V_4_load [1/2] 2.71ns
+.preheader.preheader:17  %line_buffer_V_4_load = load i8* %line_buffer_V_4_addr, align 1
+
+ST_4: stg_200 [1/1] 2.71ns
+.preheader.preheader:18  store i8 %line_buffer_V_4_load, i8* %line_buffer_V_3_addr, align 1
+
+ST_4: stg_201 [1/1] 0.00ns
+.preheader.preheader:19  store i8 %line_buffer_V_4_load, i8* @window_V_4, align 1
+
+ST_4: line_buffer_V_5_load [1/2] 2.71ns
+.preheader.preheader:21  %line_buffer_V_5_load = load i8* %line_buffer_V_5_addr, align 1
+
+ST_4: stg_203 [1/1] 2.71ns
+.preheader.preheader:22  store i8 %line_buffer_V_5_load, i8* %line_buffer_V_4_addr, align 1
+
+ST_4: stg_204 [1/1] 0.00ns
+.preheader.preheader:23  store i8 %line_buffer_V_5_load, i8* @window_V_5, align 1
+
+ST_4: stg_205 [1/1] 0.00ns
+.preheader.preheader:24  br label %.loopexit
+
+ST_4: stg_206 [1/1] 0.00ns
+:1  store i8 %in_temp_V, i8* @window_V_6, align 1
+
+ST_4: tmp_17 [1/1] 0.00ns
+:2  %tmp_17 = zext i10 %col_mid2 to i64
+
+ST_4: line_buffer_V_5_addr_1 [1/1] 0.00ns
+:3  %line_buffer_V_5_addr_1 = getelementptr [640 x i8]* @line_buffer_V_5, i64 0, i64 %tmp_17
+
+ST_4: stg_209 [1/1] 2.71ns
+:4  store i8 %in_temp_V, i8* %line_buffer_V_5_addr_1, align 1
+
+ST_4: stg_210 [1/1] 0.00ns
+:5  br label %.loopexit._crit_edge
+
+ST_4: kernel_h_V_0_loc_1_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:0  %kernel_h_V_0_loc_1_load = load i8* %kernel_h_V_0_loc_1
+
+ST_4: kernel_sum_V_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:1  %kernel_sum_V_load = load i8* @kernel_sum_V, align 1
+
+ST_4: kernel_off_V_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:2  %kernel_off_V_load = load i8* @kernel_off_V, align 1
+
+ST_4: p_Val2_s [1/1] 0.00ns
+.preheader.i.preheader_ifconv:3  %p_Val2_s = load i8* @kernel_bit_shift_V, align 1
+
+ST_4: tmp_32 [1/1] 0.00ns (grouped into LUT with out node r_V_1)
+.preheader.i.preheader_ifconv:102  %tmp_32 = call i1 @_ssdm_op_BitSelect.i1.i8.i32(i8 %p_Val2_s, i32 7)
+
+ST_4: sh_V_1 [1/1] 1.72ns
+.preheader.i.preheader_ifconv:103  %sh_V_1 = sub i8 0, %p_Val2_s
+
+ST_4: tmp_25 [1/1] 0.00ns (grouped into LUT with out node r_V_1)
+.preheader.i.preheader_ifconv:104  %tmp_25 = sext i8 %kernel_sum_V_load to i32
+
+ST_4: tmp_26 [1/1] 0.00ns (grouped into LUT with out node r_V_1)
+.preheader.i.preheader_ifconv:105  %tmp_26 = ashr i8 %kernel_sum_V_load, %sh_V_1
+
+ST_4: tmp_27 [1/1] 0.00ns (grouped into LUT with out node r_V_1)
+.preheader.i.preheader_ifconv:106  %tmp_27 = zext i8 %p_Val2_s to i32
+
+ST_4: tmp_28 [1/1] 0.00ns (grouped into LUT with out node r_V_1)
+.preheader.i.preheader_ifconv:107  %tmp_28 = shl i32 %tmp_25, %tmp_27
+
+ST_4: tmp_33 [1/1] 0.00ns (grouped into LUT with out node r_V_1)
+.preheader.i.preheader_ifconv:108  %tmp_33 = trunc i32 %tmp_28 to i8
+
+ST_4: r_V_1 [1/1] 2.01ns (out node of the LUT)
+.preheader.i.preheader_ifconv:109  %r_V_1 = select i1 %tmp_32, i8 %tmp_26, i8 %tmp_33
+
+
+ <State 5>: 28.78ns
+ST_5: kernel_v_V_0_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:4  %kernel_v_V_0_load = load i8* @kernel_v_V_0, align 1
+
+ST_5: lhs_V [1/1] 0.00ns
+.preheader.i.preheader_ifconv:5  %lhs_V = sext i8 %kernel_v_V_0_load to i16
+
+ST_5: window_V_0_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:6  %window_V_0_load = load i8* @window_V_0, align 1
+
+ST_5: rhs_V [1/1] 0.00ns
+.preheader.i.preheader_ifconv:7  %rhs_V = zext i8 %window_V_0_load to i16
+
+ST_5: r_V [1/1] 6.38ns
+.preheader.i.preheader_ifconv:8  %r_V = mul i16 %lhs_V, %rhs_V
+
+ST_5: tmp_20_cast [1/1] 0.00ns
+.preheader.i.preheader_ifconv:9  %tmp_20_cast = sext i16 %r_V to i17
+
+ST_5: kernel_v_V_1_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:10  %kernel_v_V_1_load = load i8* @kernel_v_V_1, align 1
+
+ST_5: lhs_V_s [1/1] 0.00ns
+.preheader.i.preheader_ifconv:11  %lhs_V_s = sext i8 %kernel_v_V_1_load to i16
+
+ST_5: window_V_1_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:12  %window_V_1_load = load i8* @window_V_1, align 1
+
+ST_5: rhs_V_s [1/1] 0.00ns
+.preheader.i.preheader_ifconv:13  %rhs_V_s = zext i8 %window_V_1_load to i16
+
+ST_5: r_V_s [1/1] 6.38ns
+.preheader.i.preheader_ifconv:14  %r_V_s = mul i16 %lhs_V_s, %rhs_V_s
+
+ST_5: tmp_27_1_cast [1/1] 0.00ns
+.preheader.i.preheader_ifconv:15  %tmp_27_1_cast = sext i16 %r_V_s to i17
+
+ST_5: kernel_v_V_2_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:16  %kernel_v_V_2_load = load i8* @kernel_v_V_2, align 1
+
+ST_5: lhs_V_2 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:17  %lhs_V_2 = sext i8 %kernel_v_V_2_load to i16
+
+ST_5: window_V_2_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:18  %window_V_2_load = load i8* @window_V_2, align 1
+
+ST_5: rhs_V_2 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:19  %rhs_V_2 = zext i8 %window_V_2_load to i16
+
+ST_5: r_V_2 [1/1] 3.36ns
+.preheader.i.preheader_ifconv:20  %r_V_2 = mul i16 %lhs_V_2, %rhs_V_2
+
+ST_5: tmp_27_2_cast [1/1] 0.00ns
+.preheader.i.preheader_ifconv:21  %tmp_27_2_cast = sext i16 %r_V_2 to i17
+
+ST_5: kernel_v_V_3_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:22  %kernel_v_V_3_load = load i8* @kernel_v_V_3, align 1
+
+ST_5: lhs_V_3 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:23  %lhs_V_3 = sext i8 %kernel_v_V_3_load to i16
+
+ST_5: window_V_3_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:24  %window_V_3_load = load i8* @window_V_3, align 1
+
+ST_5: rhs_V_3 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:25  %rhs_V_3 = zext i8 %window_V_3_load to i16
+
+ST_5: r_V_3 [1/1] 3.36ns
+.preheader.i.preheader_ifconv:26  %r_V_3 = mul i16 %lhs_V_3, %rhs_V_3
+
+ST_5: tmp_27_3_cast [1/1] 0.00ns
+.preheader.i.preheader_ifconv:27  %tmp_27_3_cast = sext i16 %r_V_3 to i17
+
+ST_5: kernel_v_V_4_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:28  %kernel_v_V_4_load = load i8* @kernel_v_V_4, align 1
+
+ST_5: lhs_V_4 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:29  %lhs_V_4 = sext i8 %kernel_v_V_4_load to i16
+
+ST_5: window_V_4_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:30  %window_V_4_load = load i8* @window_V_4, align 1
+
+ST_5: rhs_V_4 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:31  %rhs_V_4 = zext i8 %window_V_4_load to i16
+
+ST_5: r_V_7 [1/1] 3.36ns
+.preheader.i.preheader_ifconv:32  %r_V_7 = mul i16 %lhs_V_4, %rhs_V_4
+
+ST_5: tmp_27_4_cast [1/1] 0.00ns
+.preheader.i.preheader_ifconv:33  %tmp_27_4_cast = sext i16 %r_V_7 to i18
+
+ST_5: kernel_v_V_5_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:34  %kernel_v_V_5_load = load i8* @kernel_v_V_5, align 1
+
+ST_5: lhs_V_5 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:35  %lhs_V_5 = sext i8 %kernel_v_V_5_load to i16
+
+ST_5: window_V_5_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:36  %window_V_5_load = load i8* @window_V_5, align 1
+
+ST_5: rhs_V_5 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:37  %rhs_V_5 = zext i8 %window_V_5_load to i16
+
+ST_5: r_V_5 [1/1] 6.38ns
+.preheader.i.preheader_ifconv:38  %r_V_5 = mul i16 %lhs_V_5, %rhs_V_5
+
+ST_5: tmp_27_5_cast [1/1] 0.00ns
+.preheader.i.preheader_ifconv:39  %tmp_27_5_cast = sext i16 %r_V_5 to i17
+
+ST_5: kernel_v_V_6_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:40  %kernel_v_V_6_load = load i8* @kernel_v_V_6, align 1
+
+ST_5: lhs_V_6 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:41  %lhs_V_6 = sext i8 %kernel_v_V_6_load to i16
+
+ST_5: window_V_6_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:42  %window_V_6_load = load i8* @window_V_6, align 1
+
+ST_5: rhs_V_6 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:43  %rhs_V_6 = zext i8 %window_V_6_load to i16
+
+ST_5: r_V_6 [1/1] 3.36ns
+.preheader.i.preheader_ifconv:44  %r_V_6 = mul i16 %lhs_V_6, %rhs_V_6
+
+ST_5: tmp_27_6_cast [1/1] 0.00ns
+.preheader.i.preheader_ifconv:45  %tmp_27_6_cast = sext i16 %r_V_6 to i17
+
+ST_5: tmp6 [1/1] 3.02ns
+.preheader.i.preheader_ifconv:46  %tmp6 = add i17 %tmp_27_5_cast, %tmp_27_3_cast
+
+ST_5: tmp6_cast [1/1] 0.00ns
+.preheader.i.preheader_ifconv:47  %tmp6_cast = sext i17 %tmp6 to i18
+
+ST_5: tmp5 [1/1] 3.02ns
+.preheader.i.preheader_ifconv:48  %tmp5 = add i18 %tmp6_cast, %tmp_27_4_cast
+
+ST_5: tmp5_cast [1/1] 0.00ns
+.preheader.i.preheader_ifconv:49  %tmp5_cast = sext i18 %tmp5 to i19
+
+ST_5: tmp8 [1/1] 3.02ns
+.preheader.i.preheader_ifconv:50  %tmp8 = add i17 %tmp_20_cast, %tmp_27_2_cast
+
+ST_5: tmp8_cast [1/1] 0.00ns
+.preheader.i.preheader_ifconv:51  %tmp8_cast = sext i17 %tmp8 to i18
+
+ST_5: tmp9 [1/1] 3.02ns
+.preheader.i.preheader_ifconv:52  %tmp9 = add i17 %tmp_27_1_cast, %tmp_27_6_cast
+
+ST_5: tmp9_cast [1/1] 0.00ns
+.preheader.i.preheader_ifconv:53  %tmp9_cast = sext i17 %tmp9 to i18
+
+ST_5: tmp7 [1/1] 2.08ns
+.preheader.i.preheader_ifconv:54  %tmp7 = add i18 %tmp9_cast, %tmp8_cast
+
+ST_5: tmp7_cast [1/1] 0.00ns
+.preheader.i.preheader_ifconv:55  %tmp7_cast = sext i18 %tmp7 to i19
+
+ST_5: temp_v_V_6 [1/1] 2.08ns
+.preheader.i.preheader_ifconv:56  %temp_v_V_6 = add i19 %tmp7_cast, %tmp5_cast
+
+ST_5: convolution_buffer_V_1_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:57  %convolution_buffer_V_1_load = load i19* @convolution_buffer_V_1, align 4
+
+ST_5: tmp_19 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:58  %tmp_19 = sext i19 %convolution_buffer_V_1_load to i22
+
+ST_5: tmp_20 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:59  %tmp_20 = sext i8 %kernel_h_V_0_loc_1_load to i22
+
+ST_5: tmp_21 [1/1] 3.36ns
+.preheader.i.preheader_ifconv:60  %tmp_21 = mul i22 %tmp_19, %tmp_20
+
+ST_5: convolution_buffer_V_2_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:61  %convolution_buffer_V_2_load = load i19* @convolution_buffer_V_2, align 8
+
+ST_5: stg_281 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:62  store i19 %convolution_buffer_V_2_load, i19* @convolution_buffer_V_1, align 4
+
+ST_5: tmp_34_1 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:63  %tmp_34_1 = sext i19 %convolution_buffer_V_2_load to i22
+
+ST_5: kernel_h_V_1_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:64  %kernel_h_V_1_load = load i8* @kernel_h_V_1, align 1
+
+ST_5: tmp_35_1 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:65  %tmp_35_1 = sext i8 %kernel_h_V_1_load to i22
+
+ST_5: tmp_36_1 [1/1] 6.38ns
+.preheader.i.preheader_ifconv:66  %tmp_36_1 = mul i22 %tmp_34_1, %tmp_35_1
+
+ST_5: convolution_buffer_V_3_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:67  %convolution_buffer_V_3_load = load i19* @convolution_buffer_V_3, align 4
+
+ST_5: stg_287 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:68  store i19 %convolution_buffer_V_3_load, i19* @convolution_buffer_V_2, align 8
+
+ST_5: tmp_34_2 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:69  %tmp_34_2 = sext i19 %convolution_buffer_V_3_load to i22
+
+ST_5: kernel_h_V_2_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:70  %kernel_h_V_2_load = load i8* @kernel_h_V_2, align 1
+
+ST_5: tmp_35_2 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:71  %tmp_35_2 = sext i8 %kernel_h_V_2_load to i22
+
+ST_5: tmp_36_2 [1/1] 3.36ns
+.preheader.i.preheader_ifconv:72  %tmp_36_2 = mul i22 %tmp_34_2, %tmp_35_2
+
+ST_5: convolution_buffer_V_4_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:73  %convolution_buffer_V_4_load = load i19* @convolution_buffer_V_4, align 16
+
+ST_5: stg_293 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:74  store i19 %convolution_buffer_V_4_load, i19* @convolution_buffer_V_3, align 4
+
+ST_5: tmp_34_3 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:75  %tmp_34_3 = sext i19 %convolution_buffer_V_4_load to i22
+
+ST_5: kernel_h_V_3_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:76  %kernel_h_V_3_load = load i8* @kernel_h_V_3, align 1
+
+ST_5: tmp_35_3 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:77  %tmp_35_3 = sext i8 %kernel_h_V_3_load to i22
+
+ST_5: tmp_36_3 [1/1] 6.38ns
+.preheader.i.preheader_ifconv:78  %tmp_36_3 = mul i22 %tmp_34_3, %tmp_35_3
+
+ST_5: convolution_buffer_V_5_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:79  %convolution_buffer_V_5_load = load i19* @convolution_buffer_V_5, align 4
+
+ST_5: stg_299 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:80  store i19 %convolution_buffer_V_5_load, i19* @convolution_buffer_V_4, align 16
+
+ST_5: tmp_34_4 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:81  %tmp_34_4 = sext i19 %convolution_buffer_V_5_load to i22
+
+ST_5: kernel_h_V_4_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:82  %kernel_h_V_4_load = load i8* @kernel_h_V_4, align 1
+
+ST_5: tmp_35_4 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:83  %tmp_35_4 = sext i8 %kernel_h_V_4_load to i22
+
+ST_5: tmp_36_4 [1/1] 3.36ns
+.preheader.i.preheader_ifconv:84  %tmp_36_4 = mul i22 %tmp_34_4, %tmp_35_4
+
+ST_5: convolution_buffer_V_6_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:85  %convolution_buffer_V_6_load = load i19* @convolution_buffer_V_6, align 8
+
+ST_5: stg_305 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:86  store i19 %convolution_buffer_V_6_load, i19* @convolution_buffer_V_5, align 4
+
+ST_5: tmp_34_5 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:87  %tmp_34_5 = sext i19 %convolution_buffer_V_6_load to i22
+
+ST_5: kernel_h_V_5_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:88  %kernel_h_V_5_load = load i8* @kernel_h_V_5, align 1
+
+ST_5: tmp_35_5 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:89  %tmp_35_5 = sext i8 %kernel_h_V_5_load to i22
+
+ST_5: tmp_36_5 [1/1] 6.38ns
+.preheader.i.preheader_ifconv:90  %tmp_36_5 = mul i22 %tmp_34_5, %tmp_35_5
+
+ST_5: tmp_22 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:91  %tmp_22 = sext i19 %temp_v_V_6 to i22
+
+ST_5: kernel_h_V_6_load [1/1] 0.00ns
+.preheader.i.preheader_ifconv:92  %kernel_h_V_6_load = load i8* @kernel_h_V_6, align 1
+
+ST_5: tmp_23 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:93  %tmp_23 = sext i8 %kernel_h_V_6_load to i22
+
+ST_5: tmp_24 [1/1] 3.36ns
+.preheader.i.preheader_ifconv:94  %tmp_24 = mul i22 %tmp_22, %tmp_23
+
+ST_5: tmp1 [1/1] 3.02ns
+.preheader.i.preheader_ifconv:95  %tmp1 = add i22 %tmp_36_1, %tmp_36_2
+
+ST_5: tmp2 [1/1] 3.02ns
+.preheader.i.preheader_ifconv:96  %tmp2 = add i22 %tmp1, %tmp_21
+
+ST_5: tmp3 [1/1] 3.02ns
+.preheader.i.preheader_ifconv:97  %tmp3 = add i22 %tmp_36_3, %tmp_36_4
+
+ST_5: tmp4 [1/1] 3.02ns
+.preheader.i.preheader_ifconv:98  %tmp4 = add i22 %tmp_36_5, %tmp_24
+
+ST_5: tmp10 [1/1] 1.85ns
+.preheader.i.preheader_ifconv:99  %tmp10 = add i22 %tmp4, %tmp3
+
+ST_5: temp_h_V [1/1] 1.85ns
+.preheader.i.preheader_ifconv:100  %temp_h_V = add i22 %tmp10, %tmp2
+
+ST_5: stg_320 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:101  store i19 %temp_v_V_6, i19* @convolution_buffer_V_6, align 8
+
+ST_5: tmp_43_tr [1/1] 0.00ns
+.preheader.i.preheader_ifconv:110  %tmp_43_tr = sext i22 %temp_h_V to i23
+
+ST_5: tmp_44_tr [1/1] 0.00ns
+.preheader.i.preheader_ifconv:111  %tmp_44_tr = sext i8 %r_V_1 to i23
+
+ST_5: r_V_4 [27/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 6>: 4.20ns
+ST_6: r_V_4 [26/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 7>: 4.20ns
+ST_7: r_V_4 [25/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 8>: 4.20ns
+ST_8: r_V_4 [24/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 9>: 4.20ns
+ST_9: r_V_4 [23/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 10>: 4.20ns
+ST_10: r_V_4 [22/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 11>: 4.20ns
+ST_11: r_V_4 [21/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 12>: 4.20ns
+ST_12: r_V_4 [20/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 13>: 4.20ns
+ST_13: r_V_4 [19/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 14>: 4.20ns
+ST_14: r_V_4 [18/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 15>: 4.20ns
+ST_15: r_V_4 [17/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 16>: 4.20ns
+ST_16: r_V_4 [16/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 17>: 4.20ns
+ST_17: r_V_4 [15/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 18>: 4.20ns
+ST_18: r_V_4 [14/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 19>: 4.20ns
+ST_19: r_V_4 [13/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 20>: 4.20ns
+ST_20: r_V_4 [12/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 21>: 4.20ns
+ST_21: r_V_4 [11/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 22>: 4.20ns
+ST_22: r_V_4 [10/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 23>: 4.20ns
+ST_23: r_V_4 [9/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 24>: 4.20ns
+ST_24: r_V_4 [8/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 25>: 4.20ns
+ST_25: r_V_4 [7/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 26>: 4.20ns
+ST_26: r_V_4 [6/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 27>: 4.20ns
+ST_27: r_V_4 [5/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 28>: 4.20ns
+ST_28: r_V_4 [4/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 29>: 4.20ns
+ST_29: r_V_4 [3/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 30>: 4.20ns
+ST_30: r_V_4 [2/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+
+ <State 31>: 5.92ns
+ST_31: r_V_4 [1/27] 4.20ns
+.preheader.i.preheader_ifconv:112  %r_V_4 = sdiv i23 %tmp_43_tr, %tmp_44_tr
+
+ST_31: tmp_34 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:113  %tmp_34 = trunc i23 %r_V_4 to i8
+
+ST_31: r_V_9 [1/1] 1.72ns
+.preheader.i.preheader_ifconv:114  %r_V_9 = add i8 %tmp_34, %kernel_off_V_load
+
+ST_31: stg_352 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:115  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %out_img_V, i8 %r_V_9)
+
+ST_31: stg_353 [1/1] 0.00ns
+.preheader.i.preheader_ifconv:116  br label %._crit_edge84
+
+
+ <State 32>: 0.00ns
+ST_32: stg_354 [1/1] 0.00ns
+:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 41.7ns, clock uncertainty: 5.21ns.
+
+ No timing violations. 
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

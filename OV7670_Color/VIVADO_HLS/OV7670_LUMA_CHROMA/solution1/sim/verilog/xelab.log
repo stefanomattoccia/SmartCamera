@@ -1,0 +1,28 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_ov7670_grayscale_top -prj ov7670_grayscale.prj --lib ieee_proposed=./ieee_proposed -s ov7670_grayscale -debug wave 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/AESL_axi_s_inStream_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_inStream_V_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/AESL_axi_s_outStream_V_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_outStream_V_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/ov7670_grayscale.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_ov7670_grayscale_top
+INFO: [VRFC 10-2458] undeclared symbol ap_clk, assumed default net type wire [C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/ov7670_grayscale.autotb.v:110]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n, assumed default net type wire [C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/ov7670_grayscale.autotb.v:111]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n_n, assumed default net type wire [C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/ov7670_grayscale.autotb.v:126]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/HLS_FILTERS/OV7670_GRAYSCALE/solution1/sim/verilog/ov7670_grayscale.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ov7670_grayscale
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ov7670_grayscale
+Compiling module xil_defaultlib.fifo(DEPTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_inStream_V_V
+Compiling module xil_defaultlib.AESL_axi_s_outStream_V_V
+Compiling module xil_defaultlib.apatb_ov7670_grayscale_top
+Built simulation snapshot ov7670_grayscale

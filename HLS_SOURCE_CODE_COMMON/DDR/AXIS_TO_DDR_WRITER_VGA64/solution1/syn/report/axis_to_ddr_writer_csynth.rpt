@@ -1,0 +1,228 @@
+
+
+================================================================
+== Vivado HLS Report for 'axis_to_ddr_writer'
+================================================================
+* Date:           Sat Apr 30 19:20:28 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        AXIS_TO_DDR_WRITER_VGA64
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.75|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  346351|  346351|  346352|  346352|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------------------------+--------+--------+----------+-----------+-----------+------+----------+
+        |                                    |     Latency     | Iteration|  Initiation Interval  | Trip |          |
+        |              Loop Name             |   min  |   max  |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------------------------+--------+--------+----------+-----------+-----------+------+----------+
+        |- Loop 1                            |  346350|  346350|      4618|          -|          -|    75|    no    |
+        | + Loop 1.1                         |    4096|    4096|         1|          1|          1|  4096|    yes   |
+        | + memcpy.base_ddr_addr.buffer.gep  |     513|     513|         3|          1|          1|   512|    yes   |
+        +------------------------------------+--------+--------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      1|       0|     98|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|     548|    700|
+|Memory           |        2|      -|       0|      0|
+|Multiplexer      |        -|      -|       -|     59|
+|Register         |        -|      -|     197|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        2|      1|     745|    857|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |    ~0   |   ~0  |   ~0   |      1|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------+----------------------------------------+---------+-------+-----+-----+
+    |                 Instance                 |                 Module                 | BRAM_18K| DSP48E|  FF | LUT |
+    +------------------------------------------+----------------------------------------+---------+-------+-----+-----+
+    |axis_to_ddr_writer_base_ddr_addr_m_axi_U  |axis_to_ddr_writer_base_ddr_addr_m_axi  |        0|      0|  548|  700|
+    +------------------------------------------+----------------------------------------+---------+-------+-----+-----+
+    |Total                                     |                                        |        0|      0|  548|  700|
+    +------------------------------------------+----------------------------------------+---------+-------+-----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    +----------+---------------------------+---------+---+----+------+-----+------+-------------+
+    |  Memory  |           Module          | BRAM_18K| FF| LUT| Words| Bits| Banks| W*Bits*Banks|
+    +----------+---------------------------+---------+---+----+------+-----+------+-------------+
+    |buffer_U  |axis_to_ddr_writer_buffer  |        2|  0|   0|   512|   64|     1|        32768|
+    +----------+---------------------------+---------+---+----+------+-----+------+-------------+
+    |Total     |                           |        2|  0|   0|   512|   64|     1|        32768|
+    +----------+---------------------------+---------+---+----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------------+----------+-------+---+----+------------+------------+
+    |         Variable Name         | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------------+----------+-------+---+----+------------+------------+
+    |tmp_1_fu_214_p2                |     *    |      1|  0|   0|           3|          19|
+    |frame_count                    |     +    |      0|  0|  32|          32|           1|
+    |idx_1_fu_236_p2                |     +    |      0|  0|   7|           7|           1|
+    |indvar_flatten_next_fu_276_p2  |     +    |      0|  0|  13|          13|           1|
+    |indvar_next_fu_299_p2          |     +    |      0|  0|  10|          10|           1|
+    |offset_fu_310_p2               |     +    |      0|  0|  19|          19|          10|
+    |tmp_4_fu_242_p2                |     +    |      0|  0|   3|           3|           1|
+    |ap_sig_bdd_207                 |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_317                 |    and   |      0|  0|   1|           1|           1|
+    |exitcond1_fu_230_p2            |   icmp   |      0|  0|   3|           7|           7|
+    |exitcond3_fu_293_p2            |   icmp   |      0|  0|   4|          10|          11|
+    |exitcond_flatten_fu_270_p2     |   icmp   |      0|  0|   5|          13|          14|
+    +-------------------------------+----------+-------+---+----+------------+------------+
+    |Total                          |          |      1|  0|  98|         119|          68|
+    +-------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                             |   4|         11|    1|         11|
+    |ap_reg_ppiten_pp1_it2                 |   1|          2|    1|          2|
+    |ap_sig_ioackin_base_ddr_addr_AWREADY  |   1|          2|    1|          2|
+    |ap_sig_ioackin_base_ddr_addr_WREADY   |   1|          2|    1|          2|
+    |frame_index_V                         |   3|          2|    3|          6|
+    |idx_reg_172                           |   7|          2|    7|         14|
+    |indvar_flatten_reg_183                |  13|          2|   13|         26|
+    |indvar_reg_194                        |  10|          2|   10|         20|
+    |offset1_reg_162                       |  19|          2|   19|         38|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  59|         27|   56|        121|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------+----+----+-----+-----------+
+    |                  Name                  | FF | LUT| Bits| Const Bits|
+    +----------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                               |  10|   0|   10|          0|
+    |ap_reg_ioackin_base_ddr_addr_AWREADY    |   1|   0|    1|          0|
+    |ap_reg_ioackin_base_ddr_addr_WREADY     |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp1_it0                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp1_it1                   |   1|   0|    1|          0|
+    |ap_reg_ppiten_pp1_it2                   |   1|   0|    1|          0|
+    |ap_reg_ppstg_exitcond3_reg_348_pp1_it1  |   1|   0|    1|          0|
+    |buffer_load_reg_362                     |  64|   0|   64|          0|
+    |exitcond3_reg_348                       |   1|   0|    1|          0|
+    |frame_count_inner                       |  32|   0|   32|          0|
+    |frame_index_V_preg                      |   3|   0|    3|          0|
+    |idx_1_reg_330                           |   7|   0|    7|          0|
+    |idx_reg_172                             |   7|   0|    7|          0|
+    |indvar_flatten_reg_183                  |  13|   0|   13|          0|
+    |indvar_reg_194                          |  10|   0|   10|          0|
+    |inner_index_V                           |   3|   0|    3|          0|
+    |inner_index_V_load_reg_316              |   3|   0|    3|          0|
+    |offset1_reg_162                         |  19|   0|   19|          0|
+    |offset_reg_367                          |  19|   0|   19|          0|
+    +----------------------------------------+----+----+-----+-----------+
+    |Total                                   | 197|   0|  197|          0|
+    +----------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+--------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++------------------------------+-----+-----+------------+--------------------+--------------+
+|ap_clk                        |  in |    1| ap_ctrl_hs | axis_to_ddr_writer | return value |
+|ap_rst_n                      |  in |    1| ap_ctrl_hs | axis_to_ddr_writer | return value |
+|ap_start                      |  in |    1| ap_ctrl_hs | axis_to_ddr_writer | return value |
+|ap_done                       | out |    1| ap_ctrl_hs | axis_to_ddr_writer | return value |
+|ap_idle                       | out |    1| ap_ctrl_hs | axis_to_ddr_writer | return value |
+|ap_ready                      | out |    1| ap_ctrl_hs | axis_to_ddr_writer | return value |
+|inputStream_V_TDATA           |  in |    8|    axis    |    inputStream_V   |    pointer   |
+|inputStream_V_TVALID          |  in |    1|    axis    |    inputStream_V   |    pointer   |
+|inputStream_V_TREADY          | out |    1|    axis    |    inputStream_V   |    pointer   |
+|m_axi_base_ddr_addr_AWVALID   | out |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_AWREADY   |  in |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_AWADDR    | out |   32|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_AWID      | out |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_AWLEN     | out |    8|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_AWSIZE    | out |    3|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_AWBURST   | out |    2|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_AWLOCK    | out |    2|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_AWCACHE   | out |    4|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_AWPROT    | out |    3|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_AWQOS     | out |    4|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_AWREGION  | out |    4|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_AWUSER    | out |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_WVALID    | out |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_WREADY    |  in |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_WDATA     | out |   64|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_WSTRB     | out |    8|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_WLAST     | out |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_WID       | out |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_WUSER     | out |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_ARVALID   | out |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_ARREADY   |  in |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_ARADDR    | out |   32|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_ARID      | out |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_ARLEN     | out |    8|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_ARSIZE    | out |    3|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_ARBURST   | out |    2|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_ARLOCK    | out |    2|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_ARCACHE   | out |    4|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_ARPROT    | out |    3|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_ARQOS     | out |    4|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_ARREGION  | out |    4|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_ARUSER    | out |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_RVALID    |  in |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_RREADY    | out |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_RDATA     |  in |   64|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_RLAST     |  in |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_RID       |  in |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_RUSER     |  in |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_RRESP     |  in |    2|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_BVALID    |  in |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_BREADY    | out |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_BRESP     |  in |    2|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_BID       |  in |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|m_axi_base_ddr_addr_BUSER     |  in |    1|    m_axi   |    base_ddr_addr   |    pointer   |
+|frame_index_V                 | out |    3|   ap_none  |    frame_index_V   |    pointer   |
+|frame_count                   | out |   32|   ap_none  |     frame_count    |    pointer   |
++------------------------------+-----+-----+------------+--------------------+--------------+
+

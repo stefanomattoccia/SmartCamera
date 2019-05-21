@@ -1,0 +1,8 @@
+verilog xil_defaultlib "AESL_axi_master_base_ddr_addr.v"
+verilog xil_defaultlib "AESL_axi_s_outStream_V.v"
+verilog xil_defaultlib "AESL_fifo.v"
+verilog xil_defaultlib "ddr_to_axis_reader.autotb.v"
+verilog xil_defaultlib "ddr_to_axis_reader.v"
+verilog xil_defaultlib "ddr_to_axis_reader_base_ddr_addr_m_axi.v"
+verilog xil_defaultlib "ddr_to_axis_reader_buffer.v"
+

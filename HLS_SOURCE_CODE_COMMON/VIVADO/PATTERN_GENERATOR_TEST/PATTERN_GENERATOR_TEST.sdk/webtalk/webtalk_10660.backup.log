@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# 
+# Start of session at: Sat Apr 30 19:49:41 2016
+# Process ID: 10660
+# Current directory: C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
+# webtalk_init -webtalk_dir C:\\Users\\Riccardo\\Documents\\HLS_COMMON\\VIVADO\\PATTERN_GENERATOR_TEST\\PATTERN_GENERATOR_TEST.sdk\\webtalk
+# webtalk_register_client -client project
+# webtalk_add_data -client project -key date_generated -value "sab apr 30 19:49:40 2016" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key product_version -value "SDK v2015.4" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key build_version -value "2015.4" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key os_platform -value "amd64" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key registration_id -value "" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key tool_flow -value "SDK" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key beta -value "false" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key route_design -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_family -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_device -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_package -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_speed -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key random_id -value "ohq05be4a0b8kekpfgn0gh7rtp" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_id -value "2015.4_121" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_iteration -value "121" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key os_name -value "" -context "user_environment"
+# webtalk_add_data -client project -key os_release -value "" -context "user_environment"
+# webtalk_add_data -client project -key cpu_name -value "" -context "user_environment"
+# webtalk_add_data -client project -key cpu_speed -value "" -context "user_environment"
+# webtalk_add_data -client project -key total_processors -value "" -context "user_environment"
+# webtalk_add_data -client project -key system_ram -value "" -context "user_environment"
+# webtalk_register_client -client sdk
+# webtalk_add_data -client sdk -key uid -value "1462038551080" -context "sdk\\\\hardware/1462038551080"
+# webtalk_add_data -client sdk -key isZynq -value "true" -context "sdk\\\\hardware/1462038551080"
+# webtalk_add_data -client sdk -key Processors -value "2" -context "sdk\\\\hardware/1462038551080"
+# webtalk_add_data -client sdk -key VivadoVersion -value "2015.4" -context "sdk\\\\hardware/1462038551080"
+# webtalk_add_data -client sdk -key Arch -value "zynq" -context "sdk\\\\hardware/1462038551080"
+# webtalk_add_data -client sdk -key Device -value "7z020" -context "sdk\\\\hardware/1462038551080"
+# webtalk_add_data -client sdk -key IsHandoff -value "true" -context "sdk\\\\hardware/1462038551080"
+# webtalk_transmit -clientid 60663159 -regid "" -xml C:\\Users\\Riccardo\\Documents\\HLS_COMMON\\VIVADO\\PATTERN_GENERATOR_TEST\\PATTERN_GENERATOR_TEST.sdk\\webtalk\\usage_statistics_ext_sdk.xml -html C:\\Users\\Riccardo\\Documents\\HLS_COMMON\\VIVADO\\PATTERN_GENERATOR_TEST\\PATTERN_GENERATOR_TEST.sdk\\webtalk\\usage_statistics_ext_sdk.html -wdm C:\\Users\\Riccardo\\Documents\\HLS_COMMON\\VIVADO\\PATTERN_GENERATOR_TEST\\PATTERN_GENERATOR_TEST.sdk\\webtalk\\sdk_webtalk.wdm -intro "<H3>SDK Usage Report</H3><BR>"
+# webtalk_terminate
+INFO: [Common 17-206] Exiting Webtalk at Sat Apr 30 19:49:44 2016...

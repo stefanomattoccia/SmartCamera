@@ -1,0 +1,103 @@
+# depslib dependency file v1.0
+1504606287 source:/home/luca/Desktop/Client/connection.c
+	"connection.h"
+
+1504633102 /home/luca/Desktop/Client/connection.h
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<string.h>
+	<errno.h>
+	"control.h"
+
+1504517334 /home/luca/Desktop/Client/control.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"connection.h"
+
+1504633014 source:/home/luca/Desktop/Client/control.c
+	"control.h"
+
+1504520882 source:/home/luca/Desktop/Client/main.c
+	<stdio.h>
+	<stdlib.h>
+	"control.h"
+
+1505645426 source:c:\users\luca\desktop\client-tcp\client\connection.c
+	"connection.h"
+
+1505662153 c:\users\luca\desktop\client-tcp\client\connection.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"control.h"
+	"os.h"
+	<unistd.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<errno.h>
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+
+1505662158 c:\users\luca\desktop\client-tcp\client\control.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"connection.h"
+
+1504990539 source:c:\users\luca\desktop\client-tcp\client\control.c
+	"control.h"
+
+1504915425 source:c:\users\luca\desktop\client-tcp\client\main.c
+	<stdio.h>
+	<stdlib.h>
+	"control.h"
+
+1505645405 c:\users\luca\desktop\client-tcp\client\os.h
+
+1505660242 source:d:\000_official_pipeline_2018\ov7670_color\client_tcp\client\connection.c
+	"connection.h"
+
+1505658554 d:\000_official_pipeline_2018\ov7670_color\client_tcp\client\connection.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"control.h"
+	"os.h"
+	<unistd.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+	<errno.h>
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+
+1505658560 d:\000_official_pipeline_2018\ov7670_color\client_tcp\client\control.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"connection.h"
+
+1505641806 d:\000_official_pipeline_2018\ov7670_color\client_tcp\client\os.h
+
+1505658626 source:d:\000_official_pipeline_2018\ov7670_color\client_tcp\client\control.c
+	"control.h"
+
+1504911826 source:d:\000_official_pipeline_2018\ov7670_color\client_tcp\client\main.c
+	<stdio.h>
+	<stdlib.h>
+	"control.h"
+

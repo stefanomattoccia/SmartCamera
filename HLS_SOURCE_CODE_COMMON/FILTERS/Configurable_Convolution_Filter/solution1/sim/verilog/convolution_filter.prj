@@ -1,0 +1,10 @@
+verilog xil_defaultlib "AESL_axi_s_filter_V.v"
+verilog xil_defaultlib "AESL_axi_s_in_img_V.v"
+verilog xil_defaultlib "AESL_axi_s_out_img_V.v"
+verilog xil_defaultlib "AESL_fifo.v"
+verilog xil_defaultlib "convolution_filter.autotb.v"
+verilog xil_defaultlib "convolution_filter.v"
+verilog xil_defaultlib "convolution_filter_filter_weights_V.v"
+verilog xil_defaultlib "convolution_filter_line_buffer_V_0.v"
+verilog xil_defaultlib "convolution_filter_udiv_16ns_8ns_16_20.v"
+

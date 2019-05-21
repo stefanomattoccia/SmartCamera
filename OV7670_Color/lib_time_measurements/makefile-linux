@@ -1,0 +1,28 @@
+CC=g++
+FLAGS=-Wall
+OPT=-O3
+ARCH=
+CPU=
+
+all : lib_time_measurements.a
+
+lib_time_measurements.a : lib_time_measurements.o Time_Measurement.o
+	ar rcs lib_time_measurements.a lib_time_measurements.o Time_Measurement.o
+	@echo [INFO] 
+	@echo [INFO] Static library and object files ready
+	@echo [INFO] Copying files to the right place...
+	@echo [INFO] 
+	cp -f lib_time_measurements.a ../lib_smart_camera
+	cp -f lib_time_measurements.h ../lib_smart_camera
+	@echo da eliminare
+	cp -f lib_time_measurements.o ../lib_smart_camera
+	cp -f Time_Measurement.o ../lib_smart_camera
+
+lib_time_measurements.o : lib_time_measurements.h ../OS/os.h Time_Measurement.h lib_time_measurements.cpp makefile-linux
+	$(CC) $(FLAGS) $(OPT) $(ARCH) $(CPU) -c lib_time_measurements.cpp
+
+Time_Measurement.o : Time_Measurement.h ../OS/os.h Time_Measurement.cpp makefile-linux
+	$(CC) $(FLAGS) $(OPT) $(ARCH) $(CPU) -c Time_Measurement.cpp
+
+clean: 
+	rm -rf *.a *.o *~ 

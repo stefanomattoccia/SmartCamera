@@ -1,0 +1,6 @@
+13:27:13 **** Incremental Build of configuration Debug for project ov7670_udp ****
+make all 
+make: Nothing to be done for `all'.
+
+13:27:23 Build Finished (took 10s.126ms)
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="sep_convolution_filter" xd:componentRef="sep_convolution_filter" xd:initiationInterval="310607" xd:clockPeriod="41.666668" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="kernel_config[]" xd:originalName="kernel_config" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x40" xd:arraySize="52" xd:dataWidth="8"/>
+  <xd:arg xd:name="in_img[]" xd:originalName="in_img" xd:direction="in" xd:interfaceRef="in_img_V" xd:busTypeRef="axis" xd:arraySize="307200" xd:dataWidth="8"/>
+  <xd:arg xd:name="out_img[]" xd:originalName="out_img" xd:direction="out" xd:interfaceRef="out_img_V" xd:busTypeRef="axis" xd:arraySize="307200" xd:dataWidth="8"/>
+  <xd:latencyEstimates xd:best-case="310606" xd:worst-case="310606" xd:average-case="310606"/>
+  <xd:resourceEstimates xd:LUT="2202" xd:FF="2071" xd:BRAM="8" xd:DSP="14"/>
+</xd:acceleratorMap>

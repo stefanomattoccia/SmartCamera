@@ -1,0 +1,629 @@
+
+
+================================================================
+== Vivado HLS Report for 'LF_valid_to_AXIS'
+================================================================
+* Date:           Tue Nov 29 21:55:34 2016
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        LF_VALID_TO_AXIS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      0.00|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|      2|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|      2|
+|Register         |        -|      -|       3|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|       3|      4|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------+----------+-------+---+----+------------+------------+
+    | Variable Name| Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |ap_sig_45     |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_80     |    and   |      0|  0|   1|           1|           1|
+    +--------------+----------+-------+---+----+------------+------------+
+    |Total         |          |      0|  0|   2|           2|           2|
+    +--------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------+----+-----------+-----+-----------+
+    |                  Name                  | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------+----+-----------+-----+-----------+
+    |ap_sig_ioackin_outputStream_V_V_TREADY  |   1|          2|    1|          2|
+    |outputStream_V_V_TDATA_blk_n            |   1|          2|    1|          2|
+    +----------------------------------------+----+-----------+-----+-----------+
+    |Total                                   |   2|          4|    2|          4|
+    +----------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------+---+----+-----+-----------+
+    |                  Name                  | FF| LUT| Bits| Const Bits|
+    +----------------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                               |  1|   0|    1|          0|
+    |ap_reg_ioackin_outputStream_V_V_TREADY  |  1|   0|    1|          0|
+    |res                                     |  1|   0|    1|          0|
+    +----------------------------------------+---+----+-----+-----------+
+    |Total                                   |  3|   0|    3|          0|
+    +----------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++-------------------------+-----+-----+------------+------------------+--------------+
+|ap_clk                   |  in |    1| ap_ctrl_hs | LF_valid_to_AXIS | return value |
+|ap_rst_n                 |  in |    1| ap_ctrl_hs | LF_valid_to_AXIS | return value |
+|ap_start                 |  in |    1| ap_ctrl_hs | LF_valid_to_AXIS | return value |
+|ap_done                  | out |    1| ap_ctrl_hs | LF_valid_to_AXIS | return value |
+|ap_idle                  | out |    1| ap_ctrl_hs | LF_valid_to_AXIS | return value |
+|ap_ready                 | out |    1| ap_ctrl_hs | LF_valid_to_AXIS | return value |
+|data_in_V                |  in |    8|   ap_none  |     data_in_V    |    pointer   |
+|frame_valid              |  in |    1|   ap_none  |    frame_valid   |    pointer   |
+|line_valid               |  in |    1|   ap_none  |    line_valid    |    pointer   |
+|outputStream_V_V_TDATA   | out |    8|    axis    | outputStream_V_V |    pointer   |
+|outputStream_V_V_TVALID  | out |    1|    axis    | outputStream_V_V |    pointer   |
+|outputStream_V_V_TREADY  |  in |    1|    axis    | outputStream_V_V |    pointer   |
++-------------------------+-----+-----+------------+------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 1
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+* FSM state operations: 
+
+ <State 1>: 0.00ns
+ST_1: stg_2 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i8* %data_in_V), !map !7
+
+ST_1: stg_3 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i1* %frame_valid), !map !11
+
+ST_1: stg_4 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i1* %line_valid), !map !15
+
+ST_1: stg_5 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i8* %outputStream_V_V), !map !19
+
+ST_1: stg_6 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @LF_valid_to_AXIS_str) nounwind
+
+ST_1: stg_7 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecInterface(i8* %outputStream_V_V, [5 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_8 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecInterface(i8* %data_in_V, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_9 [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecInterface(i1* %frame_valid, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_10 [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecInterface(i1* %line_valid, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_1: res_load [1/1] 0.00ns
+:9  %res_load = load i1* @res, align 1
+
+ST_1: stg_12 [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecReset(i1* @res, i32 1, [1 x i8]* @p_str1) nounwind
+
+ST_1: frame_valid_read [1/1] 0.00ns
+:11  %frame_valid_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %frame_valid)
+
+ST_1: stg_14 [1/1] 0.00ns
+:12  br i1 %res_load, label %1, label %3
+
+ST_1: stg_15 [1/1] 0.00ns
+:0  br i1 %frame_valid_read, label %4, label %._crit_edge4
+
+ST_1: line_valid_read [1/1] 0.00ns
+:0  %line_valid_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %line_valid)
+
+ST_1: stg_17 [1/1] 0.00ns
+:1  br i1 %line_valid_read, label %5, label %._crit_edge4
+
+ST_1: tmp_V [1/1] 0.00ns
+:0  %tmp_V = call i8 @_ssdm_op_Read.ap_none.volatile.i8P(i8* %data_in_V)
+
+ST_1: stg_19 [1/1] 0.00ns
+:1  call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outputStream_V_V, i8 %tmp_V)
+
+ST_1: stg_20 [1/1] 0.00ns
+:2  br label %._crit_edge4
+
+ST_1: stg_21 [1/1] 0.00ns
+._crit_edge4:0  br label %6
+
+ST_1: stg_22 [1/1] 0.00ns
+:0  br i1 %frame_valid_read, label %._crit_edge, label %2
+
+ST_1: stg_23 [1/1] 0.00ns
+:0  store i1 false, i1* @res, align 1
+
+ST_1: stg_24 [1/1] 0.00ns
+:1  br label %._crit_edge
+
+ST_1: stg_25 [1/1] 0.00ns
+._crit_edge:0  br label %6
+
+ST_1: stg_26 [1/1] 0.00ns
+:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 1
+- Is datapath-only: 0
+- Is clock enabled: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ data_in_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ frame_valid]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ line_valid]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ outputStream_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ res]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_ovld:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+stg_2            (specbitsmap  ) [ 00]
+stg_3            (specbitsmap  ) [ 00]
+stg_4            (specbitsmap  ) [ 00]
+stg_5            (specbitsmap  ) [ 00]
+stg_6            (spectopmodule) [ 00]
+stg_7            (specinterface) [ 00]
+stg_8            (specinterface) [ 00]
+stg_9            (specinterface) [ 00]
+stg_10           (specinterface) [ 00]
+res_load         (load         ) [ 01]
+stg_12           (specreset    ) [ 00]
+frame_valid_read (read         ) [ 01]
+stg_14           (br           ) [ 00]
+stg_15           (br           ) [ 00]
+line_valid_read  (read         ) [ 01]
+stg_17           (br           ) [ 00]
+tmp_V            (read         ) [ 00]
+stg_19           (write        ) [ 00]
+stg_20           (br           ) [ 00]
+stg_21           (br           ) [ 00]
+stg_22           (br           ) [ 00]
+stg_23           (store        ) [ 00]
+stg_24           (br           ) [ 00]
+stg_25           (br           ) [ 00]
+stg_26           (ret          ) [ 00]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="data_in_V">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_in_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="frame_valid">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="frame_valid"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="line_valid">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="line_valid"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="outputStream_V_V">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outputStream_V_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="res">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="res"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="LF_valid_to_AXIS_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecReset"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_none.volatile.i1P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_none.volatile.i8P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.axis.volatile.i8P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1004" name="frame_valid_read_read_fu_38">
+<pin_list>
+<pin id="39" dir="0" index="0" bw="1" slack="0"/>
+<pin id="40" dir="0" index="1" bw="1" slack="0"/>
+<pin id="41" dir="1" index="2" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="frame_valid_read/1 "/>
+</bind>
+</comp>
+
+<comp id="44" class="1004" name="line_valid_read_read_fu_44">
+<pin_list>
+<pin id="45" dir="0" index="0" bw="1" slack="0"/>
+<pin id="46" dir="0" index="1" bw="1" slack="0"/>
+<pin id="47" dir="1" index="2" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="line_valid_read/1 "/>
+</bind>
+</comp>
+
+<comp id="50" class="1004" name="tmp_V_read_fu_50">
+<pin_list>
+<pin id="51" dir="0" index="0" bw="8" slack="0"/>
+<pin id="52" dir="0" index="1" bw="8" slack="0"/>
+<pin id="53" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tmp_V/1 "/>
+</bind>
+</comp>
+
+<comp id="56" class="1004" name="stg_19_write_fu_56">
+<pin_list>
+<pin id="57" dir="0" index="0" bw="0" slack="0"/>
+<pin id="58" dir="0" index="1" bw="8" slack="0"/>
+<pin id="59" dir="0" index="2" bw="8" slack="0"/>
+<pin id="60" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="stg_19/1 "/>
+</bind>
+</comp>
+
+<comp id="64" class="1004" name="res_load_load_fu_64">
+<pin_list>
+<pin id="65" dir="0" index="0" bw="1" slack="0"/>
+<pin id="66" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="res_load/1 "/>
+</bind>
+</comp>
+
+<comp id="68" class="1004" name="stg_23_store_fu_68">
+<pin_list>
+<pin id="69" dir="0" index="0" bw="1" slack="0"/>
+<pin id="70" dir="0" index="1" bw="1" slack="0"/>
+<pin id="71" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="stg_23/1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="42"><net_src comp="30" pin="0"/><net_sink comp="38" pin=0"/></net>
+
+<net id="43"><net_src comp="2" pin="0"/><net_sink comp="38" pin=1"/></net>
+
+<net id="48"><net_src comp="30" pin="0"/><net_sink comp="44" pin=0"/></net>
+
+<net id="49"><net_src comp="4" pin="0"/><net_sink comp="44" pin=1"/></net>
+
+<net id="54"><net_src comp="32" pin="0"/><net_sink comp="50" pin=0"/></net>
+
+<net id="55"><net_src comp="0" pin="0"/><net_sink comp="50" pin=1"/></net>
+
+<net id="61"><net_src comp="34" pin="0"/><net_sink comp="56" pin=0"/></net>
+
+<net id="62"><net_src comp="6" pin="0"/><net_sink comp="56" pin=1"/></net>
+
+<net id="63"><net_src comp="50" pin="2"/><net_sink comp="56" pin=2"/></net>
+
+<net id="67"><net_src comp="8" pin="0"/><net_sink comp="64" pin=0"/></net>
+
+<net id="72"><net_src comp="36" pin="0"/><net_sink comp="68" pin=0"/></net>
+
+<net id="73"><net_src comp="8" pin="0"/><net_sink comp="68" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: outputStream_V_V | {1 }
+	Port: res | {1 }
+ - Input state : 
+	Port: LF_valid_to_AXIS : data_in_V | {1 }
+	Port: LF_valid_to_AXIS : frame_valid | {1 }
+	Port: LF_valid_to_AXIS : line_valid | {1 }
+	Port: LF_valid_to_AXIS : res | {1 }
+  - Chain level:
+	State 1
+		stg_14 : 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-----------------------------|
+| Operation|       Functional Unit       |
+|----------|-----------------------------|
+|          | frame_valid_read_read_fu_38 |
+|   read   |  line_valid_read_read_fu_44 |
+|          |       tmp_V_read_fu_50      |
+|----------|-----------------------------|
+|   write  |      stg_19_write_fu_56     |
+|----------|-----------------------------|
+|   Total  |                             |
+|----------|-----------------------------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+
+|           |
++-----------+
+|  Function |
+|   Memory  |
+|Multiplexer|
+|  Register |
++-----------+
+|   Total   |
++-----------+

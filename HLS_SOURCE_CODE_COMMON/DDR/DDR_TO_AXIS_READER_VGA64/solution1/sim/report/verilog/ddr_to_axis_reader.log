@@ -1,0 +1,122 @@
+@I [SIM-47] Using XSIM for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+@W [SIM-369] AXI_master port 'base_ddr_addr' has a depth of '128'. Insufficient depth may result in simulation mismatch or freeze.
+   Build using "C:/Xilinx/Vivado_HLS/2015.4/msys/bin/g++.exe"
+   Compiling apatb_ddr_to_axis_reader.cpp
+   Compiling ddr_to_axis_reader.cpp_pre.cpp.tb.cpp
+   Compiling testbench.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+@I [SIM-302] Starting C TB testing ... 
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+@I [SIM-323] Starting verilog simulation. 
+@I [SIM-15] Starting XSIM ...
+@I [SIM-316] Starting C post checking ...
+FRAME_COUNT = 1
+FRAME_COUNT_EQUALS = 0
+128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 
+
+FRAME_COUNT = 2
+FRAME_COUNT_EQUALS = 1
+128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 
+
+
+C:\Users\Riccardo\Documents\Vision-pipeline-to-DDR\VIVADO_HLS\DDR_TO_AXIS_READER_VGA64\solution1\sim\verilog>call xelab xil_defaultlib.apatb_ddr_to_axis_reader_top -prj ddr_to_axis_reader.prj --lib "ieee_proposed=./ieee_proposed" -s ddr_to_axis_reader -debug wave 
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_ddr_to_axis_reader_top -prj ddr_to_axis_reader.prj --lib ieee_proposed=./ieee_proposed -s ddr_to_axis_reader -debug wave 
+Multi-threading is on. Using 2 slave threads.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/DDR_TO_AXIS_READER_VGA64/solution1/sim/verilog/AESL_axi_master_base_ddr_addr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_base_ddr_addr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/DDR_TO_AXIS_READER_VGA64/solution1/sim/verilog/AESL_axi_s_outStream_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_outStream_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/DDR_TO_AXIS_READER_VGA64/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/DDR_TO_AXIS_READER_VGA64/solution1/sim/verilog/ddr_to_axis_reader.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_ddr_to_axis_reader_top
+INFO: [VRFC 10-2458] undeclared symbol ap_clk, assumed default net type wire [C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/DDR_TO_AXIS_READER_VGA64/solution1/sim/verilog/ddr_to_axis_reader.autotb.v:167]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n, assumed default net type wire [C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/DDR_TO_AXIS_READER_VGA64/solution1/sim/verilog/ddr_to_axis_reader.autotb.v:168]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n_n, assumed default net type wire [C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/DDR_TO_AXIS_READER_VGA64/solution1/sim/verilog/ddr_to_axis_reader.autotb.v:228]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/DDR_TO_AXIS_READER_VGA64/solution1/sim/verilog/ddr_to_axis_reader.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr_to_axis_reader
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/DDR_TO_AXIS_READER_VGA64/solution1/sim/verilog/ddr_to_axis_reader_base_ddr_addr_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr_to_axis_reader_base_ddr_addr_m_axi
+INFO: [VRFC 10-311] analyzing module ddr_to_axis_reader_base_ddr_addr_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module ddr_to_axis_reader_base_ddr_addr_m_axi_decoder
+INFO: [VRFC 10-311] analyzing module ddr_to_axis_reader_base_ddr_addr_m_axi_throttl
+INFO: [VRFC 10-311] analyzing module ddr_to_axis_reader_base_ddr_addr_m_axi_read
+INFO: [VRFC 10-311] analyzing module ddr_to_axis_reader_base_ddr_addr_m_axi_write
+INFO: [VRFC 10-2458] undeclared symbol data_valid, assumed default net type wire [C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/DDR_TO_AXIS_READER_VGA64/solution1/sim/verilog/ddr_to_axis_reader_base_ddr_addr_m_axi.v:1725]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/DDR_TO_AXIS_READER_VGA64/solution1/sim/verilog/ddr_to_axis_reader_buffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ddr_to_axis_reader_buffer_ram
+INFO: [VRFC 10-311] analyzing module ddr_to_axis_reader_buffer
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ddr_to_axis_reader_base_ddr_addr...
+Compiling module xil_defaultlib.ddr_to_axis_reader_base_ddr_addr...
+Compiling module xil_defaultlib.ddr_to_axis_reader_base_ddr_addr...
+Compiling module xil_defaultlib.ddr_to_axis_reader_base_ddr_addr...
+Compiling module xil_defaultlib.ddr_to_axis_reader_base_ddr_addr...
+Compiling module xil_defaultlib.ddr_to_axis_reader_base_ddr_addr...
+Compiling module xil_defaultlib.ddr_to_axis_reader_base_ddr_addr...
+Compiling module xil_defaultlib.ddr_to_axis_reader_base_ddr_addr...
+Compiling module xil_defaultlib.ddr_to_axis_reader_base_ddr_addr...
+Compiling module xil_defaultlib.ddr_to_axis_reader_base_ddr_addr...
+Compiling module xil_defaultlib.ddr_to_axis_reader_base_ddr_addr...
+Compiling module xil_defaultlib.ddr_to_axis_reader_buffer_ram
+Compiling module xil_defaultlib.ddr_to_axis_reader_buffer(DataWi...
+Compiling module xil_defaultlib.ddr_to_axis_reader_default
+Compiling module xil_defaultlib.fifo(DEPTH=128)
+Compiling module xil_defaultlib.AESL_axi_s_outStream_V
+Compiling module xil_defaultlib.AESL_axi_master_base_ddr_addr
+Compiling module xil_defaultlib.apatb_ddr_to_axis_reader_top
+Built simulation snapshot ddr_to_axis_reader
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/DDR_TO_AXIS_READER_VGA64/solution1/sim/verilog/xsim.dir/ddr_to_axis_reader/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb 22 21:48:50 2016...
+
+****** xsim v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/ddr_to_axis_reader/xsim_script.tcl
+# xsim {ddr_to_axis_reader} -maxdeltaid 10000 -autoloadwcfg -tclbatch {ddr_to_axis_reader.tcl}
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source ddr_to_axis_reader.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-142] log_wave skipped an HDL object or scope because of this problem: WARNING: Simulation object /apatb_ddr_to_axis_reader_top/next_trigger_ready_cnt was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of Verilog named events.
+
+Tracing of this type is not supported yet
+
+Tracing of this type is not supported yet
+
+WARNING: [Simtcl 6-142] log_wave skipped an HDL object or scope because of this problem: WARNING: Simulation object /apatb_ddr_to_axis_reader_top/AESL_AXI_S_outStream_V/fifo_outStream_V_TDATA/write_event was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of Verilog named events.
+
+WARNING: [Simtcl 6-142] log_wave skipped an HDL object or scope because of this problem: WARNING: Simulation object /apatb_ddr_to_axis_reader_top/AESL_AXI_S_outStream_V/fifo_outStream_V_TDATA/read_event was not traceable in the design for the following reason:
+Vivado Simulator does not yet support tracing of Verilog named events.
+
+## run all
+$finish called at time : 7095 ns : File "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/DDR_TO_AXIS_READER_VGA64/solution1/sim/verilog/ddr_to_axis_reader.autotb.v" Line 552
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon Feb 22 21:48:55 2016...
+FRAME_COUNT = 1
+FRAME_COUNT_EQUALS = 1
+128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 
+
+FRAME_COUNT = 2
+FRAME_COUNT_EQUALS = 1
+128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 
+
+@I [SIM-1000] *** C/RTL co-simulation finished: PASS ***

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Register 'frame_count_equals_inner' is power-on initialization." projectName="DDR_TO_AXIS_READER_VGA64" solutionName="solution1" date="2016-04-30T19:23:12.508+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'index_old' is power-on initialization." projectName="DDR_TO_AXIS_READER_VGA64" solutionName="solution1" date="2016-04-30T19:23:12.478+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'frame_count_inner' is power-on initialization." projectName="DDR_TO_AXIS_READER_VGA64" solutionName="solution1" date="2016-04-30T19:23:12.471+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'frame_count_equals' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="DDR_TO_AXIS_READER_VGA64" solutionName="solution1" date="2016-04-30T19:23:12.464+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'frame_count' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="DDR_TO_AXIS_READER_VGA64" solutionName="solution1" date="2016-04-30T19:23:12.456+0200" type="Warning"/>
+        <logs message="@W [BIND-102] The specified resource core for memory 'buffer' will be ignored if a simpler one can be used." projectName="DDR_TO_AXIS_READER_VGA64" solutionName="solution1" date="2016-04-30T19:23:12.371+0200" type="Warning"/>
+        <logs message="@W [SYNCHK-23] DDR_TO_AXIS_READER_VGA64/ddr_to_axis_reader.cpp:41: variable-indexed range selection may cause suboptimal QoR." projectName="DDR_TO_AXIS_READER_VGA64" solutionName="solution1" date="2016-04-30T19:23:11.790+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

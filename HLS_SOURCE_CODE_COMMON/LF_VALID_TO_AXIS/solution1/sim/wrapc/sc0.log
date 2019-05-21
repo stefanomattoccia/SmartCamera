@@ -1,0 +1,5 @@
+   Build using "C:/Xilinx/Vivado_HLS/2015.4/msys/bin/g++.exe"
+   Compiling LF_valid_to_AXIS.cpp_pre.cpp.tb.cpp
+   Compiling apatb_LF_valid_to_AXIS.cpp
+   Compiling testbench.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

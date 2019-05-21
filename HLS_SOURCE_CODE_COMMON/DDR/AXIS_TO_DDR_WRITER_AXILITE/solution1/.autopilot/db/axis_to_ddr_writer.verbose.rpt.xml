@@ -1,0 +1,243 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'axis_to_ddr_writer'" level="0">
+<item name = "Date">Fri Apr 15 11:42:37 2016
+</item>
+<item name = "Version">2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)</item>
+<item name = "Project">AXIS_TO_DDR_WRITER_AXILITE</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">8.00, 7.00, 1.00</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">?, ?, 4618, -, -, ?, no</column>
+<column name=" + Loop 1.1">4096, 4096, 1, 1, 1, 4096, yes</column>
+<column name=" + memcpy.base_ddr_addr.buffer.gep">513, 513, 3, 1, 1, 512, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 290</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">0, 2, 719, 950</column>
+<column name="Memory">2, -, 0, 0</column>
+<column name="Multiplexer">-, -, -, 243</column>
+<column name="Register">-, -, 564, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">~0, ~0, 1, 2</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="axis_to_ddr_writer_AXILiteS_s_axi_U">axis_to_ddr_writer_AXILiteS_s_axi, 0, 0, 171, 250</column>
+<column name="axis_to_ddr_writer_base_ddr_addr_m_axi_U">axis_to_ddr_writer_base_ddr_addr_m_axi, 0, 0, 548, 700</column>
+<column name="axis_to_ddr_writer_mul_32ns_8ns_40_3_U0">axis_to_ddr_writer_mul_32ns_8ns_40_3, 0, 2, 0, 0</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="buffer_U">axis_to_ddr_writer_buffer, 2, 0, 0, 512, 64, 1, 32768</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="frame_count">+, 0, 0, 32, 32, 1</column>
+<column name="i_op_fu_566_p2">+, 0, 0, 4, 4, 1</column>
+<column name="idx_1_fu_442_p2">+, 0, 0, 32, 32, 1</column>
+<column name="indvar_flatten_next_fu_513_p2">+, 0, 0, 13, 13, 1</column>
+<column name="indvar_next_fu_608_p2">+, 0, 0, 10, 10, 1</column>
+<column name="j_s_fu_519_p2">+, 0, 0, 10, 10, 1</column>
+<column name="offset_1_fu_619_p2">+, 0, 0, 32, 32, 10</column>
+<column name="offset_fu_413_p2">+, 0, 0, 32, 32, 32</column>
+<column name="op2_assign_fu_456_p2">+, 0, 0, 9, 9, 2</column>
+<column name="tmp_6_fu_471_p2">+, 0, 0, 8, 8, 1</column>
+<column name="i_1_fu_572_p3">Select, 0, 0, 4, 1, 1</column>
+<column name="j_mid2_fu_531_p3">Select, 0, 0, 10, 1, 10</column>
+<column name="p_tmp_6_fu_476_p3">Select, 0, 0, 8, 1, 1</column>
+<column name="temp_1_fu_549_p3">Select, 0, 0, 56, 1, 1</column>
+<column name="ap_sig_bdd_231">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_297">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_439">and, 0, 0, 1, 1, 1</column>
+<column name="exitcond2_fu_602_p2">icmp, 0, 0, 4, 10, 11</column>
+<column name="exitcond5_fu_525_p2">icmp, 0, 0, 2, 4, 5</column>
+<column name="exitcond_flatten_fu_507_p2">icmp, 0, 0, 5, 13, 14</column>
+<column name="ifzero_fu_580_p2">icmp, 0, 0, 2, 4, 5</column>
+<column name="tmp_1_fu_436_p2">icmp, 0, 0, 11, 32, 32</column>
+<column name="tmp_5_fu_465_p2">icmp, 0, 0, 3, 9, 9</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">6, 15, 1, 15</column>
+<column name="ap_reg_ppiten_pp1_it2">1, 2, 1, 2</column>
+<column name="ap_sig_ioackin_base_ddr_addr_AWREADY">1, 2, 1, 2</column>
+<column name="ap_sig_ioackin_base_ddr_addr_WREADY">1, 2, 1, 2</column>
+<column name="frame_index_V">8, 2, 8, 16</column>
+<column name="i_op_assign_1_reg_253">29, 2, 29, 58</column>
+<column name="i_op_assign_reg_244">32, 2, 32, 64</column>
+<column name="i_reg_317">4, 2, 4, 8</column>
+<column name="idx_reg_273">32, 2, 32, 64</column>
+<column name="indvar_flatten_reg_284">13, 2, 13, 26</column>
+<column name="indvar_reg_328">10, 2, 10, 20</column>
+<column name="j_reg_295">10, 2, 10, 20</column>
+<column name="offset1_reg_263">32, 2, 32, 64</column>
+<column name="temp_reg_306">64, 2, 64, 128</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="BASE_ADDRESS_r">29, 0, 29, 0</column>
+<column name="FRAME_BUFFER_DIM_r">32, 0, 32, 0</column>
+<column name="FRAME_BUFFER_NUMBER_r">8, 0, 8, 0</column>
+<column name="FRAME_OFFSET">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">14, 0, 14, 0</column>
+<column name="ap_reg_ioackin_base_ddr_addr_AWREADY">1, 0, 1, 0</column>
+<column name="ap_reg_ioackin_base_ddr_addr_WREADY">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp1_it0">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp1_it1">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp1_it2">1, 0, 1, 0</column>
+<column name="ap_reg_ppstg_exitcond2_reg_715_pp1_it1">1, 0, 1, 0</column>
+<column name="buffer_load_reg_729">64, 0, 64, 0</column>
+<column name="exitcond2_reg_715">1, 0, 1, 0</column>
+<column name="frame_count_inner">32, 0, 32, 0</column>
+<column name="frame_index_V_preg">8, 0, 8, 0</column>
+<column name="i_op_assign_1_reg_253">29, 0, 29, 0</column>
+<column name="i_op_assign_reg_244">32, 0, 32, 0</column>
+<column name="i_reg_317">4, 0, 4, 0</column>
+<column name="idx_1_reg_679">32, 0, 32, 0</column>
+<column name="idx_reg_273">32, 0, 32, 0</column>
+<column name="indvar_flatten_reg_284">13, 0, 13, 0</column>
+<column name="indvar_reg_328">10, 0, 10, 0</column>
+<column name="inner_index_V">8, 0, 8, 0</column>
+<column name="j_reg_295">10, 0, 10, 0</column>
+<column name="offset1_reg_263">32, 0, 32, 0</column>
+<column name="offset_1_reg_734">32, 0, 32, 0</column>
+<column name="t_V_reg_633">8, 0, 8, 0</column>
+<column name="temp_reg_306">64, 0, 64, 0</column>
+<column name="tmp_8_reg_665">32, 0, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 6, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 6, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, axis_to_ddr_writer, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, axis_to_ddr_writer, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, axis_to_ddr_writer, return value</column>
+<column name="inputStream_V_TDATA">in, 8, axis, inputStream_V, pointer</column>
+<column name="inputStream_V_TVALID">in, 1, axis, inputStream_V, pointer</column>
+<column name="inputStream_V_TREADY">out, 1, axis, inputStream_V, pointer</column>
+<column name="m_axi_base_ddr_addr_AWVALID">out, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_AWREADY">in, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_AWADDR">out, 32, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_AWID">out, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_AWLEN">out, 8, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_AWSIZE">out, 3, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_AWBURST">out, 2, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_AWLOCK">out, 2, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_AWCACHE">out, 4, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_AWPROT">out, 3, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_AWQOS">out, 4, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_AWREGION">out, 4, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_AWUSER">out, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_WVALID">out, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_WREADY">in, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_WDATA">out, 64, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_WSTRB">out, 8, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_WLAST">out, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_WID">out, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_WUSER">out, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_ARVALID">out, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_ARREADY">in, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_ARADDR">out, 32, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_ARID">out, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_ARLEN">out, 8, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_ARSIZE">out, 3, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_ARBURST">out, 2, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_ARLOCK">out, 2, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_ARCACHE">out, 4, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_ARPROT">out, 3, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_ARQOS">out, 4, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_ARREGION">out, 4, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_ARUSER">out, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_RVALID">in, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_RREADY">out, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_RDATA">in, 64, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_RLAST">in, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_RID">in, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_RUSER">in, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_RRESP">in, 2, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_BVALID">in, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_BREADY">out, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_BRESP">in, 2, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_BID">in, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="m_axi_base_ddr_addr_BUSER">in, 1, m_axi, base_ddr_addr, pointer</column>
+<column name="frame_index_V">out, 8, ap_none, frame_index_V, pointer</column>
+<column name="frame_count">out, 32, ap_none, frame_count, pointer</column>
+</table>
+</item>
+</section>
+</profile>

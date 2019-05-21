@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Sat Aug 19 13:15:56 2017
+# Process ID: 5580
+# Current directory: D:/000_OFFICIAL_OV_VISION_PIPELINE_COLOR_2017/OV_7670/OV7670_Color/VIVADO_HLS/OV7670_GRAYSCALE/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: D:/000_OFFICIAL_OV_VISION_PIPELINE_COLOR_2017/OV_7670/OV7670_Color/VIVADO_HLS/OV7670_GRAYSCALE/solution1/impl/ip/vivado.log
+# Journal file: D:/000_OFFICIAL_OV_VISION_PIPELINE_COLOR_2017/OV_7670/OV7670_Color/VIVADO_HLS/OV7670_GRAYSCALE/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 19 13:16:00 2017...

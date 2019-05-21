@@ -1,0 +1,46 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="ddr_to_axis_reader" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="frame_count_equals"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ddr_to_axis_reader" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="frame_count"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ddr_to_axis_reader" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="outStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ddr_to_axis_reader" label="">
+<pragma name="INTERFACE">
+<option name="m_axi" positionalBoolean="mode" value=""/>
+<option name="depth" value="128"/>
+<option name="port" positionalBoolean="4" value="base_ddr_addr"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ddr_to_axis_reader" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="frame_index"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ddr_to_axis_reader" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="buffer"/>
+<option name="core" value="RAM_2P_BRAM"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ddr_to_axis_reader" label="">
+<pragma name="PIPELINE">
+<option name="II" value="1"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

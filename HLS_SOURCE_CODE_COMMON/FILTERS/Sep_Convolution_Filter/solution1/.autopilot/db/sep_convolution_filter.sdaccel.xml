@@ -1,0 +1,332 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'sep_convolution_filter'" level="0">
+<item name = "Date">Thu Sep 14 16:53:05 2017
+</item>
+<item name = "Version">2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)</item>
+<item name = "Project">Sep_Convolution_Filter</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">41.67</item>
+<item name = "Clock uncertainty (ns)">5.21</item>
+<item name = "Estimated clock period (ns)">28.78</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">310599, 310599, 310600, 310600, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop_row_Loop_col">310597, 310597, 30, 1, 1, 310569, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, 11, -, -</column>
+<column name="Expression">-, 3, 0, 552</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, 858, 858</column>
+<column name="Memory">6, -, 0, 0</column>
+<column name="Multiplexer">-, -, -, 167</column>
+<column name="Register">-, -, 634, 9</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">2, 6, 1, 2</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="sep_convolution_filter_sdiv_23s_8s_23_27_U0">sep_convolution_filter_sdiv_23s_8s_23_27, 0, 0, 858, 858</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="sep_convolution_filter_mac_muladd_19s_8s_22s_22_1_U5">sep_convolution_filter_mac_muladd_19s_8s_22s_22_1, i0 + i1 * i2</column>
+<column name="sep_convolution_filter_mac_muladd_19s_8s_22s_22_1_U6">sep_convolution_filter_mac_muladd_19s_8s_22s_22_1, i0 + i1 * i2</column>
+<column name="sep_convolution_filter_mac_muladd_19s_8s_22s_22_1_U7">sep_convolution_filter_mac_muladd_19s_8s_22s_22_1, i0 + i1 * i2</column>
+<column name="sep_convolution_filter_mac_muladd_19s_8s_22s_22_1_U11">sep_convolution_filter_mac_muladd_19s_8s_22s_22_1, i0 + i1 * i2</column>
+<column name="sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U1">sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1, i0 + i1 * i2</column>
+<column name="sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U2">sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1, i0 + i1 * i2</column>
+<column name="sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U3">sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1, i0 + i1 * i2</column>
+<column name="sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1_U4">sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1, i0 + i1 * i2</column>
+<column name="sep_convolution_filter_mul_mul_19s_8s_22_1_U8">sep_convolution_filter_mul_mul_19s_8s_22_1, i0 * i1</column>
+<column name="sep_convolution_filter_mul_mul_19s_8s_22_1_U9">sep_convolution_filter_mul_mul_19s_8s_22_1, i0 * i1</column>
+<column name="sep_convolution_filter_mul_mul_19s_8s_22_1_U10">sep_convolution_filter_mul_mul_19s_8s_22_1, i0 * i1</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="line_buffer_V_0_U">sep_convolution_filter_line_buffer_V_0, 1, 0, 0, 640, 8, 1, 5120</column>
+<column name="line_buffer_V_1_U">sep_convolution_filter_line_buffer_V_0, 1, 0, 0, 640, 8, 1, 5120</column>
+<column name="line_buffer_V_2_U">sep_convolution_filter_line_buffer_V_0, 1, 0, 0, 640, 8, 1, 5120</column>
+<column name="line_buffer_V_3_U">sep_convolution_filter_line_buffer_V_0, 1, 0, 0, 640, 8, 1, 5120</column>
+<column name="line_buffer_V_4_U">sep_convolution_filter_line_buffer_V_0, 1, 0, 0, 640, 8, 1, 5120</column>
+<column name="line_buffer_V_5_U">sep_convolution_filter_line_buffer_V_0, 1, 0, 0, 640, 8, 1, 5120</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="r_V_5_fu_1015_p2">*, 1, 0, 0, 8, 8</column>
+<column name="r_V_fu_915_p2">*, 1, 0, 0, 8, 8</column>
+<column name="r_V_s_fu_941_p2">*, 1, 0, 0, 8, 8</column>
+<column name="col_1_fu_662_p2">+, 0, 0, 10, 10, 1</column>
+<column name="indvar_flatten_next_fu_437_p2">+, 0, 0, 19, 19, 1</column>
+<column name="out_img_V_TDATA">+, 0, 0, 8, 8, 8</column>
+<column name="row_s_fu_471_p2">+, 0, 0, 9, 9, 1</column>
+<column name="temp_h_V_fu_1206_p2">+, 0, 0, 11, 22, 22</column>
+<column name="temp_v_V_6_fu_1063_p2">+, 0, 0, 19, 19, 19</column>
+<column name="tmp10_fu_1202_p2">+, 0, 0, 11, 22, 22</column>
+<column name="tmp7_fu_1053_p2">+, 0, 0, 18, 18, 18</column>
+<column name="tmp_14_fu_616_p2">+, 0, 0, 32, 32, 1</column>
+<column name="tmp_1_fu_443_p2">+, 0, 0, 19, 19, 10</column>
+<column name="tmp_30_fu_656_p2">+, 0, 0, 19, 19, 1</column>
+<column name="tmp_7_fu_569_p2">+, 0, 0, 32, 32, 1</column>
+<column name="sh_V_1_fu_861_p2">-, 0, 0, 8, 1, 8</column>
+<column name="ap_sig_1259">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_1262">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_1265">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_1267">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_1269">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_1272">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_1274">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_1277">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_1279">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_1281">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_222">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_236">and, 0, 0, 1, 1, 1</column>
+<column name="or_cond1_fu_650_p2">and, 0, 0, 1, 1, 1</column>
+<column name="or_cond_fu_638_p2">and, 0, 0, 1, 1, 1</column>
+<column name="tmp_26_fu_871_p2">ashr, 0, 0, 12, 8, 8</column>
+<column name="exitcond_flatten_fu_431_p2">icmp, 0, 0, 7, 19, 19</column>
+<column name="exitcond_fu_449_p2">icmp, 0, 0, 4, 10, 10</column>
+<column name="grp_fu_403_p2">icmp, 0, 0, 11, 32, 1</column>
+<column name="tmp_12_fu_551_p2">icmp, 0, 0, 7, 19, 6</column>
+<column name="tmp_15_fu_632_p2">icmp, 0, 0, 4, 10, 10</column>
+<column name="tmp_18_fu_644_p2">icmp, 0, 0, 4, 10, 2</column>
+<column name="tmp_2_fu_503_p2">icmp, 0, 0, 3, 9, 2</column>
+<column name="tmp_2_mid1_fu_497_p2">icmp, 0, 0, 3, 9, 2</column>
+<column name="tmp_4_fu_533_p2">icmp, 0, 0, 7, 19, 6</column>
+<column name="tmp_5_fu_563_p2">icmp, 0, 0, 11, 32, 3</column>
+<column name="tmp_6_fu_539_p2">icmp, 0, 0, 7, 19, 6</column>
+<column name="tmp_8_fu_592_p2">icmp, 0, 0, 11, 32, 1</column>
+<column name="tmp_9_fu_545_p2">icmp, 0, 0, 7, 19, 6</column>
+<column name="tmp_fu_483_p2">icmp, 0, 0, 3, 9, 7</column>
+<column name="tmp_mid1_fu_477_p2">icmp, 0, 0, 3, 9, 7</column>
+<column name="col_mid2_fu_463_p3">select, 0, 0, 10, 1, 1</column>
+<column name="r_V_1_fu_891_p3">select, 0, 0, 8, 1, 8</column>
+<column name="row_mid2_fu_525_p3">select, 0, 0, 9, 1, 9</column>
+<column name="sel_SEBB1_fu_583_p3">select, 0, 0, 32, 1, 1</column>
+<column name="sel_SEBB_fu_575_p3">select, 0, 0, 32, 1, 32</column>
+<column name="sep_convolution_filter_ap_int_6_fu_455_p3">select, 0, 0, 19, 1, 19</column>
+<column name="sep_convolution_filter_ap_int_7_fu_517_p3">select, 0, 0, 19, 1, 19</column>
+<column name="tmp_2_mid2_fu_509_p3">select, 0, 0, 1, 1, 1</column>
+<column name="tmp_mid2_fu_489_p3">select, 0, 0, 1, 1, 1</column>
+<column name="tmp_28_fu_881_p2">shl, 0, 0, 88, 32, 32</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">1, 4, 1, 4</column>
+<column name="ap_reg_ppiten_pp0_it29">1, 2, 1, 2</column>
+<column name="ap_sig_ioackin_out_img_V_TREADY">1, 2, 1, 2</column>
+<column name="col_reg_392">10, 2, 10, 20</column>
+<column name="in_img_V_TDATA_blk_n">1, 2, 1, 2</column>
+<column name="indvar_flatten_reg_348">19, 2, 19, 38</column>
+<column name="kernel_config_V_address0">6, 6, 6, 36</column>
+<column name="kernel_h_V_0_loc_1_fu_176">8, 2, 8, 16</column>
+<column name="kernel_v_V_0">8, 2, 8, 16</column>
+<column name="out_img_V_TDATA_blk_n">1, 2, 1, 2</column>
+<column name="row_reg_370">9, 2, 9, 18</column>
+<column name="sep_convolution_filter_ap_int_1_fu_184">32, 2, 32, 64</column>
+<column name="sep_convolution_filter_ap_int_2_fu_180">32, 2, 32, 64</column>
+<column name="sep_convolution_filter_ap_int_3_reg_381">19, 2, 19, 38</column>
+<column name="sep_mulconvolution_filter_ap_int_reg_359">19, 2, 19, 38</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_reg_ioackin_out_img_V_TREADY">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it0">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it1">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it10">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it11">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it12">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it13">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it14">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it15">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it16">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it17">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it18">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it19">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it2">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it20">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it21">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it22">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it23">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it24">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it25">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it26">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it27">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it28">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it29">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it3">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it4">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it5">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it6">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it7">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it8">1, 0, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it9">1, 0, 1, 0</column>
+<column name="ap_reg_ppstg_col_mid2_reg_1375_pp0_iter1">10, 0, 10, 0</column>
+<column name="ap_reg_ppstg_in_temp_V_reg_1445_pp0_iter1">8, 0, 8, 0</column>
+<column name="ap_reg_ppstg_or_cond_reg_1441_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_reg_ppstg_tmp_10_reg_1433_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_reg_ppstg_tmp_15_reg_1437_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_reg_ppstg_tmp_29_reg_1429_pp0_iter1">3, 0, 3, 0</column>
+<column name="ap_reg_ppstg_tmp_31_reg_1420_pp0_iter1">3, 0, 3, 0</column>
+<column name="ap_reg_ppstg_tmp_4_reg_1391_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_reg_ppstg_tmp_8_reg_1407_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_reg_ppstg_tmp_s_reg_1411_pp0_iter1">1, 0, 1, 0</column>
+<column name="col_mid2_reg_1375">10, 0, 10, 0</column>
+<column name="col_reg_392">10, 0, 10, 0</column>
+<column name="convolution_buffer_V_1">19, 0, 19, 0</column>
+<column name="convolution_buffer_V_2">19, 0, 19, 0</column>
+<column name="convolution_buffer_V_3">19, 0, 19, 0</column>
+<column name="convolution_buffer_V_4">19, 0, 19, 0</column>
+<column name="convolution_buffer_V_5">19, 0, 19, 0</column>
+<column name="convolution_buffer_V_6">19, 0, 19, 0</column>
+<column name="in_temp_V_reg_1445">8, 0, 8, 0</column>
+<column name="indvar_flatten_reg_348">19, 0, 19, 0</column>
+<column name="kernel_bit_shift_V">8, 0, 8, 0</column>
+<column name="kernel_h_V_0">8, 0, 8, 0</column>
+<column name="kernel_h_V_0_loc_1_fu_176">8, 0, 8, 0</column>
+<column name="kernel_h_V_0_loc_1_load_reg_1500">8, 0, 8, 0</column>
+<column name="kernel_h_V_1">8, 0, 8, 0</column>
+<column name="kernel_h_V_2">8, 0, 8, 0</column>
+<column name="kernel_h_V_3">8, 0, 8, 0</column>
+<column name="kernel_h_V_4">8, 0, 8, 0</column>
+<column name="kernel_h_V_5">8, 0, 8, 0</column>
+<column name="kernel_h_V_6">8, 0, 8, 0</column>
+<column name="kernel_off_V">8, 0, 8, 0</column>
+<column name="kernel_off_V_load_reg_1505">8, 0, 8, 0</column>
+<column name="kernel_sum_V">8, 0, 8, 0</column>
+<column name="kernel_v_V_0">8, 0, 8, 0</column>
+<column name="kernel_v_V_1">8, 0, 8, 0</column>
+<column name="kernel_v_V_2">8, 0, 8, 0</column>
+<column name="kernel_v_V_3">8, 0, 8, 0</column>
+<column name="kernel_v_V_4">8, 0, 8, 0</column>
+<column name="kernel_v_V_5">8, 0, 8, 0</column>
+<column name="kernel_v_V_6">8, 0, 8, 0</column>
+<column name="line_buffer_V_0_addr_reg_1465">10, 0, 10, 0</column>
+<column name="line_buffer_V_1_addr_reg_1471">10, 0, 10, 0</column>
+<column name="line_buffer_V_2_addr_reg_1477">10, 0, 10, 0</column>
+<column name="line_buffer_V_3_addr_reg_1483">10, 0, 10, 0</column>
+<column name="line_buffer_V_4_addr_reg_1489">10, 0, 10, 0</column>
+<column name="or_cond1_reg_1451">1, 0, 1, 0</column>
+<column name="or_cond_reg_1441">1, 0, 1, 0</column>
+<column name="r_V_1_reg_1510">8, 0, 8, 0</column>
+<column name="reg_408">8, 0, 8, 0</column>
+<column name="row_reg_370">9, 0, 9, 0</column>
+<column name="sep_convolution_filter_ap_int_1_fu_184">32, 0, 32, 0</column>
+<column name="sep_convolution_filter_ap_int_2_fu_180">32, 0, 32, 0</column>
+<column name="sep_convolution_filter_ap_int_3_reg_381">19, 0, 19, 0</column>
+<column name="sep_mulconvolution_filter_ap_int_reg_359">19, 0, 19, 0</column>
+<column name="tmp_10_reg_1433">1, 0, 1, 0</column>
+<column name="tmp_12_reg_1403">1, 0, 1, 0</column>
+<column name="tmp_15_reg_1437">1, 0, 1, 0</column>
+<column name="tmp_29_reg_1429">3, 0, 3, 0</column>
+<column name="tmp_31_reg_1420">3, 0, 3, 0</column>
+<column name="tmp_4_reg_1391">1, 0, 1, 0</column>
+<column name="tmp_6_reg_1395">1, 0, 1, 0</column>
+<column name="tmp_8_reg_1407">1, 0, 1, 0</column>
+<column name="tmp_9_reg_1399">1, 0, 1, 0</column>
+<column name="tmp_s_reg_1411">1, 0, 1, 0</column>
+<column name="window_V_0">8, 0, 8, 0</column>
+<column name="window_V_1">8, 0, 8, 0</column>
+<column name="window_V_2">8, 0, 8, 0</column>
+<column name="window_V_3">8, 0, 8, 0</column>
+<column name="window_V_4">8, 0, 8, 0</column>
+<column name="window_V_5">8, 0, 8, 0</column>
+<column name="window_V_6">8, 0, 8, 0</column>
+<column name="kernel_off_V_load_reg_1505">0, 8, 8, 0</column>
+<column name="or_cond1_reg_1451">0, 1, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, sep_convolution_filter, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, sep_convolution_filter, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, sep_convolution_filter, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, sep_convolution_filter, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, sep_convolution_filter, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, sep_convolution_filter, return value</column>
+<column name="kernel_config_V_address0">out, 6, ap_memory, kernel_config_V, array</column>
+<column name="kernel_config_V_ce0">out, 1, ap_memory, kernel_config_V, array</column>
+<column name="kernel_config_V_q0">in, 8, ap_memory, kernel_config_V, array</column>
+<column name="in_img_V_TDATA">in, 8, axis, in_img_V, pointer</column>
+<column name="in_img_V_TVALID">in, 1, axis, in_img_V, pointer</column>
+<column name="in_img_V_TREADY">out, 1, axis, in_img_V, pointer</column>
+<column name="out_img_V_TDATA">out, 8, axis, out_img_V, pointer</column>
+<column name="out_img_V_TVALID">out, 1, axis, out_img_V, pointer</column>
+<column name="out_img_V_TREADY">in, 1, axis, out_img_V, pointer</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">28.78</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'kernel_v_V_5_load', Sep_Convolution_Filter/sep_convolution_filter.cpp:22->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">load, 0.00, 0.00, -, -, -, -, -, -, -, -, &apos;kernel_v_V_5&apos;, -, -</column>
+<column name="'lhs_V_5', Sep_Convolution_Filter/sep_convolution_filter.cpp:22->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">sext, 0.00, 0.00, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'r_V_5', Sep_Convolution_Filter/sep_convolution_filter.cpp:22->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">mul, 6.38, 6.38, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_27_5_cast', Sep_Convolution_Filter/sep_convolution_filter.cpp:22->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">sext, 0.00, 6.38, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp6', Sep_Convolution_Filter/sep_convolution_filter.cpp:22->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">add, 3.02, 9.40, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp6_cast', Sep_Convolution_Filter/sep_convolution_filter.cpp:22->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">sext, 0.00, 9.40, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp5', Sep_Convolution_Filter/sep_convolution_filter.cpp:22->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">add, 3.02, 12.42, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp5_cast', Sep_Convolution_Filter/sep_convolution_filter.cpp:22->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">sext, 0.00, 12.42, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'temp_v_V_6', Sep_Convolution_Filter/sep_convolution_filter.cpp:22->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">add, 2.08, 14.50, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_22', Sep_Convolution_Filter/sep_convolution_filter.cpp:31->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">sext, 0.00, 14.50, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_24', Sep_Convolution_Filter/sep_convolution_filter.cpp:31->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">mul, 3.36, 17.86, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp4', Sep_Convolution_Filter/sep_convolution_filter.cpp:31->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">add, 3.02, 20.88, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp10', Sep_Convolution_Filter/sep_convolution_filter.cpp:31->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">add, 1.85, 22.73, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'temp_h.V', Sep_Convolution_Filter/sep_convolution_filter.cpp:31->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">add, 1.85, 24.58, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'tmp_43_tr', Sep_Convolution_Filter/sep_convolution_filter.cpp:37->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">sext, 0.00, 24.58, -, -, -, -, -, -, -, -, -, -, -</column>
+<column name="'r.V', Sep_Convolution_Filter/sep_convolution_filter.cpp:37->Sep_Convolution_Filter/sep_convolution_filter.cpp:153">sdiv, 4.20, 28.78, -, -, -, -, -, -, -, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

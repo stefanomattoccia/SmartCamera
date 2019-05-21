@@ -1,0 +1,39 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="ov7670_LUMA_CHROMA" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="enable_raw_stream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ov7670_LUMA_CHROMA" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="inStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ov7670_LUMA_CHROMA" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="outStream_grayscale"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ov7670_LUMA_CHROMA" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="outStream_LUMA"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ov7670_LUMA_CHROMA" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="outStream_CHROMA"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ov7670_LUMA_CHROMA" label="">
+<pragma name="RESET">
+<option name="variable" positionalBoolean="4" value="grayscale_valid"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

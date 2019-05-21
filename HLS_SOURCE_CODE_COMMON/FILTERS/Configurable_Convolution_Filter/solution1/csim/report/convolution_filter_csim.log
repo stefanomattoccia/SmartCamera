@@ -1,0 +1,9 @@
+   Compiling ../../../Testbench.cpp in debug mode
+   Generating csim.exe
+[INFO] Starting testbench
+[INFO] Read image ../../../DATA/house.bmp from file
+[INFO] Copying to input image
+[INFO] Processing ../../../DATA/house.bmp
+[INFO] Verifying results (TODO)
+[INFO] Writing output image
+INFO: [SIM 1] CSim done with 0 errors.

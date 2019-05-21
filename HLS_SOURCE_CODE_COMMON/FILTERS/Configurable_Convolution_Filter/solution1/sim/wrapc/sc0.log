@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/Vivado_HLS/2016.2/msys/bin/g++.exe"
+   Compiling Testbench.cpp_pre.cpp.tb.cpp
+   Compiling ap_bmp.cpp_pre.cpp.tb.cpp
+   Compiling apatb_convolution_filter.cpp
+   Compiling configurable_convolution_filter.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

@@ -1,0 +1,1 @@
+lappend pragmaStatus0 {pragma "RESET" source "C:/Users/Riccardo/Documents/Vision-pipeline-to-DDR/VIVADO_HLS/AXIS_TO_DDR_WRITER_AXILITE/axis_to_ddr_writer.cpp" location "axis_to_ddr_writer" found 1 funcFound 1 applied 1 ambiguous 0 reason "null" variable "frame_count_inner"}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="Filter_Convolution" xd:componentRef="Filter_Convolution" xd:initiationInterval="308345" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="id_filter" xd:originalName="id_filter" xd:direction="in" xd:interfaceRef="id_filter_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="3"/>
+  <xd:arg xd:name="in_img[]" xd:originalName="in_img" xd:direction="in" xd:interfaceRef="in_img_V" xd:busTypeRef="axis" xd:arraySize="307200" xd:dataWidth="8"/>
+  <xd:arg xd:name="out_img[]" xd:originalName="out_img" xd:direction="out" xd:interfaceRef="out_img_V" xd:busTypeRef="axis" xd:arraySize="307200" xd:dataWidth="8"/>
+  <xd:latencyEstimates xd:best-case="308344" xd:worst-case="308344" xd:average-case="308344"/>
+  <xd:resourceEstimates xd:LUT="598" xd:FF="785" xd:BRAM="2" xd:DSP="9"/>
+</xd:acceleratorMap>

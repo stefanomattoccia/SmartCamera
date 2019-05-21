@@ -1,0 +1,29 @@
+CC = g++ -m64
+CFLAGS = -g -Wall
+INCLUDES = -I/usr/local/include
+LFLAGS = -L/usr/local/lib 
+LIBS = -lopencv_core -lopencv_highgui -lopencv_imgproc
+
+all : dummy
+
+# Per creare l’eseguibile client abbiamo bisogno dei file oggetto
+# main.o, OV7670.o, hybrid_socket.o, lib_time_measurements.o,
+# Calibration_single_camera.o:
+
+dummy: main.o dummy.o hybrid_socket.o
+	$(CC) $(CFLAGS) $(INCLUDES) -o dummy main.o dummy.o hybrid_socket.o $(LFLAGS) $(LIBS)
+
+# Per creare main.o servono main.c e dummy.h
+main.o: main.c dummy.h makefile-mac
+	$(CC) $(CFLAGS) -c main.c 
+
+# Per creare dummy.o servono dummy.c e dummy.h
+dummy.o: dummy.c dummy.h makefile-mac
+	$(CC) $(CFLAGS) -c dummy.c
+
+# Per creare hybrid_socket.o servono hybrid_socket.c e hybrid_socket.h
+hybrid_socket.o: ../Client_pc_colore/hybrid_socket.c ../Client_pc_colore/hybrid_socket.h makefile-mac
+	$(CC) $(CFLAGS) -c ../Client_pc_colore/hybrid_socket.c
+	
+clean :
+	rm -f *.o dummy

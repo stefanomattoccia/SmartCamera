@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sep_convolution_filter.cpp" path="C:\Users\Luca\Desktop\ProgettoVivado\OV_7670\HLS_COMMON\FILTERS\Sep_Convolution_Filter\sep_convolution_filter.cpp"/>
+    <originFiles name="sep_convolution_filter.h" path="C:\Users\Luca\Desktop\ProgettoVivado\OV_7670\HLS_COMMON\FILTERS\Sep_Convolution_Filter\sep_convolution_filter.h"/>
+  </source>
+  <testbench>
+    <originFiles name="Testbench.cpp" path="C:\Users\Luca\Desktop\ProgettoVivado\OV_7670\HLS_COMMON\FILTERS\Sep_Convolution_Filter\Testbench.cpp"/>
+    <originFiles name="Testbench.h" path="C:\Users\Luca\Desktop\ProgettoVivado\OV_7670\HLS_COMMON\FILTERS\Sep_Convolution_Filter\Testbench.h"/>
+    <originFiles name="ap_bmp.cpp" path="C:\Users\Luca\Desktop\ProgettoVivado\OV_7670\HLS_COMMON\FILTERS\Sep_Convolution_Filter\ap_bmp.cpp"/>
+    <originFiles name="ap_bmp.h" path="C:\Users\Luca\Desktop\ProgettoVivado\OV_7670\HLS_COMMON\FILTERS\Sep_Convolution_Filter\ap_bmp.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,444 @@
+# depslib dependency file v1.0
+1488893284 source:c:\users\mattia\onedrive\documenti\tesi\testopencv\main.cpp
+	<iostream>
+	<windows.h>
+	"OV7670.h"
+
+1463054819 c:\opencv\my_build\install\include\opencv2\core\core.hpp
+	"opencv2/core/types_c.h"
+	"opencv2/core/version.hpp"
+	<limits.h>
+	<algorithm>
+	<cmath>
+	<cstddef>
+	<complex>
+	<map>
+	<new>
+	<string>
+	<vector>
+	<sstream>
+	"opencv2/core/operations.hpp"
+	"opencv2/core/mat.hpp"
+
+1463054819 c:\opencv\my_build\install\include\opencv2\core\types_c.h
+	<assert.h>
+	<stdlib.h>
+	<string.h>
+	<float.h>
+	<stdint.h>
+	<intrin.h>
+	<emmintrin.h>
+	<fastmath.h>
+	<math.h>
+	<ipl.h>
+	<ipl/ipl.h>
+	"tegra_round.hpp"
+	"emmintrin.h"
+
+1463054819 c:\opencv\my_build\install\include\opencv2\core\version.hpp
+
+1419747905 c:\opencv\my_build\install\include\opencv2\core\operations.hpp
+	<string.h>
+	<limits.h>
+	<ext/atomicity.h>
+	<bits/atomicity.h>
+	<limits>
+
+1453009235 c:\opencv\my_build\install\include\opencv2\core\mat.hpp
+	<limits.h>
+	<string.h>
+
+1384335862 c:\opencv\my_build\install\include\opencv2\highgui\highgui.hpp
+	"opencv2/core/core.hpp"
+	"opencv2/highgui/highgui_c.h"
+
+1427710444 c:\opencv\my_build\install\include\opencv2\highgui\highgui_c.h
+	"opencv2/core/core_c.h"
+
+1407676989 c:\opencv\my_build\install\include\opencv2\core\core_c.h
+	"opencv2/core/types_c.h"
+
+1488898166 source:c:\users\mattia\onedrive\documenti\tesi\testopencv\ov7670.cpp
+	"OV7670.h"
+
+1487772220 source:c:\users\mattia\onedrive\documenti\tesi\testopencv\webcam.cpp
+	"webcam.hpp"
+
+1487772228 c:\users\mattia\onedrive\documenti\tesi\testopencv\webcam.hpp
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<iostream>
+	<windows.h>
+
+1488487464 c:\users\mattia\onedrive\documenti\tesi\testopencv\ov7670.hpp
+	<stdio.h>
+	<WinSock2.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	<opencv2/core.hpp>
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc.hpp>
+	"opencv2/highgui.hpp"
+
+1488894314 c:\users\mattia\onedrive\documenti\tesi\testopencv\ov7670.h
+	<stdio.h>
+	<WinSock2.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	<opencv2/core.hpp>
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc.hpp>
+	"opencv2/highgui.hpp"
+
+1492794831 source:c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\main.cpp
+	<iostream>
+	<windows.h>
+	"OV7670.h"
+
+1492932175 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\ov7670.h
+	<stdio.h>
+	<WinSock2.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	"lib_time_measurements.h"
+	"Calibration_single_camera.h"
+
+1492938875 source:c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\ov7670.cpp
+	"OV7670.h"
+
+1492293461 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1492293037 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\os\os.h
+
+1492939284 source:c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\calibration_single_camera.cpp
+	"Calibration_single_camera.h"
+
+1492796514 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\calibration_single_camera.h
+	"../OS/os.h"
+	<opencv/cv.h>
+	<stdio.h>
+	<stdlib.h>
+
+1492939284 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\calibration_single_camera.cpp
+	"Calibration_single_camera.h"
+
+1498908430 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\calibration_single_camera.h
+	"../OS/os.h"
+	<opencv/cv.h>
+	<stdio.h>
+	<stdlib.h>
+
+1498915442 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\os\os.h
+
+1492794831 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\main.cpp
+	<iostream>
+	<windows.h>
+	"OV7670.h"
+
+1498908942 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\ov7670.h
+	<stdio.h>
+	<direct.h>
+	"stdbool.h"
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	"lib_time_measurements.h"
+	"hybrid_socket.h"
+	"Calibration_single_camera.h"
+	"../RealtaAumentata/application.h"
+
+1498908432 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1493580563 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\ov7670.cpp
+	"OV7670.h"
+
+1498908432 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\hybrid_socket.h
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+	<string.h>
+	"../OS/os.h"
+	<WinSock2.h>
+	<direct.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+
+1493580535 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\hybrid_socket.cpp
+	"hybrid_socket.h"
+
+1498908430 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\calibration_single_camera.c
+	"Calibration_single_camera.h"
+
+1498908432 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\main.c
+	<windows.h>
+	"OV7670.h"
+	<iostream>
+
+1499272567 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\ov7670.c
+	"OV7670.h"
+
+1498908432 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\hybrid_socket.c
+	"hybrid_socket.h"
+
+1498908432 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\stdbool.h
+
+1498908432 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\realtaaumentata\application.h
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	"opencv/cxcore.h"
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	<iostream>
+	<GL/gl.h>
+	<gl.h>
+	<GL/freeglut.h>
+	"CVfunctions.h"
+	"GLfunctions.h"
+
+1498908432 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\realtaaumentata\cvfunctions.h
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<iostream>
+
+1498908432 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\realtaaumentata\glfunctions.h
+	<GL/gl.h>
+	<gl.h>
+	<GL/freeglut.h>
+	"util.h"
+
+1498908432 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\realtaaumentata\util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+
+1499075515 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\realtaaumentata\application.cpp
+	"application.h"
+
+1498908432 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\realtaaumentata\cvfunctions.cpp
+	"CVfunctions.h"
+
+1498908432 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\realtaaumentata\glfunctions.cpp
+	"GLfunctions.h"
+
+1498908432 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\realtaaumentata\util.cpp
+	"util.h"
+
+1498901230 source:c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\client_pc_colore\calibration_single_camera.c
+	"Calibration_single_camera.h"
+
+1498901230 c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\client_pc_colore\calibration_single_camera.h
+	"../OS/os.h"
+	<opencv/cv.h>
+	<stdio.h>
+	<stdlib.h>
+
+1498908242 c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\os\os.h
+
+1498901232 source:c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\client_pc_colore\hybrid_socket.c
+	"hybrid_socket.h"
+
+1498901232 c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\client_pc_colore\hybrid_socket.h
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+	<string.h>
+	"../OS/os.h"
+	<WinSock2.h>
+	<direct.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+
+1498901232 source:c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\client_pc_colore\main.c
+	<windows.h>
+	"OV7670.h"
+	<iostream>
+
+1498901742 c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\client_pc_colore\ov7670.h
+	<stdio.h>
+	<direct.h>
+	"stdbool.h"
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	"lib_time_measurements.h"
+	"hybrid_socket.h"
+	"Calibration_single_camera.h"
+	"../RealtaAumentata/application.h"
+
+1498901232 c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\client_pc_colore\stdbool.h
+
+1498901232 c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\client_pc_colore\lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1498901232 c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\realtaaumentata\application.h
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	"opencv/cxcore.h"
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	<iostream>
+	<GL/gl.h>
+	<gl.h>
+	<GL/freeglut.h>
+	"CVfunctions.h"
+	"GLfunctions.h"
+
+1498901232 c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\realtaaumentata\cvfunctions.h
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<iostream>
+
+1498901232 c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\realtaaumentata\glfunctions.h
+	<GL/gl.h>
+	<gl.h>
+	<GL/freeglut.h>
+	"util.h"
+
+1498901232 c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\realtaaumentata\util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+
+1499944830 source:c:\users\alessio\documents\university\tesi\zedboardalessio\alessio2.0\ov7670_color_alessio\client_pc_colore\ov7670.c
+	"OV7670.h"
+
+1498901230 source:c:\users\luca\desktop\ov7670_color_client\client_pc_colore\calibration_single_camera.c
+	"Calibration_single_camera.h"
+
+1498901230 c:\users\luca\desktop\ov7670_color_client\client_pc_colore\calibration_single_camera.h
+	"../OS/os.h"
+	<opencv/cv.h>
+	<stdio.h>
+	<stdlib.h>
+
+1498908242 c:\users\luca\desktop\ov7670_color_client\os\os.h
+
+1498901232 source:c:\users\luca\desktop\ov7670_color_client\client_pc_colore\hybrid_socket.c
+	"hybrid_socket.h"
+
+1498901232 c:\users\luca\desktop\ov7670_color_client\client_pc_colore\hybrid_socket.h
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+	<string.h>
+	"../OS/os.h"
+	<WinSock2.h>
+	<direct.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+
+1498901232 source:c:\users\luca\desktop\ov7670_color_client\client_pc_colore\main.c
+	<windows.h>
+	"OV7670.h"
+	<iostream>
+
+1498901742 c:\users\luca\desktop\ov7670_color_client\client_pc_colore\ov7670.h
+	<stdio.h>
+	<direct.h>
+	"stdbool.h"
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	"lib_time_measurements.h"
+	"hybrid_socket.h"
+	"Calibration_single_camera.h"
+	"../RealtaAumentata/application.h"
+
+1498901232 c:\users\luca\desktop\ov7670_color_client\client_pc_colore\stdbool.h
+
+1498901232 c:\users\luca\desktop\ov7670_color_client\client_pc_colore\lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1498901232 c:\users\luca\desktop\ov7670_color_client\realtaaumentata\application.h
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	"opencv/cxcore.h"
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	<iostream>
+	<GL/gl.h>
+	<gl.h>
+	<GL/freeglut.h>
+	"CVfunctions.h"
+	"GLfunctions.h"
+
+1498901232 c:\users\luca\desktop\ov7670_color_client\realtaaumentata\cvfunctions.h
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<iostream>
+
+1498901232 c:\users\luca\desktop\ov7670_color_client\realtaaumentata\glfunctions.h
+	<GL/gl.h>
+	<gl.h>
+	<GL/freeglut.h>
+	"util.h"
+
+1498901232 c:\users\luca\desktop\ov7670_color_client\realtaaumentata\util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+
+1499944830 source:c:\users\luca\desktop\ov7670_color_client\client_pc_colore\ov7670.c
+	"OV7670.h"
+

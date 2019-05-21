@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'FRAME_BUFFER_DIM_r' is power-on initialization." projectName="DDR_TO_AXIS_READER_AXILITE" solutionName="solution1" date="2017-08-23T16:40:28.790+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'FRAME_BUFFER_NUMBER_r' is power-on initialization." projectName="DDR_TO_AXIS_READER_AXILITE" solutionName="solution1" date="2017-08-23T16:40:28.772+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'FRAME_OFFSET' is power-on initialization." projectName="DDR_TO_AXIS_READER_AXILITE" solutionName="solution1" date="2017-08-23T16:40:28.718+0200" type="Warning"/>
+        <logs message="WARNING: [BIND 205-102] The specified resource core for memory 'buffer' will be ignored if a simpler one can be used." projectName="DDR_TO_AXIS_READER_AXILITE" solutionName="solution1" date="2017-08-23T16:40:28.521+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'ddr_to_axis_reader/BASE_ADDRESS' to 'ddr_to_axis_reader/BASE_ADDRESS_r' to avoid the conflict with HDL keywords or other object names." projectName="DDR_TO_AXIS_READER_AXILITE" solutionName="solution1" date="2017-08-23T16:40:28.088+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'ddr_to_axis_reader/FRAME_BUFFER_DIM' to 'ddr_to_axis_reader/FRAME_BUFFER_DIM_r' to avoid the conflict with HDL keywords or other object names." projectName="DDR_TO_AXIS_READER_AXILITE" solutionName="solution1" date="2017-08-23T16:40:28.030+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'ddr_to_axis_reader/FRAME_BUFFER_NUMBER' to 'ddr_to_axis_reader/FRAME_BUFFER_NUMBER_r' to avoid the conflict with HDL keywords or other object names." projectName="DDR_TO_AXIS_READER_AXILITE" solutionName="solution1" date="2017-08-23T16:40:28.017+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] more than one sub loop." projectName="DDR_TO_AXIS_READER_AXILITE" solutionName="solution1" date="2017-08-23T16:40:27.733+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (DDR_TO_AXIS_READER_AXILITE/ddr_to_axis_reader.cpp:56:15) in function 'ddr_to_axis_reader' : " projectName="DDR_TO_AXIS_READER_AXILITE" solutionName="solution1" date="2017-08-23T16:40:27.642+0200" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] DDR_TO_AXIS_READER_AXILITE/ddr_to_axis_reader.cpp:59: variable-indexed range selection may cause suboptimal QoR." projectName="DDR_TO_AXIS_READER_AXILITE" solutionName="solution1" date="2017-08-23T16:40:26.976+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

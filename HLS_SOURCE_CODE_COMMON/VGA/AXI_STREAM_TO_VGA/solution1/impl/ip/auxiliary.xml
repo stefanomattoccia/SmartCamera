@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="axi_stream_to_vga" xd:componentRef="axi_stream_to_vga" xd:initiationInterval="420003" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="selftest" xd:originalName="selftest" xd:direction="in" xd:interfaceRef="selftest" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="inStream" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream_V_V" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(R)" xd:originalName="R" xd:direction="out" xd:interfaceRef="R_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="4"/>
+  <xd:arg xd:name="*(G)" xd:originalName="G" xd:direction="out" xd:interfaceRef="G_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="4"/>
+  <xd:arg xd:name="*(B)" xd:originalName="B" xd:direction="out" xd:interfaceRef="B_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="4"/>
+  <xd:arg xd:name="*(V_SYNC)" xd:originalName="V_SYNC" xd:direction="out" xd:interfaceRef="V_SYNC_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(H_SYNC)" xd:originalName="H_SYNC" xd:direction="out" xd:interfaceRef="H_SYNC_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="420002" xd:worst-case="420002" xd:average-case="420002"/>
+  <xd:resourceEstimates xd:LUT="215" xd:FF="95" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

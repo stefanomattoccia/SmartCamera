@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="ddr_to_axis_reader.h" path="C:\Test_5_Tesi\HLS_COMMON\DDR\DDR_TO_AXIS_READER_AXILITE\ddr_to_axis_reader.h"/>
+    <originFiles name="ddr_to_axis_reader.cpp" path="C:\Test_5_Tesi\HLS_COMMON\DDR\DDR_TO_AXIS_READER_AXILITE\ddr_to_axis_reader.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench.cpp" path="C:\Test_5_Tesi\HLS_COMMON\DDR\DDR_TO_AXIS_READER_AXILITE\testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

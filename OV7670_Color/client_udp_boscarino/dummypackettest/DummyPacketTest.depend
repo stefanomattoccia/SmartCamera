@@ -1,0 +1,64 @@
+# depslib dependency file v1.0
+1498647318 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\dummypackettest\main.c
+	"dummy.h"
+
+1498747655 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\dummypackettest\dummy.c
+	"dummy.h"
+
+1498650077 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\dummypackettest\dummy.h
+	<stdio.h>
+	<unistd.h>
+	"../OS/os.h"
+	"../Client_pc_colore/hybrid_socket.h"
+	<WinSock2.h>
+	<direct.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+
+1498495242 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\os\os.h
+
+1498747895 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\hybrid_socket.h
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+	"../OS/os.h"
+	<WinSock2.h>
+	<direct.h>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netdb.h>
+
+1498647438 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\ov7670.h
+	<stdio.h>
+	<direct.h>
+	"stdbool.h"
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	"lib_time_measurements.h"
+	"hybrid_socket.h"
+	"Calibration_single_camera.h"
+
+1498495127 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\stdbool.h
+
+1492293461 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1493579596 c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\calibration_single_camera.h
+	"../OS/os.h"
+	<opencv/cv.h>
+	<stdio.h>
+	<stdlib.h>
+
+1498747838 source:c:\users\andrea\dropbox\boscarino_andrea\ov7670_color_mattia\client_pc_colore\hybrid_socket.c
+	"hybrid_socket.h"
+

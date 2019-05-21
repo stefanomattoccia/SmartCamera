@@ -1,0 +1,278 @@
+
+
+================================================================
+== Vivado HLS Report for 'ov7670_interface'
+================================================================
+* Date:           Sat Aug 19 13:12:37 2017
+
+* Version:        2016.2 (Build 1577090 on Thu Jun 02 16:59:10 MDT 2016)
+* Project:        OV7670_INTERFACE
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      4.01|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 1
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+* FSM state operations: 
+
+ <State 1>: 4.01ns
+ST_1: stg_2 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i8 %data_in_V), !map !7
+
+ST_1: stg_3 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i1 %href_V), !map !13
+
+ST_1: stg_4 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i1 %vsync_V), !map !17
+
+ST_1: stg_5 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i8* %data_out_V), !map !21
+
+ST_1: stg_6 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap(i1* %line_valid_V), !map !25
+
+ST_1: stg_7 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i1* %frame_valid_V), !map !29
+
+ST_1: stg_8 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @ov7670_interface_str) nounwind
+
+ST_1: vsync_V_read [1/1] 0.00ns
+:7  %vsync_V_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %vsync_V)
+
+ST_1: href_V_read [1/1] 0.00ns
+:8  %href_V_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %href_V)
+
+ST_1: data_in_V_read [1/1] 0.00ns
+:9  %data_in_V_read = call i8 @_ssdm_op_Read.ap_none.i8(i8 %data_in_V)
+
+ST_1: stg_12 [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecInterface(i8 %data_in_V, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_13 [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecInterface(i1 %href_V, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_14 [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecInterface(i1 %vsync_V, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_15 [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecInterface(i8* %data_out_V, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_16 [1/1] 0.00ns
+:14  call void (...)* @_ssdm_op_SpecInterface(i1* %line_valid_V, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_17 [1/1] 0.00ns
+:15  call void (...)* @_ssdm_op_SpecInterface(i1* %frame_valid_V, [8 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_1: count_lines_load [1/1] 0.00ns
+:16  %count_lines_load = load i32* @count_lines, align 4
+
+ST_1: stg_19 [1/1] 0.00ns
+:17  call void (...)* @_ssdm_op_SpecReset(i32* @count_lines, i32 1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_20 [1/1] 0.00ns
+:18  call void (...)* @_ssdm_op_SpecReset(i32* @count_readings, i32 1, [1 x i8]* @p_str1) nounwind
+
+ST_1: first_load [1/1] 0.00ns
+:19  %first_load = load i1* @first, align 1
+
+ST_1: stg_22 [1/1] 0.00ns
+:20  call void (...)* @_ssdm_op_SpecReset(i1* @first, i32 1, [1 x i8]* @p_str1) nounwind
+
+ST_1: p_not1 [1/1] 0.00ns (grouped into LUT with out node brmerge)
+:21  %p_not1 = xor i1 %first_load, true
+
+ST_1: brmerge [1/1] 1.37ns (out node of the LUT)
+:22  %brmerge = or i1 %vsync_V_read, %p_not1
+
+ST_1: stg_25 [1/1] 0.00ns
+:23  br i1 %brmerge, label %._crit_edge, label %1
+
+ST_1: stg_26 [1/1] 0.00ns
+:0  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %frame_valid_V, i1 false)
+
+ST_1: stg_27 [1/1] 0.00ns
+:1  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %line_valid_V, i1 false)
+
+ST_1: stg_28 [1/1] 0.00ns
+:2  call void @_ssdm_op_Write.ap_none.volatile.i8P(i8* %data_out_V, i8 0)
+
+ST_1: stg_29 [1/1] 0.00ns
+:3  br label %12
+
+ST_1: stg_30 [1/1] 0.00ns
+._crit_edge:0  store i1 false, i1* @first, align 1
+
+ST_1: p_not [1/1] 1.37ns
+._crit_edge:1  %p_not = xor i1 %vsync_V_read, true
+
+ST_1: tmp_1 [1/1] 2.52ns
+._crit_edge:2  %tmp_1 = icmp ult i32 %count_lines_load, 480
+
+ST_1: or_cond [1/1] 1.37ns
+._crit_edge:3  %or_cond = and i1 %tmp_1, %p_not
+
+ST_1: stg_34 [1/1] 0.00ns
+._crit_edge:4  br i1 %or_cond, label %2, label %8
+
+ST_1: tmp_2 [1/1] 2.52ns
+:0  %tmp_2 = icmp eq i32 %count_lines_load, 480
+
+ST_1: or_cond1 [1/1] 1.37ns
+:1  %or_cond1 = and i1 %tmp_2, %p_not
+
+ST_1: stg_37 [1/1] 0.00ns
+:2  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %frame_valid_V, i1 false)
+
+ST_1: stg_38 [1/1] 0.00ns
+:3  br i1 %or_cond1, label %10, label %9
+
+ST_1: stg_39 [1/1] 1.57ns
+:0  store i32 0, i32* @count_lines, align 4
+
+ST_1: stg_40 [1/1] 0.00ns
+:1  br label %10
+
+ST_1: stg_41 [1/1] 0.00ns
+:0  br label %11
+
+ST_1: stg_42 [1/1] 0.00ns
+:0  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %frame_valid_V, i1 true)
+
+ST_1: count_readings_load [1/1] 0.00ns
+:1  %count_readings_load = load i32* @count_readings, align 4
+
+ST_1: stg_44 [1/1] 0.00ns
+:2  br i1 %href_V_read, label %3, label %4
+
+ST_1: tmp_4 [1/1] 2.52ns
+:0  %tmp_4 = icmp eq i32 %count_readings_load, 1280
+
+ST_1: stg_46 [1/1] 0.00ns
+:1  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %line_valid_V, i1 false)
+
+ST_1: stg_47 [1/1] 0.00ns
+:2  br i1 %tmp_4, label %5, label %6
+
+ST_1: stg_48 [1/1] 1.57ns
+:0  store i32 0, i32* @count_readings, align 4
+
+ST_1: tmp_5 [1/1] 2.44ns
+:1  %tmp_5 = add i32 %count_lines_load, 1
+
+ST_1: stg_50 [1/1] 1.57ns
+:2  store i32 %tmp_5, i32* @count_lines, align 4
+
+ST_1: stg_51 [1/1] 0.00ns
+:3  br label %6
+
+ST_1: stg_52 [1/1] 0.00ns
+:0  br label %7
+
+ST_1: stg_53 [1/1] 0.00ns
+:0  call void @_ssdm_op_Write.ap_none.volatile.i8P(i8* %data_out_V, i8 %data_in_V_read)
+
+ST_1: stg_54 [1/1] 0.00ns
+:1  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %line_valid_V, i1 true)
+
+ST_1: tmp_3 [1/1] 2.44ns
+:2  %tmp_3 = add i32 %count_readings_load, 1
+
+ST_1: stg_56 [1/1] 1.57ns
+:3  store i32 %tmp_3, i32* @count_readings, align 4
+
+ST_1: stg_57 [1/1] 0.00ns
+:4  br label %7
+
+ST_1: stg_58 [1/1] 0.00ns
+:0  br label %11
+
+ST_1: stg_59 [1/1] 0.00ns
+:0  br label %12
+
+ST_1: stg_60 [1/1] 0.00ns
+:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ No timing violations. 
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

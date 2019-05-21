@@ -1,0 +1,2 @@
+current_fileset
+open_wave_database ddr_to_axis_reader.wdb

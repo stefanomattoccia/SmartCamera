@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="vga_bram_read_address.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_vga_bram_read_address_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <WVObjectSize size="75" />
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_clock" type="logic">
+      <obj_property name="ElementShortName">AESL_clock</obj_property>
+      <obj_property name="ObjectShortName">AESL_clock</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ce" type="logic">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/continue" type="logic">
+      <obj_property name="ElementShortName">continue</obj_property>
+      <obj_property name="ObjectShortName">continue</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_start" type="logic">
+      <obj_property name="ElementShortName">AESL_start</obj_property>
+      <obj_property name="ObjectShortName">AESL_start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_reset" type="logic">
+      <obj_property name="ElementShortName">AESL_reset</obj_property>
+      <obj_property name="ObjectShortName">AESL_reset</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_ce" type="logic">
+      <obj_property name="ElementShortName">AESL_ce</obj_property>
+      <obj_property name="ObjectShortName">AESL_ce</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_ready" type="logic">
+      <obj_property name="ElementShortName">AESL_ready</obj_property>
+      <obj_property name="ObjectShortName">AESL_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_idle" type="logic">
+      <obj_property name="ElementShortName">AESL_idle</obj_property>
+      <obj_property name="ObjectShortName">AESL_idle</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_continue" type="logic">
+      <obj_property name="ElementShortName">AESL_continue</obj_property>
+      <obj_property name="ObjectShortName">AESL_continue</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_done" type="logic">
+      <obj_property name="ElementShortName">AESL_done</obj_property>
+      <obj_property name="ObjectShortName">AESL_done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_done_delay" type="logic">
+      <obj_property name="ElementShortName">AESL_done_delay</obj_property>
+      <obj_property name="ObjectShortName">AESL_done_delay</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_done_delay2" type="logic">
+      <obj_property name="ElementShortName">AESL_done_delay2</obj_property>
+      <obj_property name="ObjectShortName">AESL_done_delay2</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_ready_delay" type="logic">
+      <obj_property name="ElementShortName">AESL_ready_delay</obj_property>
+      <obj_property name="ObjectShortName">AESL_ready_delay</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ready" type="logic">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ready_wire" type="logic">
+      <obj_property name="ElementShortName">ready_wire</obj_property>
+      <obj_property name="ObjectShortName">ready_wire</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_mLatCnterIn" type="array">
+      <obj_property name="ElementShortName">AESL_mLatCnterIn[0:2][31:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_mLatCnterIn[0:2][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_mLatCnterIn_addr" type="array">
+      <obj_property name="ElementShortName">AESL_mLatCnterIn_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_mLatCnterIn_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_mLatCnterOut" type="array">
+      <obj_property name="ElementShortName">AESL_mLatCnterOut[0:2][31:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_mLatCnterOut[0:2][31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_mLatCnterOut_addr" type="array">
+      <obj_property name="ElementShortName">AESL_mLatCnterOut_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_mLatCnterOut_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_clk_counter" type="array">
+      <obj_property name="ElementShortName">AESL_clk_counter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_clk_counter[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_clk_ready" type="array">
+      <obj_property name="ElementShortName">AESL_clk_ready[0:2][19:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_clk_ready[0:2][19:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_clk_done" type="array">
+      <obj_property name="ElementShortName">AESL_clk_done[0:2][19:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_clk_done[0:2][19:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/reported_stuck" type="logic">
+      <obj_property name="ElementShortName">reported_stuck</obj_property>
+      <obj_property name="ObjectShortName">reported_stuck</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/reported_stuck_cnt" type="logic">
+      <obj_property name="ElementShortName">reported_stuck_cnt</obj_property>
+      <obj_property name="ObjectShortName">reported_stuck_cnt</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ap_start" type="logic">
+      <obj_property name="ElementShortName">ap_start</obj_property>
+      <obj_property name="ObjectShortName">ap_start</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ap_done" type="logic">
+      <obj_property name="ElementShortName">ap_done</obj_property>
+      <obj_property name="ObjectShortName">ap_done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ap_idle" type="logic">
+      <obj_property name="ElementShortName">ap_idle</obj_property>
+      <obj_property name="ObjectShortName">ap_idle</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ap_ready" type="logic">
+      <obj_property name="ElementShortName">ap_ready</obj_property>
+      <obj_property name="ObjectShortName">ap_ready</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/do_read_V" type="array">
+      <obj_property name="ElementShortName">do_read_V[0:0]</obj_property>
+      <obj_property name="ObjectShortName">do_read_V[0:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/address" type="array">
+      <obj_property name="ElementShortName">address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">address[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/PIXEL_V" type="array">
+      <obj_property name="ElementShortName">PIXEL_V[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PIXEL_V[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/R_V" type="array">
+      <obj_property name="ElementShortName">R_V[3:0]</obj_property>
+      <obj_property name="ObjectShortName">R_V[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/G_V" type="array">
+      <obj_property name="ElementShortName">G_V[3:0]</obj_property>
+      <obj_property name="ObjectShortName">G_V[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/B_V" type="array">
+      <obj_property name="ElementShortName">B_V[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B_V[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/V_SYNC_V" type="array">
+      <obj_property name="ElementShortName">V_SYNC_V[0:0]</obj_property>
+      <obj_property name="ObjectShortName">V_SYNC_V[0:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/H_SYNC_V" type="array">
+      <obj_property name="ElementShortName">H_SYNC_V[0:0]</obj_property>
+      <obj_property name="ObjectShortName">H_SYNC_V[0:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/done_cnt" type="array">
+      <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_ready_cnt" type="array">
+      <obj_property name="ElementShortName">AESL_ready_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_ready_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ready_cnt" type="array">
+      <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ready_initial" type="logic">
+      <obj_property name="ElementShortName">ready_initial</obj_property>
+      <obj_property name="ObjectShortName">ready_initial</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ready_initial_n" type="logic">
+      <obj_property name="ElementShortName">ready_initial_n</obj_property>
+      <obj_property name="ObjectShortName">ready_initial_n</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ready_last_n" type="logic">
+      <obj_property name="ElementShortName">ready_last_n</obj_property>
+      <obj_property name="ObjectShortName">ready_last_n</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ready_delay_last_n" type="logic">
+      <obj_property name="ElementShortName">ready_delay_last_n</obj_property>
+      <obj_property name="ObjectShortName">ready_delay_last_n</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/done_delay_last_n" type="logic">
+      <obj_property name="ElementShortName">done_delay_last_n</obj_property>
+      <obj_property name="ObjectShortName">done_delay_last_n</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/interface_done" type="logic">
+      <obj_property name="ElementShortName">interface_done</obj_property>
+      <obj_property name="ObjectShortName">interface_done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_REG_do_read_V" type="array">
+      <obj_property name="ElementShortName">AESL_REG_do_read_V[0:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_REG_do_read_V[0:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_REG_address" type="array">
+      <obj_property name="ElementShortName">AESL_REG_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_REG_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_REG_PIXEL_V" type="array">
+      <obj_property name="ElementShortName">AESL_REG_PIXEL_V[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_REG_PIXEL_V[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_REG_R_V" type="array">
+      <obj_property name="ElementShortName">AESL_REG_R_V[3:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_REG_R_V[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_REG_G_V" type="array">
+      <obj_property name="ElementShortName">AESL_REG_G_V[3:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_REG_G_V[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_REG_B_V" type="array">
+      <obj_property name="ElementShortName">AESL_REG_B_V[3:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_REG_B_V[3:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_REG_V_SYNC_V" type="array">
+      <obj_property name="ElementShortName">AESL_REG_V_SYNC_V[0:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_REG_V_SYNC_V[0:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/AESL_REG_H_SYNC_V" type="array">
+      <obj_property name="ElementShortName">AESL_REG_H_SYNC_V[0:0]</obj_property>
+      <obj_property name="ObjectShortName">AESL_REG_H_SYNC_V[0:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/all_finish" type="logic">
+      <obj_property name="ElementShortName">all_finish</obj_property>
+      <obj_property name="ObjectShortName">all_finish</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/end_PIXEL_V" type="logic">
+      <obj_property name="ElementShortName">end_PIXEL_V</obj_property>
+      <obj_property name="ObjectShortName">end_PIXEL_V</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/size_PIXEL_V" type="array">
+      <obj_property name="ElementShortName">size_PIXEL_V[31:0]</obj_property>
+      <obj_property name="ObjectShortName">size_PIXEL_V[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/end_do_read_V" type="logic">
+      <obj_property name="ElementShortName">end_do_read_V</obj_property>
+      <obj_property name="ObjectShortName">end_do_read_V</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/size_do_read_V" type="array">
+      <obj_property name="ElementShortName">size_do_read_V[31:0]</obj_property>
+      <obj_property name="ObjectShortName">size_do_read_V[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/end_address" type="logic">
+      <obj_property name="ElementShortName">end_address</obj_property>
+      <obj_property name="ObjectShortName">end_address</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/size_address" type="array">
+      <obj_property name="ElementShortName">size_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">size_address[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/end_R_V" type="logic">
+      <obj_property name="ElementShortName">end_R_V</obj_property>
+      <obj_property name="ObjectShortName">end_R_V</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/size_R_V" type="array">
+      <obj_property name="ElementShortName">size_R_V[31:0]</obj_property>
+      <obj_property name="ObjectShortName">size_R_V[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/end_G_V" type="logic">
+      <obj_property name="ElementShortName">end_G_V</obj_property>
+      <obj_property name="ObjectShortName">end_G_V</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/size_G_V" type="array">
+      <obj_property name="ElementShortName">size_G_V[31:0]</obj_property>
+      <obj_property name="ObjectShortName">size_G_V[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/end_B_V" type="logic">
+      <obj_property name="ElementShortName">end_B_V</obj_property>
+      <obj_property name="ObjectShortName">end_B_V</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/size_B_V" type="array">
+      <obj_property name="ElementShortName">size_B_V[31:0]</obj_property>
+      <obj_property name="ObjectShortName">size_B_V[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/end_V_SYNC_V" type="logic">
+      <obj_property name="ElementShortName">end_V_SYNC_V</obj_property>
+      <obj_property name="ObjectShortName">end_V_SYNC_V</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/size_V_SYNC_V" type="array">
+      <obj_property name="ElementShortName">size_V_SYNC_V[31:0]</obj_property>
+      <obj_property name="ObjectShortName">size_V_SYNC_V[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/end_H_SYNC_V" type="logic">
+      <obj_property name="ElementShortName">end_H_SYNC_V</obj_property>
+      <obj_property name="ObjectShortName">end_H_SYNC_V</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/size_H_SYNC_V" type="array">
+      <obj_property name="ElementShortName">size_H_SYNC_V[31:0]</obj_property>
+      <obj_property name="ObjectShortName">size_H_SYNC_V[31:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ap_clk" type="logic">
+      <obj_property name="ElementShortName">ap_clk</obj_property>
+      <obj_property name="ObjectShortName">ap_clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ap_rst" type="logic">
+      <obj_property name="ElementShortName">ap_rst</obj_property>
+      <obj_property name="ObjectShortName">ap_rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/apatb_vga_bram_read_address_top/ap_rst_n" type="logic">
+      <obj_property name="ElementShortName">ap_rst_n</obj_property>
+      <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+   </wvobject>
+</wave_config>

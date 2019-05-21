@@ -1,0 +1,399 @@
+# depslib dependency file v1.0
+1490453327 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prova\main.cpp
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	"stdafx.h"
+	"lib_pose_estimation.h"
+
+1490439339 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prova\lib_pose_estimation.cpp
+	"lib_pose_estimation.h"
+	"stdafx.h"
+
+1490454458 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prova\lib_pose_estimation.h
+	"../OS/os.h"
+	<cv.h>
+	<cxmisc.h>
+	<highgui.h>
+	<cvaux.h>
+	<opencv/cv.h>
+	<opencv/cxmisc.h>
+	<opencv/highgui.h>
+	<opencv/cvaux.h>
+	<opencv/cv.h>
+	<opencv/cxmisc.h>
+	<opencv/highgui.h>
+	<opencv/cvaux.h>
+
+1390674242 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prova\stdafx.h
+	"targetver.h"
+	<windows.h>
+
+1346393404 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prova\targetver.h
+
+1390674200 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prova\dllmain.cpp
+	"stdafx.h"
+
+1492591812 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prova con libreria prof\main.cpp
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	"lib_pose_estimation.cpp"
+
+1492544111 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prova con libreria prof\lib_pose_estimation.cpp
+	"lib_pose_estimation.h"
+	"stdafx.h"
+
+1492544103 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prova con libreria prof\lib_pose_estimation.h
+	<cv.h>
+	<cxmisc.h>
+	<highgui.h>
+	<cvaux.h>
+	<opencv/cv.h>
+	<opencv/cxmisc.h>
+	<opencv/highgui.h>
+	<opencv/cvaux.h>
+	<opencv/cv.h>
+	<opencv/cxmisc.h>
+	<opencv/highgui.h>
+	<opencv/cvaux.h>
+
+1390677842 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prova con libreria prof\stdafx.h
+	"targetver.h"
+	<windows.h>
+
+1346397004 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prova con libreria prof\targetver.h
+
+1493799830 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\1 - prova con lib_pose\main.cpp
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<GL/gl.h>
+	<GL/freeglut.h>
+	"util.h"
+	"stdafx.h"
+
+1492598543 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\1 - prova con lib_pose\lib_pose_estimation.cpp
+	"lib_pose_estimation.h"
+	"stdafx.h"
+
+1492544103 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\1 - prova con lib_pose\lib_pose_estimation.h
+	<cv.h>
+	<cxmisc.h>
+	<highgui.h>
+	<cvaux.h>
+	<opencv/cv.h>
+	<opencv/cxmisc.h>
+	<opencv/highgui.h>
+	<opencv/cvaux.h>
+	<opencv/cv.h>
+	<opencv/cxmisc.h>
+	<opencv/highgui.h>
+	<opencv/cvaux.h>
+
+1390677842 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\1 - prova con lib_pose\stdafx.h
+	"targetver.h"
+	<windows.h>
+
+1346397004 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\1 - prova con lib_pose\targetver.h
+
+1490806940 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\1 - prova con lib_pose\util.cpp
+	"util.h"
+
+1490806998 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\1 - prova con lib_pose\util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+
+1426346128 c:\mingw\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1426346128 c:\mingw\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1426346128 c:\mingw\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1490806940 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\2 - prova con lib_pose (cubo)\util.cpp
+	"util.h"
+
+1490806998 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\2 - prova con lib_pose (cubo)\util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+
+1493803214 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\2 - prova con lib_pose (cubo)\main.cpp
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<GL/gl.h>
+	<GL/freeglut.h>
+	"util.h"
+	"stdafx.h"
+
+1390677842 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\2 - prova con lib_pose (cubo)\stdafx.h
+	"targetver.h"
+	<windows.h>
+
+1346397004 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\2 - prova con lib_pose (cubo)\targetver.h
+
+1490806940 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\3 - prova con lib_pose (cvmat)\util.cpp
+	"util.h"
+
+1490806998 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\3 - prova con lib_pose (cvmat)\util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+
+1493836816 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\3 - prova con lib_pose (cvmat)\main.cpp
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<GL/gl.h>
+	<GL/freeglut.h>
+	"util.h"
+	"stdafx.h"
+
+1390677842 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\3 - prova con lib_pose (cvmat)\stdafx.h
+	"targetver.h"
+	<windows.h>
+
+1346397004 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\3 - prova con lib_pose (cvmat)\targetver.h
+
+1490806940 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\4 - prova con lib_pose (con material)\util.cpp
+	"util.h"
+
+1490806998 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\4 - prova con lib_pose (con material)\util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+
+1493897960 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\4 - prova con lib_pose (con material)\main.cpp
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<GL/gl.h>
+	<GL/freeglut.h>
+	"util.h"
+	"stdafx.h"
+
+1390677842 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\4 - prova con lib_pose (con material)\stdafx.h
+	"targetver.h"
+	<windows.h>
+
+1346397004 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\4 - prova con lib_pose (con material)\targetver.h
+
+1490806940 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\4 - prova con lib_pose (con lightning)\util.cpp
+	"util.h"
+
+1490806998 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\4 - prova con lib_pose (con lightning)\util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+
+1494599491 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\4 - prova con lib_pose (con lightning)\main.cpp
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<GL/gl.h>
+	<GL/freeglut.h>
+	"util.h"
+	"stdafx.h"
+
+1390677842 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\4 - prova con lib_pose (con lightning)\stdafx.h
+	"targetver.h"
+	<windows.h>
+
+1346397004 c:\users\massimo\dropbox\università\tirocinio mattoccia\to_study\prove opengl+opencv\4 - prova con lib_pose (con lightning)\targetver.h
+
+1490806940 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\1 - versione finale\util.cpp
+	"util.h"
+
+1490806998 c:\users\massimo\dropbox\università\tirocinio mattoccia\1 - versione finale\util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+
+1495390812 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\1 - versione finale\cvfunctions.cpp
+	"CVfunctions.h"
+
+1495390823 c:\users\massimo\dropbox\università\tirocinio mattoccia\1 - versione finale\cvfunctions.h
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<iostream>
+
+1495059692 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\1 - versione finale\glfunctions.cpp
+	"GLfunctions.h"
+
+1495059728 c:\users\massimo\dropbox\università\tirocinio mattoccia\1 - versione finale\glfunctions.h
+	<GL/gl.h>
+	<GL/freeglut.h>
+	"util.h"
+
+1495390846 source:c:\users\massimo\dropbox\università\tirocinio mattoccia\1 - versione finale\main.cpp
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	<GL/gl.h>
+	<GL/freeglut.h>
+	"CVfunctions.h"
+	"GLfunctions.h"
+
+1495390814 source:c:\users\andrea\desktop\tesi\1 - versione finale\cvfunctions.cpp
+	"CVfunctions.h"
+
+1495390824 c:\users\andrea\desktop\tesi\1 - versione finale\cvfunctions.h
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<iostream>
+
+1495059694 source:c:\users\andrea\desktop\tesi\1 - versione finale\glfunctions.cpp
+	"GLfunctions.h"
+
+1495059730 c:\users\andrea\desktop\tesi\1 - versione finale\glfunctions.h
+	<GL/gl.h>
+	<GL/freeglut.h>
+	"util.h"
+
+1490806998 c:\users\andrea\desktop\tesi\1 - versione finale\util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+
+1498662776 source:c:\users\andrea\desktop\tesi\1 - versione finale\main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	<iostream>
+	"application.h"
+
+1495391416 source:c:\users\andrea\desktop\tesi\1 - versione finale\util.cpp
+	"util.h"
+
+1498663338 source:c:\users\andrea\desktop\tesi\1 - versione finale\application.cpp
+	"application.h"
+
+1498663327 c:\users\andrea\desktop\tesi\1 - versione finale\application.h
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	<iostream>
+	<GL/gl.h>
+	<GL/freeglut.h>
+	"CVfunctions.h"
+	"GLfunctions.h"
+
+1498904831 source:/home/bosca/GitHub/Tesi_Boscarino_Andrea/RealtaAumentata/application.cpp
+	"application.h"
+
+1498904831 /home/bosca/GitHub/Tesi_Boscarino_Andrea/RealtaAumentata/application.h
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	"opencv/cxcore.h"
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	<iostream>
+	<GL/gl.h>
+	<gl.h>
+	<GL/freeglut.h>
+	"CVfunctions.h"
+	"GLfunctions.h"
+
+1498904831 /home/bosca/GitHub/Tesi_Boscarino_Andrea/RealtaAumentata/CVfunctions.h
+	"opencv2/highgui/highgui.hpp"
+	"opencv/cv.h"
+	"opencv/highgui.h"
+	<iostream>
+
+1498904831 /home/bosca/GitHub/Tesi_Boscarino_Andrea/RealtaAumentata/GLfunctions.h
+	<GL/gl.h>
+	<gl.h>
+	<GL/freeglut.h>
+	"util.h"
+
+1498904831 /home/bosca/GitHub/Tesi_Boscarino_Andrea/RealtaAumentata/util.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+
+1498904831 source:/home/bosca/GitHub/Tesi_Boscarino_Andrea/RealtaAumentata/CVfunctions.cpp
+	"CVfunctions.h"
+
+1498904831 source:/home/bosca/GitHub/Tesi_Boscarino_Andrea/RealtaAumentata/GLfunctions.cpp
+	"GLfunctions.h"
+
+1498904831 source:/home/bosca/GitHub/Tesi_Boscarino_Andrea/RealtaAumentata/main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	<iostream>
+	"application.h"
+
+1498904831 source:/home/bosca/GitHub/Tesi_Boscarino_Andrea/RealtaAumentata/util.cpp
+	"util.h"
+

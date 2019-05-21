@@ -1,0 +1,280 @@
+# depslib dependency file v1.0
+1488893284 source:c:\users\mattia\onedrive\documenti\tesi\testopencv\main.cpp
+	<iostream>
+	<windows.h>
+	"OV7670.h"
+
+1463054819 c:\opencv\my_build\install\include\opencv2\core\core.hpp
+	"opencv2/core/types_c.h"
+	"opencv2/core/version.hpp"
+	<limits.h>
+	<algorithm>
+	<cmath>
+	<cstddef>
+	<complex>
+	<map>
+	<new>
+	<string>
+	<vector>
+	<sstream>
+	"opencv2/core/operations.hpp"
+	"opencv2/core/mat.hpp"
+
+1463054819 c:\opencv\my_build\install\include\opencv2\core\types_c.h
+	<assert.h>
+	<stdlib.h>
+	<string.h>
+	<float.h>
+	<stdint.h>
+	<intrin.h>
+	<emmintrin.h>
+	<fastmath.h>
+	<math.h>
+	<ipl.h>
+	<ipl/ipl.h>
+	"tegra_round.hpp"
+	"emmintrin.h"
+
+1463054819 c:\opencv\my_build\install\include\opencv2\core\version.hpp
+
+1419747905 c:\opencv\my_build\install\include\opencv2\core\operations.hpp
+	<string.h>
+	<limits.h>
+	<ext/atomicity.h>
+	<bits/atomicity.h>
+	<limits>
+
+1453009235 c:\opencv\my_build\install\include\opencv2\core\mat.hpp
+	<limits.h>
+	<string.h>
+
+1384335862 c:\opencv\my_build\install\include\opencv2\highgui\highgui.hpp
+	"opencv2/core/core.hpp"
+	"opencv2/highgui/highgui_c.h"
+
+1427710444 c:\opencv\my_build\install\include\opencv2\highgui\highgui_c.h
+	"opencv2/core/core_c.h"
+
+1407676989 c:\opencv\my_build\install\include\opencv2\core\core_c.h
+	"opencv2/core/types_c.h"
+
+1488898166 source:c:\users\mattia\onedrive\documenti\tesi\testopencv\ov7670.cpp
+	"OV7670.h"
+
+1487772220 source:c:\users\mattia\onedrive\documenti\tesi\testopencv\webcam.cpp
+	"webcam.hpp"
+
+1487772228 c:\users\mattia\onedrive\documenti\tesi\testopencv\webcam.hpp
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc/imgproc.hpp>
+	<iostream>
+	<windows.h>
+
+1488487464 c:\users\mattia\onedrive\documenti\tesi\testopencv\ov7670.hpp
+	<stdio.h>
+	<WinSock2.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	<opencv2/core.hpp>
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc.hpp>
+	"opencv2/highgui.hpp"
+
+1488894314 c:\users\mattia\onedrive\documenti\tesi\testopencv\ov7670.h
+	<stdio.h>
+	<WinSock2.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	<opencv2/core.hpp>
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/imgproc.hpp>
+	"opencv2/highgui.hpp"
+
+1492794831 source:c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\main.cpp
+	<iostream>
+	<windows.h>
+	"OV7670.h"
+
+1494000895 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\ov7670.h
+	<stdio.h>
+	<WinSock2.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	"lib_time_measurements.h"
+	"Calibration_single_camera.h"
+
+1492939860 source:c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\ov7670.cpp
+	"OV7670.h"
+
+1492293461 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1492293037 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\os\os.h
+
+1492939284 source:c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\calibration_single_camera.cpp
+	"Calibration_single_camera.h"
+
+1492796514 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\calibration_single_camera.h
+	"../OS/os.h"
+	<opencv/cv.h>
+	<stdio.h>
+	<stdlib.h>
+
+1492939284 source:d:\000_official_ov_vision_pipeline_color_2017\ov_7670\ov7670_color\pc_client\calibration_single_camera.cpp
+	"Calibration_single_camera.h"
+
+1492796514 d:\000_official_ov_vision_pipeline_color_2017\ov_7670\ov7670_color\pc_client\calibration_single_camera.h
+	"../OS/os.h"
+	<opencv/cv.h>
+	<stdio.h>
+	<stdlib.h>
+
+1492293037 d:\000_official_ov_vision_pipeline_color_2017\ov_7670\ov7670_color\os\os.h
+
+1492794831 source:d:\000_official_ov_vision_pipeline_color_2017\ov_7670\ov7670_color\pc_client\main.cpp
+	<iostream>
+	<windows.h>
+	"OV7670.h"
+
+1494000895 d:\000_official_ov_vision_pipeline_color_2017\ov_7670\ov7670_color\pc_client\ov7670.h
+	<stdio.h>
+	<WinSock2.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	"lib_time_measurements.h"
+	"Calibration_single_camera.h"
+
+1492293461 d:\000_official_ov_vision_pipeline_color_2017\ov_7670\ov7670_color\pc_client\lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1503147219 source:d:\000_official_ov_vision_pipeline_color_2017\ov_7670\ov7670_color\pc_client\ov7670.cpp
+	"OV7670.h"
+
+1492939286 source:f:\tesi\progettovivado\ov7670_color\pc_client\calibration_single_camera.cpp
+	"Calibration_single_camera.h"
+
+1503921927 f:\tesi\progettovivado\ov7670_color\pc_client\calibration_single_camera.h
+	"../OS/os.h"
+	<opencv/cv.h>
+	<stdio.h>
+	<stdlib.h>
+
+1492293038 f:\tesi\progettovivado\ov7670_color\os\os.h
+
+1492794832 source:f:\tesi\progettovivado\ov7670_color\pc_client\main.cpp
+	<iostream>
+	<windows.h>
+	"OV7670.h"
+
+1494000896 f:\tesi\progettovivado\ov7670_color\pc_client\ov7670.h
+	<stdio.h>
+	<WinSock2.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	"lib_time_measurements.h"
+	"Calibration_single_camera.h"
+
+1492293462 f:\tesi\progettovivado\ov7670_color\pc_client\lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1503147220 source:f:\tesi\progettovivado\ov7670_color\pc_client\ov7670.cpp
+	"OV7670.h"
+
+1492939286 source:c:\test_5_tesi\ov7670_color\pc_client\calibration_single_camera.cpp
+	"Calibration_single_camera.h"
+
+1503921927 c:\test_5_tesi\ov7670_color\pc_client\calibration_single_camera.h
+	"../OS/os.h"
+	<opencv/cv.h>
+	<stdio.h>
+	<stdlib.h>
+
+1492293038 c:\test_5_tesi\ov7670_color\os\os.h
+
+1492794832 source:c:\test_5_tesi\ov7670_color\pc_client\main.cpp
+	<iostream>
+	<windows.h>
+	"OV7670.h"
+
+1494000896 c:\test_5_tesi\ov7670_color\pc_client\ov7670.h
+	<stdio.h>
+	<WinSock2.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	"lib_time_measurements.h"
+	"Calibration_single_camera.h"
+
+1492293462 c:\test_5_tesi\ov7670_color\pc_client\lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1503147220 source:c:\test_5_tesi\ov7670_color\pc_client\ov7670.cpp
+	"OV7670.h"
+
+1492935686 source:d:\000_official_pipeline_2018\ov7670_color\client_udp\calibration_single_camera.cpp
+	"Calibration_single_camera.h"
+
+1503918328 d:\000_official_pipeline_2018\ov7670_color\client_udp\calibration_single_camera.h
+	"../OS/os.h"
+	<opencv/cv.h>
+	<stdio.h>
+	<stdlib.h>
+
+1492289438 d:\000_official_pipeline_2018\ov7670_color\os\os.h
+
+1492791232 source:d:\000_official_pipeline_2018\ov7670_color\client_udp\main.cpp
+	<iostream>
+	<windows.h>
+	"OV7670.h"
+
+1493997296 d:\000_official_pipeline_2018\ov7670_color\client_udp\ov7670.h
+	<stdio.h>
+	<WinSock2.h>
+	<direct.h>
+	<sys/time.h>
+	<opencv/cv.h>
+	<opencv/highgui.h>
+	<stdlib.h>
+	"lib_time_measurements.h"
+	"Calibration_single_camera.h"
+
+1492289862 d:\000_official_pipeline_2018\ov7670_color\client_udp\lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1503143620 source:d:\000_official_pipeline_2018\ov7670_color\client_udp\ov7670.cpp
+	"OV7670.h"
+

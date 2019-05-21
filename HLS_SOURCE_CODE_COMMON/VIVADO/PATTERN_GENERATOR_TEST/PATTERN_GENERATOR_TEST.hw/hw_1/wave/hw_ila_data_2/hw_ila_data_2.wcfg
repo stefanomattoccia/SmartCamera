@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<wave_config>
+	<wave_state>
+	</wave_state>
+	<db_ref_list>
+		<db_ref path="C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1" type="auto">
+			<top_modules>
+				<top_module name="top">
+				</top_module>
+			</top_modules>
+		</db_ref>
+	</db_ref_list>
+	<WVObjectSize size="1">
+	</WVObjectSize>
+	<wvobject fp_name="design_1_i/axis_to_ddr_writer_frame_index_V" type="array" db_ref_id="1">
+		<obj_property name="ElementShortName">design_1_i/axis_to_ddr_writer_frame_index_V[2:0]</obj_property>
+		<obj_property name="ObjectShortName">design_1_i/axis_to_ddr_writer_frame_index_V[2:0]</obj_property>
+	</wvobject>
+</wave_config>
+

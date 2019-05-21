@@ -1,0 +1,7 @@
+#include "xparameters.h"
+#include "xbasic_types.h"
+#include "xgpio.h"
+#include "xstatus.h"
+#include <stdio.h>
+
+static XGpio GpioInput;

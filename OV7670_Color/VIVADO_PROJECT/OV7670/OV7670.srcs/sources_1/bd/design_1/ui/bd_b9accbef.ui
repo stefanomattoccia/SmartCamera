@@ -1,0 +1,24 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port ap_start -pg 1 -y -240 -defaultsOSRD
+preplace port S00_AXI -pg 1 -y -670 -defaultsOSRD
+preplace port ap_clk -pg 1 -y -280 -defaultsOSRD
+preplace port in_img_V -pg 1 -y -300 -defaultsOSRD
+preplace port ap_rst_n -pg 1 -y -260 -defaultsOSRD
+preplace port out_img_V -pg 1 -y -320 -defaultsOSRD
+preplace inst convolution_filter_0 -pg 1 -lvl 3 -y -320 -defaultsOSRD
+preplace inst sep_convolution_filter_0 -pg 1 -lvl 1 -y -310 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -y -590 -defaultsOSRD
+preplace netloc Conn1 1 0 1 N
+preplace netloc Conn2 1 0 2 NJ -670 NJ
+preplace netloc Conn3 1 3 1 N
+preplace netloc ARESETN_1 1 0 3 -330 -200 NJ -270 N
+preplace netloc axi_interconnect_0_M00_AXI 1 0 3 -300 -210 NJ -210 430
+preplace netloc sep_convolution_filter_0_out_img_V 1 1 2 NJ -310 N
+preplace netloc axi_interconnect_0_M01_AXI 1 2 1 440
+preplace netloc Net 1 0 3 -310 -180 NJ -330 N
+preplace netloc M00_ACLK_1 1 0 3 -320 -190 NJ -290 N
+levelinfo -pg 1 -350 -20 300 600 770 -top -890 -bot 170
+",
+}

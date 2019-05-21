@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Register 'frame_count_inner' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_AXILITE" solutionName="solution1" date="2016-04-15T11:42:37.696+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'FRAME_BUFFER_NUMBER_r' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_AXILITE" solutionName="solution1" date="2016-04-15T11:42:37.681+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'FRAME_BUFFER_DIM_r' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_AXILITE" solutionName="solution1" date="2016-04-15T11:42:37.667+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'BASE_ADDRESS_r' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_AXILITE" solutionName="solution1" date="2016-04-15T11:42:37.655+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'FRAME_OFFSET' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_AXILITE" solutionName="solution1" date="2016-04-15T11:42:37.640+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'inner_index_V' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_AXILITE" solutionName="solution1" date="2016-04-15T11:42:37.624+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'frame_count' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="AXIS_TO_DDR_WRITER_AXILITE" solutionName="solution1" date="2016-04-15T11:42:37.603+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'frame_index_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="AXIS_TO_DDR_WRITER_AXILITE" solutionName="solution1" date="2016-04-15T11:42:37.555+0200" type="Warning"/>
+        <logs message="@W [BIND-102] The specified resource core for memory 'buffer' will be ignored if a simpler one can be used." projectName="AXIS_TO_DDR_WRITER_AXILITE" solutionName="solution1" date="2016-04-15T11:42:37.420+0200" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'axis_to_ddr_writer/FRAME_BUFFER_NUMBER' to 'axis_to_ddr_writer/FRAME_BUFFER_NUMBER_r' to avoid the conflict with HDL keywords or other object names." projectName="AXIS_TO_DDR_WRITER_AXILITE" solutionName="solution1" date="2016-04-15T11:42:37.215+0200" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'axis_to_ddr_writer/FRAME_BUFFER_DIM' to 'axis_to_ddr_writer/FRAME_BUFFER_DIM_r' to avoid the conflict with HDL keywords or other object names." projectName="AXIS_TO_DDR_WRITER_AXILITE" solutionName="solution1" date="2016-04-15T11:42:37.206+0200" type="Warning"/>
+        <logs message="@W [SYN-107] Renaming port name 'axis_to_ddr_writer/BASE_ADDRESS' to 'axis_to_ddr_writer/BASE_ADDRESS_r' to avoid the conflict with HDL keywords or other object names." projectName="AXIS_TO_DDR_WRITER_AXILITE" solutionName="solution1" date="2016-04-15T11:42:37.195+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

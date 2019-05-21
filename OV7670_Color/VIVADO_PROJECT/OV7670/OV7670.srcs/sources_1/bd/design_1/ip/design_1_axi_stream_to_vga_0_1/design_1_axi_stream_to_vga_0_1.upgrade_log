@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Sat Apr 30 20:36:52 2016
+| Host         : DESKTOP-S5M9ALU running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_stream_to_vga_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_stream_to_vga_0_1 (xilinx.com:hls:axi_stream_to_vga:1.0) from (Rev. 1602012136) to (Rev. 1604302036)
+

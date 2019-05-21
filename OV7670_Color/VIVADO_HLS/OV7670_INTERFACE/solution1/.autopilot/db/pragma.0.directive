@@ -1,0 +1,55 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="ov7670_interface" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="data_in"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ov7670_interface" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="href"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ov7670_interface" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="vsync"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ov7670_interface" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="data_out"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ov7670_interface" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="line_valid"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ov7670_interface" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="frame_valid"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ov7670_interface" label="">
+<pragma name="RESET">
+<option name="variable" positionalBoolean="4" value="count_lines"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ov7670_interface" label="">
+<pragma name="RESET">
+<option name="variable" positionalBoolean="4" value="count_readings"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="ov7670_interface" label="">
+<pragma name="RESET">
+<option name="variable" positionalBoolean="4" value="first"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

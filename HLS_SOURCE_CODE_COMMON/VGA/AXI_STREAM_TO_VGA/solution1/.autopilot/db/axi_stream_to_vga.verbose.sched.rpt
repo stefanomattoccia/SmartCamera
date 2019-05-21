@@ -1,0 +1,437 @@
+
+
+================================================================
+== Vivado HLS Report for 'axi_stream_to_vga'
+================================================================
+* Date:           Mon Feb 01 21:36:40 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        AXI_STREAM_TO_VGA
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.25|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  420002|  420002|  420003|  420003|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+--------+--------+----------+-----------+-----------+--------+----------+
+        |          |     Latency     | Iteration|  Initiation Interval  |  Trip  |          |
+        | Loop Name|   min  |   max  |  Latency |  achieved |   target  |  Count | Pipelined|
+        +----------+--------+--------+----------+-----------+-----------+--------+----------+
+        |- Loop 1  |  420000|  420000|         2|          1|          1|  420000|    yes   |
+        +----------+--------+--------+----------+-----------+-----------+--------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 2, States = { 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	4  / (exitcond_flatten)
+	3  / (!exitcond_flatten)
+3 --> 
+	2  / true
+4 --> 
+* FSM state operations: 
+
+ <State 1>: 1.57ns
+ST_1: R_temp_V_read_assign [1/1] 0.00ns
+codeRepl:0  %R_temp_V_read_assign = alloca i4
+
+ST_1: G_temp_V_read_assign [1/1] 0.00ns
+codeRepl:1  %G_temp_V_read_assign = alloca i4
+
+ST_1: B_temp_V_read_assign [1/1] 0.00ns
+codeRepl:2  %B_temp_V_read_assign = alloca i4
+
+ST_1: stg_8 [1/1] 0.00ns
+codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i1 %selftest), !map !7
+
+ST_1: stg_9 [1/1] 0.00ns
+codeRepl:4  call void (...)* @_ssdm_op_SpecBitsMap(i8* %inStream_V_V), !map !13
+
+ST_1: stg_10 [1/1] 0.00ns
+codeRepl:5  call void (...)* @_ssdm_op_SpecBitsMap(i4* %R_V), !map !17
+
+ST_1: stg_11 [1/1] 0.00ns
+codeRepl:6  call void (...)* @_ssdm_op_SpecBitsMap(i4* %G_V), !map !21
+
+ST_1: stg_12 [1/1] 0.00ns
+codeRepl:7  call void (...)* @_ssdm_op_SpecBitsMap(i4* %B_V), !map !25
+
+ST_1: stg_13 [1/1] 0.00ns
+codeRepl:8  call void (...)* @_ssdm_op_SpecBitsMap(i1* %V_SYNC_V), !map !29
+
+ST_1: stg_14 [1/1] 0.00ns
+codeRepl:9  call void (...)* @_ssdm_op_SpecBitsMap(i1* %H_SYNC_V), !map !33
+
+ST_1: stg_15 [1/1] 0.00ns
+codeRepl:10  call void (...)* @_ssdm_op_SpecTopModule([18 x i8]* @axi_stream_to_vga_str) nounwind
+
+ST_1: selftest_read [1/1] 0.00ns
+codeRepl:11  %selftest_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %selftest)
+
+ST_1: stg_17 [1/1] 0.00ns
+codeRepl:12  call void (...)* @_ssdm_op_SpecInterface(i8* %inStream_V_V, [5 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_18 [1/1] 0.00ns
+codeRepl:13  call void (...)* @_ssdm_op_SpecInterface(i1 %selftest, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_19 [1/1] 0.00ns
+codeRepl:14  call void (...)* @_ssdm_op_SpecInterface(i4* %R_V, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_20 [1/1] 0.00ns
+codeRepl:15  call void (...)* @_ssdm_op_SpecInterface(i4* %G_V, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_21 [1/1] 0.00ns
+codeRepl:16  call void (...)* @_ssdm_op_SpecInterface(i4* %B_V, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_22 [1/1] 0.00ns
+codeRepl:17  call void (...)* @_ssdm_op_SpecInterface(i1* %H_SYNC_V, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_23 [1/1] 0.00ns
+codeRepl:18  call void (...)* @_ssdm_op_SpecInterface(i1* %V_SYNC_V, [8 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_24 [1/1] 0.00ns
+codeRepl:19  call void (...)* @_ssdm_op_SpecReset(i4* @color_blinking_V, i32 1, [1 x i8]* @p_str1) nounwind
+
+ST_1: color_blinking_V_load [1/1] 0.00ns
+codeRepl:20  %color_blinking_V_load = load i4* @color_blinking_V, align 1
+
+ST_1: op2_V_read_assign [1/1] 0.80ns
+codeRepl:21  %op2_V_read_assign = add i4 %color_blinking_V_load, 1
+
+ST_1: stg_27 [1/1] 0.00ns
+codeRepl:22  store i4 %op2_V_read_assign, i4* @color_blinking_V, align 1
+
+ST_1: tmp [1/1] 0.00ns
+codeRepl:23  %tmp = call i1 @_ssdm_op_NbReadReq.axis.i8P(i8* %inStream_V_V, i32 1)
+
+ST_1: tmp_6_i [1/1] 0.80ns
+codeRepl:24  %tmp_6_i = sub i4 -2, %color_blinking_V_load
+
+ST_1: stg_30 [1/1] 1.57ns
+codeRepl:25  br label %.preheader
+
+
+ <State 2>: 8.25ns
+ST_2: indvar_flatten [1/1] 0.00ns
+.preheader:0  %indvar_flatten = phi i19 [ 0, %codeRepl ], [ %indvar_flatten_next, %9 ]
+
+ST_2: y [1/1] 0.00ns
+.preheader:1  %y = phi i10 [ 0, %codeRepl ], [ %y_mid2, %9 ]
+
+ST_2: x [1/1] 0.00ns
+.preheader:2  %x = phi i10 [ 0, %codeRepl ], [ %x_1, %9 ]
+
+ST_2: exitcond_flatten [1/1] 2.33ns
+.preheader:3  %exitcond_flatten = icmp eq i19 %indvar_flatten, -104288
+
+ST_2: indvar_flatten_next [1/1] 2.08ns
+.preheader:4  %indvar_flatten_next = add i19 %indvar_flatten, 1
+
+ST_2: stg_36 [1/1] 0.00ns
+.preheader:5  br i1 %exitcond_flatten, label %10, label %.preheader.preheader
+
+ST_2: exitcond4 [1/1] 2.07ns
+.preheader.preheader:1  %exitcond4 = icmp eq i10 %x, -224
+
+ST_2: x_mid2 [1/1] 1.37ns
+.preheader.preheader:2  %x_mid2 = select i1 %exitcond4, i10 0, i10 %x
+
+ST_2: y_s [1/1] 1.84ns
+.preheader.preheader:3  %y_s = add i10 %y, 1
+
+ST_2: y_mid2 [1/1] 1.37ns
+.preheader.preheader:4  %y_mid2 = select i1 %exitcond4, i10 %y_s, i10 %y
+
+ST_2: p_Val2_1 [1/1] 1.84ns
+.preheader.preheader:5  %p_Val2_1 = add i10 %y_mid2, -35
+
+ST_2: tmp_3 [1/1] 0.00ns
+.preheader.preheader:6  %tmp_3 = call i9 @_ssdm_op_PartSelect.i9.i10.i32.i32(i10 %y_mid2, i32 1, i32 9)
+
+ST_2: icmp [1/1] 2.03ns
+.preheader.preheader:7  %icmp = icmp ne i9 %tmp_3, 0
+
+ST_2: tmp_1 [1/1] 2.07ns
+.preheader.preheader:8  %tmp_1 = icmp ugt i10 %y_mid2, 34
+
+ST_2: tmp_2 [1/1] 2.07ns
+.preheader.preheader:9  %tmp_2 = icmp ult i10 %y_mid2, -509
+
+ST_2: tmp2 [1/1] 1.37ns
+.preheader.preheader:10  %tmp2 = and i1 %tmp_1, %tmp_2
+
+ST_2: tmp_3_cast [1/1] 0.00ns
+.preheader.preheader:13  %tmp_3_cast = zext i10 %x_mid2 to i11
+
+ST_2: p_Val2_s [1/1] 1.84ns
+.preheader.preheader:14  %p_Val2_s = add i11 %tmp_3_cast, -144
+
+ST_2: not_1 [1/1] 2.07ns
+.preheader.preheader:15  %not_1 = icmp ugt i10 %x_mid2, 95
+
+ST_2: tmp_4 [1/1] 2.07ns
+.preheader.preheader:16  %tmp_4 = icmp ugt i10 %x_mid2, 143
+
+ST_2: tmp_5 [1/1] 2.07ns
+.preheader.preheader:17  %tmp_5 = icmp ult i10 %x_mid2, -240
+
+ST_2: tmp1 [1/1] 1.37ns
+.preheader.preheader:18  %tmp1 = and i1 %tmp_4, %tmp_5
+
+ST_2: or_cond2 [1/1] 1.37ns
+.preheader.preheader:19  %or_cond2 = and i1 %tmp2, %tmp1
+
+ST_2: stg_54 [1/1] 0.00ns
+.preheader.preheader:20  br i1 %or_cond2, label %0, label %8
+
+ST_2: stg_55 [1/1] 0.00ns
+:3  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %V_SYNC_V, i1 %icmp)
+
+ST_2: stg_56 [1/1] 0.00ns
+:4  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %H_SYNC_V, i1 %not_1)
+
+ST_2: stg_57 [1/1] 0.00ns
+:0  br i1 %selftest_read, label %3, label %1
+
+ST_2: stg_58 [1/1] 0.00ns
+:0  br i1 %tmp, label %2, label %get_checkerboard_color.exit.pre
+
+ST_2: stg_59 [1/1] 1.57ns
+get_checkerboard_color.exit.pre:0  store i4 0, i4* %B_temp_V_read_assign
+
+ST_2: stg_60 [1/1] 1.57ns
+get_checkerboard_color.exit.pre:1  store i4 0, i4* %G_temp_V_read_assign
+
+ST_2: stg_61 [1/1] 1.57ns
+get_checkerboard_color.exit.pre:2  store i4 -1, i4* %R_temp_V_read_assign
+
+ST_2: stg_62 [1/1] 0.00ns
+get_checkerboard_color.exit.pre:3  br label %get_checkerboard_color.exit
+
+ST_2: tmp_V [1/1] 0.00ns
+:0  %tmp_V = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %inStream_V_V)
+
+ST_2: R_temp_V [1/1] 0.00ns
+:1  %R_temp_V = call i4 @_ssdm_op_PartSelect.i4.i8.i32.i32(i8 %tmp_V, i32 4, i32 7)
+
+ST_2: stg_65 [1/1] 1.57ns
+:2  store i4 %R_temp_V, i4* %B_temp_V_read_assign
+
+ST_2: stg_66 [1/1] 1.57ns
+:3  store i4 %R_temp_V, i4* %G_temp_V_read_assign
+
+ST_2: stg_67 [1/1] 1.57ns
+:4  store i4 %R_temp_V, i4* %R_temp_V_read_assign
+
+ST_2: stg_68 [1/1] 0.00ns
+:5  br label %get_checkerboard_color.exit
+
+ST_2: tmp_6 [1/1] 0.00ns
+:0  %tmp_6 = call i1 @_ssdm_op_BitSelect.i1.i10.i32(i10 %p_Val2_1, i32 5)
+
+ST_2: tmp_7 [1/1] 0.00ns
+:1  %tmp_7 = call i1 @_ssdm_op_BitSelect.i1.i11.i32(i11 %p_Val2_s, i32 5)
+
+ST_2: tmp_1_i [1/1] 0.00ns
+:2  %tmp_1_i = zext i1 %tmp_7 to i19
+
+ST_2: tmp_2_i [1/1] 0.00ns
+:3  %tmp_2_i = call i21 @_ssdm_op_BitConcatenate.i21.i1.i19.i1(i1 false, i19 %tmp_1_i, i1 %tmp_6)
+
+ST_2: stg_73 [1/1] 1.88ns
+:4  switch i21 %tmp_2_i, label %get_checkerboard_color.exit [
+    i21 0, label %4
+    i21 1, label %5
+    i21 2, label %6
+    i21 3, label %7
+  ]
+
+ST_2: stg_74 [1/1] 1.57ns
+:0  store i4 0, i4* %B_temp_V_read_assign
+
+ST_2: stg_75 [1/1] 1.57ns
+:1  store i4 0, i4* %G_temp_V_read_assign
+
+ST_2: stg_76 [1/1] 1.57ns
+:2  store i4 %op2_V_read_assign, i4* %R_temp_V_read_assign
+
+ST_2: stg_77 [1/1] 0.00ns
+:3  br label %get_checkerboard_color.exit
+
+ST_2: stg_78 [1/1] 1.57ns
+:0  store i4 %tmp_6_i, i4* %B_temp_V_read_assign
+
+ST_2: stg_79 [1/1] 1.57ns
+:1  store i4 0, i4* %G_temp_V_read_assign
+
+ST_2: stg_80 [1/1] 1.57ns
+:2  store i4 0, i4* %R_temp_V_read_assign
+
+ST_2: stg_81 [1/1] 0.00ns
+:3  br label %get_checkerboard_color.exit
+
+ST_2: stg_82 [1/1] 1.57ns
+:0  store i4 %tmp_6_i, i4* %B_temp_V_read_assign
+
+ST_2: stg_83 [1/1] 1.57ns
+:1  store i4 0, i4* %G_temp_V_read_assign
+
+ST_2: stg_84 [1/1] 1.57ns
+:2  store i4 0, i4* %R_temp_V_read_assign
+
+ST_2: stg_85 [1/1] 0.00ns
+:3  br label %get_checkerboard_color.exit
+
+ST_2: stg_86 [1/1] 1.57ns
+:0  store i4 0, i4* %B_temp_V_read_assign
+
+ST_2: stg_87 [1/1] 1.57ns
+:1  store i4 0, i4* %G_temp_V_read_assign
+
+ST_2: stg_88 [1/1] 1.57ns
+:2  store i4 %op2_V_read_assign, i4* %R_temp_V_read_assign
+
+ST_2: stg_89 [1/1] 0.00ns
+:3  br label %get_checkerboard_color.exit
+
+ST_2: stg_90 [1/1] 0.00ns
+get_checkerboard_color.exit:6  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %V_SYNC_V, i1 %icmp)
+
+ST_2: stg_91 [1/1] 0.00ns
+get_checkerboard_color.exit:7  call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %H_SYNC_V, i1 %not_1)
+
+ST_2: x_1 [1/1] 1.84ns
+:1  %x_1 = add i10 %x_mid2, 1
+
+
+ <State 3>: 0.00ns
+ST_3: empty_7 [1/1] 0.00ns
+.preheader.preheader:0  %empty_7 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 420000, i64 420000, i64 420000)
+
+ST_3: tmp_9 [1/1] 0.00ns
+.preheader.preheader:11  %tmp_9 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str3)
+
+ST_3: stg_95 [1/1] 0.00ns
+.preheader.preheader:12  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_3: stg_96 [1/1] 0.00ns
+:0  call void @_ssdm_op_Write.ap_none.volatile.i4P(i4* %R_V, i4 0)
+
+ST_3: stg_97 [1/1] 0.00ns
+:1  call void @_ssdm_op_Write.ap_none.volatile.i4P(i4* %G_V, i4 0)
+
+ST_3: stg_98 [1/1] 0.00ns
+:2  call void @_ssdm_op_Write.ap_none.volatile.i4P(i4* %B_V, i4 0)
+
+ST_3: stg_99 [1/1] 0.00ns
+:5  br label %9
+
+ST_3: R_temp_V_read_assign_load [1/1] 0.00ns
+get_checkerboard_color.exit:0  %R_temp_V_read_assign_load = load i4* %R_temp_V_read_assign
+
+ST_3: G_temp_V_read_assign_load [1/1] 0.00ns
+get_checkerboard_color.exit:1  %G_temp_V_read_assign_load = load i4* %G_temp_V_read_assign
+
+ST_3: B_temp_V_read_assign_load [1/1] 0.00ns
+get_checkerboard_color.exit:2  %B_temp_V_read_assign_load = load i4* %B_temp_V_read_assign
+
+ST_3: stg_103 [1/1] 0.00ns
+get_checkerboard_color.exit:3  call void @_ssdm_op_Write.ap_none.volatile.i4P(i4* %R_V, i4 %R_temp_V_read_assign_load)
+
+ST_3: stg_104 [1/1] 0.00ns
+get_checkerboard_color.exit:4  call void @_ssdm_op_Write.ap_none.volatile.i4P(i4* %G_V, i4 %G_temp_V_read_assign_load)
+
+ST_3: stg_105 [1/1] 0.00ns
+get_checkerboard_color.exit:5  call void @_ssdm_op_Write.ap_none.volatile.i4P(i4* %B_V, i4 %B_temp_V_read_assign_load)
+
+ST_3: stg_106 [1/1] 0.00ns
+get_checkerboard_color.exit:8  br label %9
+
+ST_3: empty [1/1] 0.00ns
+:0  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str3, i32 %tmp_9)
+
+ST_3: stg_108 [1/1] 0.00ns
+:2  br label %.preheader
+
+
+ <State 4>: 0.00ns
+ST_4: stg_109 [1/1] 0.00ns
+:0  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

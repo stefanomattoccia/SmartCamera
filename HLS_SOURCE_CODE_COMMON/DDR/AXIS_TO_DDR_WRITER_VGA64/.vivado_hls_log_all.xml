@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTMG-274] Memory 'axis_to_ddr_writer_buffer' is read-only, switch it to a ROM." projectName="AXIS_TO_DDR_WRITER_VGA64" solutionName="solution1" date="2016-04-30T19:20:28.783+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'frame_count_inner' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_VGA64" solutionName="solution1" date="2016-04-30T19:20:28.383+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Register 'inner_index_V' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_VGA64" solutionName="solution1" date="2016-04-30T19:20:28.375+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'frame_count' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="AXIS_TO_DDR_WRITER_VGA64" solutionName="solution1" date="2016-04-30T19:20:28.368+0200" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'frame_index_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="AXIS_TO_DDR_WRITER_VGA64" solutionName="solution1" date="2016-04-30T19:20:28.360+0200" type="Warning"/>
+        <logs message="@W [BIND-102] The specified resource core for memory 'buffer' will be ignored if a simpler one can be used." projectName="AXIS_TO_DDR_WRITER_VGA64" solutionName="solution1" date="2016-04-30T19:20:28.307+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,19 @@
+@I [HLS-10] Running 'C:/Xilinx/Vivado_HLS/2015.4/bin/unwrapped/win64.o/vivado_hls.exe'
+            for user 'Riccardo' on host 'desktop-s5m9alu' (Windows NT_amd64 version 6.2) on Sat Apr 30 20:36:02 +0200 2016
+            in directory 'C:/Users/Riccardo/Documents/HLS_COMMON/VGA'
+@I [HLS-10] Opening project 'C:/Users/Riccardo/Documents/HLS_COMMON/VGA/AXI_STREAM_TO_VGA'.
+@I [HLS-10] Opening solution 'C:/Users/Riccardo/Documents/HLS_COMMON/VGA/AXI_STREAM_TO_VGA/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [IMPL-8] Exporting RTL as an IP in IP-XACT.
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 30 20:36:09 2016...

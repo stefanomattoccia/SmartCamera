@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1379144270 source:c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\lib_time_measurements\dllmain.cpp
+	"stdafx.h"
+
+1379144270 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\lib_time_measurements\stdafx.h
+	"targetver.h"
+	<windows.h>
+
+1379144270 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\lib_time_measurements\targetver.h
+
+1386500964 source:c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\lib_time_measurements\lib_time_measurements.cpp
+	"stdafx.h"
+	"lib_time_measurements.h"
+	"Time_Measurement.h"
+
+1492293461 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\lib_time_measurements\lib_time_measurements.h
+	"../OS/os.h"
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+
+1492293037 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\os\os.h
+
+1492293509 c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\lib_time_measurements\time_measurement.h
+	"../OS/os.h"
+	<stdio.h>
+	<opencv/cxcore.h>
+	<opencv/cxcore.h>
+	<cxcore.h>
+	<opencv/cxcore.h>
+	"stdafx.h"
+
+1379226030 source:c:\bernasconi_mattia\files_tesi\ov7670_color_mattia\client_pc_colore\lib_time_measurements\time_measurement.cpp
+	"Time_Measurement.h"
+

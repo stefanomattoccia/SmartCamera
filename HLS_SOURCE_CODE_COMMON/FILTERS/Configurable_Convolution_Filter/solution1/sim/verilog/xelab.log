@@ -1,0 +1,50 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2016.2/bin/../data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_convolution_filter_top -prj convolution_filter.prj --initfile C:/Xilinx/Vivado/2016.2/bin/../data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s convolution_filter 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/AESL_axi_s_filter_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_filter_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/AESL_axi_s_in_img_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_img_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/AESL_axi_s_out_img_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_img_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_convolution_filter_top
+INFO: [VRFC 10-2458] undeclared symbol ap_clk, assumed default net type wire [C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter.autotb.v:92]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n, assumed default net type wire [C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter.autotb.v:93]
+INFO: [VRFC 10-2458] undeclared symbol ap_rst_n_n, assumed default net type wire [C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter.autotb.v:111]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module convolution_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter_filter_weights_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module convolution_filter_filter_weights_V_ram
+INFO: [VRFC 10-311] analyzing module convolution_filter_filter_weights_V
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter_line_buffer_V_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module convolution_filter_line_buffer_V_0_ram
+INFO: [VRFC 10-311] analyzing module convolution_filter_line_buffer_V_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter_udiv_16ns_8ns_16_20.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module convolution_filter_udiv_16ns_8ns_16_20_div_u
+INFO: [VRFC 10-311] analyzing module convolution_filter_udiv_16ns_8ns_16_20_div
+INFO: [VRFC 10-311] analyzing module convolution_filter_udiv_16ns_8ns_16_20
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.convolution_filter_filter_weight...
+Compiling module xil_defaultlib.convolution_filter_filter_weight...
+Compiling module xil_defaultlib.convolution_filter_line_buffer_V...
+Compiling module xil_defaultlib.convolution_filter_line_buffer_V...
+Compiling module xil_defaultlib.convolution_filter_udiv_16ns_8ns...
+Compiling module xil_defaultlib.convolution_filter_udiv_16ns_8ns...
+Compiling module xil_defaultlib.convolution_filter_udiv_16ns_8ns...
+Compiling module xil_defaultlib.convolution_filter
+Compiling module xil_defaultlib.fifo(DEPTH=11)
+Compiling module xil_defaultlib.AESL_axi_s_filter_V
+Compiling module xil_defaultlib.fifo(DEPTH=307200)
+Compiling module xil_defaultlib.AESL_axi_s_in_img_V
+Compiling module xil_defaultlib.AESL_axi_s_out_img_V
+Compiling module xil_defaultlib.apatb_convolution_filter_top
+Built simulation snapshot convolution_filter

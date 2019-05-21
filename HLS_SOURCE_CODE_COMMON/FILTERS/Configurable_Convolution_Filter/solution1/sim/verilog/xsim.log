@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# xsim v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Aug 22 17:53:12 2017
+# Process ID: 392
+# Current directory: C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/convolution_filter/xsim_script.tcl}
+# Log file: C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/convolution_filter/xsim_script.tcl
+# xsim {convolution_filter} -autoloadwcfg -tclbatch {convolution_filter.tcl}
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source convolution_filter.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [0.00%] @ "18499745000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 18499785 ns : File "C:/Users/Luca/Desktop/ProgettoVivado/OV_7670/HLS_COMMON/FILTERS/Configurable_Convolution_Filter/solution1/sim/verilog/convolution_filter.autotb.v" Line 285
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:04:41 . Memory (MB): peak = 50.449 ; gain = 0.016
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Aug 22 17:57:56 2017...

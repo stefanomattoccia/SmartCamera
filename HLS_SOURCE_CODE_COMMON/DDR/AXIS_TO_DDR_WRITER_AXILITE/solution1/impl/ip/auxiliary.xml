@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="axis_to_ddr_writer" xd:componentRef="axis_to_ddr_writer" xd:initiationInterval="x" xd:clockPeriod="8.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="inputStream" xd:originalName="inputStream" xd:direction="in" xd:interfaceRef="inputStream_V" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(base_ddr_addr)" xd:originalName="base_ddr_addr" xd:direction="inout" xd:interfaceRef="m_axi_base_ddr_addr" xd:busTypeRef="aximm" xd:arraySize="32" xd:dataWidth="64" xd:bufferDirection="out"/>
+  <xd:arg xd:name="*(frame_index)" xd:originalName="frame_index" xd:direction="out" xd:interfaceRef="frame_index_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(frame_count)" xd:originalName="frame_count" xd:direction="out" xd:interfaceRef="frame_count" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="base_address" xd:originalName="base_address" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:dataWidth="32" xd:offset="0x10" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="frame_buffer_dim" xd:originalName="frame_buffer_dim" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:dataWidth="32" xd:offset="0x18" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="frame_buffer_offset" xd:originalName="frame_buffer_offset" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:dataWidth="32" xd:offset="0x20" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="frame_buffer_number" xd:originalName="frame_buffer_number" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:dataWidth="8" xd:offset="0x28" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="update_intr" xd:originalName="update_intr" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x30" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="1483" xd:FF="1283" xd:BRAM="2" xd:DSP="2"/>
+</xd:acceleratorMap>

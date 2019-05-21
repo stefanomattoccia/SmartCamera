@@ -1,0 +1,33 @@
+CC=g++ 
+FLAGS= -g 
+INCLUDES = -I/usr/local/include -I/System/Library/Frameworks/OpenGL.framework/Headers
+OPT=
+ARCH=
+CPU=
+CFLAGS =
+LDFLAGS = -L/usr/local/lib -framework OpenGL -lglut  -lopencv_calib3d -lopencv_core -lopencv_features2d  -lopencv_highgui -lopencv_imgproc -lopencv_legacy  -lm -dynamiclib
+
+all : augmented_reality.dylib
+
+augmented_reality.dylib : application.o CVfunctions.o GLfunctions.o util.o
+	$(CC) $(FLAGS) $(INCLUDES) $(OPT) $(ARCH) $(CPU) $(CFLAGS) -o augmented_reality.dylib application.o CVfunctions.o GLfunctions.o util.o $(LDFLAGS) 
+	@echo [INFO] 
+	@echo [INFO] Static library and object files ready
+	@echo [INFO] Copying files to the right place...
+	@echo [INFO] 
+	cp -f augmented_reality.dylib ../Client_pc_colore
+
+application.o : application.h ../OS/os.h application.cpp makefile-mac
+	$(CC) $(FLAGS) $(INCLUDES) $(OPT) $(ARCH) $(CPU) -c application.cpp $(LDFLAGS)
+
+CVfunctions.o : CVfunctions.h CVfunctions.cpp makefile-mac
+	$(CC) $(FLAGS) $(INCLUDES) $(OPT) $(ARCH) $(CPU) -c CVfunctions.cpp  $(LDFLAGS)
+
+GLfunctions.o : GLfunctions.h GLfunctions.cpp makefile-mac
+	$(CC) $(FLAGS) $(INCLUDES) $(OPT) $(ARCH) $(CPU) -c GLfunctions.cpp  $(LDFLAGS)
+
+util.o : util.h util.cpp makefile-mac
+	$(CC) $(FLAGS) $(INCLUDES) $(OPT) $(ARCH) $(CPU) -c util.cpp  $(LDFLAGS)
+
+clean: 
+	rm -rf *.dylib *.o *.~ 

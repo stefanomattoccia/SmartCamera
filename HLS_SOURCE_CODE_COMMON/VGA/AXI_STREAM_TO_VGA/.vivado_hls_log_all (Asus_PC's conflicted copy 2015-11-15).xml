@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [RTGEN-101] Register 'color_blinking_V' is power-on initialization." projectName="VGA_READ_BRAM_ADDRESS" solutionName="solution1" date="2015-11-15T18:40:58.140+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'H_SYNC_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="VGA_READ_BRAM_ADDRESS" solutionName="solution1" date="2015-11-15T18:40:58.134+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'V_SYNC_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="VGA_READ_BRAM_ADDRESS" solutionName="solution1" date="2015-11-15T18:40:58.129+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'B_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="VGA_READ_BRAM_ADDRESS" solutionName="solution1" date="2015-11-15T18:40:58.124+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'G_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="VGA_READ_BRAM_ADDRESS" solutionName="solution1" date="2015-11-15T18:40:58.119+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'R_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="VGA_READ_BRAM_ADDRESS" solutionName="solution1" date="2015-11-15T18:40:58.113+0100" type="Warning"/>
+        <logs message="@W [RTGEN-101] Port 'read_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="VGA_READ_BRAM_ADDRESS" solutionName="solution1" date="2015-11-15T18:40:58.107+0100" type="Warning"/>
+        <logs message="@W [XFORM-124] Array 'PIXEL.V' (VGA_READ_BRAM_ADDRESS/vga_bram_read_address.cpp:43): may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="VGA_READ_BRAM_ADDRESS" solutionName="solution1" date="2015-11-15T18:40:57.452+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

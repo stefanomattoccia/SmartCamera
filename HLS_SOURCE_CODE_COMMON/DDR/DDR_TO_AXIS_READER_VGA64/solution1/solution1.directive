@@ -1,0 +1,20 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="ddr_to_axis_reader" label="" functionLabel="">
+            <pragma name="RESET">
+                <option name="variable" value="frame_count_inner" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="ddr_to_axis_reader" label="" functionLabel="">
+            <pragma name="RESET">
+                <option name="variable" value="index_old" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="ddr_to_axis_reader" label="" functionLabel="">
+            <pragma name="RESET">
+                <option name="variable" value="frame_count_equals_inner" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

@@ -1,0 +1,1 @@
+"xil_defaultlib.apatb_ov7670_grayscale_top" -prj "ov7670_grayscale.prj" --lib "ieee_proposed=./ieee_proposed" -s "ov7670_grayscale" -debug "wave" 

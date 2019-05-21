@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Webtalk v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# 
+# Start of session at: Mon Nov 28 13:28:53 2016
+# Process ID: 1472
+# Current directory: Z:/Dropbox/000_OV_VISION_PIPELINE_2016/OV/VIVADO/OV7670/sdk_workspace/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: Z:/Dropbox/000_OV_VISION_PIPELINE_2016/OV/VIVADO/OV7670/sdk_workspace/webtalk/webtalk.log
+# Journal file: Z:/Dropbox/000_OV_VISION_PIPELINE_2016/OV/VIVADO/OV7670/sdk_workspace/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
+# webtalk_init -webtalk_dir Z:\\Dropbox\\000_OV_VISION_PIPELINE_2016\\OV\\VIVADO\\OV7670\\sdk_workspace\\webtalk
+# webtalk_register_client -client project
+# webtalk_add_data -client project -key date_generated -value "Mon Nov 28 13:28:13 2016" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key product_version -value "SDK v2016.2" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key build_version -value "2016.2" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key os_platform -value "amd64" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key registration_id -value "" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key tool_flow -value "SDK" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key beta -value "false" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key route_design -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_family -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_device -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_package -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_speed -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key random_id -value "12b15b2ei25vtvq8o51ksin4b4" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_id -value "2016.2_5" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_iteration -value "5" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key os_name -value "" -context "user_environment"
+# webtalk_add_data -client project -key os_release -value "" -context "user_environment"
+# webtalk_add_data -client project -key cpu_name -value "" -context "user_environment"
+# webtalk_add_data -client project -key cpu_speed -value "" -context "user_environment"
+# webtalk_add_data -client project -key total_processors -value "" -context "user_environment"
+# webtalk_add_data -client project -key system_ram -value "" -context "user_environment"
+# webtalk_register_client -client sdk
+# webtalk_add_data -client sdk -key uid -value "1480335028000" -context "sdk\\\\hardware/1480335028000"
+# webtalk_add_data -client sdk -key isZynq -value "true" -context "sdk\\\\hardware/1480335028000"
+# webtalk_add_data -client sdk -key Processors -value "2" -context "sdk\\\\hardware/1480335028000"
+# webtalk_add_data -client sdk -key VivadoVersion -value "2016.2" -context "sdk\\\\hardware/1480335028000"
+# webtalk_add_data -client sdk -key Arch -value "zynq" -context "sdk\\\\hardware/1480335028000"
+# webtalk_add_data -client sdk -key Device -value "7z020" -context "sdk\\\\hardware/1480335028000"
+# webtalk_add_data -client sdk -key IsHandoff -value "true" -context "sdk\\\\hardware/1480335028000"
+# webtalk_transmit -clientid 4003550271 -regid "" -xml Z:\\Dropbox\\000_OV_VISION_PIPELINE_2016\\OV\\VIVADO\\OV7670\\sdk_workspace\\webtalk\\usage_statistics_ext_sdk.xml -html Z:\\Dropbox\\000_OV_VISION_PIPELINE_2016\\OV\\VIVADO\\OV7670\\sdk_workspace\\webtalk\\usage_statistics_ext_sdk.html -wdm Z:\\Dropbox\\000_OV_VISION_PIPELINE_2016\\OV\\VIVADO\\OV7670\\sdk_workspace\\webtalk\\sdk_webtalk.wdm -intro "<H3>SDK Usage Report</H3><BR>"
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 49.734 ; gain = 0.000
+# webtalk_terminate
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 28 13:29:56 2016...

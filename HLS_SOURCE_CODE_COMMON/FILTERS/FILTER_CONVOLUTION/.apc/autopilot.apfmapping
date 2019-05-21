@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Filter_convolution.cpp" path="C:\Test_5_Tesi\HLS_COMMON\FILTERS\FILTER_CONVOLUTION\Filter_convolution.cpp"/>
+    <originFiles name="Filter_convolution.h" path="C:\Test_5_Tesi\HLS_COMMON\FILTERS\FILTER_CONVOLUTION\Filter_convolution.h"/>
+  </source>
+  <testbench>
+    <originFiles name="Testbench.cpp" path="C:\Test_5_Tesi\HLS_COMMON\FILTERS\FILTER_CONVOLUTION\Testbench.cpp"/>
+    <originFiles name="Testbench.h" path="C:\Test_5_Tesi\HLS_COMMON\FILTERS\FILTER_CONVOLUTION\Testbench.h"/>
+    <originFiles name="ap_bmp.cpp" path="C:\Test_5_Tesi\HLS_COMMON\FILTERS\FILTER_CONVOLUTION\ap_bmp.cpp"/>
+    <originFiles name="ap_bmp.h" path="C:\Test_5_Tesi\HLS_COMMON\FILTERS\FILTER_CONVOLUTION\ap_bmp.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

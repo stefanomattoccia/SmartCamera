@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="ddr_to_axis_reader" xd:componentRef="ddr_to_axis_reader" xd:initiationInterval="347403" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="outStream" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream_V" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="*(base_ddr_addr)" xd:originalName="base_ddr_addr" xd:direction="inout" xd:interfaceRef="m_axi_base_ddr_addr" xd:busTypeRef="aximm" xd:arraySize="128" xd:dataWidth="64" xd:bufferDirection="in"/>
+  <xd:arg xd:name="*(frame_index)" xd:originalName="frame_index" xd:direction="in" xd:interfaceRef="frame_index_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="3"/>
+  <xd:arg xd:name="*(frame_count)" xd:originalName="frame_count" xd:direction="out" xd:interfaceRef="frame_count" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="*(frame_count_equals)" xd:originalName="frame_count_equals" xd:direction="out" xd:interfaceRef="frame_count_equals" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="347402" xd:worst-case="347402" xd:average-case="347402"/>
+  <xd:resourceEstimates xd:LUT="1493" xd:FF="882" xd:BRAM="2" xd:DSP="1"/>
+</xd:acceleratorMap>

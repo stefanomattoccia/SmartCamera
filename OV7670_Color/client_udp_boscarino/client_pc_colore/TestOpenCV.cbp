@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TestOpenCV" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TestOpenCV" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option external_deps="libws2_32.a;" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="libws2_32.a" />
+					<Add directory="../RealtaAumentata/obj" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TestOpenCV" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="ws2_32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add library="bin/Release/lib_time_measurements.a" />
+			<Add library="../freeglut/lib/libfreeglut.a" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+		</Linker>
+		<Unit filename="Calibration_single_camera.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="Calibration_single_camera.h" />
+		<Unit filename="OV7670.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="OV7670.h" />
+		<Unit filename="hybrid_socket.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Unit filename="hybrid_socket.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CPP" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

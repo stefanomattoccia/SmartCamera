@@ -1,0 +1,8 @@
+16:57:02 **** Incremental Build of configuration Debug for project OV_7670_ARM ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+
+16:57:02 Build Finished (took 232ms)
+

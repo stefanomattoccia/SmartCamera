@@ -1,0 +1,367 @@
+
+
+================================================================
+== Vivado HLS Report for 'axis_to_ddr_writer'
+================================================================
+* Date:           Sat Apr 30 19:20:28 2016
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        AXIS_TO_DDR_WRITER_VGA64
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.75|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  346351|  346351|  346352|  346352|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------------------------------+--------+--------+----------+-----------+-----------+------+----------+
+        |                                    |     Latency     | Iteration|  Initiation Interval  | Trip |          |
+        |              Loop Name             |   min  |   max  |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------------------------------+--------+--------+----------+-----------+-----------+------+----------+
+        |- Loop 1                            |  346350|  346350|      4618|          -|          -|    75|    no    |
+        | + Loop 1.1                         |    4096|    4096|         1|          1|          1|  4096|    yes   |
+        | + memcpy.base_ddr_addr.buffer.gep  |     513|     513|         3|          1|          1|   512|    yes   |
+        +------------------------------------+--------+--------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+  * Pipeline-1: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 12
+* Pipeline: 2
+  Pipeline-0: II = 1, D = 1, States = { 3 }
+  Pipeline-1: II = 1, D = 3, States = { 5 6 7 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond1)
+3 --> 
+	4  / (exitcond_flatten)
+	3  / (!exitcond_flatten)
+4 --> 
+	5  / true
+5 --> 
+	8  / (exitcond3)
+	6  / (!exitcond3)
+6 --> 
+	7  / true
+7 --> 
+	5  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	2  / true
+* FSM state operations: 
+
+ <State 1>: 7.95ns
+ST_1: stg_13 [1/1] 0.00ns
+codeRepl:0  call void (...)* @_ssdm_op_SpecBitsMap(i8* %inputStream_V), !map !7
+
+ST_1: stg_14 [1/1] 0.00ns
+codeRepl:1  call void (...)* @_ssdm_op_SpecBitsMap(i64* %base_ddr_addr), !map !11
+
+ST_1: stg_15 [1/1] 0.00ns
+codeRepl:2  call void (...)* @_ssdm_op_SpecBitsMap(i3* %frame_index_V), !map !17
+
+ST_1: stg_16 [1/1] 0.00ns
+codeRepl:3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %frame_count), !map !21
+
+ST_1: stg_17 [1/1] 0.00ns
+codeRepl:4  call void (...)* @_ssdm_op_SpecTopModule([19 x i8]* @axis_to_ddr_writer_str) nounwind
+
+ST_1: buffer [1/1] 0.00ns
+codeRepl:5  %buffer = alloca [512 x i64], align 16
+
+ST_1: stg_19 [1/1] 0.00ns
+codeRepl:6  call void (...)* @_ssdm_op_SpecInterface(i64* %base_ddr_addr, [6 x i8]* @p_str, i32 0, i32 0, i32 0, i32 32, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_20 [1/1] 0.00ns
+codeRepl:7  call void (...)* @_ssdm_op_SpecInterface(i8* %inputStream_V, [5 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_21 [1/1] 0.00ns
+codeRepl:8  call void (...)* @_ssdm_op_SpecInterface(i32* %frame_count, [8 x i8]* @p_str3, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_22 [1/1] 0.00ns
+codeRepl:9  call void (...)* @_ssdm_op_SpecInterface(i3* %frame_index_V, [8 x i8]* @p_str3, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_23 [1/1] 0.00ns
+codeRepl:10  call void (...)* @_ssdm_op_SpecMemCore([512 x i64]* %buffer, [1 x i8]* @p_str1, [12 x i8]* @p_str4, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)
+
+ST_1: stg_24 [1/1] 0.00ns
+codeRepl:11  call void (...)* @_ssdm_op_SpecReset(i3* @inner_index_V, i32 1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_25 [1/1] 0.00ns
+codeRepl:12  call void (...)* @_ssdm_op_SpecReset(i32* @frame_count_inner, i32 1, [1 x i8]* @p_str1) nounwind
+
+ST_1: inner_index_V_load [1/1] 0.00ns
+codeRepl:13  %inner_index_V_load = load i3* @inner_index_V, align 1
+
+ST_1: stg_27 [1/1] 0.00ns
+codeRepl:14  call void @_ssdm_op_Write.ap_none.i3P(i3* %frame_index_V, i3 %inner_index_V_load)
+
+ST_1: tmp_cast [1/1] 0.00ns
+codeRepl:15  %tmp_cast = zext i3 %inner_index_V_load to i22
+
+ST_1: tmp_1 [1/1] 6.38ns
+codeRepl:16  %tmp_1 = mul i22 %tmp_cast, 307200
+
+ST_1: offset_cast [1/1] 0.00ns
+codeRepl:17  %offset_cast = call i19 @_ssdm_op_PartSelect.i19.i22.i32.i32(i22 %tmp_1, i32 3, i32 21)
+
+ST_1: stg_31 [1/1] 1.57ns
+codeRepl:18  br label %0
+
+
+ <State 2>: 3.54ns
+ST_2: offset1 [1/1] 0.00ns
+:0  %offset1 = phi i19 [ %offset_cast, %codeRepl ], [ %offset, %burst.wr.end ]
+
+ST_2: idx [1/1] 0.00ns
+:1  %idx = phi i7 [ 0, %codeRepl ], [ %idx_1, %burst.wr.end ]
+
+ST_2: exitcond1 [1/1] 1.97ns
+:2  %exitcond1 = icmp eq i7 %idx, -53
+
+ST_2: empty [1/1] 0.00ns
+:3  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 75, i64 75, i64 75)
+
+ST_2: idx_1 [1/1] 1.72ns
+:4  %idx_1 = add i7 %idx, 1
+
+ST_2: stg_37 [1/1] 1.57ns
+:5  br i1 %exitcond1, label %._crit_edge61, label %.preheader
+
+ST_2: tmp_4 [1/1] 0.80ns
+._crit_edge61:0  %tmp_4 = add i3 %inner_index_V_load, 1
+
+ST_2: stg_39 [1/1] 0.00ns
+._crit_edge61:1  store i3 %tmp_4, i3* @inner_index_V, align 1
+
+ST_2: frame_count_inner_load [1/1] 0.00ns
+._crit_edge61:2  %frame_count_inner_load = load i32* @frame_count_inner, align 4
+
+ST_2: tmp_5 [1/1] 2.44ns
+._crit_edge61:3  %tmp_5 = add nsw i32 %frame_count_inner_load, 1
+
+ST_2: stg_42 [1/1] 0.00ns
+._crit_edge61:4  store i32 %tmp_5, i32* @frame_count_inner, align 4
+
+ST_2: stg_43 [1/1] 0.00ns
+._crit_edge61:5  call void @_ssdm_op_Write.ap_none.i32P(i32* %frame_count, i32 %tmp_5)
+
+ST_2: stg_44 [1/1] 0.00ns
+._crit_edge61:6  ret void
+
+
+ <State 3>: 2.18ns
+ST_3: indvar_flatten [1/1] 0.00ns
+.preheader:0  %indvar_flatten = phi i13 [ %indvar_flatten_next, %.preheader59 ], [ 0, %0 ]
+
+ST_3: exitcond_flatten [1/1] 2.18ns
+.preheader:1  %exitcond_flatten = icmp eq i13 %indvar_flatten, -4096
+
+ST_3: indvar_flatten_next [1/1] 1.96ns
+.preheader:2  %indvar_flatten_next = add i13 %indvar_flatten, 1
+
+ST_3: stg_48 [1/1] 0.00ns
+.preheader:3  br i1 %exitcond_flatten, label %burst.wr.header.preheader, label %.preheader59
+
+ST_3: empty_5 [1/1] 0.00ns
+.preheader59:0  %empty_5 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4096, i64 4096, i64 4096)
+
+ST_3: tmp_3 [1/1] 0.00ns
+.preheader59:1  %tmp_3 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str5)
+
+ST_3: stg_51 [1/1] 0.00ns
+.preheader59:2  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind
+
+ST_3: tmp_0 [1/1] 0.00ns
+.preheader59:3  %tmp_0 = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %inputStream_V)
+
+ST_3: empty_6 [1/1] 0.00ns
+.preheader59:4  %empty_6 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str5, i32 %tmp_3)
+
+ST_3: stg_54 [1/1] 0.00ns
+.preheader59:5  br label %.preheader
+
+
+ <State 4>: 8.75ns
+ST_4: tmp [1/1] 0.00ns
+burst.wr.header.preheader:0  %tmp = zext i19 %offset1 to i64
+
+ST_4: base_ddr_addr_addr [1/1] 0.00ns
+burst.wr.header.preheader:1  %base_ddr_addr_addr = getelementptr i64* %base_ddr_addr, i64 %tmp
+
+ST_4: p_wr_req [1/1] 8.75ns
+burst.wr.header.preheader:2  %p_wr_req = call i1 @_ssdm_op_WriteReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)
+
+ST_4: stg_58 [1/1] 1.57ns
+burst.wr.header.preheader:3  br label %burst.wr.header
+
+
+ <State 5>: 3.44ns
+ST_5: indvar [1/1] 0.00ns
+burst.wr.header:0  %indvar = phi i10 [ %indvar_next, %burst.wr.body ], [ 0, %burst.wr.header.preheader ]
+
+ST_5: exitcond3 [1/1] 2.07ns
+burst.wr.header:1  %exitcond3 = icmp eq i10 %indvar, -512
+
+ST_5: empty_7 [1/1] 0.00ns
+burst.wr.header:2  %empty_7 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 512, i64 512, i64 512)
+
+ST_5: indvar_next [1/1] 1.84ns
+burst.wr.header:3  %indvar_next = add i10 %indvar, 1
+
+ST_5: stg_63 [1/1] 0.00ns
+burst.wr.header:4  br i1 %exitcond3, label %burst.wr.end, label %burst.wr.body
+
+ST_5: tmp_9 [1/1] 0.00ns
+burst.wr.body:3  %tmp_9 = zext i10 %indvar to i64
+
+ST_5: buffer_addr [1/1] 0.00ns
+burst.wr.body:4  %buffer_addr = getelementptr [512 x i64]* %buffer, i64 0, i64 %tmp_9
+
+ST_5: buffer_load [2/2] 2.71ns
+burst.wr.body:5  %buffer_load = load i64* %buffer_addr, align 8
+
+
+ <State 6>: 2.71ns
+ST_6: buffer_load [1/2] 2.71ns
+burst.wr.body:5  %buffer_load = load i64* %buffer_addr, align 8
+
+
+ <State 7>: 8.75ns
+ST_7: burstwrite_rbegin [1/1] 0.00ns
+burst.wr.body:0  %burstwrite_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([18 x i8]* @burstwrite_OC_region_str) nounwind
+
+ST_7: stg_69 [1/1] 0.00ns
+burst.wr.body:1  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str6)
+
+ST_7: empty_8 [1/1] 0.00ns
+burst.wr.body:2  %empty_8 = call i32 (...)* @_ssdm_op_SpecLoopName([32 x i8]* @memcpy_OC_base_ddr_addr_OC_buf) nounwind
+
+ST_7: stg_71 [1/1] 8.75ns
+burst.wr.body:6  call void @_ssdm_op_Write.m_axi.i64P(i64* %base_ddr_addr_addr, i64 %buffer_load, i8 -1)
+
+ST_7: burstwrite_rend [1/1] 0.00ns
+burst.wr.body:7  %burstwrite_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([18 x i8]* @burstwrite_OC_region_str, i32 %burstwrite_rbegin) nounwind
+
+ST_7: stg_73 [1/1] 0.00ns
+burst.wr.body:8  br label %burst.wr.header
+
+
+ <State 8>: 8.75ns
+ST_8: p_wr_resp [5/5] 8.75ns
+burst.wr.end:0  %p_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i64P(i64* %base_ddr_addr_addr)
+
+ST_8: offset [1/1] 2.08ns
+burst.wr.end:1  %offset = add i19 %offset1, 512
+
+
+ <State 9>: 8.75ns
+ST_9: p_wr_resp [4/5] 8.75ns
+burst.wr.end:0  %p_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i64P(i64* %base_ddr_addr_addr)
+
+
+ <State 10>: 8.75ns
+ST_10: p_wr_resp [3/5] 8.75ns
+burst.wr.end:0  %p_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i64P(i64* %base_ddr_addr_addr)
+
+
+ <State 11>: 8.75ns
+ST_11: p_wr_resp [2/5] 8.75ns
+burst.wr.end:0  %p_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i64P(i64* %base_ddr_addr_addr)
+
+
+ <State 12>: 8.75ns
+ST_12: p_wr_resp [1/5] 8.75ns
+burst.wr.end:0  %p_wr_resp = call i1 @_ssdm_op_WriteResp.m_axi.i64P(i64* %base_ddr_addr_addr)
+
+ST_12: stg_80 [1/1] 0.00ns
+burst.wr.end:2  br label %0
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

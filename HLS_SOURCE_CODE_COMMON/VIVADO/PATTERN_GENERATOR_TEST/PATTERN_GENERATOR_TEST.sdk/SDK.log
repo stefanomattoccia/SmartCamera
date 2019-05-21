@@ -1,0 +1,492 @@
+14:29:25 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:29:27 INFO  : XSDB server has started successfully.
+14:29:27 INFO  : Processing command line option -hwspec C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf.
+14:30:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+14:30:35 INFO  : FPGA configured successfully with bitstream "C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+14:30:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+14:30:56 INFO  : 'fpga -state' command is executed.
+14:30:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:30:56 INFO  : Sourcing of 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+14:30:56 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+14:30:56 INFO  : Hardware design information is loaded from 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+14:30:57 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+14:30:57 INFO  : 'stop' command is executed.
+14:30:57 INFO  : 'ps7_init' command is executed.
+14:30:57 INFO  : 'ps7_post_config' command is executed.
+14:30:57 INFO  : 'con' command is executed.
+14:30:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:30:58 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+14:30:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:30:58 INFO  : The application 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:30:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+loadhw C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+dow C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+14:30:58 INFO  : Memory regions updated for context APU
+14:30:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:30:58 INFO  : 'con' command is executed.
+14:30:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+con
+----------------End of Script----------------
+
+15:32:30 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1453991496199,  Project:1453987645508
+15:32:30 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+15:32:36 INFO  : Copied contents of C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+15:32:42 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:32:44 INFO  : 
+15:32:45 INFO  : Updating hardware inferred compiler options for test.
+15:32:45 INFO  : Clearing existing target manager status.
+15:32:47 INFO  : Closing and re-opening the MSS file of ther project test_bsp
+15:32:49 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+15:32:50 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+15:33:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:33:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+15:33:25 INFO  : FPGA configured successfully with bitstream "C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:37:37 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+15:37:37 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:40:37 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+15:40:37 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+16:09:37 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:09:39 INFO  : XSDB server has started successfully.
+16:09:45 INFO  : Processing command line option -hwspec C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf.
+16:09:46 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:09:46 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1453993669907,  Project:1453991496199
+16:09:46 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf.
+16:09:46 INFO  : Copied contents of C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+16:09:52 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:09:54 INFO  : 
+16:09:55 INFO  : Updating hardware inferred compiler options for test.
+16:09:55 INFO  : Clearing existing target manager status.
+16:09:57 INFO  : Closing and re-opening the MSS file of ther project test_bsp
+16:09:58 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+16:10:00 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+16:10:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:10:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+16:10:48 INFO  : FPGA configured successfully with bitstream "C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:10:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+16:10:54 INFO  : 'fpga -state' command is executed.
+16:10:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:10:54 INFO  : Sourcing of 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:10:54 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+16:10:55 INFO  : Hardware design information is loaded from 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:10:55 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+16:10:55 INFO  : 'stop' command is executed.
+16:10:55 INFO  : 'ps7_init' command is executed.
+16:10:56 INFO  : 'ps7_post_config' command is executed.
+16:10:56 INFO  : 'con' command is executed.
+16:10:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:10:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:10:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:10:56 INFO  : The application 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:10:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+loadhw C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+dow C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+16:10:57 INFO  : Memory regions updated for context APU
+16:10:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:10:57 INFO  : 'con' command is executed.
+16:10:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+con
+----------------End of Script----------------
+
+16:16:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:16:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+16:16:27 INFO  : FPGA configured successfully with bitstream "C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:16:31 INFO  : Disconnected from the channel tcfchan#1.
+16:16:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+16:16:32 INFO  : 'fpga -state' command is executed.
+16:16:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:16:32 INFO  : Sourcing of 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:16:32 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+16:16:32 INFO  : Hardware design information is loaded from 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:16:33 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+16:16:33 INFO  : 'stop' command is executed.
+16:16:33 INFO  : 'ps7_init' command is executed.
+16:16:33 INFO  : 'ps7_post_config' command is executed.
+16:16:33 INFO  : 'con' command is executed.
+16:16:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:16:34 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:16:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:16:34 INFO  : The application 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:16:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+loadhw C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+dow C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+16:16:34 INFO  : Memory regions updated for context APU
+16:16:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:16:34 INFO  : 'con' command is executed.
+16:16:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+con
+----------------End of Script----------------
+
+16:22:11 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 304 xsdb eval "disconnect tcfchan#2"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
+16:22:12 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:54:15 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:54:17 INFO  : XSDB server has started successfully.
+16:54:18 INFO  : Processing command line option -hwspec C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf.
+16:54:18 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+16:54:21 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1453996395090,  Project:1453993669907
+16:54:21 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf.
+16:54:21 INFO  : Copied contents of C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+16:54:27 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:54:29 INFO  : 
+16:54:30 INFO  : Updating hardware inferred compiler options for test.
+16:54:30 INFO  : Clearing existing target manager status.
+16:54:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:55:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+16:55:05 INFO  : FPGA configured successfully with bitstream "C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:55:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+16:55:11 INFO  : 'fpga -state' command is executed.
+16:55:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:55:11 INFO  : Sourcing of 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:55:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+16:55:12 INFO  : Hardware design information is loaded from 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:55:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+16:55:12 INFO  : 'stop' command is executed.
+16:55:13 INFO  : 'ps7_init' command is executed.
+16:55:13 INFO  : 'ps7_post_config' command is executed.
+16:55:13 INFO  : 'con' command is executed.
+16:55:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:55:13 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:55:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:55:14 INFO  : The application 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:55:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+loadhw C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+dow C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+16:55:14 INFO  : Memory regions updated for context APU
+16:55:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:55:14 INFO  : 'con' command is executed.
+16:55:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+con
+----------------End of Script----------------
+
+17:43:28 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:43:28 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:46:29 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+17:46:29 WARN  : Unexpected exception occurred.
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+12:07:39 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+12:07:41 INFO  : XSDB server has started successfully.
+12:07:41 INFO  : Processing command line option -hwspec C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf.
+12:07:42 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+12:08:01 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+12:08:04 INFO  : XSDB server has started successfully.
+12:08:04 INFO  : Processing command line option -hwspec C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf.
+12:08:04 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+12:08:07 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1454065497312,  Project:1453996395090
+12:08:07 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf.
+12:08:25 INFO  : Copied contents of C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+12:08:31 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+12:08:33 INFO  : 
+12:08:34 INFO  : Updating hardware inferred compiler options for test.
+12:08:34 INFO  : Clearing existing target manager status.
+12:09:15 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+12:09:31 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+12:09:33 INFO  : XSDB server has started successfully.
+12:09:34 INFO  : Processing command line option -hwspec C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper.hdf.
+12:10:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:10:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+12:10:38 INFO  : FPGA configured successfully with bitstream "C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:10:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+12:10:48 INFO  : 'fpga -state' command is executed.
+12:10:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:10:48 INFO  : Sourcing of 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+12:10:48 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+12:10:48 INFO  : Hardware design information is loaded from 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:10:49 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+12:10:49 INFO  : 'stop' command is executed.
+12:10:49 INFO  : 'ps7_init' command is executed.
+12:10:49 INFO  : 'ps7_post_config' command is executed.
+12:10:49 INFO  : 'con' command is executed.
+12:10:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:10:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+12:10:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:10:50 INFO  : The application 'C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/test/Debug/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:10:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+loadhw C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+dow C:/Users/Riccardo/Documents/Vivado/BASIC_VISION_PIPELINE_PERSONAL/BASIC_VISION_PIPELINE_PERSONAL.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+12:10:50 INFO  : Memory regions updated for context APU
+12:10:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:10:50 INFO  : 'con' command is executed.
+12:10:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+con
+----------------End of Script----------------
+
+12:30:25 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:47:42 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:47:45 INFO  : XSDB server has started successfully.
+19:47:45 INFO  : Processing command line option -hwspec C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper.hdf.
+19:49:02 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:49:03 INFO  : XSDB server has started successfully.
+19:49:08 INFO  : Processing command line option -hwspec C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper.hdf.
+19:49:52 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:49:54 INFO  : XSDB server has started successfully.
+19:49:54 INFO  : Processing command line option -hwspec C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper.hdf.
+19:50:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+19:50:59 INFO  : 'fpga -state' command is executed.
+19:51:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:51:05 INFO  : Sourcing of 'C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:51:05 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+19:51:05 INFO  : System reset is completed.
+19:51:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+19:51:11 INFO  : FPGA configured successfully with bitstream "C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+19:51:11 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+19:51:11 INFO  : Hardware design information is loaded from 'C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+19:51:12 INFO  : 'ps7_init' command is executed.
+19:51:12 INFO  : 'ps7_post_config' command is executed.
+19:51:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:51:12 INFO  : The application 'C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:51:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1
+fpga -file C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+loadhw C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+dow C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/helloworld/Debug/helloworld.elf
+----------------End of Script----------------
+
+19:51:12 INFO  : Memory regions updated for context APU
+19:51:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:51:13 INFO  : 'con' command is executed.
+19:51:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+con
+----------------End of Script----------------
+
+19:52:36 INFO  : Disconnected from the channel tcfchan#1.
+19:52:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:52:37 INFO  : Sourcing of 'C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:52:37 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+19:52:37 INFO  : System reset is completed.
+19:52:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+19:52:43 INFO  : FPGA configured successfully with bitstream "C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+19:52:43 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+19:52:43 INFO  : Hardware design information is loaded from 'C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+19:52:44 INFO  : 'ps7_init' command is executed.
+19:52:44 INFO  : 'ps7_post_config' command is executed.
+19:52:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:52:45 INFO  : The application 'C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:52:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1
+fpga -file C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+loadhw C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+dow C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/helloworld/Debug/helloworld.elf
+----------------End of Script----------------
+
+19:52:45 INFO  : Memory regions updated for context APU
+19:52:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:52:45 INFO  : 'con' command is executed.
+19:52:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+con
+----------------End of Script----------------
+
+19:54:12 INFO  : Disconnected from the channel tcfchan#2.
+19:54:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:54:12 INFO  : Sourcing of 'C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+19:54:12 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+19:54:12 INFO  : System reset is completed.
+19:54:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+19:54:18 INFO  : FPGA configured successfully with bitstream "C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+19:54:18 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+19:54:19 INFO  : Hardware design information is loaded from 'C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+19:54:19 INFO  : 'ps7_init' command is executed.
+19:54:19 INFO  : 'ps7_post_config' command is executed.
+19:54:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:54:20 INFO  : The application 'C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:54:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+rst -system
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1
+fpga -file C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+loadhw C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/system.hdf
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+dow C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/helloworld/Debug/helloworld.elf
+----------------End of Script----------------
+
+19:54:20 INFO  : Memory regions updated for context APU
+19:54:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:54:20 INFO  : 'con' command is executed.
+19:54:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+con
+----------------End of Script----------------
+
+20:16:20 INFO  : Disconnected from the channel tcfchan#3.
+20:16:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248470612" && level==0} -index 1' command is executed.
+20:16:20 INFO  : 'fpga -state' command is executed.
+20:16:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:16:21 INFO  : Sourcing of 'C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:16:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+20:16:21 INFO  : Hardware design information is loaded from 'C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:16:21 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0' command is executed.
+20:16:21 INFO  : 'stop' command is executed.
+20:16:22 INFO  : 'ps7_init' command is executed.
+20:16:22 INFO  : 'ps7_post_config' command is executed.
+20:16:22 INFO  : 'con' command is executed.
+20:16:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:16:23 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:16:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:16:23 INFO  : The application 'C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:16:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+loadhw C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+dow C:/Users/Riccardo/Documents/HLS_COMMON/VIVADO/PATTERN_GENERATOR_TEST/PATTERN_GENERATOR_TEST.sdk/helloworld/Debug/helloworld.elf
+----------------End of Script----------------
+
+20:16:23 INFO  : Memory regions updated for context APU
+20:16:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:16:23 INFO  : 'con' command is executed.
+20:16:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248470612"} -index 0
+con
+----------------End of Script----------------
+
+20:17:28 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 244 xsdb eval "disconnect tcfchan#4"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:162)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:84)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:254)
