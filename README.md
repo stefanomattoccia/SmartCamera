@@ -1,4 +1,4 @@
-Computer vision on Zynq devices with OV7670
+Computer vision on Zynq platfotm with OV7670 (or any other) digital image sensor
 
 This repository contains the sorce code of computer vision pipeline implemented on Xilinx devices (e.g., Zynq) with HLS tools.
 The input image streaming from a OV7670 (or any other imaging device) is fed to the FPGA for processing and then transmitted (via UDP) to a remote computer via LWIp from the ARM processor.
@@ -17,4 +17,6 @@ https://www.youtube.com/watch?v=6HEgdZEHpsM
 If you use this code please cite: 
 
 06 - Embedded_Vision.pdf available at www.vision.disi.unibo.it/smatt
+
+
 
