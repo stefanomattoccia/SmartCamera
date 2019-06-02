@@ -1,5 +1,8 @@
 # SmartCamera - Computer vision on Zynq
 
+
+![alt text](https://github.com/smatt-github/SmartCamera/blob/master/Screenshot.png)
+
 ## About
 
 Computer vision on Zynq platfotm with OV7670 (or any other) digital image sensor.
