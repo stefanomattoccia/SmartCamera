@@ -1,0 +1,20 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2018.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'andrea' on host 'Bob' (Linux_x86_64 version 4.15.0-50-generic) on Mon Jun 03 10:38:10 CEST 2019
+INFO: [HLS 200-10] On os Ubuntu 16.04.6 LTS
+INFO: [HLS 200-10] In directory '/home/andrea/Documenti/vision/Ultrascale/hls/VIDEO_STREAM_MUX'
+INFO: [HLS 200-10] Opening project '/home/andrea/Documenti/vision/Ultrascale/hls/VIDEO_STREAM_MUX/VIDEO_STREAM_MUX'.
+INFO: [HLS 200-10] Opening solution '/home/andrea/Documenti/vision/Ultrascale/hls/VIDEO_STREAM_MUX/VIDEO_STREAM_MUX/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-i'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2018.1 (64-bit)
+  **** SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+  **** IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  3 10:38:23 2019...

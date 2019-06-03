@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTMG 210-274] Memory 'axis_to_ddr_writebkb' is read-only, switch it to a ROM." projectName="AXIS_TO_DDR_WRITER_VGA64_prj" solutionName="solution1" date="2019-06-03T11:35:22.738+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'frame_count_inner' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_VGA64_prj" solutionName="solution1" date="2019-06-03T11:35:22.272+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'inner_index_V' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_VGA64_prj" solutionName="solution1" date="2019-06-03T11:35:22.267+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'frame_count' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="AXIS_TO_DDR_WRITER_VGA64_prj" solutionName="solution1" date="2019-06-03T11:35:22.258+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'frame_index_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="AXIS_TO_DDR_WRITER_VGA64_prj" solutionName="solution1" date="2019-06-03T11:35:22.253+0200" type="Warning"/>
+        <logs message="WARNING: [BIND 205-102] The specified resource core for memory 'buffer' will be ignored if a simpler one can be used." projectName="AXIS_TO_DDR_WRITER_VGA64_prj" solutionName="solution1" date="2019-06-03T11:35:22.143+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (axis_to_ddr_writer.cpp:63:17) in function 'axis_to_ddr_writer' : &#xA;&#xA;&#xA;more than one sub loop." projectName="AXIS_TO_DDR_WRITER_VGA64_prj" solutionName="solution1" date="2019-06-03T11:35:21.389+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

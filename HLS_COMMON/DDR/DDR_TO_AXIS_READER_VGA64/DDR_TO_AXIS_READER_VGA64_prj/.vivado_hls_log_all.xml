@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'frame_count_equals_i' is power-on initialization." projectName="DDR_TO_AXIS_READER_VGA64_prj" solutionName="solution1" date="2019-06-03T12:10:28.435+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'index_old' is power-on initialization." projectName="DDR_TO_AXIS_READER_VGA64_prj" solutionName="solution1" date="2019-06-03T12:10:28.427+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'frame_count_inner' is power-on initialization." projectName="DDR_TO_AXIS_READER_VGA64_prj" solutionName="solution1" date="2019-06-03T12:10:28.424+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'frame_count_equals' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="DDR_TO_AXIS_READER_VGA64_prj" solutionName="solution1" date="2019-06-03T12:10:28.421+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'frame_count' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="DDR_TO_AXIS_READER_VGA64_prj" solutionName="solution1" date="2019-06-03T12:10:28.418+0200" type="Warning"/>
+        <logs message="WARNING: [BIND 205-102] The specified resource core for memory 'buffer' will be ignored if a simpler one can be used." projectName="DDR_TO_AXIS_READER_VGA64_prj" solutionName="solution1" date="2019-06-03T12:10:28.316+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (ddr_to_axis_reader.cpp:38:15) in function 'ddr_to_axis_reader' : &#xA;&#xA;&#xA;more than one sub loop." projectName="DDR_TO_AXIS_READER_VGA64_prj" solutionName="solution1" date="2019-06-03T12:10:27.521+0200" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] ddr_to_axis_reader.cpp:41: variable-indexed range selection may cause suboptimal QoR." projectName="DDR_TO_AXIS_READER_VGA64_prj" solutionName="solution1" date="2019-06-03T12:10:26.009+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="ov7670_grayscale.h" path="D:\000_OFFICIAL_OV_VISION_PIPELINE_COLOR_2017\OV_7670\OV7670_Color\VIVADO_HLS\OV7670_GRAYSCALE\ov7670_grayscale.h"/>
+    <originFiles name="ov7670_grayscale.cpp" path="D:\000_OFFICIAL_OV_VISION_PIPELINE_COLOR_2017\OV_7670\OV7670_Color\VIVADO_HLS\OV7670_GRAYSCALE\ov7670_grayscale.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench.cpp" path="D:\000_OFFICIAL_OV_VISION_PIPELINE_COLOR_2017\OV_7670\OV7670_Color\VIVADO_HLS\OV7670_GRAYSCALE\testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

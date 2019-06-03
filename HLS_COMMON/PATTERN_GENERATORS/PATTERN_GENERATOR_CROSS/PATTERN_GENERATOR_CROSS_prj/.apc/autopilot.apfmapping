@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="pattern_generator.cpp" path="/home/gian/Documenti/HiPeRTLab/Projects/fpgavisioninfrastructure/hls/PATTERN_GENERATORS/PATTERN_GENERATOR_CROSS/pattern_generator.cpp"/>
+    <originFiles name="pattern_generator.h" path="/home/gian/Documenti/HiPeRTLab/Projects/fpgavisioninfrastructure/hls/PATTERN_GENERATORS/PATTERN_GENERATOR_CROSS/pattern_generator.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

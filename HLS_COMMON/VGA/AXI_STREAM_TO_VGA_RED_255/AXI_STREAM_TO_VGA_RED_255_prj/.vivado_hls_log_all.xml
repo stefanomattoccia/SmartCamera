@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'color_blinking_V' is power-on initialization." projectName="AXI_STREAM_TO_VGA_RED_255_prj" solutionName="solution1" date="2019-06-03T10:34:58.452+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'H_SYNC_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="AXI_STREAM_TO_VGA_RED_255_prj" solutionName="solution1" date="2019-06-03T10:34:58.433+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'V_SYNC_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="AXI_STREAM_TO_VGA_RED_255_prj" solutionName="solution1" date="2019-06-03T10:34:58.429+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'B_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="AXI_STREAM_TO_VGA_RED_255_prj" solutionName="solution1" date="2019-06-03T10:34:58.423+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'G_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="AXI_STREAM_TO_VGA_RED_255_prj" solutionName="solution1" date="2019-06-03T10:34:58.418+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'R_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="AXI_STREAM_TO_VGA_RED_255_prj" solutionName="solution1" date="2019-06-03T10:34:58.414+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

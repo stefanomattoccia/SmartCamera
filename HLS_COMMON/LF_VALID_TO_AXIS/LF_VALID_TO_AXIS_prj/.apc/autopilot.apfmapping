@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="LF_valid_to_AXIS.cpp" path="/home/andrea/Documenti/vision/Ultrascale/hls/LF_VALID_TO_AXIS/LF_valid_to_AXIS.cpp"/>
+    <originFiles name="LF_valid_to_AXIS.h" path="/home/andrea/Documenti/vision/Ultrascale/hls/LF_VALID_TO_AXIS/LF_valid_to_AXIS.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

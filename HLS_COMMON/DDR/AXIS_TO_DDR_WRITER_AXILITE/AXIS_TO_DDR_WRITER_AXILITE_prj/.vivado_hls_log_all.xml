@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'frame_count_inner' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_AXILITE_prj" solutionName="solution1" date="2019-06-03T10:44:03.459+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'FRAME_BUFFER_NUMBER_r' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_AXILITE_prj" solutionName="solution1" date="2019-06-03T10:44:03.455+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'FRAME_BUFFER_DIM_r' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_AXILITE_prj" solutionName="solution1" date="2019-06-03T10:44:03.450+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'BASE_ADDRESS_r' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_AXILITE_prj" solutionName="solution1" date="2019-06-03T10:44:03.445+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'FRAME_OFFSET' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_AXILITE_prj" solutionName="solution1" date="2019-06-03T10:44:03.440+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'inner_index_V' is power-on initialization." projectName="AXIS_TO_DDR_WRITER_AXILITE_prj" solutionName="solution1" date="2019-06-03T10:44:03.435+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'frame_count' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="AXIS_TO_DDR_WRITER_AXILITE_prj" solutionName="solution1" date="2019-06-03T10:44:03.427+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'frame_index_V' with mode 'ap_none' may require an associated data valid signal to correctly communicate with other blocks or a test bench; automatic C/RTL co-simulation may not be able to verify such a port." projectName="AXIS_TO_DDR_WRITER_AXILITE_prj" solutionName="solution1" date="2019-06-03T10:44:03.423+0200" type="Warning"/>
+        <logs message="WARNING: [BIND 205-102] The specified resource core for memory 'buffer' will be ignored if a simpler one can be used." projectName="AXIS_TO_DDR_WRITER_AXILITE_prj" solutionName="solution1" date="2019-06-03T10:44:03.332+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'axis_to_ddr_writer/FRAME_BUFFER_NUMBER' to 'axis_to_ddr_writer/FRAME_BUFFER_NUMBER_r' to avoid the conflict with HDL keywords or other object names." projectName="AXIS_TO_DDR_WRITER_AXILITE_prj" solutionName="solution1" date="2019-06-03T10:44:03.203+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'axis_to_ddr_writer/FRAME_BUFFER_DIM' to 'axis_to_ddr_writer/FRAME_BUFFER_DIM_r' to avoid the conflict with HDL keywords or other object names." projectName="AXIS_TO_DDR_WRITER_AXILITE_prj" solutionName="solution1" date="2019-06-03T10:44:03.199+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'axis_to_ddr_writer/BASE_ADDRESS' to 'axis_to_ddr_writer/BASE_ADDRESS_r' to avoid the conflict with HDL keywords or other object names." projectName="AXIS_TO_DDR_WRITER_AXILITE_prj" solutionName="solution1" date="2019-06-03T10:44:03.196+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (axis_to_ddr_writer.cpp:90:17) in function 'axis_to_ddr_writer' : &#xA;&#xA;&#xA;more than one sub loop." projectName="AXIS_TO_DDR_WRITER_AXILITE_prj" solutionName="solution1" date="2019-06-03T10:44:02.481+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

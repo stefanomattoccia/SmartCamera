@@ -1,2 +1,0 @@
-current_fileset
-open_wave_database vga_bram_read_address.wdb

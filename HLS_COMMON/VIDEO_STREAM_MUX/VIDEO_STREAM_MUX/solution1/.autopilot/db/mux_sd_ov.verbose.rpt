@@ -1,0 +1,643 @@
+
+
+================================================================
+== Vivado HLS Report for 'mux_sd_ov'
+================================================================
+* Date:           Mon Jun  3 10:37:51 2019
+
+* Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
+* Project:        VIDEO_STREAM_MUX
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      1.00|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    2|    2|    2|    2|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|      38|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        0|      -|      37|      42|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|     141|    -|
+|Register         |        -|      -|      65|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      0|     102|     221|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     1824|   2520|  548160|  274080|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+--------------------------+---------+-------+----+----+
+    |          Instance          |          Module          | BRAM_18K| DSP48E| FF | LUT|
+    +----------------------------+--------------------------+---------+-------+----+----+
+    |mux_sd_ov_AXILiteS_s_axi_U  |mux_sd_ov_AXILiteS_s_axi  |        0|      0|  37|  42|
+    +----------------------------+--------------------------+---------+-------+----+----+
+    |Total                       |                          |        0|      0|  37|  42|
+    +----------------------------+--------------------------+---------+-------+----+----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+    |            Variable Name            | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+    |data_in_ov7670_V_V_0_load_A          |    and   |      0|  0|   2|           1|           1|
+    |data_in_ov7670_V_V_0_load_B          |    and   |      0|  0|   2|           1|           1|
+    |data_in_sd_V_V_0_load_A              |    and   |      0|  0|   2|           1|           1|
+    |data_in_sd_V_V_0_load_B              |    and   |      0|  0|   2|           1|           1|
+    |outputStream_V_V_1_load_A            |    and   |      0|  0|   2|           1|           1|
+    |outputStream_V_V_1_load_B            |    and   |      0|  0|   2|           1|           1|
+    |data_in_ov7670_V_V_0_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |data_in_sd_V_V_0_state_cmp_full      |   icmp   |      0|  0|   8|           2|           1|
+    |outputStream_V_V_1_state_cmp_full    |   icmp   |      0|  0|   8|           2|           1|
+    |ap_block_state3_io                   |    or    |      0|  0|   2|           1|           1|
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                |          |      0|  0|  38|          13|          10|
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------+----+-----------+-----+-----------+
+    |              Name              | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                       |  27|          5|    1|          5|
+    |data_in_ov7670_V_V_0_data_out   |   9|          2|    8|         16|
+    |data_in_ov7670_V_V_0_state      |  15|          3|    2|          6|
+    |data_in_ov7670_V_V_TDATA_blk_n  |   9|          2|    1|          2|
+    |data_in_sd_V_V_0_data_out       |   9|          2|    8|         16|
+    |data_in_sd_V_V_0_state          |  15|          3|    2|          6|
+    |data_in_sd_V_V_TDATA_blk_n      |   9|          2|    1|          2|
+    |outputStream_V_V_1_data_in      |  15|          3|    8|         24|
+    |outputStream_V_V_1_data_out     |   9|          2|    8|         16|
+    |outputStream_V_V_1_state        |  15|          3|    2|          6|
+    |outputStream_V_V_TDATA_blk_n    |   9|          2|    1|          2|
+    +--------------------------------+----+-----------+-----+-----------+
+    |Total                           | 141|         29|   42|        101|
+    +--------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------+---+----+-----+-----------+
+    |              Name              | FF| LUT| Bits| Const Bits|
+    +--------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                       |  4|   0|    4|          0|
+    |data_in_ov7670_V_V_0_payload_A  |  8|   0|    8|          0|
+    |data_in_ov7670_V_V_0_payload_B  |  8|   0|    8|          0|
+    |data_in_ov7670_V_V_0_sel_rd     |  1|   0|    1|          0|
+    |data_in_ov7670_V_V_0_sel_wr     |  1|   0|    1|          0|
+    |data_in_ov7670_V_V_0_state      |  2|   0|    2|          0|
+    |data_in_sd_V_V_0_payload_A      |  8|   0|    8|          0|
+    |data_in_sd_V_V_0_payload_B      |  8|   0|    8|          0|
+    |data_in_sd_V_V_0_sel_rd         |  1|   0|    1|          0|
+    |data_in_sd_V_V_0_sel_wr         |  1|   0|    1|          0|
+    |data_in_sd_V_V_0_state          |  2|   0|    2|          0|
+    |outputStream_V_V_1_payload_A    |  8|   0|    8|          0|
+    |outputStream_V_V_1_payload_B    |  8|   0|    8|          0|
+    |outputStream_V_V_1_sel_rd       |  1|   0|    1|          0|
+    |outputStream_V_V_1_sel_wr       |  1|   0|    1|          0|
+    |outputStream_V_V_1_state        |  2|   0|    2|          0|
+    |switch_stream_read_reg_61       |  1|   0|    1|          0|
+    +--------------------------------+---+----+-----+-----------+
+    |Total                           | 65|   0|   65|          0|
+    +--------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+--------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++---------------------------+-----+-----+------------+--------------------+--------------+
+|s_axi_AXILiteS_AWVALID     |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_AWREADY     | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_AWADDR      |  in |    5|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WVALID      |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WREADY      | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WDATA       |  in |   32|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WSTRB       |  in |    4|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_ARVALID     |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_ARREADY     | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_ARADDR      |  in |    5|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RVALID      | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RREADY      |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RDATA       | out |   32|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RRESP       | out |    2|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_BVALID      | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_BREADY      |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_BRESP       | out |    2|    s_axi   |      AXILiteS      |    scalar    |
+|ap_clk                     |  in |    1| ap_ctrl_hs |      mux_sd_ov     | return value |
+|ap_rst_n                   |  in |    1| ap_ctrl_hs |      mux_sd_ov     | return value |
+|ap_start                   |  in |    1| ap_ctrl_hs |      mux_sd_ov     | return value |
+|ap_done                    | out |    1| ap_ctrl_hs |      mux_sd_ov     | return value |
+|ap_idle                    | out |    1| ap_ctrl_hs |      mux_sd_ov     | return value |
+|ap_ready                   | out |    1| ap_ctrl_hs |      mux_sd_ov     | return value |
+|data_in_sd_V_V_TDATA       |  in |    8|    axis    |   data_in_sd_V_V   |    pointer   |
+|data_in_sd_V_V_TVALID      |  in |    1|    axis    |   data_in_sd_V_V   |    pointer   |
+|data_in_sd_V_V_TREADY      | out |    1|    axis    |   data_in_sd_V_V   |    pointer   |
+|data_in_ov7670_V_V_TDATA   |  in |    8|    axis    | data_in_ov7670_V_V |    pointer   |
+|data_in_ov7670_V_V_TVALID  |  in |    1|    axis    | data_in_ov7670_V_V |    pointer   |
+|data_in_ov7670_V_V_TREADY  | out |    1|    axis    | data_in_ov7670_V_V |    pointer   |
+|outputStream_V_V_TDATA     | out |    8|    axis    |  outputStream_V_V  |    pointer   |
+|outputStream_V_V_TVALID    | out |    1|    axis    |  outputStream_V_V  |    pointer   |
+|outputStream_V_V_TREADY    |  in |    1|    axis    |  outputStream_V_V  |    pointer   |
++---------------------------+-----+-----+------------+--------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / (!switch_stream_read)
+	4  / (switch_stream_read)
+2 --> 
+	3  / true
+3 --> 
+4 --> 
+	3  / true
+
+* FSM state operations: 
+
+ <State 1> : 1.00ns
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %switch_stream), !map !26"
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %data_in_sd_V_V), !map !32"
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %data_in_ov7670_V_V), !map !36"
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %outputStream_V_V), !map !40"
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @mux_sd_ov_str) nounwind"
+ST_1 : Operation 10 [1/1] (1.00ns)   --->   "%switch_stream_read = call i1 @_ssdm_op_Read.s_axilite.i1(i1 %switch_stream)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %switch_stream, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [mux_sd_ov.cpp:5]
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %outputStream_V_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [mux_sd_ov.cpp:6]
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %data_in_sd_V_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [mux_sd_ov.cpp:7]
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %data_in_ov7670_V_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [mux_sd_ov.cpp:8]
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "br i1 %switch_stream_read, label %2, label %1" [mux_sd_ov.cpp:10]
+ST_1 : Operation 16 [2/2] (0.00ns)   --->   "%tmp_V_1 = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %data_in_ov7670_V_V)" [mux_sd_ov.cpp:12]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 17 [2/2] (0.00ns)   --->   "%tmp_V = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %data_in_sd_V_V)" [mux_sd_ov.cpp:16]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+ <State 2> : 0.00ns
+ST_2 : Operation 18 [1/2] (0.00ns)   --->   "%tmp_V_1 = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %data_in_ov7670_V_V)" [mux_sd_ov.cpp:12]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 19 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outputStream_V_V, i8 %tmp_V_1)" [mux_sd_ov.cpp:12]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+ <State 3> : 0.00ns
+ST_3 : Operation 20 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outputStream_V_V, i8 %tmp_V_1)" [mux_sd_ov.cpp:12]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "br label %3" [mux_sd_ov.cpp:13]
+ST_3 : Operation 22 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outputStream_V_V, i8 %tmp_V)" [mux_sd_ov.cpp:16]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "br label %3"
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "ret void" [mux_sd_ov.cpp:18]
+
+ <State 4> : 0.00ns
+ST_4 : Operation 25 [1/2] (0.00ns)   --->   "%tmp_V = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %data_in_sd_V_V)" [mux_sd_ov.cpp:16]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 26 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outputStream_V_V, i8 %tmp_V)" [mux_sd_ov.cpp:16]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ switch_stream]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ data_in_sd_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ data_in_ov7670_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+Port [ outputStream_V_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=axis:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+StgValue_5         (specbitsmap  ) [ 00000]
+StgValue_6         (specbitsmap  ) [ 00000]
+StgValue_7         (specbitsmap  ) [ 00000]
+StgValue_8         (specbitsmap  ) [ 00000]
+StgValue_9         (spectopmodule) [ 00000]
+switch_stream_read (read         ) [ 01111]
+StgValue_11        (specinterface) [ 00000]
+StgValue_12        (specinterface) [ 00000]
+StgValue_13        (specinterface) [ 00000]
+StgValue_14        (specinterface) [ 00000]
+StgValue_15        (br           ) [ 00000]
+tmp_V_1            (read         ) [ 00010]
+StgValue_20        (write        ) [ 00000]
+StgValue_21        (br           ) [ 00000]
+StgValue_22        (write        ) [ 00000]
+StgValue_23        (br           ) [ 00000]
+StgValue_24        (ret          ) [ 00000]
+tmp_V              (read         ) [ 00010]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="switch_stream">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="switch_stream"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="data_in_sd_V_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_in_sd_V_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="data_in_ov7670_V_V">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="data_in_ov7670_V_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="outputStream_V_V">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outputStream_V_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="mux_sd_ov_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.s_axilite.i1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.axis.volatile.i8P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.axis.volatile.i8P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1004" name="switch_stream_read_read_fu_34">
+<pin_list>
+<pin id="35" dir="0" index="0" bw="1" slack="0"/>
+<pin id="36" dir="0" index="1" bw="1" slack="0"/>
+<pin id="37" dir="1" index="2" bw="1" slack="2"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="switch_stream_read/1 "/>
+</bind>
+</comp>
+
+<comp id="40" class="1004" name="grp_read_fu_40">
+<pin_list>
+<pin id="41" dir="0" index="0" bw="8" slack="0"/>
+<pin id="42" dir="0" index="1" bw="8" slack="0"/>
+<pin id="43" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tmp_V_1/1 "/>
+</bind>
+</comp>
+
+<comp id="46" class="1004" name="grp_read_fu_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="8" slack="0"/>
+<pin id="48" dir="0" index="1" bw="8" slack="0"/>
+<pin id="49" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tmp_V/1 "/>
+</bind>
+</comp>
+
+<comp id="52" class="1004" name="grp_write_fu_52">
+<pin_list>
+<pin id="53" dir="0" index="0" bw="0" slack="0"/>
+<pin id="54" dir="0" index="1" bw="8" slack="0"/>
+<pin id="55" dir="0" index="2" bw="8" slack="0"/>
+<pin id="56" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_19/2 StgValue_26/4 "/>
+</bind>
+</comp>
+
+<comp id="61" class="1005" name="switch_stream_read_reg_61">
+<pin_list>
+<pin id="62" dir="0" index="0" bw="1" slack="2"/>
+<pin id="63" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="switch_stream_read "/>
+</bind>
+</comp>
+
+<comp id="65" class="1005" name="tmp_V_1_reg_65">
+<pin_list>
+<pin id="66" dir="0" index="0" bw="8" slack="1"/>
+<pin id="67" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="tmp_V_1 "/>
+</bind>
+</comp>
+
+<comp id="70" class="1005" name="tmp_V_reg_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="8" slack="1"/>
+<pin id="72" dir="1" index="1" bw="8" slack="1"/>
+</pin_list>
+<bind>
+<opset="tmp_V "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="38"><net_src comp="14" pin="0"/><net_sink comp="34" pin=0"/></net>
+
+<net id="39"><net_src comp="0" pin="0"/><net_sink comp="34" pin=1"/></net>
+
+<net id="44"><net_src comp="30" pin="0"/><net_sink comp="40" pin=0"/></net>
+
+<net id="45"><net_src comp="4" pin="0"/><net_sink comp="40" pin=1"/></net>
+
+<net id="50"><net_src comp="30" pin="0"/><net_sink comp="46" pin=0"/></net>
+
+<net id="51"><net_src comp="2" pin="0"/><net_sink comp="46" pin=1"/></net>
+
+<net id="57"><net_src comp="32" pin="0"/><net_sink comp="52" pin=0"/></net>
+
+<net id="58"><net_src comp="6" pin="0"/><net_sink comp="52" pin=1"/></net>
+
+<net id="59"><net_src comp="40" pin="2"/><net_sink comp="52" pin=2"/></net>
+
+<net id="60"><net_src comp="46" pin="2"/><net_sink comp="52" pin=2"/></net>
+
+<net id="64"><net_src comp="34" pin="2"/><net_sink comp="61" pin=0"/></net>
+
+<net id="68"><net_src comp="40" pin="2"/><net_sink comp="65" pin=0"/></net>
+
+<net id="69"><net_src comp="65" pin="1"/><net_sink comp="52" pin=2"/></net>
+
+<net id="73"><net_src comp="46" pin="2"/><net_sink comp="70" pin=0"/></net>
+
+<net id="74"><net_src comp="70" pin="1"/><net_sink comp="52" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: outputStream_V_V | {3 }
+ - Input state : 
+	Port: mux_sd_ov : switch_stream | {1 }
+	Port: mux_sd_ov : data_in_sd_V_V | {1 }
+	Port: mux_sd_ov : data_in_ov7670_V_V | {1 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-------------------------------|
+| Operation|        Functional Unit        |
+|----------|-------------------------------|
+|          | switch_stream_read_read_fu_34 |
+|   read   |         grp_read_fu_40        |
+|          |         grp_read_fu_46        |
+|----------|-------------------------------|
+|   write  |        grp_write_fu_52        |
+|----------|-------------------------------|
+|   Total  |                               |
+|----------|-------------------------------|
+
+Memories:
+N/A
+
+* Register list:
++-------------------------+--------+
+|                         |   FF   |
++-------------------------+--------+
+|switch_stream_read_reg_61|    1   |
+|      tmp_V_1_reg_65     |    8   |
+|       tmp_V_reg_70      |    8   |
++-------------------------+--------+
+|          Total          |   17   |
++-------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|-----------------|------|------|------|--------||---------||---------|
+|       Comp      |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|-----------------|------|------|------|--------||---------||---------|
+| grp_write_fu_52 |  p2  |   4  |   8  |   32   ||    21   |
+|-----------------|------|------|------|--------||---------||---------|
+|      Total      |      |      |      |   32   ||  0.6935 ||    21   |
+|-----------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    -   |    -   |    -   |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    0   |    -   |   21   |
+|  Register |    -   |   17   |    -   |
++-----------+--------+--------+--------+
+|   Total   |    0   |   17   |   21   |
++-----------+--------+--------+--------+

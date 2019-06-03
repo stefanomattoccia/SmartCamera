@@ -1,0 +1,3 @@
+<annotationInfo>
+<item  id="17" filename="ov7670_grayscale.cpp" linenumber="16" name="tmp_3" contextFuncName="ov7670_grayscale" moduleName="ov7670_grayscale" rtlName="tmp_3_fu_50_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE"></item>
+</annotationInfo>

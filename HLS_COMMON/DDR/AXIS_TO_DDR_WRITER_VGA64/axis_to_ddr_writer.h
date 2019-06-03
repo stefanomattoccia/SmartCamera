@@ -1,4 +1,5 @@
 #include "hls_stream.h"
+#include <string.h>
 #include "ap_int.h"
 #include <math.h>
 
@@ -46,9 +47,9 @@ typedef unsigned char byte;
 /*
  * INTERFACCIA
  *
- * @inputStream è l'axi-stream in ingresso che verrà reindirizzato sulla ddr
- * @base_ddr_addr primo indirizzo della ddr su cui scrive (verrà poi settato in Vivado)
- * @frame_index indica il numero del frame buffer su cui il writer sta scrivendo. L'ultimo frame valido è quindi a frame_index - 1
+ * @inputStream ï¿½ l'axi-stream in ingresso che verrï¿½ reindirizzato sulla ddr
+ * @base_ddr_addr primo indirizzo della ddr su cui scrive (verrï¿½ poi settato in Vivado)
+ * @frame_index indica il numero del frame buffer su cui il writer sta scrivendo. L'ultimo frame valido ï¿½ quindi a frame_index - 1
  * @frame_count indica quanti frame sono stati scritti in memoria da questo modulo a partire dalla sua inizializzazione
  */
 void axis_to_ddr_writer(hls::stream<DATA_IN> &inputStream, volatile unsigned long long* base_ddr_addr, ap_uint<LOG2_FB>* frame_index, unsigned int* frame_count);

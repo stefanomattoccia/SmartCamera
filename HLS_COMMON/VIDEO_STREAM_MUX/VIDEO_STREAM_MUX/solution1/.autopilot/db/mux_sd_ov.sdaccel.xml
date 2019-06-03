@@ -1,0 +1,178 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'mux_sd_ov'" level="0">
+<item name = "Date">Mon Jun  3 10:37:51 2019
+</item>
+<item name = "Version">2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)</item>
+<item name = "Project">VIDEO_STREAM_MUX</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu9eg-ffvb1156-2-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">10.00</item>
+<item name = "Clock uncertainty (ns)">1.25</item>
+<item name = "Estimated clock period (ns)">1.00</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">2, 2, 2, 2, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 38, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">0, -, 37, 42, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 141, -</column>
+<column name="Register">-, -, 65, -, -</column>
+<specialColumn name="Available">1824, 2520, 548160, 274080, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="mux_sd_ov_AXILiteS_s_axi_U">mux_sd_ov_AXILiteS_s_axi, 0, 0, 37, 42</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="data_in_ov7670_V_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="data_in_ov7670_V_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="data_in_sd_V_V_0_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="data_in_sd_V_V_0_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="outputStream_V_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="outputStream_V_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="data_in_ov7670_V_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="data_in_sd_V_V_0_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="outputStream_V_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="ap_block_state3_io">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">27, 5, 1, 5</column>
+<column name="data_in_ov7670_V_V_0_data_out">9, 2, 8, 16</column>
+<column name="data_in_ov7670_V_V_0_state">15, 3, 2, 6</column>
+<column name="data_in_ov7670_V_V_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="data_in_sd_V_V_0_data_out">9, 2, 8, 16</column>
+<column name="data_in_sd_V_V_0_state">15, 3, 2, 6</column>
+<column name="data_in_sd_V_V_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="outputStream_V_V_1_data_in">15, 3, 8, 24</column>
+<column name="outputStream_V_V_1_data_out">9, 2, 8, 16</column>
+<column name="outputStream_V_V_1_state">15, 3, 2, 6</column>
+<column name="outputStream_V_V_TDATA_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
+<column name="data_in_ov7670_V_V_0_payload_A">8, 0, 8, 0</column>
+<column name="data_in_ov7670_V_V_0_payload_B">8, 0, 8, 0</column>
+<column name="data_in_ov7670_V_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="data_in_ov7670_V_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="data_in_ov7670_V_V_0_state">2, 0, 2, 0</column>
+<column name="data_in_sd_V_V_0_payload_A">8, 0, 8, 0</column>
+<column name="data_in_sd_V_V_0_payload_B">8, 0, 8, 0</column>
+<column name="data_in_sd_V_V_0_sel_rd">1, 0, 1, 0</column>
+<column name="data_in_sd_V_V_0_sel_wr">1, 0, 1, 0</column>
+<column name="data_in_sd_V_V_0_state">2, 0, 2, 0</column>
+<column name="outputStream_V_V_1_payload_A">8, 0, 8, 0</column>
+<column name="outputStream_V_V_1_payload_B">8, 0, 8, 0</column>
+<column name="outputStream_V_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="outputStream_V_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="outputStream_V_V_1_state">2, 0, 2, 0</column>
+<column name="switch_stream_read_reg_61">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 5, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 5, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, mux_sd_ov, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, mux_sd_ov, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, mux_sd_ov, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, mux_sd_ov, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, mux_sd_ov, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, mux_sd_ov, return value</column>
+<column name="data_in_sd_V_V_TDATA">in, 8, axis, data_in_sd_V_V, pointer</column>
+<column name="data_in_sd_V_V_TVALID">in, 1, axis, data_in_sd_V_V, pointer</column>
+<column name="data_in_sd_V_V_TREADY">out, 1, axis, data_in_sd_V_V, pointer</column>
+<column name="data_in_ov7670_V_V_TDATA">in, 8, axis, data_in_ov7670_V_V, pointer</column>
+<column name="data_in_ov7670_V_V_TVALID">in, 1, axis, data_in_ov7670_V_V, pointer</column>
+<column name="data_in_ov7670_V_V_TREADY">out, 1, axis, data_in_ov7670_V_V, pointer</column>
+<column name="outputStream_V_V_TDATA">out, 8, axis, outputStream_V_V, pointer</column>
+<column name="outputStream_V_V_TVALID">out, 1, axis, outputStream_V_V, pointer</column>
+<column name="outputStream_V_V_TREADY">in, 1, axis, outputStream_V_V, pointer</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">1.00</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'switch_stream'">read, 1.00, 1.00, -, -, -, s_axi, read, &apos;switch_stream&apos;, -, -, -, -, -</column>
+</table>
+</item>
+</section>
+</profile>

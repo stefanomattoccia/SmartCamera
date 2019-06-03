@@ -1,7 +1,0 @@
-Running: xsim.dir/vga_bram_read_address/xsimk.exe -maxdeltaid 10000 -simmode gui -wdb vga_bram_read_address.wdb -simrunnum 0 -socket 50688
-Design successfully loaded
-Design Loading Memory Usage: 19424 KB (Peak: 19424 KB)
-Design Loading CPU Usage: 124 ms
-Simulation completed
-Simulation Memory Usage: 27976 KB (Peak: 27976 KB)
-Simulation CPU Usage: 2546 ms

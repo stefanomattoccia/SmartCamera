@@ -1,0 +1,33 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="LF_valid_to_AXIS" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="outputStream"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="LF_valid_to_AXIS" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="data_in"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="LF_valid_to_AXIS" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="frame_valid"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="LF_valid_to_AXIS" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="line_valid"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="LF_valid_to_AXIS" label="">
+<pragma name="RESET">
+<option name="variable" positionalBoolean="4" value="res"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

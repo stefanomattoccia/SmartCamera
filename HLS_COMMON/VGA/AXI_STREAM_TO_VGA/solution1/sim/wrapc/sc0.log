@@ -1,5 +1,0 @@
-   Build using "d:/Xilinx/Vivado_HLS/2015.3/msys/bin/g++.exe"
-   Compiling apatb_vga_bram_read_address.cpp
-   Compiling testbench.cpp_pre.cpp.tb.cpp
-   Compiling vga_bram_read_address.cpp_pre.cpp.tb.cpp
-   Generating cosim.tv.exe

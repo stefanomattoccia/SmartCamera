@@ -1,3 +1,0 @@
-lappend pragmaStatus0 {pragma "RESET" source "C:/Users/Riccardo/Documents/HLS_COMMON/DDR/DDR_TO_AXIS_READER_VGA64/ddr_to_axis_reader.cpp" location "ddr_to_axis_reader" found 1 funcFound 1 applied 1 ambiguous 0 reason "null" variable "frame_count_inner"}
-lappend pragmaStatus1 {pragma "RESET" source "C:/Users/Riccardo/Documents/HLS_COMMON/DDR/DDR_TO_AXIS_READER_VGA64/ddr_to_axis_reader.cpp" location "ddr_to_axis_reader" found 1 funcFound 1 applied 1 ambiguous 0 reason "null" variable "index_old"}
-lappend pragmaStatus2 {pragma "RESET" source "C:/Users/Riccardo/Documents/HLS_COMMON/DDR/DDR_TO_AXIS_READER_VGA64/ddr_to_axis_reader.cpp" location "ddr_to_axis_reader" found 1 funcFound 1 applied 1 ambiguous 0 reason "null" variable "frame_count_equals_inner"}

@@ -1,0 +1,189 @@
+
+
+================================================================
+== Vivado HLS Report for 'mux_sd_ov'
+================================================================
+* Date:           Mon Jun  3 10:37:51 2019
+
+* Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
+* Project:        VIDEO_STREAM_MUX
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      1.00|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    2|    2|    2|    2|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|      38|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        0|      -|      37|      42|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|     141|    -|
+|Register         |        -|      -|      65|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      0|     102|     221|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     1824|   2520|  548160|  274080|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+--------------------------+---------+-------+----+----+
+    |          Instance          |          Module          | BRAM_18K| DSP48E| FF | LUT|
+    +----------------------------+--------------------------+---------+-------+----+----+
+    |mux_sd_ov_AXILiteS_s_axi_U  |mux_sd_ov_AXILiteS_s_axi  |        0|      0|  37|  42|
+    +----------------------------+--------------------------+---------+-------+----+----+
+    |Total                       |                          |        0|      0|  37|  42|
+    +----------------------------+--------------------------+---------+-------+----+----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+    |            Variable Name            | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+    |data_in_ov7670_V_V_0_load_A          |    and   |      0|  0|   2|           1|           1|
+    |data_in_ov7670_V_V_0_load_B          |    and   |      0|  0|   2|           1|           1|
+    |data_in_sd_V_V_0_load_A              |    and   |      0|  0|   2|           1|           1|
+    |data_in_sd_V_V_0_load_B              |    and   |      0|  0|   2|           1|           1|
+    |outputStream_V_V_1_load_A            |    and   |      0|  0|   2|           1|           1|
+    |outputStream_V_V_1_load_B            |    and   |      0|  0|   2|           1|           1|
+    |data_in_ov7670_V_V_0_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |data_in_sd_V_V_0_state_cmp_full      |   icmp   |      0|  0|   8|           2|           1|
+    |outputStream_V_V_1_state_cmp_full    |   icmp   |      0|  0|   8|           2|           1|
+    |ap_block_state3_io                   |    or    |      0|  0|   2|           1|           1|
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                |          |      0|  0|  38|          13|          10|
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------+----+-----------+-----+-----------+
+    |              Name              | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                       |  27|          5|    1|          5|
+    |data_in_ov7670_V_V_0_data_out   |   9|          2|    8|         16|
+    |data_in_ov7670_V_V_0_state      |  15|          3|    2|          6|
+    |data_in_ov7670_V_V_TDATA_blk_n  |   9|          2|    1|          2|
+    |data_in_sd_V_V_0_data_out       |   9|          2|    8|         16|
+    |data_in_sd_V_V_0_state          |  15|          3|    2|          6|
+    |data_in_sd_V_V_TDATA_blk_n      |   9|          2|    1|          2|
+    |outputStream_V_V_1_data_in      |  15|          3|    8|         24|
+    |outputStream_V_V_1_data_out     |   9|          2|    8|         16|
+    |outputStream_V_V_1_state        |  15|          3|    2|          6|
+    |outputStream_V_V_TDATA_blk_n    |   9|          2|    1|          2|
+    +--------------------------------+----+-----------+-----+-----------+
+    |Total                           | 141|         29|   42|        101|
+    +--------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------+---+----+-----+-----------+
+    |              Name              | FF| LUT| Bits| Const Bits|
+    +--------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                       |  4|   0|    4|          0|
+    |data_in_ov7670_V_V_0_payload_A  |  8|   0|    8|          0|
+    |data_in_ov7670_V_V_0_payload_B  |  8|   0|    8|          0|
+    |data_in_ov7670_V_V_0_sel_rd     |  1|   0|    1|          0|
+    |data_in_ov7670_V_V_0_sel_wr     |  1|   0|    1|          0|
+    |data_in_ov7670_V_V_0_state      |  2|   0|    2|          0|
+    |data_in_sd_V_V_0_payload_A      |  8|   0|    8|          0|
+    |data_in_sd_V_V_0_payload_B      |  8|   0|    8|          0|
+    |data_in_sd_V_V_0_sel_rd         |  1|   0|    1|          0|
+    |data_in_sd_V_V_0_sel_wr         |  1|   0|    1|          0|
+    |data_in_sd_V_V_0_state          |  2|   0|    2|          0|
+    |outputStream_V_V_1_payload_A    |  8|   0|    8|          0|
+    |outputStream_V_V_1_payload_B    |  8|   0|    8|          0|
+    |outputStream_V_V_1_sel_rd       |  1|   0|    1|          0|
+    |outputStream_V_V_1_sel_wr       |  1|   0|    1|          0|
+    |outputStream_V_V_1_state        |  2|   0|    2|          0|
+    |switch_stream_read_reg_61       |  1|   0|    1|          0|
+    +--------------------------------+---+----+-----+-----------+
+    |Total                           | 65|   0|   65|          0|
+    +--------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+--------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++---------------------------+-----+-----+------------+--------------------+--------------+
+|s_axi_AXILiteS_AWVALID     |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_AWREADY     | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_AWADDR      |  in |    5|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WVALID      |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WREADY      | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WDATA       |  in |   32|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_WSTRB       |  in |    4|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_ARVALID     |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_ARREADY     | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_ARADDR      |  in |    5|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RVALID      | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RREADY      |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RDATA       | out |   32|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_RRESP       | out |    2|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_BVALID      | out |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_BREADY      |  in |    1|    s_axi   |      AXILiteS      |    scalar    |
+|s_axi_AXILiteS_BRESP       | out |    2|    s_axi   |      AXILiteS      |    scalar    |
+|ap_clk                     |  in |    1| ap_ctrl_hs |      mux_sd_ov     | return value |
+|ap_rst_n                   |  in |    1| ap_ctrl_hs |      mux_sd_ov     | return value |
+|ap_start                   |  in |    1| ap_ctrl_hs |      mux_sd_ov     | return value |
+|ap_done                    | out |    1| ap_ctrl_hs |      mux_sd_ov     | return value |
+|ap_idle                    | out |    1| ap_ctrl_hs |      mux_sd_ov     | return value |
+|ap_ready                   | out |    1| ap_ctrl_hs |      mux_sd_ov     | return value |
+|data_in_sd_V_V_TDATA       |  in |    8|    axis    |   data_in_sd_V_V   |    pointer   |
+|data_in_sd_V_V_TVALID      |  in |    1|    axis    |   data_in_sd_V_V   |    pointer   |
+|data_in_sd_V_V_TREADY      | out |    1|    axis    |   data_in_sd_V_V   |    pointer   |
+|data_in_ov7670_V_V_TDATA   |  in |    8|    axis    | data_in_ov7670_V_V |    pointer   |
+|data_in_ov7670_V_V_TVALID  |  in |    1|    axis    | data_in_ov7670_V_V |    pointer   |
+|data_in_ov7670_V_V_TREADY  | out |    1|    axis    | data_in_ov7670_V_V |    pointer   |
+|outputStream_V_V_TDATA     | out |    8|    axis    |  outputStream_V_V  |    pointer   |
+|outputStream_V_V_TVALID    | out |    1|    axis    |  outputStream_V_V  |    pointer   |
+|outputStream_V_V_TREADY    |  in |    1|    axis    |  outputStream_V_V  |    pointer   |
++---------------------------+-----+-----+------------+--------------------+--------------+
+
