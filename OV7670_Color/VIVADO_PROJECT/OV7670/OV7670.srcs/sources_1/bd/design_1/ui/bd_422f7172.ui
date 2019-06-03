@@ -1,62 +1,63 @@
 {
-   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 TLS
 #  -string -flagsOSRD
-preplace port AXIS_OUT -pg 1 -y 510 -defaultsOSRD
-preplace port clk_vdma -pg 1 -y 400 -defaultsOSRD
-preplace port s_axi_AXILite_raw_CHROMA -pg 1 -y -170 -defaultsOSRD
-preplace port clk_out -pg 1 -y 580 -defaultsOSRD
-preplace port clk_in -pg 1 -y 380 -defaultsOSRD
-preplace port AXIM_WRITER -pg 1 -y 330 -defaultsOSRD
-preplace port s_axi_AXILiteS1 -pg 1 -y 460 -defaultsOSRD
-preplace port s_axi_AXILiteS -pg 1 -y 270 -defaultsOSRD
-preplace port AXIS_IN_RAW_LUMA -pg 1 -y -140 -defaultsOSRD
-preplace port AXIS_IN_RAW_CHROMA -pg 1 -y -120 -defaultsOSRD
-preplace port AXIM_READER -pg 1 -y 110 -defaultsOSRD
-preplace port s_axi_AXILite_raw_LUMA -pg 1 -y -200 -defaultsOSRD
-preplace port AXIS_IN -pg 1 -y 320 -defaultsOSRD
+preplace port AXIS_OUT -pg 1 -y 1140 -defaultsOSRD
+preplace port clk_vdma -pg 1 -y 410 -defaultsOSRD
+preplace port s_axi_AXILite_raw_CHROMA -pg 1 -y 60 -defaultsOSRD
+preplace port clk_out -pg 1 -y 1210 -defaultsOSRD
+preplace port clk_in -pg 1 -y 390 -defaultsOSRD
+preplace port AXIM_WRITER -pg 1 -y 350 -defaultsOSRD
+preplace port s_axi_AXILiteS1 -pg 1 -y 860 -defaultsOSRD
+preplace port s_axi_AXILiteS -pg 1 -y 670 -defaultsOSRD
+preplace port AXIS_IN_RAW_LUMA -pg 1 -y 330 -defaultsOSRD
+preplace port AXIS_IN_RAW_CHROMA -pg 1 -y 120 -defaultsOSRD
+preplace port AXIM_READER -pg 1 -y 950 -defaultsOSRD
+preplace port s_axi_AXILite_raw_LUMA -pg 1 -y 270 -defaultsOSRD
+preplace port AXIS_IN -pg 1 -y 530 -defaultsOSRD
 preplace portBus ap_start -pg 1 -y 20 -defaultsOSRD
-preplace portBus aresetn_in -pg 1 -y 340 -defaultsOSRD
-preplace portBus interconnect_aresetn -pg 1 -y 90 -defaultsOSRD
-preplace portBus aresetn_out -pg 1 -y 560 -defaultsOSRD
-preplace portBus aresetn_vdma -pg 1 -y 360 -defaultsOSRD
-preplace portBus frame_index_V -pg 1 -y 450 -defaultsOSRD
-preplace inst axis_data_fifo_raw_CHROMA -pg 1 -lvl 1 -y 140 -defaultsOSRD
-preplace inst axi_mem_intercon_writer -pg 1 -lvl 4 -y 330 -defaultsOSRD
-preplace inst axis_data_fifo_pipeline_to_writer -pg 1 -lvl 1 -y 300 -defaultsOSRD
-preplace inst axis_data_fifo_raw_LUMA -pg 1 -lvl 1 -y -100 -defaultsOSRD
-preplace inst axis_to_ddr_writer_LUMA -pg 1 -lvl 2 -y 510 -defaultsOSRD
-preplace inst axi_mem_intercon_reader -pg 1 -lvl 4 -y 50 -defaultsOSRD
-preplace inst ddr_to_axis_reader_0 -pg 1 -lvl 3 -y 890 -defaultsOSRD
-preplace inst axis_to_ddr_writer_0 -pg 1 -lvl 3 -y 700 -defaultsOSRD
-preplace inst axis_to_ddr_writer_CHROMA -pg 1 -lvl 3 -y 530 -defaultsOSRD
-preplace inst axis_data_fifo_reader_to_vga -pg 1 -lvl 4 -y 600 -defaultsOSRD
-preplace netloc axis_data_fifo_reader_to_vga_M_AXIS 1 4 1 NJ
-preplace netloc aresetn_vga 1 0 4 NJ 560 NJ 610 NJ 610 NJ
-preplace netloc ddr_to_axis_reader_0_m_axi_base_ddr_addr 1 3 1 1550
-preplace netloc PCLK_1 1 0 1 NJ
-preplace netloc AXIS_IN_RAW_LUMA_1 1 0 1 N
-preplace netloc s_axi_AXILite_raw_CHROMA_1 1 0 3 NJ -190 N -190 1150
-preplace netloc s_axi_AXILiteS_1 1 0 3 NJ 50 NJ 50 NJ
+preplace portBus aresetn_in -pg 1 -y 350 -defaultsOSRD
+preplace portBus interconnect_aresetn -pg 1 -y 790 -defaultsOSRD
+preplace portBus aresetn_out -pg 1 -y 1170 -defaultsOSRD
+preplace portBus aresetn_vdma -pg 1 -y 370 -defaultsOSRD
+preplace portBus frame_index_V -pg 1 -y 1070 -defaultsOSRD
+preplace inst axis_data_fifo_raw_CHROMA -pg 1 -lvl 1 -y 160 -defaultsOSRD
+preplace inst axi_mem_intercon_writer -pg 1 -lvl 3 -y 350 -defaultsOSRD
+preplace inst axis_data_fifo_pipeline_to_writer -pg 1 -lvl 1 -y 570 -defaultsOSRD
+preplace inst axis_data_fifo_raw_LUMA -pg 1 -lvl 1 -y 370 -defaultsOSRD
+preplace inst axis_to_ddr_writer_LUMA -pg 1 -lvl 2 -y 300 -defaultsOSRD
+preplace inst axi_mem_intercon_reader -pg 1 -lvl 3 -y 950 -defaultsOSRD
+preplace inst ddr_to_axis_reader_0 -pg 1 -lvl 2 -y 890 -defaultsOSRD
+preplace inst axis_to_ddr_writer_0 -pg 1 -lvl 2 -y 700 -defaultsOSRD
+preplace inst axis_to_ddr_writer_CHROMA -pg 1 -lvl 2 -y 90 -defaultsOSRD
+preplace inst axis_data_fifo_reader_to_vga -pg 1 -lvl 3 -y 1170 -defaultsOSRD
+preplace netloc axis_data_fifo_reader_to_vga_M_AXIS 1 3 1 NJ
+preplace netloc aresetn_vga 1 0 3 NJ 1170 NJ 1170 NJ
+preplace netloc ddr_to_axis_reader_0_m_axi_base_ddr_addr 1 2 1 N
+preplace netloc PCLK_1 1 0 1 40
+preplace netloc AXIS_IN_RAW_LUMA_1 1 0 1 NJ
+preplace netloc s_axi_AXILite_raw_CHROMA_1 1 0 2 NJ 60 NJ
+preplace netloc s_axi_AXILiteS_1 1 0 2 NJ 670 NJ
 preplace netloc Filter_Convolution_0_out_img_V 1 0 1 NJ
-preplace netloc S02_AXI_1 1 2 2 1120 250 N
-preplace netloc axi_mem_intercon_M00_AXI 1 4 1 NJ
-preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 0 4 -10 40 650 420 1110 420 1600
-preplace netloc aresetn_in_1 1 0 1 -30
-preplace netloc axis_to_ddr_writer_0_frame_index_V 1 2 3 1140 780 1590 510 NJ
-preplace netloc AXIS_IN_RAW_CHROMA_1 1 0 1 -40
-preplace netloc axis_data_fifo_pipeline_to_writer_M_AXIS 1 1 2 N 270 1100
-preplace netloc clk_wiz_0_clk_out1 1 0 4 NJ 580 NJ 620 NJ 620 NJ
-preplace netloc s_axi_AXILite_raw_LUMA_1 1 0 2 NJ -200 670
-preplace netloc s_axi_AXILiteS1_1 1 0 3 NJ 430 NJ 430 NJ
-preplace netloc axi_mem_intercon_reader_M00_AXI 1 4 1 NJ
-preplace netloc ddr_to_axis_reader_0_outStream_V 1 3 1 1610
-preplace netloc S01_AXI_1 1 3 1 1540
-preplace netloc axis_data_fifo_0_M_AXIS 1 1 1 660
-preplace netloc axis_data_fifo_1_M_AXIS 1 1 2 N 110 1130
-preplace netloc axis_to_ddr_writer_0_m_axi_base_ddr_addr 1 3 1 1560
-preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 0 4 NJ 20 NJ 20 N 20 1570
-preplace netloc CLOCK_100M_1 1 0 4 20 400 640 410 1090 450 1580
-levelinfo -pg 1 -60 490 900 1350 1760 1940 -top -220 -bot 970
+preplace netloc S02_AXI_1 1 2 1 N
+preplace netloc axi_mem_intercon_M00_AXI 1 3 1 NJ
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 0 3 30 470 410 390 870
+preplace netloc aresetn_in_1 1 0 1 20
+preplace netloc axis_to_ddr_writer_0_frame_index_V 1 1 3 420 800 860 1070 NJ
+preplace netloc AXIS_IN_RAW_CHROMA_1 1 0 1 NJ
+preplace netloc axis_data_fifo_pipeline_to_writer_M_AXIS 1 1 1 390
+preplace netloc clk_wiz_0_clk_out1 1 0 3 NJ 1210 NJ 1210 NJ
+preplace netloc s_axi_AXILite_raw_LUMA_1 1 0 2 NJ 270 NJ
+preplace netloc s_axi_AXILiteS1_1 1 0 2 NJ 860 NJ
+preplace netloc axi_mem_intercon_reader_M00_AXI 1 3 1 NJ
+preplace netloc ddr_to_axis_reader_0_outStream_V 1 2 1 840
+preplace netloc S01_AXI_1 1 2 1 880
+preplace netloc axis_data_fifo_0_M_AXIS 1 1 1 420
+preplace netloc axis_data_fifo_1_M_AXIS 1 1 1 390
+preplace netloc axis_to_ddr_writer_0_m_axi_base_ddr_addr 1 2 1 860
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 0 3 NJ 790 NJ 790 880
+preplace netloc CLOCK_100M_1 1 0 3 50 260 400 210 850
+levelinfo -pg 1 0 220 630 1050 1240 -top 0 -bot 1270
 ",
 }
 0

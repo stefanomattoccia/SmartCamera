@@ -1,15 +1,15 @@
 #-----------------------------------------------------------
-# Vivado v2016.2 (64-bit)
-# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
-# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
-# Start of session at: Mon Oct 02 15:25:29 2017
-# Process ID: 5184
-# Current directory: C:/Users/Luca/Desktop/Progetto_Vivado/OV7670_Color/VIVADO_PROJECT/OV7670
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12564 C:\Users\Luca\Desktop\Progetto_Vivado\OV7670_Color\VIVADO_PROJECT\OV7670\OV7670.xpr
-# Log file: C:/Users/Luca/Desktop/Progetto_Vivado/OV7670_Color/VIVADO_PROJECT/OV7670/vivado.log
-# Journal file: C:/Users/Luca/Desktop/Progetto_Vivado/OV7670_Color/VIVADO_PROJECT/OV7670\vivado.jou
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue May 21 15:38:23 2019
+# Process ID: 5485
+# Current directory: /home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670
+# Command line: vivado OV7670.xpr
+# Log file: /home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/vivado.log
+# Journal file: /home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Luca/Desktop/Progetto_Vivado/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.xpr
+open_project -read_only OV7670.xpr
 update_compile_order -fileset sources_1
-launch_sdk -workspace C:/Users/Luca/Desktop/Progetto_Vivado/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.sdk -hwspec C:/Users/Luca/Desktop/Progetto_Vivado/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.sdk/design_1_wrapper.hdf
+open_bd_design {/home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.srcs/sources_1/bd/design_1/design_1.bd}

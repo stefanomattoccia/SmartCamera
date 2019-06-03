@@ -1,3 +1,748 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:56 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xlconstant_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_xlconstant_0_2 (xilinx.com:ip:xlconstant:1.1) from (Rev. 2) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:56 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xlconstant_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_xlconstant_0_1 (xilinx.com:ip:xlconstant:1.1) from (Rev. 2) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:56 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xlconstant_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_xlconstant_0_0 (xilinx.com:ip:xlconstant:1.1) from (Rev. 2) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:56 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xlconcat_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_xlconcat_0_1 (xilinx.com:ip:xlconcat:2.1) from (Rev. 2) to (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:56 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_rst_processing_system7_0_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_rst_processing_system7_0_100M_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 9) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:56 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_processing_system7_0_axi_periph_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_processing_system7_0_axi_periph_1 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 10) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:55 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5) from (Rev. 3) to (Rev. 6)
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_USE_AXI_NONSECURE with default value 0 : a parameter called PCW_USE_AXI_NONSECURE already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+Added parameter PCW_GP0_NUM_WRITE_THREADS with value 4 (source 'default')
+Added parameter PCW_GP0_NUM_READ_THREADS with value 4 (source 'default')
+Added parameter PCW_GP1_NUM_WRITE_THREADS with value 4 (source 'default')
+Added parameter PCW_GP1_NUM_READ_THREADS with value 4 (source 'default')
+Added parameter PCW_GP0_EN_MODIFIABLE_TXN with value 0 (source 'default')
+Added parameter PCW_GP1_EN_MODIFIABLE_TXN with value 0 (source 'default')
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:55 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_proc_sys_reset_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_proc_sys_reset_0_1 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 9) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:55 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_proc_sys_reset_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_proc_sys_reset_0_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 9) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:55 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_clk_wiz_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_clk_wiz_0_0 from xilinx.com:ip:clk_wiz:5.3 (Rev. 1) to xilinx.com:ip:clk_wiz:6.0 (Rev. 1)
+
+After upgrade, an IP may have parameter differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality.
+
+2. Customization warnings
+-------------------------
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKIN1_PERIOD' from '10.000' to '10.0' has been ignored for IP 'design_1_clk_wiz_0_0'
+
+An attempt to modify the value of disabled parameter 'MMCM_CLKIN2_PERIOD' from '10.000' to '10.0' has been ignored for IP 'design_1_clk_wiz_0_0'
+
+
+3. Debug Commands
+-----------------
+
+  The following debug information can be passed to Vivado as Tcl commands,
+in order to validate or debug the output of the upgrade flow.
+  You may consult any warnings from within this upgrade, and alter or remove
+the configuration parameter(s) which caused the warning; then execute the Tcl
+commands, and use the IP Customization GUI to verify the IP configuration.
+
+create_ip -vlnv xilinx.com:ip:clk_wiz:6.0 -user_name design_1_clk_wiz_0_0
+set_property -dict "\
+  CONFIG.AXI_DRP {false} \
+  CONFIG.CALC_DONE {empty} \
+  CONFIG.CDDCDONE_PORT {cddcdone} \
+  CONFIG.CDDCREQ_PORT {cddcreq} \
+  CONFIG.CLKFB_IN_N_PORT {clkfb_in_n} \
+  CONFIG.CLKFB_IN_PORT {clkfb_in} \
+  CONFIG.CLKFB_IN_P_PORT {clkfb_in_p} \
+  CONFIG.CLKFB_IN_SIGNALING {SINGLE} \
+  CONFIG.CLKFB_OUT_N_PORT {clkfb_out_n} \
+  CONFIG.CLKFB_OUT_PORT {clkfb_out} \
+  CONFIG.CLKFB_OUT_P_PORT {clkfb_out_p} \
+  CONFIG.CLKFB_STOPPED_PORT {clkfb_stopped} \
+  CONFIG.CLKIN1_JITTER_PS {100.0} \
+  CONFIG.CLKIN1_UI_JITTER {0.010} \
+  CONFIG.CLKIN2_JITTER_PS {100.0} \
+  CONFIG.CLKIN2_UI_JITTER {0.010} \
+  CONFIG.CLKOUT1_DRIVES {BUFG} \
+  CONFIG.CLKOUT1_JITTER {469.645} \
+  CONFIG.CLKOUT1_PHASE_ERROR {476.991} \
+  CONFIG.CLKOUT1_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {25.175} \
+  CONFIG.CLKOUT1_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT1_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT1_USED {true} \
+  CONFIG.CLKOUT2_DRIVES {BUFG} \
+  CONFIG.CLKOUT2_JITTER {473.605} \
+  CONFIG.CLKOUT2_PHASE_ERROR {476.991} \
+  CONFIG.CLKOUT2_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {24} \
+  CONFIG.CLKOUT2_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT2_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT2_USED {true} \
+  CONFIG.CLKOUT3_DRIVES {BUFG} \
+  CONFIG.CLKOUT3_JITTER {0.0} \
+  CONFIG.CLKOUT3_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT3_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT3_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT3_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT3_USED {false} \
+  CONFIG.CLKOUT4_DRIVES {BUFG} \
+  CONFIG.CLKOUT4_JITTER {0.0} \
+  CONFIG.CLKOUT4_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT4_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT4_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT4_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT4_USED {false} \
+  CONFIG.CLKOUT5_DRIVES {BUFG} \
+  CONFIG.CLKOUT5_JITTER {0.0} \
+  CONFIG.CLKOUT5_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT5_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT5_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT5_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT5_USED {false} \
+  CONFIG.CLKOUT6_DRIVES {BUFG} \
+  CONFIG.CLKOUT6_JITTER {0.0} \
+  CONFIG.CLKOUT6_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT6_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT6_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT6_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT6_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT6_USED {false} \
+  CONFIG.CLKOUT7_DRIVES {BUFG} \
+  CONFIG.CLKOUT7_JITTER {0.0} \
+  CONFIG.CLKOUT7_PHASE_ERROR {0.0} \
+  CONFIG.CLKOUT7_REQUESTED_DUTY_CYCLE {50.000} \
+  CONFIG.CLKOUT7_REQUESTED_OUT_FREQ {100.000} \
+  CONFIG.CLKOUT7_REQUESTED_PHASE {0.000} \
+  CONFIG.CLKOUT7_SEQUENCE_NUMBER {1} \
+  CONFIG.CLKOUT7_USED {false} \
+  CONFIG.CLKOUTPHY_REQUESTED_FREQ {600.000} \
+  CONFIG.CLK_IN1_BOARD_INTERFACE {Custom} \
+  CONFIG.CLK_IN2_BOARD_INTERFACE {Custom} \
+  CONFIG.CLK_IN_SEL_PORT {clk_in_sel} \
+  CONFIG.CLK_OUT1_PORT {clk_out1} \
+  CONFIG.CLK_OUT1_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT2_PORT {clk_out2} \
+  CONFIG.CLK_OUT2_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT3_PORT {clk_out3} \
+  CONFIG.CLK_OUT3_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT4_PORT {clk_out4} \
+  CONFIG.CLK_OUT4_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT5_PORT {clk_out5} \
+  CONFIG.CLK_OUT5_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT6_PORT {clk_out6} \
+  CONFIG.CLK_OUT6_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_OUT7_PORT {clk_out7} \
+  CONFIG.CLK_OUT7_USE_FINE_PS_GUI {false} \
+  CONFIG.CLK_VALID_PORT {CLK_VALID} \
+  CONFIG.CLOCK_MGR_TYPE {auto} \
+  CONFIG.Component_Name {design_1_clk_wiz_0_0} \
+  CONFIG.DADDR_PORT {daddr} \
+  CONFIG.DCLK_PORT {dclk} \
+  CONFIG.DEN_PORT {den} \
+  CONFIG.DIFF_CLK_IN1_BOARD_INTERFACE {Custom} \
+  CONFIG.DIFF_CLK_IN2_BOARD_INTERFACE {Custom} \
+  CONFIG.DIN_PORT {din} \
+  CONFIG.DOUT_PORT {dout} \
+  CONFIG.DRDY_PORT {drdy} \
+  CONFIG.DWE_PORT {dwe} \
+  CONFIG.ENABLE_CDDC {false} \
+  CONFIG.ENABLE_CLKOUTPHY {false} \
+  CONFIG.ENABLE_CLOCK_MONITOR {false} \
+  CONFIG.ENABLE_USER_CLOCK0 {false} \
+  CONFIG.ENABLE_USER_CLOCK1 {false} \
+  CONFIG.ENABLE_USER_CLOCK2 {false} \
+  CONFIG.ENABLE_USER_CLOCK3 {false} \
+  CONFIG.Enable_PLL0 {false} \
+  CONFIG.Enable_PLL1 {false} \
+  CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} \
+  CONFIG.INPUT_CLK_STOPPED_PORT {input_clk_stopped} \
+  CONFIG.INPUT_MODE {frequency} \
+  CONFIG.INTERFACE_SELECTION {Enable_AXI} \
+  CONFIG.IN_FREQ_UNITS {Units_MHz} \
+  CONFIG.IN_JITTER_UNITS {Units_UI} \
+  CONFIG.JITTER_OPTIONS {UI} \
+  CONFIG.JITTER_SEL {No_Jitter} \
+  CONFIG.LOCKED_PORT {locked} \
+  CONFIG.MMCM_BANDWIDTH {OPTIMIZED} \
+  CONFIG.MMCM_CLKFBOUT_MULT_F {53.750} \
+  CONFIG.MMCM_CLKFBOUT_PHASE {0.000} \
+  CONFIG.MMCM_CLKFBOUT_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKIN1_PERIOD {10.0} \
+  CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
+  CONFIG.MMCM_CLKOUT0_DIVIDE_F {30.500} \
+  CONFIG.MMCM_CLKOUT0_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT0_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT0_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT1_DIVIDE {32} \
+  CONFIG.MMCM_CLKOUT1_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT1_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT1_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT2_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT2_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT2_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT2_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT3_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT3_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT3_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT3_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT4_CASCADE {false} \
+  CONFIG.MMCM_CLKOUT4_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT4_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT4_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT4_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT5_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT5_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT5_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT5_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLKOUT6_DIVIDE {1} \
+  CONFIG.MMCM_CLKOUT6_DUTY_CYCLE {0.500} \
+  CONFIG.MMCM_CLKOUT6_PHASE {0.000} \
+  CONFIG.MMCM_CLKOUT6_USE_FINE_PS {false} \
+  CONFIG.MMCM_CLOCK_HOLD {false} \
+  CONFIG.MMCM_COMPENSATION {ZHOLD} \
+  CONFIG.MMCM_DIVCLK_DIVIDE {7} \
+  CONFIG.MMCM_NOTES {None} \
+  CONFIG.MMCM_REF_JITTER1 {0.010} \
+  CONFIG.MMCM_REF_JITTER2 {0.010} \
+  CONFIG.MMCM_STARTUP_WAIT {false} \
+  CONFIG.NUM_OUT_CLKS {2} \
+  CONFIG.OVERRIDE_MMCM {false} \
+  CONFIG.OVERRIDE_PLL {false} \
+  CONFIG.PHASE_DUTY_CONFIG {false} \
+  CONFIG.PLATFORM {UNKNOWN} \
+  CONFIG.PLL_BANDWIDTH {OPTIMIZED} \
+  CONFIG.PLL_CLKFBOUT_MULT {4} \
+  CONFIG.PLL_CLKFBOUT_PHASE {0.000} \
+  CONFIG.PLL_CLKIN_PERIOD {10.000} \
+  CONFIG.PLL_CLKOUT0_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT0_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT0_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT1_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT1_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT1_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT2_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT2_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT2_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT3_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT3_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT3_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT4_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT4_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT4_PHASE {0.000} \
+  CONFIG.PLL_CLKOUT5_DIVIDE {1} \
+  CONFIG.PLL_CLKOUT5_DUTY_CYCLE {0.500} \
+  CONFIG.PLL_CLKOUT5_PHASE {0.000} \
+  CONFIG.PLL_CLK_FEEDBACK {CLKFBOUT} \
+  CONFIG.PLL_COMPENSATION {SYSTEM_SYNCHRONOUS} \
+  CONFIG.PLL_DIVCLK_DIVIDE {1} \
+  CONFIG.PLL_NOTES {None} \
+  CONFIG.PLL_REF_JITTER {0.010} \
+  CONFIG.POWER_DOWN_PORT {power_down} \
+  CONFIG.PRECISION {1} \
+  CONFIG.PRIMARY_PORT {clk_in1} \
+  CONFIG.PRIMITIVE {MMCM} \
+  CONFIG.PRIMTYPE_SEL {mmcm_adv} \
+  CONFIG.PRIM_IN_FREQ {100.000} \
+  CONFIG.PRIM_IN_JITTER {0.010} \
+  CONFIG.PRIM_IN_TIMEPERIOD {10.000} \
+  CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin} \
+  CONFIG.PSCLK_PORT {psclk} \
+  CONFIG.PSDONE_PORT {psdone} \
+  CONFIG.PSEN_PORT {psen} \
+  CONFIG.PSINCDEC_PORT {psincdec} \
+  CONFIG.REF_CLK_FREQ {100.0} \
+  CONFIG.RELATIVE_INCLK {REL_PRIMARY} \
+  CONFIG.RESET_BOARD_INTERFACE {Custom} \
+  CONFIG.RESET_PORT {reset} \
+  CONFIG.RESET_TYPE {ACTIVE_HIGH} \
+  CONFIG.SECONDARY_IN_FREQ {100.000} \
+  CONFIG.SECONDARY_IN_JITTER {0.010} \
+  CONFIG.SECONDARY_IN_TIMEPERIOD {10.000} \
+  CONFIG.SECONDARY_PORT {clk_in2} \
+  CONFIG.SECONDARY_SOURCE {Single_ended_clock_capable_pin} \
+  CONFIG.SS_MODE {CENTER_HIGH} \
+  CONFIG.SS_MOD_FREQ {250} \
+  CONFIG.SS_MOD_TIME {0.004} \
+  CONFIG.STATUS_PORT {STATUS} \
+  CONFIG.SUMMARY_STRINGS {empty} \
+  CONFIG.USER_CLK_FREQ0 {100.0} \
+  CONFIG.USER_CLK_FREQ1 {100.0} \
+  CONFIG.USER_CLK_FREQ2 {100.0} \
+  CONFIG.USER_CLK_FREQ3 {100.0} \
+  CONFIG.USE_BOARD_FLOW {false} \
+  CONFIG.USE_CLKFB_STOPPED {false} \
+  CONFIG.USE_CLK_VALID {false} \
+  CONFIG.USE_CLOCK_SEQUENCING {false} \
+  CONFIG.USE_DYN_PHASE_SHIFT {false} \
+  CONFIG.USE_DYN_RECONFIG {false} \
+  CONFIG.USE_FREEZE {false} \
+  CONFIG.USE_FREQ_SYNTH {true} \
+  CONFIG.USE_INCLK_STOPPED {false} \
+  CONFIG.USE_INCLK_SWITCHOVER {false} \
+  CONFIG.USE_LOCKED {false} \
+  CONFIG.USE_MAX_I_JITTER {false} \
+  CONFIG.USE_MIN_O_JITTER {false} \
+  CONFIG.USE_MIN_POWER {false} \
+  CONFIG.USE_PHASE_ALIGNMENT {true} \
+  CONFIG.USE_POWER_DOWN {false} \
+  CONFIG.USE_RESET {false} \
+  CONFIG.USE_SAFE_CLOCK_STARTUP {false} \
+  CONFIG.USE_SPREAD_SPECTRUM {false} \
+  CONFIG.USE_STATUS {false} " [get_ips design_1_clk_wiz_0_0]
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:55 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_c_counter_binary_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_c_counter_binary_0_0 (xilinx.com:ip:c_counter_binary:12.0) from (Rev. 9) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:55 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axis_data_fifo_1_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axis_data_fifo_1_2 (xilinx.com:ip:axis_data_fifo:1.1) from (Rev. 10) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:55 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axis_data_fifo_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axis_data_fifo_1_0 (xilinx.com:ip:axis_data_fifo:1.1) from (Rev. 10) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:54 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axis_data_fifo_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axis_data_fifo_0_2 (xilinx.com:ip:axis_data_fifo:1.1) from (Rev. 10) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:54 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axis_data_fifo_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axis_data_fifo_0_0 (xilinx.com:ip:axis_data_fifo:1.1) from (Rev. 10) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:54 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_mem_intercon_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_mem_intercon_1_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 10) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:54 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_mem_intercon_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_mem_intercon_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 10) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:54 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_interconnect_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_interconnect_1_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 10) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:54 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_interconnect_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_interconnect_0_1 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 10) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:54 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_interconnect_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_interconnect_0_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 10) to (Rev. 18)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:53 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_gpio_1_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 11) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 24 15:12:53 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_axi_gpio_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_axi_gpio_0_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 11) to (Rev. 19)
+
+
+
+
+
+
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016

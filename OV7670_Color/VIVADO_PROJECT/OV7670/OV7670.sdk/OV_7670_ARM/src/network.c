@@ -63,7 +63,7 @@ int init_network()
 	/* initliaze IP addresses to be used */
 	IP4_ADDR(&ipaddr,  169, 254, 41, 50);
 	IP4_ADDR(&netmask, 255, 255, 0,  0);
-	IP4_ADDR(&gateway, 169, 254, 41, 1);
+	IP4_ADDR(&gateway, 169, 254, 41, 55);
 
 	/* Remote ip address */
 	IP4_ADDR(&d_addr,  169, 254, 41, 190);
@@ -78,6 +78,8 @@ int init_network()
 int start_udp()
 {
 	udp_netif = &server_netif;
+
+	//print_ip_settings(&ipaddr, &netmask, &gateway);
 
 	/* Add network interface to the netif_list, and set it as default */
 	if (!xemac_add(udp_netif, &ipaddr, &netmask, &gateway, mac_ethernet_address, PLATFORM_EMAC_BASEADDR))

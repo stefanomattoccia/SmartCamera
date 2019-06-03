@@ -13,7 +13,7 @@
 	<item value="Local" key="design_1_wrapper_hw_platform_0-target"/>
 	<item value="Local" key="design_1_wrapper_hw_platform_1-target"/>
 	<item value="Auto Detect" key="design_1_wrapper_hw_platform_0-device"/>
-	<item value="design_1_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="design_1_wrapper_hw_platform_2" key="programfpga.hwplatform"/>
 	<item value="false" key="design_1_wrapper_hw_platform_3-partial_bit"/>
 	<item value="Auto Detect" key="design_1_wrapper_hw_platform_2-device"/>
 	<item value="design_1_wrapper.bit" key="design_1_wrapper_hw_platform_3-bitFile"/>
