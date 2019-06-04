@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Test_OV_7670_ARM/Debug/OV_7670_ARM.elf&apos; to &apos;Test_OV_7670_ARM.elf&apos;" description="Rename resource &apos;OV_7670_ARM.elf&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Debug/OV_7670_ARM.elf" name="Test_OV_7670_ARM.elf" stamp="1503999880611" updateReferences="true"/>
+</session>

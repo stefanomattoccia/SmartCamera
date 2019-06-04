@@ -1,0 +1,505 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Wed May 22 10:56:28 2019
+| Host         : Sirio running 64-bit Ubuntu 18.04.2 LTS
+| Command      : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 90
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| CHECK-3     | Warning  | Report rule limit reached                                   | 2          |
+| DPIP-1      | Warning  | Input pipelining                                            | 8          |
+| DPOP-1      | Warning  | PREG Output pipelining                                      | 17         |
+| DPOP-2      | Warning  | MREG Output pipelining                                      | 21         |
+| PLCK-12     | Warning  | Clock Placer Checks                                         | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
+| REQP-1839   | Warning  | RAMB36 async control check                                  | 20         |
+| REQP-1840   | Warning  | RAMB18 async control check                                  | 20         |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+CHECK-3#2 Warning
+Report rule limit reached  
+REQP-1840 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_27s_27_1_U5/sep_convolution_filter_mac_muladd_19s_8s_27s_27_1_DSP48_2_U/m input design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_27s_27_1_U5/sep_convolution_filter_mac_muladd_19s_8s_27s_27_1_DSP48_2_U/m/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U2/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p input design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U2/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U3/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p input design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U3/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U4/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p input design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U4/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1_U1/sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1_DSP48_0_U/p input design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1_U1/sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1_DSP48_0_U/p/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2 input design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2__0 input design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2__1 input design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/r_V_5_fu_1021_p2 output design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/r_V_5_fu_1021_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/r_V_fu_921_p2 output design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/r_V_fu_921_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/r_V_s_fu_947_p2 output design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/r_V_s_fu_947_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_27s_27_1_U5/sep_convolution_filter_mac_muladd_19s_8s_27s_27_1_DSP48_2_U/p output design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_27s_27_1_U5/sep_convolution_filter_mac_muladd_19s_8s_27s_27_1_DSP48_2_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_27s_28_1_U6/sep_convolution_filter_mac_muladd_19s_8s_27s_28_1_DSP48_3_U/p output design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_27s_28_1_U6/sep_convolution_filter_mac_muladd_19s_8s_27s_28_1_DSP48_3_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_28s_28_1_U11/sep_convolution_filter_mac_muladd_19s_8s_28s_28_1_DSP48_5_U/p output design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_28s_28_1_U11/sep_convolution_filter_mac_muladd_19s_8s_28s_28_1_DSP48_5_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U2/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p output design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U2/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U3/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p output design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U3/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U4/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p output design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U4/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1_U1/sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1_DSP48_0_U/p output design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1_U1/sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1_DSP48_0_U/p/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2 output design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2__0 output design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2__1 output design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP design_1_i/VDMA/axis_to_ddr_writer_0/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/tmp_product output design_1_i/VDMA/axis_to_ddr_writer_0/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP design_1_i/VDMA/axis_to_ddr_writer_CHROMA/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/tmp_product output design_1_i/VDMA/axis_to_ddr_writer_CHROMA/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP design_1_i/VDMA/axis_to_ddr_writer_LUMA/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/tmp_product output design_1_i/VDMA/axis_to_ddr_writer_LUMA/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP design_1_i/VDMA/ddr_to_axis_reader_0/inst/ddr_to_axis_reader_mul_8ns_32ns_40_3_U0/ddr_to_axis_reader_mul_8ns_32ns_40_3_Mul3S_0_U/tmp_product output design_1_i/VDMA/ddr_to_axis_reader_0/inst/ddr_to_axis_reader_mul_8ns_32ns_40_3_U0/ddr_to_axis_reader_mul_8ns_32ns_40_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/r_V_5_fu_1021_p2 multiplier stage design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/r_V_5_fu_1021_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/r_V_fu_921_p2 multiplier stage design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/r_V_fu_921_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/r_V_s_fu_947_p2 multiplier stage design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/r_V_s_fu_947_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_27s_27_1_U5/sep_convolution_filter_mac_muladd_19s_8s_27s_27_1_DSP48_2_U/p multiplier stage design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_27s_27_1_U5/sep_convolution_filter_mac_muladd_19s_8s_27s_27_1_DSP48_2_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_27s_28_1_U6/sep_convolution_filter_mac_muladd_19s_8s_27s_28_1_DSP48_3_U/p multiplier stage design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_27s_28_1_U6/sep_convolution_filter_mac_muladd_19s_8s_27s_28_1_DSP48_3_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_28s_28_1_U11/sep_convolution_filter_mac_muladd_19s_8s_28s_28_1_DSP48_5_U/p multiplier stage design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_19s_8s_28s_28_1_U11/sep_convolution_filter_mac_muladd_19s_8s_28s_28_1_DSP48_5_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U2/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p multiplier stage design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U2/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U3/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p multiplier stage design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U3/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U4/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p multiplier stage design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_U4/sep_convolution_filter_mac_muladd_8s_8ns_16s_17_1_DSP48_1_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1_U1/sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1_DSP48_0_U/p multiplier stage design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1_U1/sep_convolution_filter_mac_muladd_8s_8ns_17s_18_1_DSP48_0_U/p/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2 multiplier stage design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2__0 multiplier stage design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2__1 multiplier stage design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/tmp_s_fu_595_p2__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP design_1_i/VDMA/axis_to_ddr_writer_0/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/buff0_reg__0 multiplier stage design_1_i/VDMA/axis_to_ddr_writer_0/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP design_1_i/VDMA/axis_to_ddr_writer_0/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/tmp_product multiplier stage design_1_i/VDMA/axis_to_ddr_writer_0/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP design_1_i/VDMA/axis_to_ddr_writer_CHROMA/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/buff0_reg__0 multiplier stage design_1_i/VDMA/axis_to_ddr_writer_CHROMA/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP design_1_i/VDMA/axis_to_ddr_writer_CHROMA/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/tmp_product multiplier stage design_1_i/VDMA/axis_to_ddr_writer_CHROMA/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP design_1_i/VDMA/axis_to_ddr_writer_LUMA/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/buff0_reg__0 multiplier stage design_1_i/VDMA/axis_to_ddr_writer_LUMA/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP design_1_i/VDMA/axis_to_ddr_writer_LUMA/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/tmp_product multiplier stage design_1_i/VDMA/axis_to_ddr_writer_LUMA/inst/axis_to_ddr_writer_mul_32ns_8ns_40_3_U0/axis_to_ddr_writer_mul_32ns_8ns_40_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP design_1_i/VDMA/ddr_to_axis_reader_0/inst/ddr_to_axis_reader_mul_8ns_32ns_40_3_U0/ddr_to_axis_reader_mul_8ns_32ns_40_3_Mul3S_0_U/buff0_reg__0 multiplier stage design_1_i/VDMA/ddr_to_axis_reader_0/inst/ddr_to_axis_reader_mul_8ns_32ns_40_3_U0/ddr_to_axis_reader_mul_8ns_32ns_40_3_Mul3S_0_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP design_1_i/VDMA/ddr_to_axis_reader_0/inst/ddr_to_axis_reader_mul_8ns_32ns_40_3_U0/ddr_to_axis_reader_mul_8ns_32ns_40_3_Mul3S_0_U/tmp_product multiplier stage design_1_i/VDMA/ddr_to_axis_reader_0/inst/ddr_to_axis_reader_mul_8ns_32ns_40_3_U0/ddr_to_axis_reader_mul_8ns_32ns_40_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	PCLK_IBUF_inst (IBUF.O) is locked to W10
+	PCLK_IBUF_BUFG_inst (BUFG.I) cannot be placed
+
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT design_1_i/OV7670_GRAYSCALE_TO_AXIS/ov7670_interface_0/inst/frame_valid_V[0]_INST_0 is driving clock pin of 5 cells. This could lead to large hold time violations. First few involved cells are:
+    design_1_i/OV7670_GRAYSCALE_TO_AXIS/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/i_out_q_thresh0.q_thresh0_i_reg {FDRE}
+    design_1_i/OV7670_GRAYSCALE_TO_AXIS/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[1] {FDRE}
+    design_1_i/OV7670_GRAYSCALE_TO_AXIS/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[2] {FDRE}
+    design_1_i/OV7670_GRAYSCALE_TO_AXIS/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[3] {FDRE}
+    design_1_i/OV7670_GRAYSCALE_TO_AXIS/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/the_addsub/no_pipelining.the_addsub/i_lut6.i_lut6_addsub/i_q.i_simple.qreg/i_no_async_controls.output_reg[4] {FDRE}
+
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/Convolution_Filter/convolution_filter_0/inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg has an input control pin design_1_i/Convolution_Filter/convolution_filter_0/inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg/WEBWE[0] (net: design_1_i/Convolution_Filter/convolution_filter_0/inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg_i_12_n_2) which is driven by a register (design_1_i/processing_system7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/Convolution_Filter/convolution_filter_0/inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg has an input control pin design_1_i/Convolution_Filter/convolution_filter_0/inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg/WEBWE[1] (net: design_1_i/Convolution_Filter/convolution_filter_0/inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg_i_11_n_2) which is driven by a register (design_1_i/processing_system7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/Convolution_Filter/convolution_filter_0/inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg has an input control pin design_1_i/Convolution_Filter/convolution_filter_0/inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg/WEBWE[2] (net: design_1_i/Convolution_Filter/convolution_filter_0/inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg_i_10_n_2) which is driven by a register (design_1_i/processing_system7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/Convolution_Filter/convolution_filter_0/inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg has an input control pin design_1_i/Convolution_Filter/convolution_filter_0/inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg/WEBWE[3] (net: design_1_i/Convolution_Filter/convolution_filter_0/inst/convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg_i_9_n_2) which is driven by a register (design_1_i/processing_system7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg/WEBWE[0] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg_i_12_n_2) which is driven by a register (design_1_i/processing_system7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg/WEBWE[1] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg_i_11_n_2) which is driven by a register (design_1_i/processing_system7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg/WEBWE[2] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg_i_10_n_2) which is driven by a register (design_1_i/processing_system7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg/WEBWE[3] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/sep_convolution_filter_AXILiteS_s_axi_U/int_kernel_config_V/gen_write[1].mem_reg_i_9_n_2) which is driven by a register (design_1_i/processing_system7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/ram_reg_0 has an input control pin design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/ram_reg_0/ENBWREN (net: design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/buffer_ce0) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/ram_reg_0 has an input control pin design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/ram_reg_0/ENBWREN (net: design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/buffer_ce0) which is driven by a register (design_1_i/VDMA/axis_data_fifo_raw_CHROMA/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/ram_reg_0 has an input control pin design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/ram_reg_0/ENBWREN (net: design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/buffer_ce0) which is driven by a register (design_1_i/VDMA/axis_data_fifo_raw_LUMA/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/ram_reg_1 has an input control pin design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/ram_reg_1/ENBWREN (net: design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/buffer_ce0) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/ram_reg_1 has an input control pin design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/ram_reg_1/ENBWREN (net: design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/buffer_ce0) which is driven by a register (design_1_i/VDMA/axis_data_fifo_raw_CHROMA/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/ram_reg_1 has an input control pin design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/ram_reg_1/ENBWREN (net: design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/buffer_U/ddr_to_axis_reader_SD_buffer_ram_U/buffer_ce0) which is driven by a register (design_1_i/VDMA/axis_data_fifo_raw_LUMA/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/m_axi_base_ddr_addr_RVALID) which is driven by a register (design_1_i/OV7670_GRAYSCALE_TO_AXIS/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/m_axi_base_ddr_addr_RVALID) which is driven by a register (design_1_i/OV7670_GRAYSCALE_TO_AXIS/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/m_axi_base_ddr_addr_RVALID) which is driven by a register (design_1_i/OV7670_GRAYSCALE_TO_AXIS/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/m_axi_base_ddr_addr_RVALID) which is driven by a register (design_1_i/OV7670_GRAYSCALE_TO_AXIS/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/m_axi_base_ddr_addr_RVALID) which is driven by a register (design_1_i/VDMA/axi_mem_intercon_writer/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/mem_reg has an input control pin design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/mem_reg/WEBWE[7] (net: design_1_i/OV7670_GRAYSCALE_TO_AXIS/ddr_to_axis_reader_SD_0/inst/ddr_to_axis_reader_SD_base_ddr_addr_m_axi_U/bus_read/buff_rdata/m_axi_base_ddr_addr_RVALID) which is driven by a register (design_1_i/VDMA/axi_mem_intercon_writer/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_0_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_0_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/ENARDEN (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_0_U/sep_convolution_filter_line_buffer_V_0_ram_U/line_buffer_V_0_we1) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_0_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_0_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/ENBWREN (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_0_U/sep_convolution_filter_line_buffer_V_0_ram_U/p_62_in) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_0_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_0_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/WEA[0] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_0_U/sep_convolution_filter_line_buffer_V_0_ram_U/WEA[0]) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_0_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_0_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/WEA[1] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_0_U/sep_convolution_filter_line_buffer_V_0_ram_U/WEA[0]) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_1_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_1_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/ENARDEN (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_1_U/sep_convolution_filter_line_buffer_V_0_ram_U/line_buffer_V_0_we1) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_1_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_1_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/ENBWREN (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_1_U/sep_convolution_filter_line_buffer_V_0_ram_U/p_62_in) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_1_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_1_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/WEA[0] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_1_U/sep_convolution_filter_line_buffer_V_0_ram_U/WEA[0]) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_1_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_1_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/WEA[1] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_1_U/sep_convolution_filter_line_buffer_V_0_ram_U/WEA[0]) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_2_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_2_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/ENARDEN (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_2_U/sep_convolution_filter_line_buffer_V_0_ram_U/line_buffer_V_0_we1) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_2_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_2_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/ENBWREN (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_2_U/sep_convolution_filter_line_buffer_V_0_ram_U/p_62_in) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_2_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_2_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/WEA[0] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_2_U/sep_convolution_filter_line_buffer_V_0_ram_U/WEA[0]) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_2_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_2_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/WEA[1] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_2_U/sep_convolution_filter_line_buffer_V_0_ram_U/WEA[0]) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_3_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_3_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/ENARDEN (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_3_U/sep_convolution_filter_line_buffer_V_0_ram_U/line_buffer_V_0_we1) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_3_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_3_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/ENBWREN (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_3_U/sep_convolution_filter_line_buffer_V_0_ram_U/p_62_in) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_3_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_3_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/WEA[0] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_3_U/sep_convolution_filter_line_buffer_V_0_ram_U/WEA[0]) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_3_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_3_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/WEA[1] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_3_U/sep_convolution_filter_line_buffer_V_0_ram_U/WEA[0]) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#17 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_4_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_4_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/ENARDEN (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_4_U/sep_convolution_filter_line_buffer_V_0_ram_U/line_buffer_V_0_we1) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#18 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_4_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_4_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/ENBWREN (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_4_U/sep_convolution_filter_line_buffer_V_0_ram_U/p_62_in) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#19 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_4_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_4_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/WEA[0] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_4_U/sep_convolution_filter_line_buffer_V_0_ram_U/WEA[0]) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#20 Warning
+RAMB18 async control check  
+The RAMB18E1 design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_4_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg has an input control pin design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_4_U/sep_convolution_filter_line_buffer_V_0_ram_U/ram_reg/WEA[1] (net: design_1_i/Convolution_Filter/sep_convolution_filter_0/inst/line_buffer_V_4_U/sep_convolution_filter_line_buffer_V_0_ram_U/WEA[0]) which is driven by a register (design_1_i/VDMA/axis_data_fifo_pipeline_to_writer/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+

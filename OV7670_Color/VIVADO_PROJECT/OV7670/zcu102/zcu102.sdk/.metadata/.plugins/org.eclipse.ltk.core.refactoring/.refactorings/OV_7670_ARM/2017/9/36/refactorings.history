@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Test_OV_7670_ARM/src/mux_sd_ov_config.c&apos; to &apos;mux_sd_ov.c&apos;" description="Rename resource &apos;mux_sd_ov_config.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/mux_sd_ov_config.c" name="mux_sd_ov.c" stamp="1504531040492" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Test_OV_7670_ARM/src/mux_sd_ov_config.h&apos; to &apos;mux_sd_ov.h&apos;" description="Rename resource &apos;mux_sd_ov_config.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/mux_sd_ov_config.h" name="mux_sd_ov.h" stamp="1504531048651" updateReferences="true"/>
+</session>

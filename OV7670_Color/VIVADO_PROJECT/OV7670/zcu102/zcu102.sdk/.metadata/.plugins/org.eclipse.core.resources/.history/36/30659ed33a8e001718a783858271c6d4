@@ -1,0 +1,44 @@
+/*
+ * ddr_to_axis_reader.c
+ *
+ *  Created on: Feb 2, 2017
+ *      Author: Mattia Bernasconi
+ *        Mail: mattia@studiobernasconi.com
+ */
+
+#include "ddr_to_axis_reader_SD.h"
+
+int init_ddr_to_axis_reader_SD(void)
+{
+	int status;
+
+	status = XDdr_to_axis_reader_sd_Initialize(&reader_sd, XPAR_XDDR_TO_AXIS_READER_SD_0_DEVICE_ID);
+
+	if (status != XST_SUCCESS)
+	{
+		xil_printf("Errore inizializzazione reader\n");
+		return status;
+	}
+	return XST_SUCCESS;
+}
+
+int configue_ddr_to_axis_reader_SD(void)
+{
+	xil_printf("0\n");
+	XDdr_to_axis_reader_sd_Set_base_address(&reader_sd, FRAME_BUFFER_BASE_ADDR_SD);
+	xil_printf("1\n");
+	XDdr_to_axis_reader_sd_Set_frame_buffer_dim(&reader_sd, FRAME_BUFFER_DIM);
+	xil_printf("2\n");
+	XDdr_to_axis_reader_sd_Set_frame_buffer_number(&reader_sd, FRAME_BUFFER_NUM_SD);
+	xil_printf("3\n");
+	XDdr_to_axis_reader_sd_Set_frame_buffer_offset(&reader_sd, FRAME_BUFFER_DIM);
+	xil_printf("4\n");
+	XDdr_to_axis_reader_sd_Set_update_intr(&reader_sd, 1);
+	xil_printf("5\n");
+	XDdr_to_axis_reader_sd_EnableAutoRestart(&reader_sd);
+	xil_printf("6\n");
+	XDdr_to_axis_reader_sd_Start(&reader_sd);
+	xil_printf("7\n");
+
+	return XST_SUCCESS;
+}

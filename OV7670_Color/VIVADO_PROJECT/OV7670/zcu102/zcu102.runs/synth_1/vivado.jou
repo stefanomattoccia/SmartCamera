@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May 22 10:45:57 2019
+# Process ID: 4529
+# Current directory: /home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
