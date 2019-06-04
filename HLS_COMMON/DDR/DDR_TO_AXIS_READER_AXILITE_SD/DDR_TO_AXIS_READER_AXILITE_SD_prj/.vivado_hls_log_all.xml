@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'luma_chroma_switch' is power-on initialization." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:56.286+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'BASE_ADDRESS_r' is power-on initialization." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:56.281+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'guard_variable_for_d_3' is power-on initialization." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:56.277+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'FRAME_BUFFER_NUMBER_r' is power-on initialization." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:56.272+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'guard_variable_for_d_1' is power-on initialization." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:56.268+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'FRAME_OFFSET' is power-on initialization." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:56.265+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'guard_variable_for_d' is power-on initialization." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:56.262+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'FRAME_BUFFER_DIM_r' is power-on initialization." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:56.259+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'guard_variable_for_d_2' is power-on initialization." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:56.256+0200" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'inner_index' is power-on initialization." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:56.253+0200" type="Warning"/>
+        <logs message="WARNING: [BIND 205-102] The specified resource core for memory 'buffer' will be ignored if a simpler one can be used." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:56.011+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'ddr_to_axis_reader_SD/BASE_ADDRESS' to 'ddr_to_axis_reader_SD/BASE_ADDRESS_r' to avoid the conflict with HDL keywords or other object names." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:55.743+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'ddr_to_axis_reader_SD/FRAME_BUFFER_NUMBER' to 'ddr_to_axis_reader_SD/FRAME_BUFFER_NUMBER_r' to avoid the conflict with HDL keywords or other object names." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:55.740+0200" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'ddr_to_axis_reader_SD/FRAME_BUFFER_DIM' to 'ddr_to_axis_reader_SD/FRAME_BUFFER_DIM_r' to avoid the conflict with HDL keywords or other object names." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:55.738+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (ddr_to_axis_reader_SD.cpp:50:16) in function 'ddr_to_axis_reader_SD' : &#xA;&#xA;&#xA;more than one sub loop." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:54.995+0200" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] ddr_to_axis_reader_SD.cpp:58: variable-indexed range selection may cause suboptimal QoR." projectName="DDR_TO_AXIS_READER_AXILITE_SD_prj" solutionName="solution1" date="2019-06-03T12:07:53.369+0200" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1559551443000">
+  <ports id="1" name="inputStream_V" type="PortType" originalName="inputStream.V" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="base_ddr_addr" type="PortType" originalName="base_ddr_addr" bitwidth="64" direction="DirOut" iftype="IfTypeFifo"/>
+  <ports id="3" name="frame_index_V" type="PortType" originalName="frame_index.V" bitwidth="8" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="frame_count" type="PortType" originalName="frame_count" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="5" name="base_address" type="PortType" originalName="base_address" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="6" name="frame_buffer_dim" type="PortType" originalName="frame_buffer_dim" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="7" name="frame_buffer_offset" type="PortType" originalName="frame_buffer_offset" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="8" name="frame_buffer_number" type="PortType" originalName="frame_buffer_number" bitwidth="8">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="9" name="update_intr" type="PortType" originalName="update_intr" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="153" source_obj="//@ports.8" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="156" source_obj="//@ports.7" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="159" source_obj="//@ports.6" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="161" source_obj="//@ports.5" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="163" source_obj="//@ports.4" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="166" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="169" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@ports.2"/>
+  <edges id="170" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="171" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="172" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="173" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="174" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="175" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="176" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="177" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="178" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="179" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="180" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="181" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="190" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="191" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="192" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="193" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="194" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="195" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="197" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="198" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="199" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="213" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="214" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="215" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="216" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="217" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="220" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="221" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="222" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="223" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="231" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="233" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="236" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="237" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="238" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="239" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="240" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="241" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="244" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="245" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="246" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="249" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="251" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="254" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="255" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="256" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="259" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="260" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="263" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="266" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="267" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="268" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="275" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="276" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="277" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="280" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="283" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="284" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="285" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="288" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="296" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="304" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="307" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="309" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="310" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="312" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="313" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="314" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="323" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="325" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="326" source_obj="//@regions.1/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="327" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.0"/>
+  <edges id="328" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.1"/>
+  <edges id="331" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.2"/>
+  <edges id="333" source_obj="//@regions.1/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="334" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="335" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@regions.1/@basic_blocks.0/@node_objs.3"/>
+  <edges id="344" source_obj="//@regions.1/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="347" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.2"/>
+  <edges id="351" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="353" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="354" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="361" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.7/@node_objs.2"/>
+  <edges id="362" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="365" source_obj="//@blocks.7/@node_objs.2" sink_obj="//@blocks.7/@node_objs.4"/>
+  <edges id="368" source_obj="//@blocks.7/@node_objs.3" sink_obj="//@blocks.7/@node_objs.4"/>
+  <edges id="369" source_obj="//@blocks.7/@node_objs.4" sink_obj="//@blocks.7/@node_objs.5"/>
+  <edges id="370" sink_obj="//@blocks.7/@node_objs.5"/>
+  <edges id="371" sink_obj="//@blocks.7/@node_objs.6"/>
+  <edges id="372" source_obj="//@blocks.7/@node_objs.6" sink_obj="//@blocks.7/@node_objs.7"/>
+  <edges id="374" source_obj="//@blocks.7/@node_objs.7" sink_obj="//@blocks.7/@node_objs.8"/>
+  <edges id="375" sink_obj="//@blocks.7/@node_objs.8"/>
+  <edges id="378" source_obj="//@blocks.7/@node_objs.9" sink_obj="//@ports.3"/>
+  <edges id="379" source_obj="//@blocks.7/@node_objs.7" sink_obj="//@blocks.7/@node_objs.9"/>
+  <edges id="655" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="656" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="657" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="658" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="659" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="660" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.7"/>
+  <edges id="661" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="662" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.5"/>
+  <edges id="663" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="664" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="665" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="666" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="667" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="668" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@regions.1/@basic_blocks.0"/>
+  <edges id="669" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@blocks.6"/>
+  <edges id="670" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.0" sink_obj="//@regions.1/@basic_blocks.1"/>
+  <edges id="671" edge_type="CtrlEdge" source_obj="//@regions.1/@basic_blocks.1" sink_obj="//@regions.1/@basic_blocks.0"/>
+  <edges id="672" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.3"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="-1" source_obj="//@regions.1/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.1/@basic_blocks.1/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.7/@node_objs.2"/>
+  <blocks id="53" name="codeRepl" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_60</controlOutputObjs>
+    <controlOutputObjs>._crit_edge98</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="update_intr_read" originalName="update_intr" bitwidth="1" opcode="read" m_display="0">
+      <dataInputObjs>update_intr</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="frame_buffer_number_s" originalName="frame_buffer_number" bitwidth="8" opcode="read" m_display="0">
+      <dataInputObjs>frame_buffer_number</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="frame_buffer_offset_s" originalName="frame_buffer_offset" bitwidth="32" opcode="read" m_display="0">
+      <dataInputObjs>frame_buffer_offset</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="frame_buffer_dim_rea" originalName="frame_buffer_dim" bitwidth="32" opcode="read" m_display="0">
+      <dataInputObjs>frame_buffer_dim</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="base_address_read" originalName="base_address" bitwidth="32" opcode="read" m_display="0">
+      <dataInputObjs>base_address</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="buffer" lineNumber="46" originalName="buffer" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="buffer_U" coreName="RAM_2P_BRAM" contextFuncName="axis_to_ddr_writer" bitwidth="64" opcode="alloca" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="46" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="t_V" lineNumber="58" originalName="t.V" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" bitwidth="8" opcode="load" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="58" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="node_45" lineNumber="58" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="write" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="58" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>frame_index_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="FRAME_OFFSET_load" lineNumber="63" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" bitwidth="32" opcode="load" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="63" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="BASE_ADDRESS_load" bitwidth="29" opcode="load" m_display="0">
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="node_52" lineNumber="72" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="br" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="72" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>read</dataInputObjs>
+      <controlInputObjs>._crit_edge98</controlInputObjs>
+      <controlInputObjs>block_60</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="axis_to_ddr_writer.cpp">
+      <validLinenumbers>46</validLinenumbers>
+      <validLinenumbers>58</validLinenumbers>
+      <validLinenumbers>63</validLinenumbers>
+      <validLinenumbers>72</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="60" name="block_60" type="BlockType">
+    <controlInputObjs>codeRepl</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>._crit_edge98</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="node_54" lineNumber="75" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="store" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="75" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>read</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="node_55" lineNumber="76" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="store" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="76" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>read</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="node_56" lineNumber="77" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="store" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="77" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>read</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="node_58" lineNumber="78" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="store" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="78" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>read</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="node_59" lineNumber="79" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="br" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="79" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <controlInputObjs>._crit_edge98</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="axis_to_ddr_writer.cpp">
+      <validLinenumbers>75</validLinenumbers>
+      <validLinenumbers>76</validLinenumbers>
+      <validLinenumbers>77</validLinenumbers>
+      <validLinenumbers>78</validLinenumbers>
+      <validLinenumbers>79</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="70" name="._crit_edge98" type="BlockType">
+    <controlInputObjs>codeRepl</controlInputObjs>
+    <controlInputObjs>block_60</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_79</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="i_op_assign" lineNumber="63" originalName="i_op" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" bitwidth="32" opcode="phi" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="63" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>mul</dataOutputObjs>
+      <controlInputObjs>block_60</controlInputObjs>
+      <controlInputObjs>codeRepl</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="i_op_assign_1" originalName="i_op" bitwidth="29" opcode="phi" m_display="0">
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>block_60</controlInputObjs>
+      <controlInputObjs>codeRepl</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="r_V" lineNumber="83" originalName="r.V" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="r_V_fu_409_p2" contextFuncName="axis_to_ddr_writer" bitwidth="35" opcode="mul" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="83" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="offset" lineNumber="83" originalName="offset" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="offset_fu_425_p2" contextFuncName="axis_to_ddr_writer" bitwidth="32" opcode="add" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="83" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>mul</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="node_69" lineNumber="90" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="br" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="90" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <controlInputObjs>block_79</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="axis_to_ddr_writer.cpp">
+      <validLinenumbers>63</validLinenumbers>
+      <validLinenumbers>83</validLinenumbers>
+      <validLinenumbers>90</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="79" name="block_79" type="BlockType">
+    <controlInputObjs>._crit_edge98</controlInputObjs>
+    <controlInputObjs>memcpy.tail</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader.preheader</controlOutputObjs>
+    <controlOutputObjs>._crit_edge99</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="offset1" originalName="offset" bitwidth="32" opcode="phi" nodeLabel="1" m_display="0">
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>writereq</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>writeresp</dataOutputObjs>
+      <controlInputObjs>._crit_edge98</controlInputObjs>
+      <controlInputObjs>memcpy.tail</controlInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="idx" originalName="idx" bitwidth="32" opcode="phi" nodeLabel="1" m_display="0">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>._crit_edge98</controlInputObjs>
+      <controlInputObjs>memcpy.tail</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="FRAME_BUFFER_DIM_loa" lineNumber="90" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" bitwidth="32" opcode="load" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="90" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="tmp_1" lineNumber="90" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="tmp_1_fu_449_p2" contextFuncName="axis_to_ddr_writer" bitwidth="1" opcode="icmp" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="90" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="idx_1" lineNumber="90" originalName="idx" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="idx_1_fu_455_p2" contextFuncName="axis_to_ddr_writer" bitwidth="32" opcode="add" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="90" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="node_78" lineNumber="90" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="br" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="90" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>._crit_edge99</controlInputObjs>
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="axis_to_ddr_writer.cpp">
+      <validLinenumbers>90</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="81" name=".preheader.preheader" type="BlockType">
+    <controlInputObjs>block_79</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="node_80" opcode="br" nodeLabel="1" m_display="0">
+      <controlInputObjs>.preheader</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="116" name="block_116" type="BlockType">
+    <controlInputObjs>.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>burst.wr.header</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="114" name="base_ddr_addr_addr_1" lineNumber="138" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" bitwidth="1" opcode="writereq" nodeLabel="3" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="138" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="115" name="node_115" opcode="br" nodeLabel="3" m_display="0">
+      <controlInputObjs>burst.wr.header</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="axis_to_ddr_writer.cpp">
+      <validLinenumbers>138</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="136" name="memcpy.tail" type="BlockType">
+    <controlInputObjs>burst.wr.header</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_79</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="133" name="base_ddr_addr_addr_1_1" lineNumber="138" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" bitwidth="1" opcode="writeresp" nodeLabel="5" nodeLatency="4" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="138" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>phi</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="134" name="offset_1" lineNumber="140" originalName="offset" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="offset_1_fu_629_p2" contextFuncName="axis_to_ddr_writer" bitwidth="32" opcode="add" nodeLabel="5" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="140" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="135" name="node_135" lineNumber="90" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="br" nodeLabel="9" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="90" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <controlInputObjs>block_79</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="axis_to_ddr_writer.cpp">
+      <validLinenumbers>138</validLinenumbers>
+      <validLinenumbers>140</validLinenumbers>
+      <validLinenumbers>90</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="150" name="._crit_edge99" type="BlockType">
+    <controlInputObjs>block_79</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="137" name="FRAME_BUFFER_NUMBER_s" lineNumber="144" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" bitwidth="8" opcode="load" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="144" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="139" name="op2_assign" lineNumber="144" originalName="op2" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="op2_assign_fu_469_p2" contextFuncName="axis_to_ddr_writer" bitwidth="9" opcode="add" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="144" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="141" name="tmp_5" lineNumber="144" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="tmp_5_fu_478_p2" contextFuncName="axis_to_ddr_writer" bitwidth="1" opcode="icmp" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="144" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="142" name="tmp_7" lineNumber="146" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="tmp_7_fu_484_p2" contextFuncName="axis_to_ddr_writer" bitwidth="8" opcode="add" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="146" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="143" name="p_tmp_7" lineNumber="144" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="p_tmp_7_fu_489_p3" contextFuncName="axis_to_ddr_writer" bitwidth="8" opcode="select" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="144" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="144" name="node_144" lineNumber="145" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="store" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="145" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>select</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="145" name="frame_count_inner_lo" lineNumber="153" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" bitwidth="32" opcode="load" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="153" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="146" name="tmp_2" lineNumber="153" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="tmp_2_fu_507_p2" contextFuncName="axis_to_ddr_writer" bitwidth="32" opcode="add" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="153" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="147" name="node_147" lineNumber="153" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="store" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="153" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>add</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="148" name="node_148" lineNumber="154" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="write" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="154" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>frame_count</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="149" name="node_149" lineNumber="156" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="ret" nodeLabel="1" m_display="0">
+      <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="156" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="axis_to_ddr_writer.cpp">
+      <validLinenumbers>144</validLinenumbers>
+      <validLinenumbers>146</validLinenumbers>
+      <validLinenumbers>145</validLinenumbers>
+      <validLinenumbers>153</validLinenumbers>
+      <validLinenumbers>154</validLinenumbers>
+      <validLinenumbers>156</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="501" pipe_depth="2" RegionName="Loop 1.1">
+    <basic_blocks id="89" name=".preheader" type="BlockType">
+      <controlInputObjs>.preheader.preheader</controlInputObjs>
+      <controlInputObjs>ifFalse</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_116</controlOutputObjs>
+      <controlOutputObjs>.preheader95</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="indvar_flatten" bitwidth="13" opcode="phi" nodeLabel="2" m_display="0">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>ifFalse</controlInputObjs>
+        <controlInputObjs>.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="j" lineNumber="105" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" bitwidth="10" opcode="phi" nodeLabel="2" m_display="0">
+        <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="105" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>ifFalse</controlInputObjs>
+        <controlInputObjs>.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="temp" originalName="temp" bitwidth="64" opcode="phi" nodeLabel="2" m_display="0">
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <controlInputObjs>ifFalse</controlInputObjs>
+        <controlInputObjs>.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="i" originalName="i" bitwidth="4" opcode="phi" nodeLabel="2" m_display="0">
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>ifFalse</controlInputObjs>
+        <controlInputObjs>.preheader.preheader</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="exitcond_flatten" rtlName="exitcond_flatten_fu_520_p2" bitwidth="1" opcode="icmp" nodeLabel="2" m_display="0">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="indvar_flatten_next" rtlName="indvar_flatten_next_fu_526_p2" bitwidth="13" opcode="add" nodeLabel="2" m_display="0">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="node_88" opcode="br" nodeLabel="2" m_display="0">
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.preheader95</controlInputObjs>
+        <controlInputObjs>block_116</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axis_to_ddr_writer.cpp">
+        <validLinenumbers>105</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="104" name=".preheader95" type="BlockType">
+      <controlInputObjs>.preheader</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>ifTrue</controlOutputObjs>
+      <controlOutputObjs>ifFalse</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="j_s" lineNumber="97" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="j_s_fu_532_p2" contextFuncName="axis_to_ddr_writer" bitwidth="10" opcode="add" nodeLabel="2" m_display="0">
+        <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="97" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="tmp_4" lineNumber="105" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="tmp_4_fu_538_p2" contextFuncName="axis_to_ddr_writer" bitwidth="1" opcode="icmp" nodeLabel="2" m_display="0">
+        <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="105" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="j_mid2" lineNumber="105" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="j_mid2_fu_544_p3" contextFuncName="axis_to_ddr_writer" bitwidth="10" opcode="select" nodeLabel="2" m_display="0">
+        <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="105" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="tmp" lineNumber="123" originalName="tmp" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" bitwidth="8" opcode="read" nodeLabel="2" nodeLatency="1" m_display="0">
+        <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="123" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+        <dataInputObjs>inputStream_V</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="temp_1" lineNumber="105" originalName="temp" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="temp_1_fu_576_p3" contextFuncName="axis_to_ddr_writer" bitwidth="56" opcode="select" nodeLabel="3" m_display="0">
+        <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="105" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="i_op" lineNumber="105" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="i_op_fu_552_p2" contextFuncName="axis_to_ddr_writer" bitwidth="4" opcode="add" nodeLabel="2" m_display="0">
+        <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="105" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="i_1" lineNumber="105" originalName="i" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="i_1_fu_558_p3" contextFuncName="axis_to_ddr_writer" bitwidth="4" opcode="select" nodeLabel="2" m_display="0">
+        <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="105" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="ifzero" lineNumber="105" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." rtlName="ifzero_fu_592_p2" contextFuncName="axis_to_ddr_writer" bitwidth="1" opcode="icmp" nodeLabel="3" m_display="0">
+        <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="105" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="node_103" lineNumber="105" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="br" nodeLabel="3" m_display="0">
+        <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="105" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>ifFalse</controlInputObjs>
+        <controlInputObjs>ifTrue</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axis_to_ddr_writer.cpp">
+        <validLinenumbers>97</validLinenumbers>
+        <validLinenumbers>105</validLinenumbers>
+        <validLinenumbers>123</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="109" name="ifTrue" type="BlockType">
+      <controlInputObjs>.preheader95</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>ifFalse</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="node_107" lineNumber="134" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="store" nodeLabel="3" m_display="0">
+        <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="134" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="node_108" opcode="br" nodeLabel="3" m_display="0">
+        <controlInputObjs>ifFalse</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axis_to_ddr_writer.cpp">
+        <validLinenumbers>134</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="111" name="ifFalse" type="BlockType">
+      <controlInputObjs>.preheader95</controlInputObjs>
+      <controlInputObjs>ifTrue</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="node_110" opcode="br" nodeLabel="3" m_display="0">
+        <controlInputObjs>.preheader</controlInputObjs>
+      </node_objs>
+    </basic_blocks>
+  </regions>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="502" pipe_depth="3" RegionName="memcpy.base_ddr_addr.buffer.gep">
+    <basic_blocks id="122" name="burst.wr.header" type="BlockType">
+      <controlInputObjs>block_116</controlInputObjs>
+      <controlInputObjs>burst.wr.body</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>memcpy.tail</controlOutputObjs>
+      <controlOutputObjs>burst.wr.body</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="indvar" bitwidth="10" opcode="phi" nodeLabel="4" m_display="0">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <controlInputObjs>block_116</controlInputObjs>
+        <controlInputObjs>burst.wr.body</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="exitcond" rtlName="exitcond_fu_612_p2" bitwidth="1" opcode="icmp" nodeLabel="4" m_display="0">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="indvar_next" rtlName="indvar_next_fu_618_p2" bitwidth="10" opcode="add" nodeLabel="4" m_display="0">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="node_121" opcode="br" nodeLabel="4" m_display="0">
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>burst.wr.body</controlInputObjs>
+        <controlInputObjs>memcpy.tail</controlInputObjs>
+      </node_objs>
+    </basic_blocks>
+    <basic_blocks id="132" name="burst.wr.body" type="BlockType">
+      <controlInputObjs>burst.wr.header</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>burst.wr.header</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="buffer_load" lineNumber="138" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" bitwidth="64" opcode="load" nodeLabel="4" nodeLatency="1" m_display="0">
+        <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="138" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="129" name="node_129" lineNumber="138" fileName="axis_to_ddr_writer.cpp" fileDirectory=".." contextFuncName="axis_to_ddr_writer" opcode="write" nodeLabel="6" m_display="0">
+        <inlineStackInfo fileName="axis_to_ddr_writer.cpp" linenumber="138" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/DDR/AXIS_TO_DDR_WRITER_AXILITE" functionName="axis_to_ddr_writer"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="131" name="node_131" opcode="br" nodeLabel="6" m_display="0">
+        <controlInputObjs>burst.wr.header</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="axis_to_ddr_writer.cpp">
+        <validLinenumbers>138</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <regnodes realName="exitcond_reg_698">
+    <nodeIds>118</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten_reg_291">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <regnodes realName="offset_1_reg_717">
+    <nodeIds>134</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten_next_reg_662">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="temp_2_reg_684">
+    <nodeIds>98</nodeIds>
+  </regnodes>
+  <regnodes realName="temp_reg_313">
+    <nodeIds>84</nodeIds>
+  </regnodes>
+  <regnodes realName="base_ddr_addr_addr_reg_692">
+    <nodeIds>113</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_next_reg_702">
+    <nodeIds>120</nodeIds>
+  </regnodes>
+  <regnodes realName="buffer_addr_1_reg_707">
+    <nodeIds>127</nodeIds>
+  </regnodes>
+  <regnodes realName="t_V_reg_638">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="idx_reg_280">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="exitcond_flatten_reg_658">
+    <nodeIds>86</nodeIds>
+  </regnodes>
+  <regnodes realName="i_1_reg_678">
+    <nodeIds>101</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_4_reg_667">
+    <nodeIds>91</nodeIds>
+  </regnodes>
+  <regnodes realName="j_reg_302">
+    <nodeIds>83</nodeIds>
+  </regnodes>
+  <regnodes realName="buffer_load_reg_712">
+    <nodeIds>128</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_1_reg_649">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_325">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="idx_1_reg_653">
+    <nodeIds>77</nodeIds>
+  </regnodes>
+  <regnodes realName="i_op_assign_1_reg_261">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_reg_336">
+    <nodeIds>117</nodeIds>
+  </regnodes>
+  <regnodes realName="offset_reg_644">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <regnodes realName="offset1_reg_270">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="j_mid2_reg_672">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="i_op_assign_reg_251">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_4_fu_538">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rhs_V_cast_fu_405">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_fu_612">
+    <nodeIds>118</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_11_fu_566">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_cast_fu_465">
+    <nodeIds>138</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_op_assign_phi_fu_254">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_478">
+    <nodeIds>141</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="temp_2_fu_583">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_phi_fu_340">
+    <nodeIds>117</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="idx_1_fu_455">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_329">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="offset1_phi_fu_273">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_484">
+    <nodeIds>142</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_9_fu_601">
+    <nodeIds>112</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_op_assign_1_phi_fu_264">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_next_fu_618">
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_mid2_fu_544">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="base_ddr_addr_addr_fu_605">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="offset_1_fu_629">
+    <nodeIds>134</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_V_fu_409">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_507">
+    <nodeIds>146</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_phi_fu_306">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="op2_assign_fu_469">
+    <nodeIds>139</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buffer_addr_gep_fu_230">
+    <nodeIds>106</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="idx_phi_fu_284">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="offset_fu_425">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_10_fu_597">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_449">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_445">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="exitcond_flatten_fu_520">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ifzero_fu_592">
+    <nodeIds>102</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar1_fu_624">
+    <nodeIds>126</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_op_assign_1_cast_fu_397">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_tmp_7_fu_489">
+    <nodeIds>143</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="temp_1_fu_576">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buffer_alloca_fu_160">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten_next_fu_526">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="temp_phi_fu_317">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_op_fu_552">
+    <nodeIds>100</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_fu_558">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="j_s_fu_532">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lhs_V_cast_fu_401">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_cast4_fu_380">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_415">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="buffer_addr_1_gep_fu_244">
+    <nodeIds>127</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten_phi_fu_295">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_435">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_cast_fu_475">
+    <nodeIds>140</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="FRAME_OFFSET_load_load_fu_352">
+    <nodeIds>47</nodeIds>
+  </ioNodes>
+  <ioNodes realName="BASE_ADDRESS_load_load_fu_357">
+    <nodeIds>50</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_131_write_fu_221">
+    <nodeIds>129</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_82_store_fu_497">
+    <nodeIds>144</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_read_fu_208">
+    <nodeIds>95</nodeIds>
+  </ioNodes>
+  <ioNodes realName="base_address_read_read_fu_188">
+    <nodeIds>30</nodeIds>
+  </ioNodes>
+  <ioNodes realName="frame_buffer_offset_s_read_fu_176">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_86_write_fu_201">
+    <nodeIds>148</nodeIds>
+  </ioNodes>
+  <ioNodes realName="frame_buffer_dim_rea_read_fu_182">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="update_intr_read_read_fu_164">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="FRAME_BUFFER_NUMBER_s_load_fu_461">
+    <nodeIds>137</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_51_store_fu_362">
+    <nodeIds>54</nodeIds>
+  </ioNodes>
+  <ioNodes realName="FRAME_BUFFER_DIM_loa_load_fu_431">
+    <nodeIds>73</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_52_store_fu_368">
+    <nodeIds>55</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_53_store_fu_374">
+    <nodeIds>56</nodeIds>
+  </ioNodes>
+  <ioNodes realName="t_V_load_fu_347">
+    <nodeIds>44</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_43_write_fu_194">
+    <nodeIds>45</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_writeresp_fu_214">
+    <nodeIds>114</nodeIds>
+    <nodeIds>133</nodeIds>
+  </ioNodes>
+  <ioNodes realName="frame_count_inner_lo_load_fu_503">
+    <nodeIds>145</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_55_store_fu_391">
+    <nodeIds>58</nodeIds>
+  </ioNodes>
+  <ioNodes realName="frame_buffer_number_s_read_fu_170">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_85_store_fu_514">
+    <nodeIds>147</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="buffer">
+    <nodeIds>128</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="buffer" portID="1">
+    <nodeIds>107</nodeIds>
+  </memoryPorts>
+  <ioPorts name="base_address">
+    <contents name="read">
+      <nodeIds>30</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="base_ddr_addr"/>
+  <ioPorts name="frame_buffer_dim">
+    <contents name="read">
+      <nodeIds>29</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="frame_buffer_number">
+    <contents name="read">
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="frame_buffer_offset">
+    <contents name="read">
+      <nodeIds>28</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="frame_count">
+    <contents name="write">
+      <nodeIds>148</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="frame_index_V">
+    <contents name="write">
+      <nodeIds>45</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="inputStream_V">
+    <contents name="read">
+      <nodeIds>95</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="update_intr">
+    <contents name="read">
+      <nodeIds>26</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="143" stage="1" latency="1"/>
+      <operations id="144" stage="1" latency="1"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="146" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+      <operations id="148" stage="1" latency="1"/>
+      <operations id="149" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="95" stage="2" latency="2"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="2"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="117" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="128" stage="1" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="133" stage="5" latency="5"/>
+      <operations id="134" stage="1" latency="1"/>
+    </states>
+    <states id="10">
+      <operations id="133" stage="4" latency="5"/>
+    </states>
+    <states id="11">
+      <operations id="133" stage="3" latency="5"/>
+    </states>
+    <states id="12">
+      <operations id="133" stage="2" latency="5"/>
+    </states>
+    <states id="13">
+      <operations id="133" stage="1" latency="5"/>
+      <operations id="135" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="67"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="69"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="77"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="85"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="86"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="87"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="88"/>
+    </transitions>
+    <transitions inState="13" outState="2">
+      <condition id="90"/>
+    </transitions>
+    <transitions inState="4" outState="3">
+      <condition id="92"/>
+    </transitions>
+    <transitions inState="3" outState="5">
+      <condition id="91"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="93"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="95"/>
+    </transitions>
+    <transitions inState="8" outState="6">
+      <condition id="96"/>
+    </transitions>
+    <transitions inState="6" outState="9">
+      <condition id="94"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="97"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="axis_to_ddr_writer" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>9</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>53</basicBlocks>
+      <basicBlocks>60</basicBlocks>
+      <basicBlocks>70</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Loop 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <subRegions>8</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>79</basicBlocks>
+      <basicBlocks>81</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="Loop 1.1" mII="1" mDepth="2" mMinTripCount="4096" mMaxTripCount="4096" mMinLatency="4096" mMaxLatency="-1" mType="1">
+      <basicBlocks>89</basicBlocks>
+      <basicBlocks>104</basicBlocks>
+      <basicBlocks>109</basicBlocks>
+      <basicBlocks>111</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>116</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="memcpy.base_ddr_addr.buffer.gep" mII="1" mDepth="3" mMinTripCount="512" mMaxTripCount="512" mMinLatency="513" mMaxLatency="-1" mType="1">
+      <basicBlocks>122</basicBlocks>
+      <basicBlocks>132</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="Region 3" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4" mMaxLatency="-1">
+      <basicBlocks>136</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="9" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMaxLatency="-1">
+      <basicBlocks>150</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,7 +1,0 @@
-Running: xsim.dir/LF_valid_to_AXIS/xsimk.exe -maxdeltaid 10000 -simmode gui -wdb LF_valid_to_AXIS.wdb -simrunnum 0 -socket 61730
-Design successfully loaded
-Design Loading Memory Usage: 20052 KB (Peak: 20052 KB)
-Design Loading CPU Usage: 46 ms
-Simulation completed
-Simulation Memory Usage: 20924 KB (Peak: 20924 KB)
-Simulation CPU Usage: 62 ms

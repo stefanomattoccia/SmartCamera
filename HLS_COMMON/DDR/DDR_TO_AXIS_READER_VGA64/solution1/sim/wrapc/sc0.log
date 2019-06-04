@@ -1,5 +1,0 @@
-   Build using "C:/Xilinx/Vivado_HLS/2015.4/msys/bin/g++.exe"
-   Compiling apatb_ddr_to_axis_reader.cpp
-   Compiling ddr_to_axis_reader.cpp_pre.cpp.tb.cpp
-   Compiling testbench.cpp_pre.cpp.tb.cpp
-   Generating cosim.tv.exe

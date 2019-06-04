@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
+# IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
+# Start of session at: Mon Jun  3 10:21:09 2019
+# Process ID: 9466
+# Current directory: /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/impl/ip/vivado.log
+# Journal file: /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  3 10:21:21 2019...

@@ -5,7 +5,7 @@
 void axis_to_ddr_writer(hls::stream<DATA_IN> &inputStream, volatile u64* base_ddr_addr, ap_uint<LOG2_FB>* frame_index, unsigned int* frame_count)
 {
 	/*
-	 * La depth è usata solo in fase di test (co-simulazione). Per FRAME_BUFFER_DIM = 128
+	 * La depth ï¿½ usata solo in fase di test (co-simulazione). Per FRAME_BUFFER_DIM = 128
 	 * porre depth = 32
 	 *
 	 * In qualche documentazione online ho trovato questo:
@@ -27,11 +27,11 @@ void axis_to_ddr_writer(hls::stream<DATA_IN> &inputStream, volatile u64* base_dd
 	 * in maniera sequenziale con i dati in ingresso dallo stream definisco
 	 * un puntatore a size_in che punta allo stesso buffer. In questo modo
 	 * in ingresso uso il puntatore a size_in e in uscita il puntatore a long long,
-	 * ma il buffer è sempre unico. Per potere fare il cast da buffer a buffer_pixel
+	 * ma il buffer ï¿½ sempre unico. Per potere fare il cast da buffer a buffer_pixel
 	 * devo usare dei dati noti, non me lo fa fare con ap_uint<>
 	 *
-	 * Probabilmente il fatto che il buffer utilizzi 2 BRAM è dovuto non tanto
-	 * alla dimensione del buffer, che è comunque più piccola di quella di una
+	 * Probabilmente il fatto che il buffer utilizzi 2 BRAM ï¿½ dovuto non tanto
+	 * alla dimensione del buffer, che ï¿½ comunque piï¿½ piccola di quella di una
 	 * BRAM, quanto al fatto che il buffer che definisco ha width = 64 mentre
 	 * le BRAM hanno una width minore, quindi per poter accedere contemporaneamente
 	 * a tutti e 64 i bit ho bisogno di 2 BRAM.
@@ -51,12 +51,12 @@ void axis_to_ddr_writer(hls::stream<DATA_IN> &inputStream, volatile u64* base_dd
 
 	*frame_index = inner_index;
 
-	//L'offset è usato con il puntatore a long, motivo per cui devo sempre dividere per 8
+	//L'offset ï¿½ usato con il puntatore a long, motivo per cui devo sempre dividere per 8
 	int offset = inner_index*FRAME_OFFSET/sizeof(u64);
 
 	/*
-	 * Il ciclo più esterno indica quante volte faccio un trasferimento
-	 * dal modulo alla DDR, cioè a FRAME_BUFFER_DIM / BUFFER_SIZE volte.
+	 * Il ciclo piï¿½ esterno indica quante volte faccio un trasferimento
+	 * dal modulo alla DDR, cioï¿½ a FRAME_BUFFER_DIM / BUFFER_SIZE volte.
 	 * In ogni ciclo quindi devo riempire il buffer e fare una memcpy
 	 */
 	u64 temp = 0;
@@ -72,8 +72,8 @@ void axis_to_ddr_writer(hls::stream<DATA_IN> &inputStream, volatile u64* base_dd
 
 
 			/*
-			 * Il ciclo più interno si occupa di riempire il registro a 8 byte temp
-			 * prendendo in ingresso dati di lunghezza possibilmente più piccola
+			 * Il ciclo piï¿½ interno si occupa di riempire il registro a 8 byte temp
+			 * prendendo in ingresso dati di lunghezza possibilmente piï¿½ piccola
 			 */
 			for(int i = 0; i < sizeof(u64) / sizeof(DATA_IN); i++)
 			{
@@ -99,7 +99,7 @@ void axis_to_ddr_writer(hls::stream<DATA_IN> &inputStream, volatile u64* base_dd
 
 				if (sizeof(DATA_IN) != 8)
 				{
-					data = data << 64 - sizeof(DATA_IN)*8; 	//Porto il dato letto nei bit più significativi
+					data = data << 64 - sizeof(DATA_IN)*8; 	//Porto il dato letto nei bit piï¿½ significativi
 					temp = temp >> sizeof(DATA_IN)*8;		//Shifto verso destra temp in modo da far spazio al nuovo dato
 					temp += data;
 				}
@@ -126,7 +126,7 @@ void axis_to_ddr_writer(hls::stream<DATA_IN> &inputStream, volatile u64* base_dd
 	/*
 	 * Nonostante io setti il frame_count alla fine del metodo, dalle forme d'onda
 	 * vedo che viene incremantato appena la funzione viene chiamata. In questo modo
-	 * il numero di frame scritti realmente sarà frame count - 1
+	 * il numero di frame scritti realmente sarï¿½ frame count - 1
 	 */
 	frame_count_inner++;
 	*frame_count = frame_count_inner;

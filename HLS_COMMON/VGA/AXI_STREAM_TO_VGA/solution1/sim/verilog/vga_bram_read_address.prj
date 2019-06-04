@@ -1,3 +1,0 @@
-verilog xil_defaultlib "vga_bram_read_address.autotb.v"
-verilog xil_defaultlib "vga_bram_read_address.v"
-

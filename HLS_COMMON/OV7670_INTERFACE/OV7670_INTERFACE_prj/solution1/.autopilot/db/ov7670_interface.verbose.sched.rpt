@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vivado HLS Report for 'ov7670_interface'
+================================================================
+* Date:           Mon Jun  3 10:18:13 2019
+
+* Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
+* Project:        OV7670_INTERFACE_prj
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      1.67|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+ <State 1> : 1.67ns
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %data_in_V), !map !41"
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %href_V), !map !47"
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %vsync_V), !map !51"
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %data_out_V), !map !55"
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %line_valid_V), !map !59"
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %frame_valid_V), !map !63"
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @ov7670_interface_str) nounwind"
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%vsync_V_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %vsync_V)"
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%href_V_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %href_V)"
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%data_in_V_read = call i8 @_ssdm_op_Read.ap_none.i8(i8 %data_in_V)"
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %data_in_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ov7670_interface.cpp:6]
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %href_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ov7670_interface.cpp:7]
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %vsync_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ov7670_interface.cpp:8]
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %data_out_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ov7670_interface.cpp:9]
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %line_valid_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ov7670_interface.cpp:10]
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %frame_valid_V, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ov7670_interface.cpp:11]
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%count_lines_load = load i32* @count_lines, align 4" [ov7670_interface.cpp:17]
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecReset(i32* @count_lines, i32 1, [1 x i8]* @p_str1) nounwind" [ov7670_interface.cpp:17]
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecReset(i32* @count_readings, i32 1, [1 x i8]* @p_str1) nounwind" [ov7670_interface.cpp:18]
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%first_load = load i1* @first, align 1" [ov7670_interface.cpp:19]
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecReset(i1* @first, i32 1, [1 x i8]* @p_str1) nounwind" [ov7670_interface.cpp:19]
+ST_1 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node brmerge)   --->   "%p_not1 = xor i1 %first_load, true" [ov7670_interface.cpp:21]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.28ns) (out node of the LUT)   --->   "%brmerge = or i1 %vsync_V_read, %p_not1" [ov7670_interface.cpp:21]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "br i1 %brmerge, label %._crit_edge, label %1" [ov7670_interface.cpp:21]
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %frame_valid_V, i1 false)" [ov7670_interface.cpp:23]
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %line_valid_V, i1 false)" [ov7670_interface.cpp:24]
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.volatile.i8P(i8* %data_out_V, i8 0)" [ov7670_interface.cpp:25]
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "br label %12" [ov7670_interface.cpp:26]
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "store i1 false, i1* @first, align 1" [ov7670_interface.cpp:28]
+ST_1 : Operation 31 [1/1] (0.28ns)   --->   "%p_not = xor i1 %vsync_V_read, true" [ov7670_interface.cpp:30]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 32 [1/1] (0.99ns)   --->   "%tmp_1 = icmp ult i32 %count_lines_load, 480" [ov7670_interface.cpp:30]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 33 [1/1] (0.28ns)   --->   "%or_cond = and i1 %tmp_1, %p_not" [ov7670_interface.cpp:30]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "br i1 %or_cond, label %2, label %8" [ov7670_interface.cpp:30]
+ST_1 : Operation 35 [1/1] (0.99ns)   --->   "%tmp_2 = icmp eq i32 %count_lines_load, 480" [ov7670_interface.cpp:49]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (0.28ns)   --->   "%or_cond1 = and i1 %tmp_2, %p_not" [ov7670_interface.cpp:49]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %frame_valid_V, i1 false)" [ov7670_interface.cpp:49]
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "br i1 %or_cond1, label %10, label %9" [ov7670_interface.cpp:49]
+ST_1 : Operation 39 [1/1] (0.65ns)   --->   "store i32 0, i32* @count_lines, align 4" [ov7670_interface.cpp:53]
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "br label %10"
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "br label %11"
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %frame_valid_V, i1 true)" [ov7670_interface.cpp:33]
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%count_readings_load = load i32* @count_readings, align 4" [ov7670_interface.cpp:38]
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "br i1 %href_V_read, label %3, label %4" [ov7670_interface.cpp:34]
+ST_1 : Operation 45 [1/1] (0.99ns)   --->   "%tmp_4 = icmp eq i32 %count_readings_load, 1280" [ov7670_interface.cpp:40]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %line_valid_V, i1 false)" [ov7670_interface.cpp:42]
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "br i1 %tmp_4, label %5, label %6" [ov7670_interface.cpp:40]
+ST_1 : Operation 48 [1/1] (0.65ns)   --->   "store i32 0, i32* @count_readings, align 4" [ov7670_interface.cpp:43]
+ST_1 : Operation 49 [1/1] (1.01ns)   --->   "%tmp_5 = add i32 %count_lines_load, 1" [ov7670_interface.cpp:44]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 50 [1/1] (0.65ns)   --->   "store i32 %tmp_5, i32* @count_lines, align 4" [ov7670_interface.cpp:44]
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "br label %6" [ov7670_interface.cpp:45]
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "br label %7"
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.volatile.i8P(i8* %data_out_V, i8 %data_in_V_read)" [ov7670_interface.cpp:36]
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_none.volatile.i1P(i1* %line_valid_V, i1 true)" [ov7670_interface.cpp:37]
+ST_1 : Operation 55 [1/1] (1.01ns)   --->   "%tmp_3 = add i32 %count_readings_load, 1" [ov7670_interface.cpp:38]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 56 [1/1] (0.65ns)   --->   "store i32 %tmp_3, i32* @count_readings, align 4" [ov7670_interface.cpp:38]
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "br label %7" [ov7670_interface.cpp:39]
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "br label %11" [ov7670_interface.cpp:48]
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "br label %12" [ov7670_interface.cpp:55]
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "ret void" [ov7670_interface.cpp:56]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.67ns
+The critical path consists of the following:
+	'load' operation ('count_lines_load', ov7670_interface.cpp:17) on static variable 'count_lines' [26]  (0 ns)
+	'add' operation ('tmp_5', ov7670_interface.cpp:44) [65]  (1.02 ns)
+	'store' operation (ov7670_interface.cpp:44) of variable 'tmp_5', ov7670_interface.cpp:44 on static variable 'count_lines' [66]  (0.656 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

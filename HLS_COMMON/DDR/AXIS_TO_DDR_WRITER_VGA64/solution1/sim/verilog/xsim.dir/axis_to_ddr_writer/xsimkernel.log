@@ -1,7 +1,0 @@
-Running: xsim.dir/axis_to_ddr_writer/xsimk.exe -maxdeltaid 10000 -simmode gui -wdb axis_to_ddr_writer.wdb -simrunnum 0 -socket 49812
-Design successfully loaded
-Design Loading Memory Usage: 20628 KB (Peak: 20628 KB)
-Design Loading CPU Usage: 62 ms
-Simulation completed
-Simulation Memory Usage: 23652 KB (Peak: 23652 KB)
-Simulation CPU Usage: 124 ms

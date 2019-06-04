@@ -1,0 +1,410 @@
+INFO: [HLS 200-0] Workspace /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1 opened at Mon Jun 03 10:21:08 CEST 2019
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Command     config_clock returned 0; 0 sec.
+Execute     open_platform DefaultPlatform 
+Command     open_platform returned 0; 0 sec.
+Execute     import_lib /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.lib 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.lib 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.lib 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.lib 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.lib 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0 sec.
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.lib 
+Command         ap_source returned 0; 0 sec.
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.lib 
+Command         ap_source returned 0; 0 sec.
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.lib 
+Command         ap_source returned 0; 0 sec.
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.lib 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0 sec.
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_old.lib 
+Command       ap_source returned 0; 0 sec.
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_vivado.lib 
+Command       ap_source returned 0; 0.01 sec.
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
+Command         ap_source returned 0; 0 sec.
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0 sec.
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0 sec.
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Command       ap_source returned 0; 0 sec.
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Execute       config_chip_info -quiet -resource  {SLICE 34260} {LUT 274080}   {FF 548160}  {DSP48E 2520}  {BRAM 1824} {URAM 0}  
+Command       config_chip_info returned 0; 0 sec.
+Execute       config_chip_info -quiet -speed medium 
+Command       config_chip_info returned 0; 0 sec.
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
+Command         ap_source returned 0; 0 sec.
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0 sec.
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0 sec.
+Command     import_lib returned 0; 0.02 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0.01 sec.
+Command           ap_source returned 0; 0.01 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0.01 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.08 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0.01 sec.
+Command         ap_source returned 0; 0.11 sec.
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.11 sec.
+Command     ap_source returned 0; 0.11 sec.
+Execute     open_platform DefaultPlatform 
+Command     open_platform returned 0; 0 sec.
+Execute     import_lib /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_hp.lib 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.01 sec.
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/target_info.tcl 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.hlp 
+Command             ap_source returned 0; 0 sec.
+Execute             source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.hlp 
+Command             ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.hlp 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0 sec.
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/zynquplus/zynquplus_hp.hlp 
+Command       ap_source returned 0; 0 sec.
+Command     import_lib returned 0; 0.01 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command       ap_source returned 0; 0.01 sec.
+Command     ap_source returned 0; 0.01 sec.
+Execute     set_part xczu9eg-ffvb1156-2-i 
+Execute       add_library xilinx/zynquplus/zynquplus:xczu9eg:-ffvb1156:-2-i 
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         license_isbetapart xczu9eg 
+Command         license_isbetapart returned 1; 0.01 sec.
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Execute         config_chip_info -quiet -resource  {SLICE 34260} {LUT 274080}   {FF 548160}  {DSP48E 2520}  {BRAM 1824} {URAM 0}  
+Command         config_chip_info returned 0; 0 sec.
+Execute         config_chip_info -quiet -speed medium 
+Command         config_chip_info returned 0; 0 sec.
+Command       add_library returned 0; 0.01 sec.
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+Command         get_default_platform returned 0; 0 sec.
+Command       add_library returned 0; 0 sec.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-i'
+Execute       get_default_platform 
+Command       get_default_platform returned 0; 0 sec.
+Command     set_part returned 0; 0.05 sec.
+Execute     get_default_platform 
+Command     get_default_platform returned 0; 0 sec.
+Execute     config_chip_info -quiet -resource  {SLICE 34260} {LUT 274080}   {FF 548160}  {DSP48E 2520}  {BRAM 1824} {URAM 0}  
+Command     config_chip_info returned 0; 0 sec.
+Execute     config_chip_info -quiet -speed medium 
+Command     config_chip_info returned 0; 0 sec.
+Command   open_solution returned 0; 0.21 sec.
+Execute   export_design -rtl verilog -format ip_catalog -version 1.0 -display_name OV7670_GRAYSCALE 
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
+Command       ap_source returned 0; 0 sec.
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source returned 0; 0.01 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0.01 sec.
+Command           ap_source returned 0; 0.01 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.07 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0.01 sec.
+Command         ap_source returned 0; 0.11 sec.
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.11 sec.
+Command     ap_source returned 0; 0.11 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command       ap_source returned 0; 0 sec.
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
+Command       ap_source returned 0; 0 sec.
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
+Command             ap_source returned 0; 0 sec.
+Execute             source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0.01 sec.
+Command           ap_source returned 0; 0.01 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0.01 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.08 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.1 sec.
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.1 sec.
+Command     ap_source returned 0; 0.1 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command       ap_source returned 0; 0 sec.
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.compgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.compgen.tcl 
+Command     ap_source returned 0; 0.01 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.compgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.constraint.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.constraint.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     sc_get_clocks ov7670_grayscale 
+Command     sc_get_clocks returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.rtl_wrap.cfg.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.constraint.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.constraint.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.constraint.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/ov7670_grayscale.tbgen.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/APCoreGen.gen 
+Command       ap_source returned 0; 0 sec.
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/op_simcore.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/generic/autopilot/interface.gen 
+Command     ap_source returned 0; 0 sec.
+Execute     source /home/andrea/Documenti/vision/Ultrascale/hls/OV7670_GRAYSCALE/OV7670_GRAYSCALE_prj/solution1/.autopilot/db/global.setting.tcl 
+Command     ap_source returned 0; 0 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/virtex.gen 
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/plb46.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/fsl.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/axi4.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/saxilite.gen 
+Command             ap_source returned 0; 0.01 sec.
+Execute             source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/maxi.gen 
+Command             ap_source returned 0; 0 sec.
+Command           ap_source returned 0; 0.01 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Command           ap_source returned 0; 0.01 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/util.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfft.gen 
+Command           ap_source returned 0; 0.07 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/dds_compiler.gen 
+Command           ap_source returned 0; 0 sec.
+Execute           source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source returned 0; 0 sec.
+Command         ap_source returned 0; 0.1 sec.
+Execute         source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source returned 0; 0 sec.
+Command       ap_source returned 0; 0.11 sec.
+Command     ap_source returned 0; 0.11 sec.
+Execute     source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source /opt/Xilinx/Vivado/2018.1/common/technology/xilinx/common/xilinx_fpv6.gen 
+Command       ap_source returned 0; 0 sec.
+Command     ap_source returned 0; 0 sec.
+Command   export_design returned 0; 13.09 sec.
+Command ap_source returned 0; 13.3 sec.
+Execute cleanup_all 
+Command cleanup_all returned 0; 0.01 sec.

@@ -1,3 +1,0 @@
-ddr_to_axis_reader_buffer
-ddr_to_axis_reader_base_ddr_addr_m_axi
-ddr_to_axis_reader

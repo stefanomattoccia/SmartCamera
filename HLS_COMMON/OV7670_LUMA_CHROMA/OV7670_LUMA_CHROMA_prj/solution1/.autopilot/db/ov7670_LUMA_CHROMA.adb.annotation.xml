@@ -1,0 +1,3 @@
+<annotationInfo>
+<item  id="39" filename="ov7670_LUMA_CHROMA.cpp" linenumber="30" name="tmp_6" contextFuncName="ov7670_LUMA_CHROMA" moduleName="ov7670_LUMA_CHROMA" rtlName="tmp_6_fu_81_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="2" fileDirectory="/home/andrea/Documenti/vision/Ultrascale/hls/OV7670_LUMA_CHROMA"></item>
+</annotationInfo>

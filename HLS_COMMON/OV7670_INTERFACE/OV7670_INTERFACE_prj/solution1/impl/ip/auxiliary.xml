@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="ov7670_interface" xd:componentRef="ov7670_interface" xd:initiationInterval="1" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="data_in" xd:originalName="data_in" xd:direction="in" xd:interfaceRef="data_in_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:arg xd:name="href" xd:originalName="href" xd:direction="in" xd:interfaceRef="href_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="vsync" xd:originalName="vsync" xd:direction="in" xd:interfaceRef="vsync_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(data_out)" xd:originalName="data_out" xd:direction="out" xd:interfaceRef="data_out_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="8" xd:firstOut="0"/>
+  <xd:arg xd:name="*(line_valid)" xd:originalName="line_valid" xd:direction="out" xd:interfaceRef="line_valid_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="0"/>
+  <xd:arg xd:name="*(frame_valid)" xd:originalName="frame_valid" xd:direction="out" xd:interfaceRef="frame_valid_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="0"/>
+  <xd:latencyEstimates xd:best-case="0" xd:worst-case="0" xd:average-case="0"/>
+  <xd:resourceEstimates xd:LUT="219" xd:FF="66" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

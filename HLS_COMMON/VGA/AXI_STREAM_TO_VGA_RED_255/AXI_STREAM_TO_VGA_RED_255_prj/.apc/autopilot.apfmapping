@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="vga.cpp" path="/home/andrea/Documenti/vision/Ultrascale/hls/VGA/AXI_STREAM_TO_VGA_RED_255/vga.cpp"/>
+    <originFiles name="vga.h" path="/home/andrea/Documenti/vision/Ultrascale/hls/VGA/AXI_STREAM_TO_VGA_RED_255/vga.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

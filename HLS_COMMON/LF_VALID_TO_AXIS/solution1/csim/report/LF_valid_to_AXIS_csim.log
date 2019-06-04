@@ -1,6 +1,0 @@
-   Compiling ../../../testbench.cpp in debug mode
-   Compiling ../../../LF_valid_to_AXIS.cpp in debug mode
-   Generating csim.exe
-frame_offset == 4
-byte letti = 5
-@I [SIM-1] CSim done with 0 errors.

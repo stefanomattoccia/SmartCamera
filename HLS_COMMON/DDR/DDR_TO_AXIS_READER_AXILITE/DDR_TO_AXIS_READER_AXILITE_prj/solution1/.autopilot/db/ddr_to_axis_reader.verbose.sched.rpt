@@ -1,0 +1,396 @@
+
+
+================================================================
+== Vivado HLS Report for 'ddr_to_axis_reader'
+================================================================
+* Date:           Mon Jun  3 12:05:09 2019
+
+* Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
+* Project:        DDR_TO_AXIS_READER_AXILITE_prj
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.75|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------------------+------+------+----------+-----------+-----------+------+----------+
+        |                                |   Latency   | Iteration|  Initiation Interval  | Trip |          |
+        |            Loop Name           |  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------------------+------+------+----------+-----------+-----------+------+----------+
+        |- Loop 1                        |     ?|     ?|      4621|          -|          -|     ?|    no    |
+        | + memcpy.buffer.base_ddr_addr  |   513|   513|         3|          1|          1|   512|    yes   |
+        | + Loop 1.2                     |  4097|  4097|         3|          1|          1|  4096|    yes   |
+        +--------------------------------+------+------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+  * Pipeline-1: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 16
+* Pipeline : 2
+  Pipeline-0 : II = 1, D = 3, States = { 9 10 11 }
+  Pipeline-1 : II = 1, D = 3, States = { 13 14 15 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (tmp_7)
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	12  / (exitcond)
+	10  / (!exitcond)
+10 --> 
+	11  / true
+11 --> 
+	9  / true
+12 --> 
+	13  / true
+13 --> 
+	16  / (tmp_9)
+	14  / (!tmp_9)
+14 --> 
+	15  / true
+15 --> 
+	13  / true
+16 --> 
+	2  / true
+
+* FSM state operations: 
+
+ <State 1> : 7.51ns
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %outStream_V), !map !70"
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i64* %base_ddr_addr), !map !74"
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %frame_index_V), !map !80"
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %base_address), !map !84"
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %frame_buffer_dim), !map !90"
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %frame_buffer_offset), !map !94"
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %frame_buffer_number), !map !98"
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %update_intr), !map !102"
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([19 x i8]* @ddr_to_axis_reader_s) nounwind"
+ST_1 : Operation 26 [1/1] (1.00ns)   --->   "%update_intr_read = call i1 @_ssdm_op_Read.s_axilite.i1(i1 %update_intr)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 27 [1/1] (1.00ns)   --->   "%frame_buffer_number_s = call i8 @_ssdm_op_Read.s_axilite.i8(i8 %frame_buffer_number)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 28 [1/1] (1.00ns)   --->   "%frame_buffer_offset_s = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %frame_buffer_offset)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 29 [1/1] (1.00ns)   --->   "%frame_buffer_dim_rea = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %frame_buffer_dim)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 30 [1/1] (1.00ns)   --->   "%base_address_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %base_address)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%buffer = alloca [512 x i64], align 16" [ddr_to_axis_reader.cpp:22]   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 512> <RAM>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:12]
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %base_address, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:13]
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %update_intr, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:14]
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_1 = zext i8 %frame_buffer_number_s to i32" [ddr_to_axis_reader.cpp:15]
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8 %frame_buffer_number, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:15]
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %frame_buffer_offset, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:16]
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %frame_buffer_dim, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:17]
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %outStream_V, [5 x i8]* @p_str2, i32 1, i32 1, [5 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:18]
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i64* %base_ddr_addr, [6 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 128, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:19]
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %frame_index_V, [8 x i8]* @p_str5, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:20]
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([512 x i64]* %buffer, [1 x i8]* @p_str1, [12 x i8]* @p_str6, [1 x i8]* @p_str1, i32 -1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1)" [ddr_to_axis_reader.cpp:23]
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecReset(i32* @FRAME_BUFFER_DIM_r, i32 0, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:28]
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%FRAME_OFFSET_load = load i32* @FRAME_OFFSET, align 4" [ddr_to_axis_reader.cpp:30]
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecReset(i32* @FRAME_OFFSET, i32 0, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:30]
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%FRAME_BUFFER_NUMBER_s = load i32* @FRAME_BUFFER_NUMBER_r, align 4" [ddr_to_axis_reader.cpp:32]
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecReset(i32* @FRAME_BUFFER_NUMBER_r, i32 0, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:32]
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%BASE_ADDRESS_load = load i32* @BASE_ADDRESS_r, align 4" [ddr_to_axis_reader.cpp:34]
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecReset(i32* @BASE_ADDRESS_r, i32 0, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:34]
+ST_1 : Operation 50 [1/1] (0.65ns)   --->   "br i1 %update_intr_read, label %1, label %._crit_edge" [ddr_to_axis_reader.cpp:36]
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "store i32 %frame_buffer_dim_rea, i32* @FRAME_BUFFER_DIM_r, align 4" [ddr_to_axis_reader.cpp:39]
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "store i32 %tmp_1, i32* @FRAME_BUFFER_NUMBER_r, align 4" [ddr_to_axis_reader.cpp:40]
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "store i32 %frame_buffer_offset_s, i32* @FRAME_OFFSET, align 4" [ddr_to_axis_reader.cpp:41]
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%tmp_2 = call i29 @_ssdm_op_PartSelect.i29.i32.i32.i32(i32 %base_address_read, i32 3, i32 31)" [ddr_to_axis_reader.cpp:42]
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%tmp_5 = zext i29 %tmp_2 to i32" [ddr_to_axis_reader.cpp:42]
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "store i32 %tmp_5, i32* @BASE_ADDRESS_r, align 4" [ddr_to_axis_reader.cpp:42]
+ST_1 : Operation 57 [1/1] (0.65ns)   --->   "br label %._crit_edge" [ddr_to_axis_reader.cpp:43]
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%i_op_assign = phi i32 [ %frame_buffer_offset_s, %1 ], [ %FRAME_OFFSET_load, %0 ]" [ddr_to_axis_reader.cpp:30]
+ST_1 : Operation 59 [1/1] (0.00ns) (grouped into LUT with out node offset)   --->   "%i_op_assign_1 = phi i32 [ %tmp_5, %1 ], [ %BASE_ADDRESS_load, %0 ]" [ddr_to_axis_reader.cpp:42]
+ST_1 : Operation 60 [1/1] (0.00ns) (grouped into LUT with out node inner_index_V_1)   --->   "%tmp_3 = phi i32 [ %tmp_1, %1 ], [ %FRAME_BUFFER_NUMBER_s, %0 ]" [ddr_to_axis_reader.cpp:15]
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%t_V_2 = call i8 @_ssdm_op_Read.ap_none.i8P(i8* %frame_index_V)" [ddr_to_axis_reader.cpp:45]
+ST_1 : Operation 62 [1/1] (0.84ns)   --->   "%tmp_4 = icmp eq i8 %t_V_2, 0" [ddr_to_axis_reader.cpp:50]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 63 [1/1] (0.00ns) (grouped into LUT with out node inner_index_V_1)   --->   "%tmp = trunc i32 %tmp_3 to i8" [ddr_to_axis_reader.cpp:51]
+ST_1 : Operation 64 [1/1] (0.00ns) (grouped into LUT with out node inner_index_V_1)   --->   "%t_V = select i1 %tmp_4, i8 %tmp, i8 %t_V_2" [ddr_to_axis_reader.cpp:50]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 65 [1/1] (0.76ns) (out node of the LUT)   --->   "%inner_index_V_1 = add i8 -1, %t_V" [ddr_to_axis_reader.cpp:51]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%lhs_V_cast = zext i8 %inner_index_V_1 to i35" [ddr_to_axis_reader.cpp:55]
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "%rhs_V_cast = zext i32 %i_op_assign to i35" [ddr_to_axis_reader.cpp:55]
+ST_1 : Operation 68 [1/1] (3.42ns)   --->   "%r_V = mul i35 %lhs_V_cast, %rhs_V_cast" [ddr_to_axis_reader.cpp:55]   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 3.42> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 69 [1/1] (0.00ns) (grouped into LUT with out node offset)   --->   "%tmp_s = call i32 @_ssdm_op_PartSelect.i32.i35.i32.i32(i35 %r_V, i32 3, i32 34)" [ddr_to_axis_reader.cpp:55]
+ST_1 : Operation 70 [1/1] (1.01ns) (out node of the LUT)   --->   "%offset = add i32 %i_op_assign_1, %tmp_s" [ddr_to_axis_reader.cpp:55]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 71 [1/1] (0.65ns)   --->   "br label %2" [ddr_to_axis_reader.cpp:56]
+
+ <State 2> : 8.75ns
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%offset1 = phi i32 [ %offset, %._crit_edge ], [ %offset_1, %5 ]"
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%i = phi i32 [ 0, %._crit_edge ], [ %i_1, %5 ]"
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%FRAME_BUFFER_DIM_loa = load i32* @FRAME_BUFFER_DIM_r, align 4" [ddr_to_axis_reader.cpp:56]
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%tmp_6 = call i20 @_ssdm_op_PartSelect.i20.i32.i32.i32(i32 %FRAME_BUFFER_DIM_loa, i32 12, i32 31)" [ddr_to_axis_reader.cpp:56]
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%tmp_10 = zext i20 %tmp_6 to i32" [ddr_to_axis_reader.cpp:56]
+ST_2 : Operation 77 [1/1] (0.99ns)   --->   "%tmp_7 = icmp ult i32 %i, %tmp_10" [ddr_to_axis_reader.cpp:56]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 78 [1/1] (1.01ns)   --->   "%i_1 = add nsw i32 %i, 1" [ddr_to_axis_reader.cpp:56]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 79 [1/1] (0.00ns)   --->   "br i1 %tmp_7, label %3, label %6" [ddr_to_axis_reader.cpp:56]
+ST_2 : Operation 80 [1/1] (0.00ns)   --->   "%tmp_8 = sext i32 %offset1 to i64" [ddr_to_axis_reader.cpp:58]
+ST_2 : Operation 81 [1/1] (0.00ns)   --->   "%base_ddr_addr_addr = getelementptr inbounds i64* %base_ddr_addr, i64 %tmp_8" [ddr_to_axis_reader.cpp:58]
+ST_2 : Operation 82 [7/7] (8.75ns)   --->   "%base_ddr_addr_addr_1 = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)" [ddr_to_axis_reader.cpp:58]   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_2 : Operation 83 [1/1] (0.00ns)   --->   "ret void" [ddr_to_axis_reader.cpp:69]
+
+ <State 3> : 8.75ns
+ST_3 : Operation 84 [6/7] (8.75ns)   --->   "%base_ddr_addr_addr_1 = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)" [ddr_to_axis_reader.cpp:58]   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+ <State 4> : 8.75ns
+ST_4 : Operation 85 [5/7] (8.75ns)   --->   "%base_ddr_addr_addr_1 = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)" [ddr_to_axis_reader.cpp:58]   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+ <State 5> : 8.75ns
+ST_5 : Operation 86 [4/7] (8.75ns)   --->   "%base_ddr_addr_addr_1 = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)" [ddr_to_axis_reader.cpp:58]   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+ <State 6> : 8.75ns
+ST_6 : Operation 87 [3/7] (8.75ns)   --->   "%base_ddr_addr_addr_1 = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)" [ddr_to_axis_reader.cpp:58]   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+ <State 7> : 8.75ns
+ST_7 : Operation 88 [2/7] (8.75ns)   --->   "%base_ddr_addr_addr_1 = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)" [ddr_to_axis_reader.cpp:58]   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+ <State 8> : 8.75ns
+ST_8 : Operation 89 [1/7] (8.75ns)   --->   "%base_ddr_addr_addr_1 = call i1 @_ssdm_op_ReadReq.m_axi.i64P(i64* %base_ddr_addr_addr, i32 512)" [ddr_to_axis_reader.cpp:58]   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 90 [1/1] (0.65ns)   --->   "br label %burst.rd.header"
+
+ <State 9> : 0.91ns
+ST_9 : Operation 91 [1/1] (0.00ns)   --->   "%indvar = phi i10 [ 0, %3 ], [ %indvar_next, %burst.rd.body ]"
+ST_9 : Operation 92 [1/1] (0.91ns)   --->   "%exitcond = icmp eq i10 %indvar, -512"   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 93 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 512, i64 512, i64 512)"
+ST_9 : Operation 94 [1/1] (0.78ns)   --->   "%indvar_next = add i10 %indvar, 1"   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 95 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %burst.rd.end.preheader, label %burst.rd.body"
+
+ <State 10> : 8.75ns
+ST_10 : Operation 96 [1/1] (8.75ns)   --->   "%base_ddr_addr_addr_r = call i64 @_ssdm_op_Read.m_axi.i64P(i64* %base_ddr_addr_addr)" [ddr_to_axis_reader.cpp:58]   --->   Core 9 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+ <State 11> : 1.24ns
+ST_11 : Operation 97 [1/1] (0.00ns)   --->   "%burstread_rbegin = call i32 (...)* @_ssdm_op_SpecRegionBegin([17 x i8]* @burstread_OC_region_s) nounwind"
+ST_11 : Operation 98 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str8)"
+ST_11 : Operation 99 [1/1] (0.00ns)   --->   "%empty_11 = call i32 (...)* @_ssdm_op_SpecLoopName([28 x i8]* @memcpy_OC_buffer_OC_s) nounwind"
+ST_11 : Operation 100 [1/1] (0.00ns)   --->   "%indvar1 = zext i10 %indvar to i64"
+ST_11 : Operation 101 [1/1] (0.00ns)   --->   "%buffer_addr = getelementptr [512 x i64]* %buffer, i64 0, i64 %indvar1" [ddr_to_axis_reader.cpp:58]
+ST_11 : Operation 102 [1/1] (1.23ns)   --->   "store i64 %base_ddr_addr_addr_r, i64* %buffer_addr, align 8" [ddr_to_axis_reader.cpp:58]   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 512> <RAM>
+ST_11 : Operation 103 [1/1] (0.00ns)   --->   "%burstread_rend = call i32 (...)* @_ssdm_op_SpecRegionEnd([17 x i8]* @burstread_OC_region_s, i32 %burstread_rbegin) nounwind"
+ST_11 : Operation 104 [1/1] (0.00ns)   --->   "br label %burst.rd.header"
+
+ <State 12> : 0.66ns
+ST_12 : Operation 105 [1/1] (0.65ns)   --->   "br label %burst.rd.end" [ddr_to_axis_reader.cpp:59]
+
+ <State 13> : 1.39ns
+ST_13 : Operation 106 [1/1] (0.00ns)   --->   "%j = phi i13 [ %j_1, %4 ], [ 0, %burst.rd.end.preheader ]"
+ST_13 : Operation 107 [1/1] (1.00ns)   --->   "%tmp_9 = icmp eq i13 %j, -4096" [ddr_to_axis_reader.cpp:59]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 108 [1/1] (0.00ns)   --->   "%empty_12 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4096, i64 4096, i64 4096)"
+ST_13 : Operation 109 [1/1] (0.82ns)   --->   "%j_1 = add i13 %j, 1" [ddr_to_axis_reader.cpp:59]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 110 [1/1] (0.00ns)   --->   "br i1 %tmp_9, label %5, label %4" [ddr_to_axis_reader.cpp:59]
+ST_13 : Operation 111 [1/1] (0.00ns)   --->   "%tmp_12 = trunc i13 %j to i3" [ddr_to_axis_reader.cpp:59]
+ST_13 : Operation 112 [1/1] (0.00ns)   --->   "%gepindex_cast = call i9 @_ssdm_op_PartSelect.i9.i13.i32.i32(i13 %j, i32 3, i32 11)" [ddr_to_axis_reader.cpp:59]
+ST_13 : Operation 113 [1/1] (0.00ns)   --->   "%gepindex2_cast = zext i9 %gepindex_cast to i64" [ddr_to_axis_reader.cpp:59]
+ST_13 : Operation 114 [1/1] (0.00ns)   --->   "%buffer_addr_1 = getelementptr [512 x i64]* %buffer, i64 0, i64 %gepindex2_cast" [ddr_to_axis_reader.cpp:59]
+ST_13 : Operation 115 [2/2] (1.23ns)   --->   "%buffer_load = load i64* %buffer_addr_1, align 8" [ddr_to_axis_reader.cpp:59]   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 512> <RAM>
+
+ <State 14> : 3.51ns
+ST_14 : Operation 116 [1/2] (1.23ns)   --->   "%buffer_load = load i64* %buffer_addr_1, align 8" [ddr_to_axis_reader.cpp:59]   --->   Core 41 'RAM_2P_BRAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 512> <RAM>
+ST_14 : Operation 117 [1/1] (0.00ns)   --->   "%start_pos = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %tmp_12, i3 0)" [ddr_to_axis_reader.cpp:59]
+ST_14 : Operation 118 [1/1] (0.00ns)   --->   "%end_pos = or i6 %start_pos, 7" [ddr_to_axis_reader.cpp:59]
+ST_14 : Operation 119 [1/1] (0.78ns)   --->   "%tmp_13 = icmp ugt i6 %start_pos, %end_pos" [ddr_to_axis_reader.cpp:59]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 120 [1/1] (0.00ns)   --->   "%tmp_14 = zext i6 %start_pos to i7" [ddr_to_axis_reader.cpp:59]
+ST_14 : Operation 121 [1/1] (0.00ns)   --->   "%tmp_15 = zext i6 %end_pos to i7" [ddr_to_axis_reader.cpp:59]
+ST_14 : Operation 122 [1/1] (0.00ns) (grouped into LUT with out node tmp_26)   --->   "%tmp_16 = call i64 @llvm.part.select.i64(i64 %buffer_load, i32 63, i32 0)" [ddr_to_axis_reader.cpp:59]
+ST_14 : Operation 123 [1/1] (0.78ns)   --->   "%tmp_17 = sub i7 %tmp_14, %tmp_15" [ddr_to_axis_reader.cpp:59]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 124 [1/1] (0.00ns) (grouped into LUT with out node tmp_26)   --->   "%tmp_18 = xor i7 %tmp_14, 63" [ddr_to_axis_reader.cpp:59]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 125 [1/1] (0.78ns)   --->   "%tmp_19 = sub i7 %tmp_15, %tmp_14" [ddr_to_axis_reader.cpp:59]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 126 [1/1] (0.00ns) (grouped into LUT with out node tmp_23)   --->   "%tmp_20 = select i1 %tmp_13, i7 %tmp_17, i7 %tmp_19" [ddr_to_axis_reader.cpp:59]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 127 [1/1] (0.00ns) (grouped into LUT with out node tmp_26)   --->   "%tmp_21 = select i1 %tmp_13, i64 %tmp_16, i64 %buffer_load" [ddr_to_axis_reader.cpp:59]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 128 [1/1] (0.00ns) (grouped into LUT with out node tmp_26)   --->   "%tmp_22 = select i1 %tmp_13, i7 %tmp_18, i7 %tmp_14" [ddr_to_axis_reader.cpp:59]   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_14 : Operation 129 [1/1] (0.77ns) (out node of the LUT)   --->   "%tmp_23 = sub i7 63, %tmp_20" [ddr_to_axis_reader.cpp:59]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 130 [1/1] (0.00ns) (grouped into LUT with out node tmp_26)   --->   "%tmp_24 = zext i7 %tmp_22 to i64" [ddr_to_axis_reader.cpp:59]
+ST_14 : Operation 131 [1/1] (0.00ns) (grouped into LUT with out node tmp_28)   --->   "%tmp_25 = zext i7 %tmp_23 to i64" [ddr_to_axis_reader.cpp:59]
+ST_14 : Operation 132 [1/1] (1.53ns) (out node of the LUT)   --->   "%tmp_26 = lshr i64 %tmp_21, %tmp_24" [ddr_to_axis_reader.cpp:59]   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 133 [1/1] (0.00ns) (grouped into LUT with out node tmp_28)   --->   "%tmp_27 = lshr i64 -1, %tmp_25" [ddr_to_axis_reader.cpp:59]   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 134 [1/1] (0.73ns) (out node of the LUT)   --->   "%tmp_28 = and i64 %tmp_26, %tmp_27" [ddr_to_axis_reader.cpp:59]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.37> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 135 [1/1] (0.00ns)   --->   "%tmp_29 = trunc i64 %tmp_28 to i8" [ddr_to_axis_reader.cpp:59]
+ST_14 : Operation 136 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outStream_V, i8 %tmp_29)" [ddr_to_axis_reader.cpp:62]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+ <State 15> : 0.00ns
+ST_15 : Operation 137 [1/1] (0.00ns)   --->   "%tmp_11 = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str7)" [ddr_to_axis_reader.cpp:60]
+ST_15 : Operation 138 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [ddr_to_axis_reader.cpp:61]
+ST_15 : Operation 139 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outStream_V, i8 %tmp_29)" [ddr_to_axis_reader.cpp:62]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_15 : Operation 140 [1/1] (0.00ns)   --->   "%empty_13 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str7, i32 %tmp_11)" [ddr_to_axis_reader.cpp:63]
+ST_15 : Operation 141 [1/1] (0.00ns)   --->   "br label %burst.rd.end" [ddr_to_axis_reader.cpp:59]
+
+ <State 16> : 1.02ns
+ST_16 : Operation 142 [1/1] (1.01ns)   --->   "%offset_1 = add i32 %offset1, 512" [ddr_to_axis_reader.cpp:65]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 143 [1/1] (0.00ns)   --->   "br label %2" [ddr_to_axis_reader.cpp:56]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 7.51ns
+The critical path consists of the following:
+	s_axi read on port 'update_intr' [22]  (1 ns)
+	multiplexor before 'phi' operation ('tmp_3', ddr_to_axis_reader.cpp:15) with incoming values : ('tmp_1', ddr_to_axis_reader.cpp:15) ('FRAME_BUFFER_NUMBER_s', ddr_to_axis_reader.cpp:32) [58]  (0.656 ns)
+	'phi' operation ('tmp_3', ddr_to_axis_reader.cpp:15) with incoming values : ('tmp_1', ddr_to_axis_reader.cpp:15) ('FRAME_BUFFER_NUMBER_s', ddr_to_axis_reader.cpp:32) [58]  (0 ns)
+	'select' operation ('t.V', ddr_to_axis_reader.cpp:50) [62]  (0 ns)
+	'add' operation ('inner_index.V', ddr_to_axis_reader.cpp:51) [63]  (0.765 ns)
+	'mul' operation ('r.V', ddr_to_axis_reader.cpp:55) [66]  (3.42 ns)
+	'add' operation ('offset', ddr_to_axis_reader.cpp:55) [68]  (1.02 ns)
+	multiplexor before 'phi' operation ('offset') with incoming values : ('offset', ddr_to_axis_reader.cpp:55) ('offset', ddr_to_axis_reader.cpp:65) [71]  (0.656 ns)
+
+ <State 2>: 8.75ns
+The critical path consists of the following:
+	'phi' operation ('offset') with incoming values : ('offset', ddr_to_axis_reader.cpp:55) ('offset', ddr_to_axis_reader.cpp:65) [71]  (0 ns)
+	'getelementptr' operation ('base_ddr_addr_addr', ddr_to_axis_reader.cpp:58) [81]  (0 ns)
+	bus request on port 'base_ddr_addr' (ddr_to_axis_reader.cpp:58) [82]  (8.75 ns)
+
+ <State 3>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'base_ddr_addr' (ddr_to_axis_reader.cpp:58) [82]  (8.75 ns)
+
+ <State 4>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'base_ddr_addr' (ddr_to_axis_reader.cpp:58) [82]  (8.75 ns)
+
+ <State 5>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'base_ddr_addr' (ddr_to_axis_reader.cpp:58) [82]  (8.75 ns)
+
+ <State 6>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'base_ddr_addr' (ddr_to_axis_reader.cpp:58) [82]  (8.75 ns)
+
+ <State 7>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'base_ddr_addr' (ddr_to_axis_reader.cpp:58) [82]  (8.75 ns)
+
+ <State 8>: 8.75ns
+The critical path consists of the following:
+	bus request on port 'base_ddr_addr' (ddr_to_axis_reader.cpp:58) [82]  (8.75 ns)
+
+ <State 9>: 0.912ns
+The critical path consists of the following:
+	'phi' operation ('indvar') with incoming values : ('indvar_next') [85]  (0 ns)
+	'icmp' operation ('exitcond') [86]  (0.912 ns)
+
+ <State 10>: 8.75ns
+The critical path consists of the following:
+	bus read on port 'base_ddr_addr' (ddr_to_axis_reader.cpp:58) [95]  (8.75 ns)
+
+ <State 11>: 1.24ns
+The critical path consists of the following:
+	'getelementptr' operation ('buffer_addr', ddr_to_axis_reader.cpp:58) [96]  (0 ns)
+	'store' operation (ddr_to_axis_reader.cpp:58) of variable 'base_ddr_addr_addr_r', ddr_to_axis_reader.cpp:58 on array 'buffer', ddr_to_axis_reader.cpp:22 [97]  (1.24 ns)
+
+ <State 12>: 0.656ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('j') with incoming values : ('j', ddr_to_axis_reader.cpp:59) [103]  (0.656 ns)
+
+ <State 13>: 1.39ns
+The critical path consists of the following:
+	'icmp' operation ('tmp_9', ddr_to_axis_reader.cpp:59) [104]  (1.01 ns)
+	blocking operation 0.379 ns on control path)
+
+ <State 14>: 3.51ns
+The critical path consists of the following:
+	'load' operation ('buffer_load', ddr_to_axis_reader.cpp:59) on array 'buffer', ddr_to_axis_reader.cpp:22 [115]  (1.24 ns)
+	'select' operation ('tmp_21', ddr_to_axis_reader.cpp:59) [126]  (0 ns)
+	'lshr' operation ('tmp_26', ddr_to_axis_reader.cpp:59) [131]  (1.54 ns)
+	'and' operation ('tmp_28', ddr_to_axis_reader.cpp:59) [133]  (0.738 ns)
+
+ <State 15>: 0ns
+The critical path consists of the following:
+
+ <State 16>: 1.02ns
+The critical path consists of the following:
+	'add' operation ('offset', ddr_to_axis_reader.cpp:65) [139]  (1.02 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

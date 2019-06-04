@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="ov7670_LUMA_CHROMA.cpp" path="F:\Tesi\ProgettoVivado\OV7670_Color\VIVADO_HLS\OV7670_LUMA_CHROMA\ov7670_LUMA_CHROMA.cpp"/>
+    <originFiles name="ov7670_LUMA_CHROMA.h" path="F:\Tesi\ProgettoVivado\OV7670_Color\VIVADO_HLS\OV7670_LUMA_CHROMA\ov7670_LUMA_CHROMA.h"/>
+  </source>
+  <testbench>
+    <originFiles name="testbench.cpp" path="F:\Tesi\ProgettoVivado\OV7670_Color\VIVADO_HLS\OV7670_LUMA_CHROMA\testbench.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

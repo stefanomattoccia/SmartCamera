@@ -1,0 +1,137 @@
+
+
+================================================================
+== Vivado HLS Report for 'LF_valid_to_AXIS'
+================================================================
+* Date:           Mon Jun  3 10:41:08 2019
+
+* Version:        2018.1 (Build 2188600 on Wed Apr 04 19:04:02 MDT 2018)
+* Project:        LF_VALID_TO_AXIS_prj
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      0.00|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    1|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+
+* FSM state operations: 
+
+ <State 1> : 0.00ns
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %data_in_V), !map !29"
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %frame_valid), !map !33"
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %line_valid), !map !37"
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %outputStream_V_V), !map !41"
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @LF_valid_to_AXIS_str) nounwind"
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %outputStream_V_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [LF_valid_to_AXIS.cpp:5]
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %data_in_V, [8 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [LF_valid_to_AXIS.cpp:6]
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %frame_valid, [8 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [LF_valid_to_AXIS.cpp:7]
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1* %line_valid, [8 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [LF_valid_to_AXIS.cpp:8]
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%res_load = load i1* @res, align 1" [LF_valid_to_AXIS.cpp:11]
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecReset(i1* @res, i32 1, [1 x i8]* @p_str2) nounwind" [LF_valid_to_AXIS.cpp:11]
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%frame_valid_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %frame_valid)" [LF_valid_to_AXIS.cpp:22]
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "br i1 %res_load, label %1, label %3" [LF_valid_to_AXIS.cpp:20]
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "br i1 %frame_valid_read, label %4, label %._crit_edge4" [LF_valid_to_AXIS.cpp:27]
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%line_valid_read = call i1 @_ssdm_op_Read.ap_none.volatile.i1P(i1* %line_valid)" [LF_valid_to_AXIS.cpp:27]
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "br i1 %line_valid_read, label %5, label %._crit_edge4" [LF_valid_to_AXIS.cpp:27]
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%tmp_V = call i8 @_ssdm_op_Read.ap_none.volatile.i8P(i8* %data_in_V)" [LF_valid_to_AXIS.cpp:29]
+ST_1 : Operation 20 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outputStream_V_V, i8 %tmp_V)" [LF_valid_to_AXIS.cpp:29]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "br i1 %frame_valid_read, label %._crit_edge, label %2" [LF_valid_to_AXIS.cpp:22]
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "store i1 false, i1* @res, align 1" [LF_valid_to_AXIS.cpp:23]
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "br label %._crit_edge" [LF_valid_to_AXIS.cpp:23]
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "br label %6" [LF_valid_to_AXIS.cpp:24]
+
+ <State 2> : 0.00ns
+ST_2 : Operation 25 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P(i8* %outputStream_V_V, i8 %tmp_V)" [LF_valid_to_AXIS.cpp:29]   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "br label %._crit_edge4" [LF_valid_to_AXIS.cpp:30]
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "br label %6"
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "ret void" [LF_valid_to_AXIS.cpp:32]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
