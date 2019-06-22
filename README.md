@@ -14,11 +14,16 @@ Tested with operating system Baremetal (Zynq ARM processor) but easily portable 
 An OpenCV client allows to visualize the image stream (raw image Luma, raw image Chroma, Color image and processed image)
 A client running on the remote computer enables to change (via TCP) parameters of the convolutional filter (separable or standard) implemeted into the FPGA. 
 
-## Supported Boards
+## Supported Boards and Images
 
-* Xilinx ZedBoard
-* Xilinx ZCU102		( Work in progress )
-* Xilinx Ultra96	( Work in progress )
+
+| Board   |      Linux Image      | MD5 Checksum | Documentation |
+|----------|:-------------:|------:|------:|
+| Xilinx Zedboard   |   [ubuntu-16.04.2-minimal-armhf.img.gz](google.it) |  Work in progress | Work in progress |
+| Xilinx ZCU102     |   Work in progress |  Work in progress | Work in progress |
+| Xilinx Ultra96    |   Work in progress |  Work in progress | Work in progress |
+
+Create custom Linux Images
 
 ## Other Informations
 
