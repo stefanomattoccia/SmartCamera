@@ -23,7 +23,9 @@ A client running on the remote computer enables to change (via TCP) parameters o
 | Xilinx ZCU102     |   Work in progress |  Work in progress | Work in progress |
 | Xilinx Ultra96    |   Work in progress |  Work in progress | Work in progress |
 
-Create custom Linux Images
+### Other Resources
+
+* [Create custom Linux Images](google.it)
 
 ## Other Informations
 
