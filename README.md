@@ -25,7 +25,7 @@ A client running on the remote computer enables to change (via TCP) parameters o
 
 ### Other Resources
 
-* [Create custom Linux Images](google.it)
+* [Create custom Linux Images](https://github.com/smatt-github/SmartCamera/blob/master/Documentation/board_preparation.md)
 
 ## Other Informations
 
