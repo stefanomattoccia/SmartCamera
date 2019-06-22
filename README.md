@@ -19,7 +19,7 @@ A client running on the remote computer enables to change (via TCP) parameters o
 
 | Board   |      Linux Image      | MD5 Checksum | Documentation |
 |----------|:-------------:|------:|------:|
-| Xilinx Zedboard   |   [ubuntu-16.04.2-minimal-armhf.img.gz](google.it) |  Work in progress | Work in progress |
+| Xilinx Zedboard   |   [ubuntu-16.04.2-minimal-armhf.img.gz](google.it) |  fab161a1948e7cc0c93e6c2c8c5e89f7 | Work in progress |
 | Xilinx ZCU102     |   Work in progress |  Work in progress | Work in progress |
 | Xilinx Ultra96    |   Work in progress |  Work in progress | Work in progress |
 
@@ -31,11 +31,9 @@ A client running on the remote computer enables to change (via TCP) parameters o
 
 For more details see 06 - Embedded_Vision.pdf in Documentation
 
-https://www.youtube.com/watch?v=EG3NYqMJvZI
-
-https://www.youtube.com/watch?v=QFxjXWgBBcc
-
-https://www.youtube.com/watch?v=6HEgdZEHpsM
+* https://www.youtube.com/watch?v=EG3NYqMJvZI
+* https://www.youtube.com/watch?v=QFxjXWgBBcc
+* https://www.youtube.com/watch?v=6HEgdZEHpsM
 
 If you use this code please refer to: 
 
