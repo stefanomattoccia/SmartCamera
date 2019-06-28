@@ -3,35 +3,10 @@
 #### Prerequisites
 - Host PC with Linux
 - SD Card
-- Vivado Design Suite - HLx Editions 2018.1
-- Xilinx SDK 2016.4
-- Xilinx PetaLinux 2016.4
+- Vivado Design Suite - HLx Editions
+- Xilinx PetaLinux
 
-### Step 01 - Hardware Design Creation
-In this step I will use the most basic hardware design that Linux can be booted in.
-In particular the steps needed to generate the hardware design are:
-
-- Create a new RTL project for ZYNQ-7000 SoC in Vivado HLx.
-- Click ‘Create Block Design’ from the ‘Project Manager’ window
-- Add ‘ZYNQ7 Processing System’ IP from the ‘Add IP’ window
-- Connect FCLK_CLK0 output pin to M_AXI_GP0_ACLK input pin of ‘ZYNQ7 Processing System’ IP
-- Click ‘Run Block Automation’
-
-After these steps the block design will be like in the following figure:
-
-![alt text](https://git.hipert.unimore.it/F1-10/Thundershot/raw/master/docs/zedboard/img/hardware_design.png)
-
-Then right click the block design file, and select ‘Create HDL Wrapper’. 
-Tick “Let Vivado manage wrapper and auto-update” and click ok. And finally:
-
-- Synthesize the design and generate the bit stream
-- After bit stream is generated, go to File > Export > Export Hardware, tick Include bitstream and click OK.
-
-After the steps described above, the hardware description file (.hdf) will be generated under <project-name>.sdk folder,
-located under the project directory.
-This file is required for building the kernel image in the following step
-
-### Step 02 - Kernel Image generation
+### Step 01 - Kernel Image generation
 
 Open a terminal in the Linux OS that you installed PetaLinux and go to the 
 directory that you want to create the PetaLinux project. First of all we must source from PetaLinux and XSDK installation directories: 
@@ -52,15 +27,58 @@ Add the .hdf file to the project and configure some aspects in the kernel in ord
 to point the kernel itself to a custom root file system (ubuntu 16.04 in this case):
 
 ```console
-$ petalinux-config --get-hw-description=/path/to/hardware/description/file.hdf
+$ petalinux-config --get-hw-description=/path/to/hardware/description/OV7670.sdk
 ```
 
 This command will also pop-up a window, in which we have to configure some parameters:
 
 - Subsystem AUTO Hardware Settings > Advanced bootable images storage Settings > boot image settings and set ‘image storage media’ option to ‘primary sd’
+
 - Subsystem AUTO Hardware Settings > Advanced bootable images storage Settings > kernel image settings and set ‘image storage media’ option to ‘primary sd’
 - Subsystem AUTO Hardware Settings > Advanced bootable images storage Settings > dtb image settings and set ‘image storage media’ option to ‘primary sd’
 - Image Packaging Configurations and set ‘Root filesystem type’ option to ‘SD card’
+
+Disable the auto-generated bootargs:
+
+```console
+$ petalinux-config
+```
+Subsystem AUTO Hardware Settings > DTG Settings > Kernel Bootargs 
+
+and remove the flag on "generate boot args automatically", then insert below the following string:
+
+```console
+console=ttyPS0,115200 earlyprintk uio_pdrv_genirq.of_id=generic-uio clk_ignore_unused root=/dev/mmcblk0p2 rw rootwait sdhci.debug_quirks=64 cpuidle.off=1
+```
+Then save and exit.
+
+After this, copy the content of pl.dtsi, that can be found on <project-dir>/components/device-tree/device-tree, inside the system-user.dtsi, that can be found in <project-dir>/project-spec/meta-user/recipes-bsp/device-tree/files, and change all the "compatible" field to "generic-uio", as for example:
+
+```console
+/include/ "system-conf.dtsi"
+/ {
+	amba_pl: amba_pl {
+		#address-cells = <1>;
+		#size-cells = <1>;
+		compatible = "simple-bus";
+		ranges ;
+		VDMA_axis_to_ddr_writer_0: axis_to_ddr_writer@43c00000 {
+			clock-names = "ap_clk";
+			clocks = <&clkc 15>;
+			compatible = "generic-uio";
+			reg = <0x43c00000 0x10000>;
+			xlnx,s-axi-axilites-addr-width = <0x6>;
+			xlnx,s-axi-axilites-data-width = <0x20>;
+		};
+        ...
+        ...
+};
+```
+Then include the UIO kernel modules, through the followind command:
+```console
+$ petalinux-config -c kernel
+```
+Go to Device Drivers > Userspace IO Drivers and insert "Userspace IO Platform Driver with generic IRQ Handling" and "Userspace Platform Driver with generic irq and dynamic memory" as a modules.
 
 Select Exit and save the new configuration, then the following command will build the project and generate the boot files:
 
@@ -74,7 +92,7 @@ After project is successfully built, run the following command to generate the B
 $ petalinux-package --boot --format BIN --fsbl ./images/linux/zynq_fsbl.elf --fpga ./images/linux/bitfile.bit --u-boot
 ```
 
-### Step 03 - Preparing SD Card
+### Step 02 - Preparing SD Card
 
 Partitioning an SD Card with at least 16GB of capacity, in particular we need to create two partitions as follows:
 
@@ -116,7 +134,7 @@ $ sudo umount /media/BOOT
 Place the SD Card into the Zedboard, connect an uart-usb cable to zedboard and host pc and connect a serial monitor 
 (like screen, cu, minicom, ...) to /dev/ttyACM0 with a baudrate of 115200.
 
-### Step 04 - Boot Ubuntu Linux on Zedboard
+### Step 03 - Boot Ubuntu Linux on Zedboard
 
 After the Ubuntu boot, we can log in the new system with:
 

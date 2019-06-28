@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Jun 25 17:28:35 2019
-# Process ID: 9242
+# Start of session at: Tue Jun 25 17:21:03 2019
+# Process ID: 8483
 # Current directory: /home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670
 # Command line: vivado OV7670.xpr
 # Log file: /home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/vivado.log
@@ -97,7 +97,8 @@ design_1_ddr_to_axis_reader_SD_0_0
 design_1_mux_sd_ov_1_0
 
 WARNING: [Project 1-229] Project 'OV7670.xpr' is read-only and therefore could not be upgraded for this version of Vivado.  Use 'File | Save Project As...' if you wish to save an upgraded copy.
-open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:00:20 . Memory (MB): peak = 6272.734 ; gain = 170.391 ; free physical = 281 ; free virtual = 4934
+open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:36 . Memory (MB): peak = 6274.875 ; gain = 171.621 ; free physical = 148 ; free virtual = 5001
+update_compile_order -fileset sources_1
 open_bd_design {/home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.srcs/sources_1/bd/design_1/design_1.bd}
 Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
 Adding cell -- xilinx.com:ip:xlconstant:1.1 - const_true
@@ -143,5 +144,6 @@ Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
 Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
 Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
 Successfully read diagram <design_1> from BD file </home/gian/Documenti/HiPeRTLab/Projects/SmartCamera/OV7670_Color/VIVADO_PROJECT/OV7670/OV7670.srcs/sources_1/bd/design_1/design_1.bd>
-open_bd_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 6767.258 ; gain = 466.504 ; free physical = 190 ; free virtual = 4845
-update_compile_order -fileset sources_1
+open_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 6762.113 ; gain = 0.000 ; free physical = 131 ; free virtual = 4854
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 25 17:25:02 2019...
