@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libddr_to_axis_reader.so -o libddr_to_axis_reader.so CMakeFiles/ddr_to_axis_reader.dir/src/drivers/src/ddr_to_axis_reader_v1_0/xddr_to_axis_reader.c.o 

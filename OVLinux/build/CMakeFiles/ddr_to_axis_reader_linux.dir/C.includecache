@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/OVLinux/src/drivers/src/ddr_to_axis_reader_v1_0/xddr_to_axis_reader.h
+stdint.h
+-
+assert.h
+-
+dirent.h
+-
+fcntl.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/mman.h
+-
+unistd.h
+-
+stddef.h
+-
+xddr_to_axis_reader_hw.h
+/home/ubuntu/OVLinux/src/drivers/src/ddr_to_axis_reader_v1_0/xddr_to_axis_reader_hw.h
+
+/home/ubuntu/OVLinux/src/drivers/src/ddr_to_axis_reader_v1_0/xddr_to_axis_reader_hw.h
+
+/home/ubuntu/OVLinux/src/drivers/src/ddr_to_axis_reader_v1_0/xddr_to_axis_reader_linux.c
+xddr_to_axis_reader.h
+/home/ubuntu/OVLinux/src/drivers/src/ddr_to_axis_reader_v1_0/xddr_to_axis_reader.h
+

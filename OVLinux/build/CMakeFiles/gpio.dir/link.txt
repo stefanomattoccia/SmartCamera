@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libgpio.so -o libgpio.so CMakeFiles/gpio.dir/src/drivers/src/gpio_v4_1/xgpio_intr.c.o 

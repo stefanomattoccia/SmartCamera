@@ -1,0 +1,11 @@
+[Unit]
+Description=Omnivision Camera Interface
+
+[Service]
+Type=oneshot
+ExecStart=/home/ubuntu/OVLinux/build/ov7670Start
+ExecStop=/home/ubuntu/OVLinux/build/ov7670Stop
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

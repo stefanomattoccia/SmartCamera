@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/OVLinux/src/drivers/src/gpio_v4_1/xgpio.h
+stdint.h
+-
+assert.h
+-
+dirent.h
+-
+fcntl.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/mman.h
+-
+unistd.h
+-
+stddef.h
+-
+xgpio_l.h
+/home/ubuntu/OVLinux/src/drivers/src/gpio_v4_1/xgpio_l.h
+
+/home/ubuntu/OVLinux/src/drivers/src/gpio_v4_1/xgpio_intr.c
+xgpio.h
+/home/ubuntu/OVLinux/src/drivers/src/gpio_v4_1/xgpio.h
+
+/home/ubuntu/OVLinux/src/drivers/src/gpio_v4_1/xgpio_l.h
+

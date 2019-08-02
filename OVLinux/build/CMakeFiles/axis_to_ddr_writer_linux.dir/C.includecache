@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ubuntu/OVLinux/src/drivers/src/axis_to_ddr_writer_v1_0/xaxis_to_ddr_writer.h
+stdint.h
+-
+assert.h
+-
+dirent.h
+-
+fcntl.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/mman.h
+-
+unistd.h
+-
+stddef.h
+-
+xaxis_to_ddr_writer_hw.h
+/home/ubuntu/OVLinux/src/drivers/src/axis_to_ddr_writer_v1_0/xaxis_to_ddr_writer_hw.h
+
+/home/ubuntu/OVLinux/src/drivers/src/axis_to_ddr_writer_v1_0/xaxis_to_ddr_writer_hw.h
+
+/home/ubuntu/OVLinux/src/drivers/src/axis_to_ddr_writer_v1_0/xaxis_to_ddr_writer_linux.c
+xaxis_to_ddr_writer.h
+/home/ubuntu/OVLinux/src/drivers/src/axis_to_ddr_writer_v1_0/xaxis_to_ddr_writer.h
+

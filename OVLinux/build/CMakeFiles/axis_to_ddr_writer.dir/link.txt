@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libaxis_to_ddr_writer.so -o libaxis_to_ddr_writer.so CMakeFiles/axis_to_ddr_writer.dir/src/drivers/src/axis_to_ddr_writer_v1_0/xaxis_to_ddr_writer.c.o 
