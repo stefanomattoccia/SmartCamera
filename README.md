@@ -38,3 +38,5 @@ For more details see 06 - Embedded_Vision.pdf in Documentation
 If you use this code please refer to: 
 
 06 - Embedded_Vision.pdf available at www.vision.disi.unibo.it/smatt
+
+Credits to initial developers: Riccardo Albertazzi and Simone Mingarelli
