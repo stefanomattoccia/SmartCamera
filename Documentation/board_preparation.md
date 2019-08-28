@@ -43,7 +43,7 @@ Disable the auto-generated bootargs:
 ```console
 $ petalinux-config
 ```
-Subsystem AUTO Hardware Settings > DTG Settings > Kernel Bootargs 
+DTG Settings > Kernel Bootargs 
 
 and remove the flag on "generate boot args automatically", then insert below the following string:
 
@@ -51,6 +51,12 @@ and remove the flag on "generate boot args automatically", then insert below the
 console=ttyPS0,115200 earlyprintk uio_pdrv_genirq.of_id=generic-uio clk_ignore_unused root=/dev/mmcblk0p2 rw rootwait sdhci.debug_quirks=64 cpuidle.off=1
 ```
 Then save and exit.
+
+After this run the following command to build the project and generate the device-tree:
+
+```console
+$ petalinux-build
+```
 
 After this, copy the content of pl.dtsi, that can be found on <project-dir>/components/device-tree/device-tree, inside the system-user.dtsi, that can be found in <project-dir>/project-spec/meta-user/recipes-bsp/device-tree/files, and change all the "compatible" field to "generic-uio", as for example:
 
