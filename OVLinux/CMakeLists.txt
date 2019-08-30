@@ -44,3 +44,21 @@ target_link_libraries(
     PUBLIC gpio
     PUBLIC gpio_linux
 )
+
+add_executable(
+    getFrames
+    src/frameAccess/src/getFrames.cpp 
+    src/common/src/axis_to_ddr_writer.cpp
+    src/common/src/ddr_to_axis_reader.cpp
+    src/common/src/gpio_intr.cpp
+)
+
+target_link_libraries(
+    getFrames
+    PUBLIC ddr_to_axis_reader_linux
+    PUBLIC ddr_to_axis_reader
+    PUBLIC axis_to_ddr_writer_linux
+    PUBLIC axis_to_ddr_writer
+    PUBLIC gpio
+    PUBLIC gpio_linux
+)
