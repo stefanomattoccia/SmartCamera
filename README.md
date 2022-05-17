@@ -40,3 +40,10 @@ If you use this code please refer to:
 06 - Embedded_Vision.pdf available at www.vision.disi.unibo.it/smatt
 
 Credits to initial developers: Riccardo Albertazzi and Simone Mingarelli
+
+
+May 2022 - OV7670 and PYNQ (by Mattia Mazzoli and Matteo Di Lorenzi)
+At the following link is available a new project, developed by Mattia Mazzoli and Matteo Di Lorenzi, for the PYNQ board:
+
+https://github.com/m-dilorenzi/OV7670-PynqZ2
+
