@@ -42,8 +42,10 @@ If you use this code please refer to:
 Credits to initial developers: Riccardo Albertazzi and Simone Mingarelli
 
 
-May 2022 - OV7670 and PYNQ (by Mattia Mazzoli and Matteo Di Lorenzi)
-At the following link is available a new project, developed by Mattia Mazzoli and Matteo Di Lorenzi, for the PYNQ board:
+
+### OV7670 and PYNQ 
+
+At the following link is available a new project, developed by Mattia Mazzoli and Matteo Di Lorenzi, for the PYNQ Z2 board:
 
 https://github.com/m-dilorenzi/OV7670-PynqZ2
 
